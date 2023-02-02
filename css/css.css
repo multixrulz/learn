@@ -19,6 +19,12 @@ img.centre {
   margin-right: auto;
 }
 
+/* Award icon in front of heading text */
+h1 img {
+height: 1.5em;
+vertical-align: bottom;
+}
+
 /* Tutorials - these are a div.tutorial with more divs within that contain the actual content.
  */
 div.tut_section{
