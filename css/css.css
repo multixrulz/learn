@@ -1,9 +1,77 @@
-body {
-background: #dfdfdf;
-font-family: sans-serif;
-font-size: 4mm;
+@font-face {
+font-family: 'Encode Sans';
+font-style: normal;
+font-weight: 400;
+src: url('/fonts/EncodeSans-Regular.ttf');
 }
 
+@font-face {
+font-family: 'Encode Sans';
+font-style: normal;
+font-weight: 800;
+src: url('/fonts/EncodeSans-Bold.ttf');
+}
+
+/* reset */
+html, body {
+margin: 0;
+border: 0;
+padding: 0;
+}
+
+body {
+background: #222;
+font-family: "Encode Sans";
+font-size: 16px;
+}
+
+/* Layout */
+#width {
+min-width: 35em;
+max-width: 60em;
+overflow: auto;
+margin: 0 auto 0 auto;
+padding: 0;
+}
+
+#head {
+height: 7em;
+background: linear-gradient(-27deg, rgba(2,0,36,0.5) 0%, rgba(54,54,54,0.4) 35%, rgba(255,255,255,0) 100%), rgba(19,194,252,1);
+}
+#head p {
+position: absolute;
+font-size: 250%;
+font-weight: 900;
+padding: 0;
+margin: 0.5em 0 0 1em;
+color: #f5f8f9;
+text-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.3);
+}
+#headimg img{
+float: right;
+content: url(/img/mrhenley.svg);
+height: 7em; /* same as #head */
+}
+
+#content {
+background: #f5f8f9;
+padding: 0 2em 2em 2em;
+margin-top: 0;
+border-top: solid #DF9C00 0.2em;
+}
+
+#foot {
+border-top: solid 1px;
+padding: 1em 3em 3em 3em;
+background: #efefef;
+font-size: 80%;
+text-align: center;
+}
+#foot * {
+margin: 0.2em 0 0 0;
+}
+
+/* Images */
 img.tutorial {
   max-width: 90%;
   max-height: 100vh;
@@ -34,8 +102,9 @@ input.show_hide {
   display: none;
 }
 input.show_hide + label {
-  background: blue;
+  background: #13C2FC;
   padding: 0.5em;
+  border-radius: 0.5em;
 }
 input.show_hide + label::before {
   content: 'Show this section';
@@ -47,12 +116,13 @@ input.show_hide:checked ~ div.tut_section{
   display: block;
 }
 .tutorial .step {
-  background: #efefef;
-  margin: 0;
+  background: #bbb;
+  margin: 0.5em 0;
+  border-radius: 0.5em;
   padding: 1em;
 }
 .tutorial .step:nth-of-type(even) {
-  background: #afafaf;
+  background: #ddd;
 }
 
 /* Speakers */
@@ -177,4 +247,12 @@ input.show_hide:checked ~ div.tut_section{
 .right.thoughtbubble::after {
   right: -3.5em;
   bottom: 2em;
+}
+
+/* Code - highlighted with codehilite/pygments */
+div.codehilite {
+margin: 0 3em;
+padding: 0.2em 1em;
+border-radius: 0.5em;
+overflow-x:auto;
 }

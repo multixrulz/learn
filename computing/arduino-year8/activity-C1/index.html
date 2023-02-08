@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arduino and basic electronics – Year 8</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/css/codehilite.css">
+<link rel="stylesheet" type="text/css" href="/css/css.css">
+<link rel="shortcut icon" href="/favicon.png">
+<meta name="description" content="A tutorial about how to upload a sketch onto an Arduino">
+<meta name="generator" content="0cms">
+<meta name="author" content="Jared Henley">
+<meta name="copyright" content="&copy; 2023 Jared Henley">
+</head>
+<body>
+<div id="width">
+    <div id="head">
+        <div>
+            <p>Learn Arduino</p>
+        </div>
+    </div>
+    <div id="content">
+<h1><a id="level1"></a><img src="/computing/arduino-year8/img/award.svg" /> C1 — Upload a sketch onto an Arduino</h1>
+
+<div class="tutorial">
+<div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What are we doing in this tutorial, sir?</p>
+</div>
+</div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>I’m going to show you how to put a program onto an Arduino. We call an Arduino program a “Sketch”.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<div class="step">
+<h2>Start the Arduino IDE</h2>
+<div><input type="checkbox" class="show_hide" id="start_ide" checked><label for="start_ide"></label><div class="tut_section">
+            
+<div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>First we start the Arduino IDE. There are two ways to do this.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>One way is to click the “Windows” button at the bottom left of your screen, and find “Arduino” in the list.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<img src="01-arduino-menu.png" alt="Arduino program in the start menu" class="tutorial centre">
+
+<div class="speech right">
+<div class="speechbubble right">
+<p>Another way is to type “arduino” into the search box at the bottom left of your screen, and find the Arduino app in the list.&rdquo;</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<img src="02-arduino-search.png" alt="Arduino program in the search results" class="tutorial centre">
+
+<div class="speech right">
+<div class="speechbubble right">
+<p>When you’ve started the Arduino IDE, you’ll see the window shown here.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<img src="03-arduino-new-window.png" alt="New Arduino IDE window" class="tutorial centre">
+
+</div>
+
+            </div></div>
+            
+</div>
+<div class="step">
+<h2>Put a sketch into the Arduino IDE</h2>
+<div><input type="checkbox" class="show_hide" id="copy_program" checked><label for="copy_program"></label><div class="tut_section">
+            
+<div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>Go back to your Arduino window and select the whole sketch.</p>
+<p>You can do this quickly by typing Control-A.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<img src="04-arduino-select-all.png" alt="Entire sketch selected" class="tutorial centre">
+
+<div class="speech right">
+<div class="speechbubble right">
+<p>Now you’ll need to put a sketch into this window. I have the sketch written out here, so all you need to do is copy and paste.</p>
+<p>Select and copy the sketch you see below. You can copy by typing Control-C.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">          </span><span class="c1">// the setup function runs once when you press reset or power the board</span>
+<span class="n">pinMode</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// initialize digital pin 12 as an output.</span>
+<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">           </span><span class="c1">// the loop function runs over and over again forever</span>
+<span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// turn the LED on</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for a second</span>
+<span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn the LED off</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for a second</span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>Type Control-V into the Arduino window, to paste the sketch that you just copied.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<img src="05-arduino-pasted.png" alt="Sketch pasted in" class="tutorial centre">
+
+<div class="speech right">
+<div class="speechbubble right">
+<p>Before you can upload an Arduino sketch, it needs to be saved, so we’ll do that.</p>
+<p>Click the “File” menu, then click “Save As&hellip;”.</p>
+<p>Now choose “This PC” on the left hand side of the window, and then double-click &ldquo;Documents&rdquo;.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<img src="06-arduino-this-pc.png" alt="This PC selected in the Save As... dialog" class="tutorial centre">
+
+<div class="speech right">
+<div class="speechbubble right">
+<p>Create a new folder called “Arduino” inside “Documents” by clicking the icon of a folder with a star near the top right of the window.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<img src="07-arduino-create-new-folder.png" alt="Create New Folder icon selected" class="tutorial centre">
+
+<div class="speech right">
+<div class="speechbubble right">
+<p>Double-click the Arduino folder that you just made.</p>
+<p>Now name your file “C1-upload” and click the “Save” button.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<img src="08-arduino-filename-save.png" alt="Entire program selected" class="tutorial centre">
+
+<div class="speech right">
+<div class="speechbubble right">
+<p>Now go back to your Arduino window and select the whole program.</p>
+<p>You can do this quickly by typing Control-A.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+</div>
+
+            </div></div>
+            
+</div>
+<div class="step">
+<h2>Upload the program</h2>
+<div><input type="checkbox" class="show_hide" id="upload_program" checked><label for="upload_program"></label><div class="tut_section">
+            
+<div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>Now you need to connect your Arduino board to the computer. Check that the power light on the ThinkerShield is on.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>Tell the Arduino IDE which “port” to use to talk to the Arduino.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<img src="09-arduino-set-port.png" alt="Setting the COM port" class="tutorial centre">
+
+<div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>But Sir, I don’t have COM3 like you do.</p>
+</div>
+</div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>That’s OK. Just choose the highest numbered COM port. If it doesn’t work, come back here and try the next number.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>Click the upload button at the top right of the Arduino IDE.</p>
+<p>The Arduino IDE will build the sketch, and the upload it to the Arduino.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<img src="10-arduino-upload.png" alt="The upload button" class="tutorial centre">
+
+<img src="11-arduino-compiling.png" alt="Compiling the sketch" class="tutorial centre">
+
+<img src="12-arduino-uploaded.png" alt="The sketch has been uploaded" class="tutorial centre">
+
+<div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>There&rsquo;s a green light flashing on the ThinkerShield!</p>
+</div>
+</div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>Congratulations. You have uploaded a sketch to the Arduino.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>Fill out an activity claim slip. Use the code C1. Make sure that I see your Arduino IDE and blinking Arduino, so that I knows you got it to work.</p>
+<p>Also put your saved Arduino sketch into the Google Drive folder I asked you to make in activity T1. Make sure it’s named “C1-upload”.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+</div>
+
+            </div></div>
+            
+</div>
+</div>
+    </div>
+    <div id="foot">
+<p><strong>This website is Copyright &copy; 2023 Jared Henley</strong></p>
+<p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
+<p>All content is licenced <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise noted.  Code is licenced under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>. <a href="/credits.html">Credits</a></p>
+<p><em>Last built: 2023-02-08 21:13:19.103367</em></p>
+<p><em>Last modified: 2023-02-08 20:01:57.657594</em></p>
+    </div>
+</div>
+</body>
+</html>
