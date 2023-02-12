@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arduino and basic electronics – Year 8</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/css/codehilite.css">
+<link rel="stylesheet" type="text/css" href="/css/css.css">
+<link rel="shortcut icon" href="/favicon.png">
+<meta name="description" content="A tutorial about how to upload a sketch onto an Arduino">
+<meta name="generator" content="0cms">
+<meta name="author" content="Jared Henley">
+<meta name="copyright" content="&copy; 2023 Jared Henley">
+</head>
+<body>
+<div id="width">
+    <div id="head">
+        <div>
+            <p>Learn Arduino</p>
+        </div>
+    </div>
+    <div id="content">
+<h1>C2 — Blink</h1>
+<p>There are three levels in this activity:</p>
+<ul>
+<li><a href="#level1">Level 1</a></li>
+<li><a href="#level2">Level 2</a></li>
+<li><a href="#level3">Level 3</a></li>
+</ul>
+<h2><a id="level1"></a><img src="/computing/arduino-year8/img/award.svg" /> Level 1 — Change the blink “on” time</h2>
+
+<div class="tutorial">
+<div><input type="checkbox" class="show_hide section" id="level1-section" checked><label for="level1-section"></label><div class="tut_section">
+            
+<div>
+<div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What are we doing in level, sir?</p>
+</div>
+</div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>I am going to give you a program that blinks an LED on your Arduino MAAS shield.</p>
+<p>Your challenge is to change the program so that the LED is on for a shorter time: it’s on for one second now, change it so that it’s on for only half a second.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<div class="step">
+<div class="speech right">
+<div class="speechbubble right">
+<p>Start the Arduino IDE.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>How do I do that? I think I did it before, but I can’t remember.</p>
+</div>
+</div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>You learned how to do this in <a href="../activity-C1">tutorial C1</a>. Click the link and look at that if you need to.</p>
+<p>You might want to arrange your browser and Arduino windows side by side so you can see both of them at the same time.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+</div>
+<div class="step">
+<div class="speech right">
+<div class="speechbubble right">
+<p>Copy the program below into your Arduino window. Remember to delete the other program first.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">          </span><span class="c1">// the setup function runs once when you press reset or power the board</span>
+<span class="n">pinMode</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// initialize digital pin 12 as an output.</span>
+<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">           </span><span class="c1">// the loop function runs over and over again forever</span>
+<span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// turn the LED on</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for a second</span>
+<span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn the LED off</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for a second</span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>See if you can work out how to change the length of time the LED is on. Make a change, upload the program to the Arduino, and see if it works right.</p>
+<p>Remember, the challenge is to have the LED on for only half a second.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>I can give you some hints if you need them, but have a go by yourself first.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level2_hint1-1"><label for="level2_hint1-1"></label><div class="hint">
+            
+<div>
+<p>Can you see a comment in the sketch that says &ldquo;wait for a second&rdquo;? (comments start with <code>//</code>. Everything after <code>//</code> is for people to read, not the computer).</p>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level2_hint1-2"><label for="level2_hint1-2"></label><div class="hint">
+            
+<div>
+<p>The command <code>delay(1000);</code> tells the Arduino to wait for 1000 milliseconds. 1000 milliseconds is 1 second.</p>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level2_hint1-3"><label for="level2_hint1-3"></label><div class="hint">
+            
+<div>
+<p>Change the first <code>delay(1000);</code> to <code>delay(500);</code>.</p>
+</div>
+
+            </div></div>
+            
+</div>
+
+            </div></div>
+            
+</div>
+
+            </div></div>
+            
+</div>
+<div class="step">
+<div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>I did it!</p>
+</div>
+</div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>That’s fantastic!</p>
+<p>Now claim your achievement.</p>
+<ol>
+<li>Save your Arduino sketch. Name it <code>C2-level1</code>.</li>
+<li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive.</li>
+<li>Complete a claim slip and hand it to me. The code is <code>C2</code> and the level is <code>1</code>.</li>
+</ol>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+</div>
+</div>
+
+            </div></div>
+            
+</div>
+
+<h2><a id="level2"></a><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /> Level 2 — Change the blink “off” time</h2>
+
+<div class="tutorial">
+<div><input type="checkbox" class="show_hide section" id="level2-section" checked><label for="level2-section"></label><div class="tut_section">
+            
+<div>
+<div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What are we doing in level, sir?</p>
+</div>
+</div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>I am going to give you a program that blinks an LED on your Arduino MAAS shield.</p>
+<p>Your challenge is to change the program so that the LED is off for a longer time: it’s off for one second now, change it so that it’s of for three seconds.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<div class="step">
+<div class="speech right">
+<div class="speechbubble right">
+<p>Open a new Arduino window.</p>
+<p>Copy the program below into your Arduino window. Remember to delete the other program first.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">          </span><span class="c1">// the setup function runs once when you press reset or power the board</span>
+<span class="n">pinMode</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// initialize digital pin 12 as an output.</span>
+<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">           </span><span class="c1">// the loop function runs over and over again forever</span>
+<span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// turn the LED on</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for a second</span>
+<span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn the LED off</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for a second</span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>See if you can work out how to change the length of time the LED is of. Make a change, upload the program to the Arduino, and see if it works right.</p>
+<p>Remember, the challenge is to get the LED to stay off for three seconds.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>I can give you some hints if you need them, but have a go by yourself first.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level1_hint1-1"><label for="level1_hint1-1"></label><div class="hint">
+            
+<div>
+<p>Can you see a comment in the sketch that says &ldquo;wait for a second&rdquo;? (comments start with <code>//</code>. Everything after <code>//</code> is for people to read, not the computer).</p>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level1_hint1-2"><label for="level1_hint1-2"></label><div class="hint">
+            
+<div>
+<p>The command <code>delay(1000);</code> tells the Arduino to wait for 1000 milliseconds. 1000 milliseconds is 1 second.</p>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level1_hint1-3"><label for="level1_hint1-3"></label><div class="hint">
+            
+<div>
+<p>Change the second <code>delay(1000);</code> to <code>delay(3000);</code>.</p>
+</div>
+
+            </div></div>
+            
+</div>
+
+            </div></div>
+            
+</div>
+
+            </div></div>
+            
+</div>
+<div class="step">
+<div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>I did it!</p>
+</div>
+</div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>That’s fantastic!</p>
+<p>Now claim your achievement.</p>
+<ol>
+<li>Save your Arduino sketch. Name it <code>C2-level2</code>.</li>
+<li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive.</li>
+<li>Complete a claim slip and hand it to me. The code is <code>C2</code> and the level is <code>2</code>.</li>
+</ol>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+</div>
+</div>
+
+            </div></div>
+            
+</div>
+
+<h2><a id="level3"></a><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /> Level 3 — Blink two LEDs</h2>
+
+<div class="tutorial">
+<div><input type="checkbox" class="show_hide section" id="level3-section" checked><label for="level3-section"></label><div class="tut_section">
+            
+<div>
+<div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What are we doing in level, sir?</p>
+</div>
+</div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>I am going to give you a program that blinks an LED on your Arduino MAAS shield.</p>
+<p>Your challenge is to change the program so that another LED (called Pin 8) also blinks on and off.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<div class="step">
+<div class="speech right">
+<div class="speechbubble right">
+<p>Open a new Arduino window.</p>
+<p>Copy the program below into your Arduino window. Remember to delete the other program first.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">          </span><span class="c1">// the setup function runs once when you press reset or power the board</span>
+<span class="n">pinMode</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// initialize digital pin 12 as an output.</span>
+<span class="p">}</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">           </span><span class="c1">// the loop function runs over and over again forever</span>
+<span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// turn the LED on</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for a second</span>
+<span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn the LED off</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for a second</span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>See if you can work out how to make another LED blink. You will need to make changes in the <code>setup</code> section of the sketch, and in the <code>loop</code> section of the sketch.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>I can give you some hints if you need them, but have a go by yourself first.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level3_hint1-1"><label for="level3_hint1-1"></label><div class="hint">
+            
+<div>
+<p>Wherever you see pin 12 in the program, you need to make a second copy of that line and change one of them to use pin 8 instead.</p>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level3_hint1-2"><label for="level3_hint1-2"></label><div class="hint">
+            
+<div>
+<p>Can you see a line in the sketch that looks like this:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">pinMode</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// initialize digital pin 12 as an output.</span>
+</code></pre></div>
+
+<p>That tells the Arduino that pin number 12 is an output.  You’ll need to add another line just like it for pin number 8.</p>
+<p>You also need to look for two lines that start with <code>digitalWrite</code> and make copies that say pin 8 too.</p>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level3_hint1-3"><label for="level3_hint1-3"></label><div class="hint">
+            
+<div>
+<p>There are two other lines that you need to make copies of and change the <code>12</code> to <code>8</code>. They are</p>
+<div class="codehilite"><pre><span></span><code><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// turn the LED on</span>
+</code></pre></div>
+
+<p>and</p>
+<div class="codehilite"><pre><span></span><code><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn the LED off</span>
+</code></pre></div>
+</div>
+
+            </div></div>
+            
+</div>
+
+            </div></div>
+            
+</div>
+
+            </div></div>
+            
+</div>
+<div class="step">
+<div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>I did it!</p>
+</div>
+</div>
+<div class="speech right">
+<div class="speechbubble right">
+<p>That’s fantastic!</p>
+<p>Now claim your achievement.</p>
+<ol>
+<li>Save your Arduino sketch. Name it <code>C2-level3</code>.</li>
+<li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive.</li>
+<li>Complete a claim slip and hand it to me. The code is <code>C2</code> and the level is <code>3</code>.</li>
+</ol>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div>
+</div>
+</div>
+
+            </div></div>
+            
+</div>
+    </div>
+    <div id="foot">
+<p><strong>This website is Copyright &copy; 2023 Jared Henley</strong></p>
+<p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
+<p>All content is licenced <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise noted.  Code is licenced under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>. <a href="/credits.html">Credits</a></p>
+<p><em>Last built: 2023-02-12 14:21:23.801019</em></p>
+<p><em>Last modified: 2023-02-12 14:21:20.936146</em></p>
+    </div>
+</div>
+</body>
+</html>

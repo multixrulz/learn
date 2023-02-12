@@ -88,16 +88,21 @@ img.centre {
 }
 
 /* Award icon in front of heading text */
-h1 img {
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 height: 1.5em;
 vertical-align: bottom;
 }
 
+/* code - but not codehilite code */
+code:not(.codehilite *) {
+background: #ccc;
+border: solid 0.1em #777;
+border-radius: 0.2em;
+padding: 0 0.2em;
+}
+
 /* Tutorials - these are a div.tutorial with more divs within that contain the actual content.
  */
-div.tut_section{
-  display: none;
-}
 input.show_hide {
   display: none;
 }
@@ -105,15 +110,6 @@ input.show_hide + label {
   background: #13C2FC;
   padding: 0.5em;
   border-radius: 0.5em;
-}
-input.show_hide + label::before {
-  content: 'Show this section';
-}
-input.show_hide:checked + label::before {
-  content: 'Hide this section';
-}
-input.show_hide:checked ~ div.tut_section{
-  display: block;
 }
 .tutorial .step {
   background: #bbb;
@@ -123,6 +119,46 @@ input.show_hide:checked ~ div.tut_section{
 }
 .tutorial .step:nth-of-type(even) {
   background: #ddd;
+}
+
+input.show_hide:checked ~ div.tut_section{
+  display: block;
+}
+div.tut_section{
+  display: none;
+}
+input.show_hide.section + label::before {
+  content: 'Show this section';
+}
+input.show_hide.section:checked + label::before {
+  content: 'Hide this section';
+}
+
+div.hintbox {
+margin-left: 3em;
+}
+div.hintbox div.hintbox{
+margin-left: 0;
+}
+input.show_hide:checked ~ div.hint{
+  display: block;
+}
+input.show_hide ~ div.hint{
+  display: none;
+}
+div.hint{
+  display: block;
+  background: #BBF0C3;
+  border: solid 0.2em #6FB279;
+  border-radius: 0.5em;
+  margin-top: 1em;
+  padding: 0.2em 1em;
+}
+input.show_hide.hint + label::before {
+  content: 'Show hint';
+}
+input.show_hide.hint:checked + label::before {
+  content: 'Hide hint';
 }
 
 /* Speakers */
@@ -255,4 +291,7 @@ margin: 0 3em;
 padding: 0.2em 1em;
 border-radius: 0.5em;
 overflow-x:auto;
+}
+.hint div.codehilite {
+margin: 0;
 }
