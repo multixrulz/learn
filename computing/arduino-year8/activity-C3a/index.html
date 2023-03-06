@@ -56,21 +56,21 @@
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div>
-<pre class="codehilite"><code class="language-c++">int buttonState = 0;               // variable for reading the pushbutton status
-void setup() {
-    pinMode(12, OUTPUT);           // initialise pin 12 as an output:
-    pinMode(7, INPUT);             // initialise pin 7 as an input:
-}
+<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">buttonState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">               </span><span class="c1">// variable for reading the pushbutton status</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">           </span><span class="c1">// initialise pin 12 as an output:</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT</span><span class="p">);</span><span class="w">             </span><span class="c1">// initialise pin 7 as an input:</span>
+<span class="p">}</span>
 
-void loop() {
-    buttonState = digitalRead(7);  // read the state of the pushbutton value:
-    if (buttonState == HIGH) {    // check if the pushbutton is pressed.
-        digitalWrite(12, HIGH);    // turn LED on if the buttonState is HIGH:
-    } else {
-        digitalWrite(12, LOW);     // turn LED off if the buttonState is LOW:
-    }
-}
-</code></pre>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">buttonState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">digitalRead</span><span class="p">(</span><span class="mi">7</span><span class="p">);</span><span class="w">  </span><span class="c1">// read the state of the pushbutton value:</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">buttonState</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">HIGH</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">    </span><span class="c1">// check if the pushbutton is pressed.</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w">    </span><span class="c1">// turn LED on if the buttonState is HIGH:</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">     </span><span class="c1">// turn LED off if the buttonState is LOW:</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 <div class="speech right">
 <div class="speechbubble right">
 <p>Upload this sketch to your Arduino and check that it works.</p>
@@ -169,27 +169,27 @@ void loop() {
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div>
-<pre class="codehilite"><code class="language-c++">int buttonState = 0;                // variable for reading the pushbutton status
-void setup() {
-    pinMode(ledPin, OUTPUT);        // initialise ledPin as an output:
-    pinMode(buttonPin, INPUT);      // initialise buttonPin as an input:
-}
+<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">buttonState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">                </span><span class="c1">// variable for reading the pushbutton status</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">        </span><span class="c1">// initialise ledPin as an output:</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">buttonPin</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT</span><span class="p">);</span><span class="w">      </span><span class="c1">// initialise buttonPin as an input:</span>
+<span class="p">}</span>
 
-void loop() {
-    buttonState = digitalRead(buttonPin); // read the state of the pushbutton value:
-    if (buttonState == HIGH) {     // check if the pushbutton is pressed.
-        digitalWrite(ledPin, HIGH); // turn LED on if the buttonState is HIGH:
-    } else {
-        digitalWrite(ledPin, LOW);  // turn LED off if the buttonState is LOW:
-    }
-}
-</code></pre>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">buttonState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">digitalRead</span><span class="p">(</span><span class="n">buttonPin</span><span class="p">);</span><span class="w"> </span><span class="c1">// read the state of the pushbutton value:</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">buttonState</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">HIGH</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">     </span><span class="c1">// check if the pushbutton is pressed.</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// turn LED on if the buttonState is HIGH:</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn LED off if the buttonState is LOW:</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 <div class="speech right">
 <div class="speechbubble right">
 <p>Now at the very top of the sketch, declare two new variables by adding these lines:</p>
-<pre class="codehilite"><code class="language-c++">int buttonPin = 7;
-int ledPin = 12;
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">buttonPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">;</span>
+</code></pre></div>
 
 <p>Upload your sketch and check that it works.</p>
 </div>
@@ -437,8 +437,8 @@ int ledPin = 12;
 <p><strong>This website is Copyright &copy; 2023 Jared Henley</strong></p>
 <p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
 <p>All content is licenced <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise noted.  Code is licenced under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>. <a href="/credits.html">Credits</a></p>
-<p><em>Last built: 2023-03-05 16:19:04.214979</em></p>
-<p><em>Last modified: 2023-02-20 20:40:01.754987</em></p>
+<p><em>Last built: 2023-03-06 11:28:47.325794</em></p>
+<p><em>Last modified: 2023-03-06 11:28:44.632571</em></p>
     </div>
 </div>
 </body>
