@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arduino and basic electronics – Year 8</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/css/codehilite.css">
+<link rel="stylesheet" type="text/css" href="/css/css.css">
+<link rel="shortcut icon" href="/favicon.png">
+<meta name="description" content="A tutorial about using analogue inputs on an Arduino">
+<meta name="generator" content="0cms">
+<meta name="author" content="Jared Henley">
+<meta name="copyright" content="&copy; 2023 Jared Henley">
+</head>
+<body>
+<div id="width">
+    <div id="head">
+        <div>
+            <p>Learn Arduino</p>
+        </div>
+    </div>
+    <div id="content">
+<h1>C3c — Analogue outputs</h1>
+<p>There are three levels in this activity:</p>
+<ul>
+<li><a href="#level1">Level 1</a></li>
+<li><a href="#level2">Level 2</a></li>
+<li><a href="#level3">Level 3</a></li>
+</ul>
+<h2><a id="level1"></a><img src="/computing/arduino-year8/img/award.svg" /> Level 1 — Change the brightness of an LED</h2>
+
+<div class="tutorial">
+<input type="checkbox" class="show_hide section" id="level1-section" checked>
+            <label for="level1-section">
+            <div class="tut_section">
+            
+<div>
+
+        <input id="140012420955632" type="checkbox" class="show_read">
+        <label for="140012420955632"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What are we doing in this level, sir?</p>
+</div>
+</div></label>
+
+        <input id="140012418234448" type="checkbox" class="show_read">
+        <label for="140012418234448"><div class="speech right">
+<div class="speechbubble right">
+<p>You are going to learn how to use the analogue output to change the brightness of an LED.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="step">
+
+        <input id="140012418233968" type="checkbox" class="show_read">
+        <label for="140012418233968"><div class="speech right">
+<div class="speechbubble right">
+<p>Open a new Arduino window with a blank sketch in it.</p>
+<p>Copy the sketch below into your Arduino window. Remember to delete the blank sketch first.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A9</span><span class="p">;</span><span class="w">                </span><span class="c1">// define the pin for LED D9 on the ThinkerShield</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">buttonPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span><span class="w">              </span><span class="c1">// define the pin for button D7</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">buttonState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">            </span><span class="c1">// create a variable for what the button is doing</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up the ledPin as an OUTPUT</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">buttonPin</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT</span><span class="p">);</span><span class="w">  </span><span class="c1">// set up the buttonPin as an INPUT</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">buttonState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">digitalRead</span><span class="p">(</span><span class="n">buttonPin</span><span class="p">);</span><span class="w">  </span><span class="c1">// read the state of the pushbutton value</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">buttonState</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">HIGH</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">            </span><span class="c1">// check if the pushbutton is pressed.</span>
+<span class="w">        </span><span class="n">analogWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="mi">60</span><span class="p">);</span><span class="w">           </span><span class="c1">// turn the LED part on if the buttonState is HIGH</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">analogWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">);</span><span class="w">          </span><span class="c1">// turn LED full on if the buttonState is LOW</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+        <input id="140012418233392" type="checkbox" class="show_read">
+        <label for="140012418233392"><div class="speech right">
+<div class="speechbubble right">
+<p>Upload this sketch to your Arduino and check that it works.</p>
+<p>The light should be dimmer when you press button D7.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140012418232912" type="checkbox" class="show_read">
+        <label for="140012418232912"><div class="speech right">
+<div class="speechbubble right">
+<p>The analogue outputs can have values from 0 to 255. Try out some different numbers in the <code>analogWrite()</code> function.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140012418232432" type="checkbox" class="show_read">
+        <label for="140012418232432"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What are those numbers, sir?</p>
+</div>
+</div></label>
+
+        <input id="140012418231952" type="checkbox" class="show_read">
+        <label for="140012418231952"><div class="speech right">
+<div class="speechbubble right">
+<p>Digital data is just &ldquo;on&rdquo; or &ldquo;off&rdquo;, <code>HIGH</code> or <code>LOW</code>, etc.</p>
+<p>Analogue data is a number. There’s a minimum and a maximum possible value for that number.</p>
+<p>In an Ardiuno, the minimum number is 0 and the maximum is 255.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+<div class="step">
+
+        <input id="140012418231376" type="checkbox" class="show_read">
+        <label for="140012418231376"><div class="speech right">
+<div class="speechbubble right">
+<p>To complete this activity, change the program so that the LED is on with a value of 50 when the button is not pressed, and is on with a value of 190 when the button is pressed.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+<div class="step">
+
+        <input id="140012418230800" type="checkbox" class="show_read">
+        <label for="140012418230800"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>I did it!</p>
+</div>
+</div></label>
+
+        <input id="140012418230272" type="checkbox" class="show_read">
+        <label for="140012418230272"><div class="speech right">
+<div class="speechbubble right">
+<p>That’s fantastic!</p>
+<p>Now claim your achievement.</p>
+<ol>
+<li>Save your Arduino sketch. Name it <code>C3c-level1</code>.</li>
+<li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive.</li>
+<li>Complete a claim slip. The code is <code>C3c</code> and the level is <code>1</code>.</li>
+</ol>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+</div>
+
+            </div>
+            </label>
+            
+</div>
+
+<h2><a id="level2"></a><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /> Level 2 — The Dimmer Switch</h2>
+
+<div class="tutorial">
+<input type="checkbox" class="show_hide section" id="level2-section" checked>
+            <label for="level2-section">
+            <div class="tut_section">
+            
+<div>
+
+        <input id="140012418229360" type="checkbox" class="show_read">
+        <label for="140012418229360"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What are we doing in this level, sir?</p>
+</div>
+</div></label>
+
+        <input id="140012418228784" type="checkbox" class="show_read">
+        <label for="140012418228784"><div class="speech right">
+<div class="speechbubble right">
+<p>You&rsquo;ll learn how to use buttons to make an LED shine brighter and dimmer.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="step">
+
+        <input id="140012418227392" type="checkbox" class="show_read">
+        <label for="140012418227392"><div class="speech right">
+<div class="speechbubble right">
+<p>Open a new Arduino window with a blank sketch in it.</p>
+<p>Copy the sketch below into your Arduino window. Remember to delete the blank sketch first.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">9</span><span class="p">;</span><span class="w">                 </span><span class="c1">// define the pin for LED D9 on the ThinkerShield</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">upButtonPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span><span class="w">            </span><span class="c1">// define the pin for the &quot;up&quot; button</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">downButtonPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span><span class="w">          </span><span class="c1">// define the pin for the &quot;down&quot; button</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">upButtonState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">          </span><span class="c1">// create a variable for what the up button is doing</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">downButtonState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">        </span><span class="c1">// create a variable for what the down button is doing</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">brightness</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">             </span><span class="c1">// create a variable for the brightness of the LED</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">         </span><span class="c1">// set up the ledPin as an OUTPUT</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">upButtonPin</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT</span><span class="p">);</span><span class="w">     </span><span class="c1">// set up the buttonPin as an INPUT</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">downButtonPin</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT</span><span class="p">);</span><span class="w">   </span><span class="c1">// set up the buttonPin as an INPUT</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">upButtonState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">digitalRead</span><span class="p">(</span><span class="n">upButtonPin</span><span class="p">);</span><span class="w">      </span><span class="c1">// read the state of the up pushbutton</span>
+<span class="w">    </span><span class="n">downButtonState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">digitalRead</span><span class="p">(</span><span class="n">downButtonPin</span><span class="p">);</span><span class="w">  </span><span class="c1">// read the state of the down pushbutton</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">upButtonState</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">HIGH</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">            </span><span class="c1">// check if the up pushbutton is pressed.</span>
+<span class="w">        </span><span class="n">brightness</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">brightness</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="cm">/* ADD CODE HERE */</span><span class="p">;</span><span class="w">         </span><span class="c1">// increase the brightness by 1</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">downButtonState</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">HIGH</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">          </span><span class="c1">// check if the down pushbutton is pressed.</span>
+<span class="w">        </span><span class="n">brightness</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">brightness</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="cm">/* ADD CODE HERE */</span><span class="p">;</span><span class="w">         </span><span class="c1">// decrease the brightness by 1</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">brightness</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">255</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">                 </span><span class="c1">// Don&#39;t let brightness get bigger than 255</span>
+<span class="w">        </span><span class="n">brightness</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">brightness</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">                   </span><span class="c1">// Don&#39;t let brightness get smaller than 0</span>
+<span class="w">        </span><span class="n">brightness</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="cm">/* ADD CODE HERE */</span><span class="w">                      </span><span class="c1">// set the brightness of the LED</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span><span class="w">                               </span><span class="c1">// wait a little while before checking again</span>
+<span class="p">}</span>
+</code></pre></div>
+
+        <input id="140012418226768" type="checkbox" class="show_read">
+        <label for="140012418226768"><div class="speech right">
+<div class="speechbubble right">
+<p>There are three places that say <code>/* ADD CODE HERE */</code>. Use the comments to work out what to put in these places, instead of <code>/* ADD CODE HERE */</code>.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level2_hint1-1"><label for="level2_hint1-1"></label><div class="hint">
+            
+<div>
+<p>To set the brightness of the LED, use the analogWrite() function.</p>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level2_hint1-2"><label for="level2_hint1-2"></label><div class="hint">
+            
+<div>
+<p>Put in <code>analogWrite(ledPin, brightness);</code></p>
+</div>
+
+            </div></div>
+            
+</div>
+
+            </div></div>
+            
+</div>
+<div class="step">
+
+        <input id="140012418225760" type="checkbox" class="show_read">
+        <label for="140012418225760"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>I did it!</p>
+</div>
+</div></label>
+
+        <input id="140012419073312" type="checkbox" class="show_read">
+        <label for="140012419073312"><div class="speech right">
+<div class="speechbubble right">
+<p>That’s fantastic!</p>
+<p>Now claim your achievement.</p>
+<ol>
+<li>Save your Arduino sketch. Name it <code>C3c-level2</code>.</li>
+<li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive.</li>
+<li>Complete a claim slip. The code is <code>C3c</code> and the level is <code>2</code>.</li>
+</ol>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+</div>
+
+            </div>
+            </label>
+            
+</div>
+
+<h2><a id="level3"></a><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /> Level 3 — Make an LED “breathe”</h2>
+
+<div class="tutorial">
+<input type="checkbox" class="show_hide section" id="level3-section" checked>
+            <label for="level3-section">
+            <div class="tut_section">
+            
+<div>
+
+        <input id="140012420947472" type="checkbox" class="show_read">
+        <label for="140012420947472"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What are we doing in this level, sir?</p>
+</div>
+</div></label>
+
+        <input id="140012420945504" type="checkbox" class="show_read">
+        <label for="140012420945504"><div class="speech right">
+<div class="speechbubble right">
+<p>You’ll learn how to use a “for” loop to make a LED glow brighter and dimmer.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="step">
+
+        <input id="140012420947088" type="checkbox" class="show_read">
+        <label for="140012420947088"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>I did it!</p>
+</div>
+</div></label>
+
+        <input id="140012420951648" type="checkbox" class="show_read">
+        <label for="140012420951648"><div class="speech right">
+<div class="speechbubble right">
+<p>That’s fantastic!</p>
+<p>Now claim your achievement.</p>
+<ol>
+<li>Save your Arduino sketch. Name it <code>C3c-level3</code>.</li>
+<li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive.</li>
+<li>Complete a claim slip. The code is <code>C3c</code> and the level is <code>3</code>.</li>
+</ol>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+</div>
+
+            </div>
+            </label>
+            
+</div>
+    </div>
+    <div id="foot">
+<p>Author: Jared Henley</p>
+<p><strong>Copyright: © State of NSW 2023 (Department of Education)</strong> <img src="/img/by-sa.svg" alt="Creative Commons BY-SA icon" /></p>
+<p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
+<p><a href="/credits.html">Credits for material from third parties</a></p>
+<p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
+<p><em>Last built: 2023-04-25 15:14:44.802301</em></p>
+<p><em>Last modified: 2023-03-26 14:18:27.491128</em></p>
+    </div>
+</div>
+</body>
+</html>

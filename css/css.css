@@ -17,12 +17,13 @@ html, body {
 margin: 0;
 border: 0;
 padding: 0;
+line-height: 1.4;
 }
 
 body {
 background: #222;
 font-family: "Encode Sans";
-font-size: 16px;
+font-size: 20px;
 }
 
 /* Layout */
@@ -73,12 +74,22 @@ margin: 0.2em 0 0 0;
 
 /* Images */
 img.tutorial {
+  background: white;
   max-width: 90%;
   max-height: 100vh;
-  border: solid black 0.4em;
+  padding: 0.5em;
+  border: solid #5a8f00 0.2em;
 }
 img.tutorial + img.tutorial {
   margin-top: 0.4em;
+}
+
+img.claimslip {
+  width: 20em;
+  background: white;
+  padding: 1em;
+  max-width: 90%;
+  max-height: 100vh;
 }
 
 img.centre {
@@ -103,35 +114,42 @@ padding: 0 0.2em;
 
 /* Tutorials - these are a div.tutorial with more divs within that contain the actual content.
  */
-input.show_hide {
-  display: none;
-}
-input.show_hide + label {
-  background: #13C2FC;
-  padding: 0.5em;
-  border-radius: 0.5em;
-}
 .tutorial .step {
-  background: #bbb;
+  background: #bde;
   margin: 0.5em 0;
   border-radius: 0.5em;
   padding: 1em;
 }
 .tutorial .step:nth-of-type(even) {
-  background: #ddd;
+  background: #bed;
+}
+.tutorial > h2, .step > h2 {
+  margin-top: 0;
 }
 
-input.show_hide:checked ~ div.tut_section{
-  display: block;
+input.show_hide {
+  display: none;
 }
 div.tut_section{
   display: none;
 }
-input.show_hide.section + label::before {
-  content: 'Show this section';
+input.show_hide:checked + label div.tut_section{
+  display: block;
 }
-input.show_hide.section:checked + label::before {
-  content: 'Hide this section';
+input.show_hide.section + label::after, input.show_hide.section + label::before {
+  background: #13C2FC;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+input.show_hide.section + label::before {
+  content: '🐵️ Show this section';
+}
+input.show_hide.section + label::after {
+  display: none;
+}
+input.show_hide.section:checked + label::before, input.show_hide.section:checked + label::after {
+  content: '🙈 Hide this section';
+  display: inline;
 }
 
 div.hintbox {
@@ -187,12 +205,18 @@ input.show_hide.hint:checked + label::before {
   position:relative;
   padding:0 1em;
   min-height: 4em;
-  margin:1em;
+  margin:2em;
   border:0.4em solid #5a8f00;
   text-align:left;
   color:#333;
   background:#fff;
   border-radius:1.5em;
+}
+input.show_read {
+display: none;
+}
+input.show_read:checked + label .speech {
+filter: grayscale(100%);
 }
 .speechbubble.left, .thoughtbubble.left {
   margin-left: 9em;
@@ -294,4 +318,10 @@ overflow-x:auto;
 }
 .hint div.codehilite {
 margin: 0;
+}
+
+/* YouTube video embed */
+.youtube {
+aspect-ratio: 16 / 9;
+width: 80%;
 }
