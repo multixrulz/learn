@@ -130,26 +130,22 @@ padding: 0 0.2em;
 input.show_hide {
   display: none;
 }
-div.tut_section{
+div.tut_section {
   display: none;
 }
-input.show_hide:checked + label div.tut_section{
+input.show_hide:checked + label + div.tut_section {
   display: block;
 }
-input.show_hide.section + label::after, input.show_hide.section + label::before {
+label.tut_section::before, label.hint::before {
   background: #13C2FC;
   padding: 0.5em;
   border-radius: 0.5em;
 }
-input.show_hide.section + label::before {
+input.show_hide.section + label.tut_section::before {
   content: '🐵️ Show this section';
 }
-input.show_hide.section + label::after {
-  display: none;
-}
-input.show_hide.section:checked + label::before, input.show_hide.section:checked + label::after {
+input.show_hide.section:checked + label.tut_section::before, div.tut_section label.tut_section::before {
   content: '🙈 Hide this section';
-  display: inline;
 }
 
 div.hintbox {
