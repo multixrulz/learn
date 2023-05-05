@@ -106,10 +106,11 @@ vertical-align: bottom;
 
 /* code - but not codehilite code */
 code:not(.codehilite *) {
-background: #ccc;
-border: solid 0.1em #777;
+background: #C9F2FF;
+border: solid 0.1em #34A7CC;
 border-radius: 0.2em;
 padding: 0 0.2em;
+color: #1F6D87;
 }
 
 /* Tutorials - these are a div.tutorial with more divs within that contain the actual content.
