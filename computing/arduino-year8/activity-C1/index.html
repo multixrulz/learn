@@ -24,8 +24,8 @@
 
 <div class="tutorial">
 
-        <input id="140522358865776" type="checkbox" class="show_read">
-        <label for="140522358865776"><div class="speech left">
+        <input id="139858088819056" type="checkbox" class="show_read">
+        <label for="139858088819056"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -33,8 +33,8 @@
 </div>
 </div></label>
 
-        <input id="140522358863232" type="checkbox" class="show_read">
-        <label for="140522358863232"><div class="speech right">
+        <input id="139858088818048" type="checkbox" class="show_read">
+        <label for="139858088818048"><div class="speech right">
 <div class="speechbubble right">
 <p>I’m going to show you how to put a program onto an Arduino. We call an Arduino program a “Sketch”.</p>
 </div>
@@ -55,8 +55,8 @@
             
 <div>
 
-        <input id="140522358862560" type="checkbox" class="show_read">
-        <label for="140522358862560"><div class="speech right">
+        <input id="139858088817376" type="checkbox" class="show_read">
+        <label for="139858088817376"><div class="speech right">
 <div class="speechbubble right">
 <p>There are two ways to do this.</p>
 </div>
@@ -64,8 +64,8 @@
 
 </div></label>
 
-        <input id="140522358862080" type="checkbox" class="show_read">
-        <label for="140522358862080"><div class="speech right">
+        <input id="139858088816896" type="checkbox" class="show_read">
+        <label for="139858088816896"><div class="speech right">
 <div class="speechbubble right">
 <p>One way is to click the “Windows” button at the bottom left of your screen, and find <code>Arduino</code> in the list.</p>
 </div>
@@ -75,8 +75,8 @@
 <img src="01-arduino-menu.png" alt="Arduino program in the start menu" class="tutorial centre">
 
 
-        <input id="140522358861552" type="checkbox" class="show_read">
-        <label for="140522358861552"><div class="speech right">
+        <input id="139858088816368" type="checkbox" class="show_read">
+        <label for="139858088816368"><div class="speech right">
 <div class="speechbubble right">
 <p>Another way is to type <code>arduino</code> into the search box at the bottom left of your screen, and find the Arduino app in the list.&rdquo;</p>
 </div>
@@ -86,8 +86,8 @@
 <img src="02-arduino-search.png" alt="Arduino program in the search results" class="tutorial centre">
 
 
-        <input id="140522358860976" type="checkbox" class="show_read">
-        <label for="140522358860976"><div class="speech right">
+        <input id="139858088815792" type="checkbox" class="show_read">
+        <label for="139858088815792"><div class="speech right">
 <div class="speechbubble right">
 <p>When you’ve started the Arduino IDE, you’ll see the window shown here.</p>
 </div>
@@ -110,8 +110,8 @@
             
 <div>
 
-        <input id="140522358860064" type="checkbox" class="show_read">
-        <label for="140522358860064"><div class="speech right">
+        <input id="139858088814880" type="checkbox" class="show_read">
+        <label for="139858088814880"><div class="speech right">
 <div class="speechbubble right">
 <p>Go back to your Arduino window and select the whole sketch.</p>
 <p>You can do this quickly by typing Control-A.</p>
@@ -122,8 +122,8 @@
 <img src="04-arduino-select-all.png" alt="Entire sketch selected" class="tutorial centre">
 
 
-        <input id="140522358859536" type="checkbox" class="show_read">
-        <label for="140522358859536"><div class="speech right">
+        <input id="139858088814352" type="checkbox" class="show_read">
+        <label for="139858088814352"><div class="speech right">
 <div class="speechbubble right">
 <p>Press the <code>Delete</code> or <code>Backspace</code> keys to delete the sketch.</p>
 </div>
@@ -131,8 +131,8 @@
 
 </div></label>
 
-        <input id="140522358859008" type="checkbox" class="show_read">
-        <label for="140522358859008"><div class="speech right">
+        <input id="139858088813824" type="checkbox" class="show_read">
+        <label for="139858088813824"><div class="speech right">
 <div class="speechbubble right">
 <p>Now copy and paste the sketch below.</p>
 <p>Select and copy the sketch you see below. You can copy by typing <code>Control-C</code>.</p>
@@ -141,9 +141,10 @@
 
 </div></label>
 <div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 12 as an output.</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 13 as an output.</span>
 <span class="p">}</span>
-<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// turn the LED on</span>
 <span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for 1 second</span>
 <span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn the LED off</span>
@@ -151,8 +152,8 @@
 <span class="p">}</span>
 </code></pre></div>
 
-        <input id="140522358858432" type="checkbox" class="show_read">
-        <label for="140522358858432"><div class="speech right">
+        <input id="139858088813248" type="checkbox" class="show_read">
+        <label for="139858088813248"><div class="speech right">
 <div class="speechbubble right">
 <p>Click the Arduino window and type <code>Control-V</code> to paste the sketch that you just copied.</p>
 </div>
@@ -162,8 +163,8 @@
 <img src="05-arduino-pasted.png" alt="Sketch pasted in" class="tutorial centre">
 
 
-        <input id="140522358857904" type="checkbox" class="show_read">
-        <label for="140522358857904"><div class="speech right">
+        <input id="139858088811856" type="checkbox" class="show_read">
+        <label for="139858088811856"><div class="speech right">
 <div class="speechbubble right">
 <p>Before you can upload an Arduino sketch, it needs to be saved, so we’ll do that.</p>
 <p>Click the <code>File</code> menu, then click <code>Save As…</code>.</p>
@@ -175,8 +176,8 @@
 <img src="06-arduino-this-pc.png" alt="This PC selected in the Save As... dialog" class="tutorial centre">
 
 
-        <input id="140522358856464" type="checkbox" class="show_read">
-        <label for="140522358856464"><div class="speech right">
+        <input id="139858088811232" type="checkbox" class="show_read">
+        <label for="139858088811232"><div class="speech right">
 <div class="speechbubble right">
 <p>Create a new folder called <code>Arduino</code> inside <code>Documents</code> by clicking the icon of a folder with a star near the top right of the window.</p>
 </div>
@@ -186,8 +187,8 @@
 <img src="07-arduino-create-new-folder.png" alt="Create New Folder icon selected" class="tutorial centre">
 
 
-        <input id="140522358855840" type="checkbox" class="show_read">
-        <label for="140522358855840"><div class="speech right">
+        <input id="139858088810608" type="checkbox" class="show_read">
+        <label for="139858088810608"><div class="speech right">
 <div class="speechbubble right">
 <p>Double-click the Arduino folder that you just made.</p>
 <p>Now name your file <code>C1-upload</code> and click the <code>Save</code> button.</p>
@@ -211,8 +212,8 @@
             
 <div>
 
-        <input id="140522358854880" type="checkbox" class="show_read">
-        <label for="140522358854880"><div class="speech right">
+        <input id="139858088809648" type="checkbox" class="show_read">
+        <label for="139858088809648"><div class="speech right">
 <div class="speechbubble right">
 <p>Now you need to connect your Arduino board to the computer.  Use the blue USB cable. Check that the power light is on.</p>
 </div>
@@ -220,8 +221,8 @@
 
 </div></label>
 
-        <input id="140522358854352" type="checkbox" class="show_read">
-        <label for="140522358854352"><div class="speech right">
+        <input id="139858088809120" type="checkbox" class="show_read">
+        <label for="139858088809120"><div class="speech right">
 <div class="speechbubble right">
 <p>Tell the Arduino IDE which “port” to use to talk to the Arduino.</p>
 </div>
@@ -231,8 +232,8 @@
 <img src="09-arduino-set-port.png" alt="Setting the COM port" class="tutorial centre">
 
 
-        <input id="140522358850224" type="checkbox" class="show_read">
-        <label for="140522358850224"><div class="speech left">
+        <input id="139858088805232" type="checkbox" class="show_read">
+        <label for="139858088805232"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -240,8 +241,8 @@
 </div>
 </div></label>
 
-        <input id="140522358854112" type="checkbox" class="show_read">
-        <label for="140522358854112"><div class="speech right">
+        <input id="139858088808544" type="checkbox" class="show_read">
+        <label for="139858088808544"><div class="speech right">
 <div class="speechbubble right">
 <p>That’s OK. Just choose the port that has <code>(Arduino Uno)</code> after it.</p>
 </div>
@@ -249,8 +250,8 @@
 
 </div></label>
 
-        <input id="140522358853200" type="checkbox" class="show_read">
-        <label for="140522358853200"><div class="speech right">
+        <input id="139858088808016" type="checkbox" class="show_read">
+        <label for="139858088808016"><div class="speech right">
 <div class="speechbubble right">
 <p>Click the upload button at the top right of the Arduino IDE.</p>
 <p>The Arduino IDE will build the sketch, and the upload it to the Arduino.</p>
@@ -265,8 +266,8 @@
 <img src="12-arduino-uploaded.png" alt="The sketch has been uploaded" class="tutorial centre">
 
 
-        <input id="140522358852432" type="checkbox" class="show_read">
-        <label for="140522358852432"><div class="speech left">
+        <input id="139858088804752" type="checkbox" class="show_read">
+        <label for="139858088804752"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -274,8 +275,8 @@
 </div>
 </div></label>
 
-        <input id="140522358851712" type="checkbox" class="show_read">
-        <label for="140522358851712"><div class="speech right">
+        <input id="139858088807248" type="checkbox" class="show_read">
+        <label for="139858088807248"><div class="speech right">
 <div class="speechbubble right">
 <p>Then it’s time to:</p>
 <ul>
@@ -290,8 +291,8 @@
 
 </div></label>
 
-        <input id="140522358851904" type="checkbox" class="show_read">
-        <label for="140522358851904"><div class="speech left">
+        <input id="139858091540240" type="checkbox" class="show_read">
+        <label for="139858091540240"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -299,8 +300,8 @@
 </div>
 </div></label>
 
-        <input id="140522362154304" type="checkbox" class="show_read">
-        <label for="140522362154304"><div class="speech right">
+        <input id="139858091533424" type="checkbox" class="show_read">
+        <label for="139858091533424"><div class="speech right">
 <div class="speechbubble right">
 <p>Congratulations. You have uploaded a sketch to the Arduino.</p>
 </div>
@@ -308,8 +309,8 @@
 
 </div></label>
 
-        <input id="140522362149696" type="checkbox" class="show_read">
-        <label for="140522362149696"><div class="speech right">
+        <input id="139858091536256" type="checkbox" class="show_read">
+        <label for="139858091536256"><div class="speech right">
 <div class="speechbubble right">
 <p>Fill out an activity claim slip. Use the code <code>C1</code>. Make sure that I see your Arduino IDE and blinking Arduino, so that I knows you got it to work.</p>
 <p>Here’s an example:</p>
@@ -320,8 +321,8 @@
 <img src="claim-slip-C1.svg" alt="Sample claim slip" class="claimslip centre">
 
 
-        <input id="140522362148640" type="checkbox" class="show_read">
-        <label for="140522362148640"><div class="speech right">
+        <input id="139858091529728" type="checkbox" class="show_read">
+        <label for="139858091529728"><div class="speech right">
 <div class="speechbubble right">
 <p>Also put your saved Arduino sketch into the Google Drive folder I asked you to make in activity <a href="../activity-T1">T1</a>. Make sure it’s named <code>C1-upload</code>.</p>
 <p><a href="../activity-I1">Here are instructions about how to do this.</a></p>
@@ -343,8 +344,8 @@
 <p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
 <p><a href="/credits.html">Credits for material from third parties</a></p>
 <p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
-<p><em>Last built: 2023-05-05 12:26:05.185166</em></p>
-<p><em>Last modified: 2023-05-05 12:26:00.699947</em></p>
+<p><em>Last built: 2023-05-07 12:15:09.232905</em></p>
+<p><em>Last modified: 2023-05-07 12:11:27.974550</em></p>
     </div>
 </div>
 </body>

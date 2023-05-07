@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="/css/codehilite.css">
 <link rel="stylesheet" type="text/css" href="/css/css.css">
 <link rel="shortcut icon" href="/favicon.png">
-<meta name="description" content="Hasn’t been written yet">
+<meta name="description" content="A theory lesson about the setup and loop functions in Arduino code">
 <meta name="generator" content="0cms">
 <meta name="author" content="Jared Henley">
 <meta name="copyright" content="&copy; 2023 Jared Henley">
@@ -20,27 +20,124 @@
         </div>
     </div>
     <div id="content">
-<h1><a id="level1"></a><img src="/computing/arduino-year8/img/award.svg" /> Nothing to see</h1>
+<h1><a id="level1"></a><img src="/computing/arduino-year8/img/award.svg" /> The setup and loop functions</h1>
 
 <div class="tutorial">
 
-        <input id="140181593832368" type="checkbox" class="show_read">
-        <label for="140181593832368"><div class="speech left">
+        <input id="140226658680304" type="checkbox" class="show_read">
+        <label for="140226658680304"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
-<p>What do we have to do, sir?</p>
+<p>What are we learning about now, sir?</p>
 </div>
 </div></label>
 
-        <input id="140181590363536" type="checkbox" class="show_read">
-        <label for="140181590363536"><div class="speech right">
+        <input id="140226655952064" type="checkbox" class="show_read">
+        <label for="140226655952064"><div class="speech right">
 <div class="speechbubble right">
-<p>Sorry, I haven’t written this one yet.</p>
+<p>I’m going to explain about the setup and loop functions in Arduino code.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
+
+        <input id="140226655951584" type="checkbox" class="show_read">
+        <label for="140226655951584"><div class="speech right">
+<div class="speechbubble right">
+<p>Every time you create a new Arduino project, you get a sketch that contains this code:</p>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// put your setup code here, to run once:</span>
+
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// put your main code here, to run repeatedly:</span>
+
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140226655951104" type="checkbox" class="show_read">
+        <label for="140226655951104"><div class="speech right">
+<div class="speechbubble right">
+<p>The setup code runs once when you either:</p>
+<ul>
+<li>Turn on the Arduino</li>
+<li>Upload a sketch to the Arduino</li>
+<li>Reset the Arduino using its reset button</li>
+</ul>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140226655950624" type="checkbox" class="show_read">
+        <label for="140226655950624"><div class="speech right">
+<div class="speechbubble right">
+<p>This is where you put code that has to happen only once, like telling the Arduino that you want to use pin 13 as an output, like we did in <a href="../activity-C2">C2 — Blink</a>.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140226655950144" type="checkbox" class="show_read">
+        <label for="140226655950144"><div class="speech right">
+<div class="speechbubble right">
+<p>When the setup code has finished, the loop code runs again and again until you either:</p>
+<ul>
+<li>Turn off the Arduino</li>
+<li>Upload a sketch to the Arduino</li>
+<li>Reset the Arduino using its reset button</li>
+</ul>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140226655949664" type="checkbox" class="show_read">
+        <label for="140226655949664"><div class="speech right">
+<div class="speechbubble right">
+<p>This is where you put code that has to happen forever, like telling the LED to blink, like we did in <a href="../activity-C2">C2 — Blink</a>.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140226655948896" type="checkbox" class="show_read">
+        <label for="140226655948896"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>OK, I get it.</p>
+</div>
+</div></label>
+
+        <input id="140226655948416" type="checkbox" class="show_read">
+        <label for="140226655948416"><div class="speech right">
+<div class="speechbubble right">
+<p>That’s fantastic!</p>
+<p>Now claim your achievement.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140226655947936" type="checkbox" class="show_read">
+        <label for="140226655947936"><div class="speech right">
+<div class="speechbubble right">
+<p>Complete a claim slip. The code is <code>T2</code>.</p>
+<p>In the other information section, write the function where you put code that has to happen only once.</p>
+<p>Here’s an example:</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="claim-slip-T2.svg" alt="Sample claim slip" class="claimslip centre">
+
 </div>
     </div>
     <div id="foot">
@@ -49,8 +146,8 @@
 <p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
 <p><a href="/credits.html">Credits for material from third parties</a></p>
 <p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
-<p><em>Last built: 2023-05-05 12:04:57.995640</em></p>
-<p><em>Last modified: 2023-03-12 11:41:40.876950</em></p>
+<p><em>Last built: 2023-05-07 12:39:32.334513</em></p>
+<p><em>Last modified: 2023-05-07 12:39:30.084167</em></p>
     </div>
 </div>
 </body>
