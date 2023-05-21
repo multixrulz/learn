@@ -73,14 +73,14 @@ margin: 0.2em 0 0 0;
 }
 
 /* Images */
-img.tutorial {
+img.activity {
   background: white;
   max-width: 90%;
   max-height: 100vh;
   padding: 0.5em;
   border: solid #5a8f00 0.2em;
 }
-img.tutorial + img.tutorial {
+img.activity + img.activity {
   margin-top: 0.4em;
 }
 
@@ -113,39 +113,48 @@ padding: 0 0.2em;
 color: #1F6D87;
 }
 
-/* Tutorials - these are a div.tutorial with more divs within that contain the actual content.
+/* Activity stuff
  */
-.tutorial .step {
+.activitysectioncontainer {
+  background: #dee;
+  margin: 0.5em 0;
+  border-radius: 0.5em;
+  padding: 1em;
+}
+.activitysectioncontainer h3:first-child {
+  margin-top: 0;
+}
+.activitystep {
   background: #bde;
   margin: 0.5em 0;
   border-radius: 0.5em;
   padding: 1em;
 }
-.tutorial .step:nth-of-type(even) {
+.activitystep:nth-of-type(even) {
   background: #bed;
 }
-.tutorial > h2, .step > h2 {
+.activitystep > h2 {
   margin-top: 0;
 }
 
 input.show_hide {
   display: none;
 }
-div.tut_section {
+div.activitysection {
   display: none;
 }
-input.show_hide:checked + label + div.tut_section {
+input.show_hide:checked + label + div.activitysection {
   display: block;
 }
-label.tut_section::before, label.hint::before {
+label.activitysection::before, label.hint::before {
   background: #13C2FC;
   padding: 0.5em;
   border-radius: 0.5em;
 }
-input.show_hide.section + label.tut_section::before {
+input.show_hide.section + label.activitysection::before {
   content: '🐵️ Show this section';
 }
-input.show_hide.section:checked + label.tut_section::before, div.tut_section label.tut_section::before {
+input.show_hide.section:checked + label.activitysection::before, div.activitysection label.activitysection::before {
   content: '🙈 Hide this section';
 }
 
@@ -170,10 +179,10 @@ div.hint{
   padding: 0.2em 1em;
 }
 input.show_hide.hint + label::before {
-  content: 'Show hint';
+  content: '🐵️ Show hint';
 }
 input.show_hide.hint:checked + label::before {
-  content: 'Hide hint';
+  content: '🙈 Hide hint';
 }
 
 /* Speakers */

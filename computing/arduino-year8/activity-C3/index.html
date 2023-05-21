@@ -20,7 +20,7 @@
         </div>
     </div>
     <div id="content">
-<h1>C3 — Digital outputs</h1>
+<h1>Activity C3 — Digital outputs</h1>
 <p>There are three levels in this activity:</p>
 <ul>
 <li><a href="#level1">Level 1</a></li>
@@ -28,17 +28,13 @@
 <li><a href="#level3">Level 3</a></li>
 </ul>
 <p>It would be best if you do activity <a href="../activity-E1">“E1 - Wiring an LED”</a> before doing these activity.</p>
-<h2><a id="level1"></a><img src="/computing/arduino-year8/img/award.svg" /> Level 1 — Use a digital output</h2>
 
-<div class="tutorial">
-<input type="checkbox" class="show_hide section" id="level1-section" checked>
-            <label for="level1-section" class="tut_section"></label>
-            <div class="tut_section">
-            
-<div>
+<h2><a id="level1"></a>
+<img src="/computing/arduino-year8/img/award.svg" />
+ Level 1 — Use a digital output</h2>
 
-        <input id="140037362678608" type="checkbox" class="show_read">
-        <label for="140037362678608"><div class="speech left">
+        <input id="139958442650000" type="checkbox" class="show_read">
+        <label for="139958442650000"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -46,18 +42,27 @@
 </div>
 </div></label>
 
-        <input id="140037362678672" type="checkbox" class="show_read">
-        <label for="140037362678672"><div class="speech right">
+        <input id="139958442653840" type="checkbox" class="show_read">
+        <label for="139958442653840"><div class="speech right">
 <div class="speechbubble right">
 <p>You are going to start with an empty new sketch and learn how to control a digital output.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="step">
 
-        <input id="140037362746576" type="checkbox" class="show_read">
-        <label for="140037362746576"><div class="speech right">
+
+            <div class="activitysectioncontainer">
+            <h3>Complete the challenge</h3>
+            <input type="checkbox" class="show_hide section" id="139958442648656" checked>
+            <label for="139958442648656" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="139958451696848" type="checkbox" class="show_read">
+        <label for="139958451696848"><div class="speech right">
 <div class="speechbubble right">
 <p>Create a new sketch in the Arduino IDE. It will look like this:</p>
 <div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
@@ -74,9 +79,11 @@
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
+</div>
+<div class="activitystep">
 
-        <input id="140037362746960" type="checkbox" class="show_read">
-        <label for="140037362746960"><div class="speech right">
+        <input id="139958442590096" type="checkbox" class="show_read">
+        <label for="139958442590096"><div class="speech right">
 <div class="speechbubble right">
 <p>Digital pins on an Arduino can be inputs or outputs, depending on what you want them to be.</p>
 <p>The <code>pinMode()</code> function is how you tell the Arduino that a pin is going to be an input or output.</p>
@@ -85,8 +92,8 @@
 
 </div></label>
 
-        <input id="140037362747344" type="checkbox" class="show_read">
-        <label for="140037362747344"><div class="speech right">
+        <input id="139958442655056" type="checkbox" class="show_read">
+        <label for="139958442655056"><div class="speech right">
 <div class="speechbubble right">
 <p>Tell the Arduino that pin 5 is an output, by putting the following code inside the <code>setup()</code> function.</p>
 <div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 5 as an output.</span>
@@ -96,15 +103,15 @@
 
 </div></label>
 
-        <input id="140037362747728" type="checkbox" class="show_read">
-        <label for="140037362747728"><div class="speech right">
+        <input id="139958442655440" type="checkbox" class="show_read">
+        <label for="139958442655440"><div class="speech right">
 <div class="speechbubble right">
 <p>I can give you a hint if you need it, but have a go by yourself first.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level1_hint1-1"><label for="level1_hint1-1" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="139958442738640"><label for="139958442738640" class="hint"></label><div class="hint">
             
 <div>
 <p>Your entire <code>setup()</code> function should look like this:</p>
@@ -113,8 +120,8 @@
 <span class="p">}</span>
 </code></pre></div>
 
-        <input id="140037362748176" type="checkbox" class="show_read">
-        <label for="140037362748176"><div class="speech left">
+        <input id="139958442737872" type="checkbox" class="show_read">
+        <label for="139958442737872"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -122,8 +129,8 @@
 </div>
 </div></label>
 
-        <input id="140037362748560" type="checkbox" class="show_read">
-        <label for="140037362748560"><div class="speech right">
+        <input id="139958442738256" type="checkbox" class="show_read">
+        <label for="139958442738256"><div class="speech right">
 <div class="speechbubble right">
 <p>Anything you see after a double slash (that’s <code>//</code>) is a comment. It is there to help people read the sketch.</p>
 <p>It means nothing to the Arduino, so deleting it doesn’t make any difference to the sketch.</p>
@@ -136,10 +143,10 @@
             </div></div>
             
 </div>
-<div class="step">
+<div class="activitystep">
 
-        <input id="140037362748880" type="checkbox" class="show_read">
-        <label for="140037362748880"><div class="speech right">
+        <input id="139958442738576" type="checkbox" class="show_read">
+        <label for="139958442738576"><div class="speech right">
 <div class="speechbubble right">
 <p>The Arduino knows that pin 5 is an output, so now you can turn it on and off.</p>
 <p>Let’s just flash it on briefly each second.  Put this code into the <code>loop()</code> function:</p>
@@ -153,15 +160,15 @@
 
 </div></label>
 
-        <input id="140037362749456" type="checkbox" class="show_read">
-        <label for="140037362749456"><div class="speech right">
+        <input id="139958446443536" type="checkbox" class="show_read">
+        <label for="139958446443536"><div class="speech right">
 <div class="speechbubble right">
 <p>I can give you a hint if you need it, but have a go by yourself first.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level1_hint2-1"><label for="level1_hint2-1" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="139958445454352"><label for="139958445454352" class="hint"></label><div class="hint">
             
 <div>
 <p>Your entire <code>loop()</code> function should look like this:</p>
@@ -177,10 +184,10 @@
             </div></div>
             
 </div>
-<div class="step">
+<div class="activitystep">
 
-        <input id="140037362750032" type="checkbox" class="show_read">
-        <label for="140037362750032"><div class="speech right">
+        <input id="139958445454608" type="checkbox" class="show_read">
+        <label for="139958445454608"><div class="speech right">
 <div class="speechbubble right">
 <p>Now upload the sketch to your Arduino. You also need to connect an LED to pin 5. Use the diagram below to help you.</p>
 </div>
@@ -190,10 +197,25 @@
 <img src="01-LED-pin5.svg" alt="Connecting an LED to pin 5" class="tutorial centre">
 
 </div>
-<div class="step">
+</div>
 
-        <input id="140037362750608" type="checkbox" class="show_read">
-        <label for="140037362750608"><div class="speech right">
+            <label for="139958442648656" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Claim your achievement</h3>
+            <input type="checkbox" class="show_hide section" id="139958442580624" checked>
+            <label for="139958442580624" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="139958442648720" type="checkbox" class="show_read">
+        <label for="139958442648720"><div class="speech right">
 <div class="speechbubble right">
 <p>Did the LED flash?</p>
 </div>
@@ -201,8 +223,8 @@
 
 </div></label>
 
-        <input id="140037372111056" type="checkbox" class="show_read">
-        <label for="140037372111056"><div class="speech left">
+        <input id="139958442640464" type="checkbox" class="show_read">
+        <label for="139958442640464"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -210,8 +232,8 @@
 </div>
 </div></label>
 
-        <input id="140037364793488" type="checkbox" class="show_read">
-        <label for="140037364793488"><div class="speech right">
+        <input id="139958442640912" type="checkbox" class="show_read">
+        <label for="139958442640912"><div class="speech right">
 <div class="speechbubble right">
 <p>That’s fantastic!</p>
 <p>Now claim your achievement.</p>
@@ -220,18 +242,18 @@
 
 </div></label>
 
-        <input id="140037362669648" type="checkbox" class="show_read">
-        <label for="140037362669648"><div class="speech right">
+        <input id="139958444172048" type="checkbox" class="show_read">
+        <label for="139958444172048"><div class="speech right">
 <div class="speechbubble right">
-<p>Save your Arduino sketch. Name it <code>C2-level1</code>.</p>
+<p>Save your Arduino sketch. Name it <code>C3-level1</code>.</p>
 <p>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive. <a href="../activity-I1">Here are instructions about how to do this.</a></p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
 
-        <input id="140037362665872" type="checkbox" class="show_read">
-        <label for="140037362665872"><div class="speech right">
+        <input id="139958444718800" type="checkbox" class="show_read">
+        <label for="139958444718800"><div class="speech right">
 <div class="speechbubble right">
 <p>Complete a claim slip. The code is <code>C3</code> and the level is <code>1</code>.
 Here’s an example:</p>
@@ -244,22 +266,17 @@ Here’s an example:</p>
 </div>
 </div>
 
-            <label for="level1-section" class="tut_section"></label>
+            <label for="139958442580624" class="activitysection"></label>
+            </div>
             </div>
             
-</div>
 
-<h2><a id="level2"></a><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /> Level 2 — Use a different digital output</h2>
+<h2><a id="level2"></a>
+<img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" />
+ Level 2 — Use a different digital output</h2>
 
-<div class="tutorial">
-<input type="checkbox" class="show_hide section" id="level2-section" checked>
-            <label for="level2-section" class="tut_section"></label>
-            <div class="tut_section">
-            
-<div>
-
-        <input id="140037362663568" type="checkbox" class="show_read">
-        <label for="140037362663568"><div class="speech left">
+        <input id="139958442582480" type="checkbox" class="show_read">
+        <label for="139958442582480"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -267,8 +284,8 @@ Here’s an example:</p>
 </div>
 </div></label>
 
-        <input id="140037364619472" type="checkbox" class="show_read">
-        <label for="140037364619472"><div class="speech right">
+        <input id="139958442580944" type="checkbox" class="show_read">
+        <label for="139958442580944"><div class="speech right">
 <div class="speechbubble right">
 <p>You are going to learn how to change the sketch to use a different digital output.</p>
 <p>Your challenge is to change sketch from level 1 to use pin 7 instead of pin 5.</p>
@@ -276,10 +293,19 @@ Here’s an example:</p>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="step">
 
-        <input id="140037364726608" type="checkbox" class="show_read">
-        <label for="140037364726608"><div class="speech right">
+
+            <div class="activitysectioncontainer">
+            <h3>Complete the challenge</h3>
+            <input type="checkbox" class="show_hide section" id="139958442739344" checked>
+            <label for="139958442739344" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="139958442581904" type="checkbox" class="show_read">
+        <label for="139958442581904"><div class="speech right">
 <div class="speechbubble right">
 <p>Open up the sketch from level 1.</p>
 </div>
@@ -287,8 +313,8 @@ Here’s an example:</p>
 
 </div></label>
 
-        <input id="140037366466320" type="checkbox" class="show_read">
-        <label for="140037366466320"><div class="speech right">
+        <input id="139958442586000" type="checkbox" class="show_read">
+        <label for="139958442586000"><div class="speech right">
 <div class="speechbubble right">
 <p>In your sketch, there’s a line that says</p>
 <p><code>pinMode(5, OUTPUT);    // set up pin 5 as an output.</code></p>
@@ -298,8 +324,8 @@ Here’s an example:</p>
 
 </div></label>
 
-        <input id="140037362607184" type="checkbox" class="show_read">
-        <label for="140037362607184"><div class="speech right">
+        <input id="139958442582160" type="checkbox" class="show_read">
+        <label for="139958442582160"><div class="speech right">
 <div class="speechbubble right">
 <p>In the comment, change the pin number from 5 to 7 too, so that it still matches what the sketch is doing.</p>
 </div>
@@ -307,15 +333,15 @@ Here’s an example:</p>
 
 </div></label>
 
-        <input id="140037362605200" type="checkbox" class="show_read">
-        <label for="140037362605200"><div class="speech right">
+        <input id="139958442584784" type="checkbox" class="show_read">
+        <label for="139958442584784"><div class="speech right">
 <div class="speechbubble right">
 <p>I can give you a hint if you need it, but have a go by yourself first.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level2_hint1-1"><label for="level2_hint1-1" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="139958442584208"><label for="139958442584208" class="hint"></label><div class="hint">
             
 <div>
 <p>Your entire <code>setup()</code> function should look like this:</p>
@@ -328,10 +354,10 @@ Here’s an example:</p>
             </div></div>
             
 </div>
-<div class="step">
+<div class="activitystep">
 
-        <input id="140037362613456" type="checkbox" class="show_read">
-        <label for="140037362613456"><div class="speech right">
+        <input id="139958442586640" type="checkbox" class="show_read">
+        <label for="139958442586640"><div class="speech right">
 <div class="speechbubble right">
 <p>In your sketch, there are two calls to <code>digitalWrite()</code>. Change the pin number in both of them from 5 to 7.</p>
 </div>
@@ -339,15 +365,15 @@ Here’s an example:</p>
 
 </div></label>
 
-        <input id="140037362612496" type="checkbox" class="show_read">
-        <label for="140037362612496"><div class="speech right">
+        <input id="139958442582992" type="checkbox" class="show_read">
+        <label for="139958442582992"><div class="speech right">
 <div class="speechbubble right">
 <p>I can give you a hint if you need it, but have a go by yourself first.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level2_hint2-1"><label for="level2_hint2-1" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="139958442584912"><label for="139958442584912" class="hint"></label><div class="hint">
             
 <div>
 <p>Your entire <code>loop()</code> function should look like this:</p>
@@ -363,10 +389,10 @@ Here’s an example:</p>
             </div></div>
             
 </div>
-<div class="step">
+<div class="activitystep">
 
-        <input id="140037362609680" type="checkbox" class="show_read">
-        <label for="140037362609680"><div class="speech right">
+        <input id="139958442584976" type="checkbox" class="show_read">
+        <label for="139958442584976"><div class="speech right">
 <div class="speechbubble right">
 <p>Now upload the sketch to your Arduino. You also need to connect an LED to pin 7. Use the diagram below to help you.</p>
 </div>
@@ -376,10 +402,25 @@ Here’s an example:</p>
 <img src="01-LED-pin7.svg" alt="Connecting an LED to pin 7" class="tutorial centre">
 
 </div>
-<div class="step">
+</div>
 
-        <input id="140037362607824" type="checkbox" class="show_read">
-        <label for="140037362607824"><div class="speech right">
+            <label for="139958442739344" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Claim your achievement</h3>
+            <input type="checkbox" class="show_hide section" id="139958442741456" checked>
+            <label for="139958442741456" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="139958442739280" type="checkbox" class="show_read">
+        <label for="139958442739280"><div class="speech right">
 <div class="speechbubble right">
 <p>Did the LED flash?</p>
 </div>
@@ -387,8 +428,8 @@ Here’s an example:</p>
 
 </div></label>
 
-        <input id="140037362605840" type="checkbox" class="show_read">
-        <label for="140037362605840"><div class="speech left">
+        <input id="139958442739792" type="checkbox" class="show_read">
+        <label for="139958442739792"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -396,8 +437,8 @@ Here’s an example:</p>
 </div>
 </div></label>
 
-        <input id="140037362609744" type="checkbox" class="show_read">
-        <label for="140037362609744"><div class="speech right">
+        <input id="139958442740176" type="checkbox" class="show_read">
+        <label for="139958442740176"><div class="speech right">
 <div class="speechbubble right">
 <p>That’s fantastic!</p>
 <p>Now claim your achievement.</p>
@@ -406,18 +447,18 @@ Here’s an example:</p>
 
 </div></label>
 
-        <input id="140037362601424" type="checkbox" class="show_read">
-        <label for="140037362601424"><div class="speech right">
+        <input id="139958442740560" type="checkbox" class="show_read">
+        <label for="139958442740560"><div class="speech right">
 <div class="speechbubble right">
-<p>Save your Arduino sketch. Name it <code>C2-level2</code>.</p>
+<p>Save your Arduino sketch. Name it <code>C3-level2</code>.</p>
 <p>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive. <a href="../activity-I1">Here are instructions about how to do this.</a></p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
 
-        <input id="140037362751504" type="checkbox" class="show_read">
-        <label for="140037362751504"><div class="speech right">
+        <input id="139958442741008" type="checkbox" class="show_read">
+        <label for="139958442741008"><div class="speech right">
 <div class="speechbubble right">
 <p>Complete a claim slip. The code is <code>C3</code> and the level is <code>2</code>.
 Here’s an example:</p>
@@ -430,22 +471,17 @@ Here’s an example:</p>
 </div>
 </div>
 
-            <label for="level2-section" class="tut_section"></label>
+            <label for="139958442741456" class="activitysection"></label>
+            </div>
             </div>
             
-</div>
 
-<h2><a id="level2"></a><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /> Level 3 — Use two digital outputs</h2>
+<h2><a id="level3"></a>
+<img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" />
+ Level 3 — Use two digital outputs at once</h2>
 
-<div class="tutorial">
-<input type="checkbox" class="show_hide section" id="level3-section" checked>
-            <label for="level3-section" class="tut_section"></label>
-            <div class="tut_section">
-            
-<div>
-
-        <input id="140037362752336" type="checkbox" class="show_read">
-        <label for="140037362752336"><div class="speech left">
+        <input id="139958442741712" type="checkbox" class="show_read">
+        <label for="139958442741712"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -453,19 +489,28 @@ Here’s an example:</p>
 </div>
 </div></label>
 
-        <input id="140037362752656" type="checkbox" class="show_read">
-        <label for="140037362752656"><div class="speech right">
+        <input id="139958442742096" type="checkbox" class="show_read">
+        <label for="139958442742096"><div class="speech right">
 <div class="speechbubble right">
-<p>You are going to learn how to change the sketch to use two digital outputs.</p>
+<p>You are going to learn how to change the sketch to use two digital outputs at the same time.</p>
 <p>Your challenge is to change sketch from level 2 to use pins 7 <strong>and</strong> 13.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="step">
 
-        <input id="140037362753040" type="checkbox" class="show_read">
-        <label for="140037362753040"><div class="speech right">
+
+            <div class="activitysectioncontainer">
+            <h3>Complete the challenge</h3>
+            <input type="checkbox" class="show_hide section" id="139958442746640" checked>
+            <label for="139958442746640" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="139958442741584" type="checkbox" class="show_read">
+        <label for="139958442741584"><div class="speech right">
 <div class="speechbubble right">
 <p>Open up the sketch from level 2.</p>
 </div>
@@ -473,8 +518,8 @@ Here’s an example:</p>
 
 </div></label>
 
-        <input id="140037362753424" type="checkbox" class="show_read">
-        <label for="140037362753424"><div class="speech right">
+        <input id="139958442742800" type="checkbox" class="show_read">
+        <label for="139958442742800"><div class="speech right">
 <div class="speechbubble right">
 <p>In your sketch, there’s a line that says</p>
 <p><code>pinMode(7, OUTPUT);    // set up pin 7 as an output.</code></p>
@@ -484,8 +529,8 @@ Here’s an example:</p>
 
 </div></label>
 
-        <input id="140037362753808" type="checkbox" class="show_read">
-        <label for="140037362753808"><div class="speech right">
+        <input id="139958442743184" type="checkbox" class="show_read">
+        <label for="139958442743184"><div class="speech right">
 <div class="speechbubble right">
 <p>Now change one of those lines so that it sets the mode of pin 13.</p>
 </div>
@@ -493,8 +538,8 @@ Here’s an example:</p>
 
 </div></label>
 
-        <input id="140037362754192" type="checkbox" class="show_read">
-        <label for="140037362754192"><div class="speech right">
+        <input id="139958442743568" type="checkbox" class="show_read">
+        <label for="139958442743568"><div class="speech right">
 <div class="speechbubble right">
 <p>In the comment, change the pin number from 7 to 13 too, so that it still matches what the sketch is doing.</p>
 </div>
@@ -502,15 +547,15 @@ Here’s an example:</p>
 
 </div></label>
 
-        <input id="140037362754576" type="checkbox" class="show_read">
-        <label for="140037362754576"><div class="speech right">
+        <input id="139958442743952" type="checkbox" class="show_read">
+        <label for="139958442743952"><div class="speech right">
 <div class="speechbubble right">
 <p>I can give you a hint if you need it, but have a go by yourself first.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level3_hint1-1"><label for="level3_hint1-1" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="139958442744528"><label for="139958442744528" class="hint"></label><div class="hint">
             
 <div>
 <p>When you have done the copy and paste, your entire <code>setup()</code> function should look like this:</p>
@@ -519,7 +564,7 @@ Here’s an example:</p>
 <span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 7 as an output.</span>
 <span class="p">}</span>
 </code></pre></div>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level3_hint1-2"><label for="level3_hint1-2" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="139958442744464"><label for="139958442744464" class="hint"></label><div class="hint">
             
 <div>
 <p>When you have changed the pin number, your entire <code>setup()</code> function should look like this:</p>
@@ -537,10 +582,10 @@ Here’s an example:</p>
             </div></div>
             
 </div>
-<div class="step">
+<div class="activitystep">
 
-        <input id="140037362755280" type="checkbox" class="show_read">
-        <label for="140037362755280"><div class="speech right">
+        <input id="139958442744656" type="checkbox" class="show_read">
+        <label for="139958442744656"><div class="speech right">
 <div class="speechbubble right">
 <p>In your sketch, there are two calls to <code>digitalWrite()</code>.</p>
 <p>Copy each line and paste it below the one you copied, so that you have two pairs of lines that say exactly the same thing.</p>
@@ -549,8 +594,8 @@ Here’s an example:</p>
 
 </div></label>
 
-        <input id="140037362755728" type="checkbox" class="show_read">
-        <label for="140037362755728"><div class="speech right">
+        <input id="139958442745040" type="checkbox" class="show_read">
+        <label for="139958442745040"><div class="speech right">
 <div class="speechbubble right">
 <p>Now change the second <code>digitalWrite()</code> in each pair to use pin 13 instead of 7.</p>
 </div>
@@ -558,15 +603,15 @@ Here’s an example:</p>
 
 </div></label>
 
-        <input id="140037362756112" type="checkbox" class="show_read">
-        <label for="140037362756112"><div class="speech right">
+        <input id="139958442745424" type="checkbox" class="show_read">
+        <label for="139958442745424"><div class="speech right">
 <div class="speechbubble right">
 <p>I can give you a hint if you need it, but have a go by yourself first.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level3_hint2-1"><label for="level3_hint2-1" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="139958442746000"><label for="139958442746000" class="hint"></label><div class="hint">
             
 <div>
 <p>When you have done the copy and paste, your entire <code>loop()</code> function should look like this:</p>
@@ -579,7 +624,7 @@ Here’s an example:</p>
 <span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for 1 second</span>
 <span class="p">}</span>
 </code></pre></div>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level3_hint2-2"><label for="level3_hint2-2" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="139958442745936"><label for="139958442745936" class="hint"></label><div class="hint">
             
 <div>
 <p>When you have changed the pin numbers, your entire <code>loop()</code> function should look like this:</p>
@@ -601,10 +646,10 @@ Here’s an example:</p>
             </div></div>
             
 </div>
-<div class="step">
+<div class="activitystep">
 
-        <input id="140037362756816" type="checkbox" class="show_read">
-        <label for="140037362756816"><div class="speech right">
+        <input id="139958442746064" type="checkbox" class="show_read">
+        <label for="139958442746064"><div class="speech right">
 <div class="speechbubble right">
 <p>Now upload the sketch to your Arduino. If you don’t have an LED connected to pin 7, you’ll need to do that too.  Use the diagram below to help you.</p>
 </div>
@@ -614,10 +659,25 @@ Here’s an example:</p>
 <img src="01-LED-pin7.svg" alt="Connecting an LED to pin 7" class="tutorial centre">
 
 </div>
-<div class="step">
+</div>
 
-        <input id="140037362757328" type="checkbox" class="show_read">
-        <label for="140037362757328"><div class="speech right">
+            <label for="139958442746640" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Claim your achievement</h3>
+            <input type="checkbox" class="show_hide section" id="139958442748688" checked>
+            <label for="139958442748688" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="139958442746576" type="checkbox" class="show_read">
+        <label for="139958442746576"><div class="speech right">
 <div class="speechbubble right">
 <p>Did the external LED and the LED on the Arduino both flash?</p>
 </div>
@@ -625,8 +685,8 @@ Here’s an example:</p>
 
 </div></label>
 
-        <input id="140037362757840" type="checkbox" class="show_read">
-        <label for="140037362757840"><div class="speech left">
+        <input id="139958442747088" type="checkbox" class="show_read">
+        <label for="139958442747088"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -634,8 +694,8 @@ Here’s an example:</p>
 </div>
 </div></label>
 
-        <input id="140037362758224" type="checkbox" class="show_read">
-        <label for="140037362758224"><div class="speech right">
+        <input id="139958442747472" type="checkbox" class="show_read">
+        <label for="139958442747472"><div class="speech right">
 <div class="speechbubble right">
 <p>That’s fantastic!</p>
 <p>Now claim your achievement.</p>
@@ -644,8 +704,8 @@ Here’s an example:</p>
 
 </div></label>
 
-        <input id="140037362758608" type="checkbox" class="show_read">
-        <label for="140037362758608"><div class="speech right">
+        <input id="139958442747856" type="checkbox" class="show_read">
+        <label for="139958442747856"><div class="speech right">
 <div class="speechbubble right">
 <p>Save your Arduino sketch. Name it <code>C3-level3</code>.</p>
 <p>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive. <a href="../activity-I1">Here are instructions about how to do this.</a></p>
@@ -654,8 +714,8 @@ Here’s an example:</p>
 
 </div></label>
 
-        <input id="140037362758992" type="checkbox" class="show_read">
-        <label for="140037362758992"><div class="speech right">
+        <input id="139958442748240" type="checkbox" class="show_read">
+        <label for="139958442748240"><div class="speech right">
 <div class="speechbubble right">
 <p>Complete a claim slip. The code is <code>C3</code> and the level is <code>3</code>.
 Here’s an example:</p>
@@ -668,10 +728,10 @@ Here’s an example:</p>
 </div>
 </div>
 
-            <label for="level3-section" class="tut_section"></label>
+            <label for="139958442748688" class="activitysection"></label>
+            </div>
             </div>
             
-</div>
     </div>
     <div id="foot">
 <p>Author: Jared Henley</p>
@@ -679,8 +739,8 @@ Here’s an example:</p>
 <p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
 <p><a href="/credits.html">Credits for material from third parties</a></p>
 <p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
-<p><em>Last built: 2023-05-18 08:10:49.957773</em></p>
-<p><em>Last modified: 2023-05-18 08:10:48.154202</em></p>
+<p><em>Last built: 2023-05-21 21:01:57.524439</em></p>
+<p><em>Last modified: 2023-05-21 21:01:49.676147</em></p>
     </div>
 </div>
 </body>
