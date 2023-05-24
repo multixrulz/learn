@@ -20,24 +20,20 @@
         </div>
     </div>
     <div id="content">
-<h1>C3a — Digital inputs</h1>
+<h1>C4 — Digital inputs</h1>
 <p>There are three levels in this activity:</p>
 <ul>
 <li><a href="#level1">Level 1</a></li>
 <li><a href="#level2">Level 2</a></li>
 <li><a href="#level3">Level 3</a></li>
 </ul>
-<h2><a id="level1"></a><img src="/computing/arduino-year8/img/award.svg" /> Level 1 — The torch</h2>
 
-<div class="tutorial">
-<input type="checkbox" class="show_hide section" id="level1-section" checked>
-            <label for="level1-section" class="tut_section"></label>
-            <div class="tut_section">
-            
-<div>
+<h2><a id="level1"></a>
+<img src="/computing/arduino-year8/img/award.svg" />
+ Level 1 — Use a digital input</h2>
 
-        <input id="140393132638064" type="checkbox" class="show_read">
-        <label for="140393132638064"><div class="speech left">
+        <input id="140342078862608" type="checkbox" class="show_read">
+        <label for="140342078862608"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -45,72 +41,374 @@
 </div>
 </div></label>
 
-        <input id="140393132635568" type="checkbox" class="show_read">
-        <label for="140393132635568"><div class="speech right">
+        <input id="140342078865232" type="checkbox" class="show_read">
+        <label for="140342078865232"><div class="speech right">
 <div class="speechbubble right">
-<p>I am giving you a sketch that turns an LED on when you push a button, and turns the LED off again when you stop pushing the button.</p>
-<p>Your challenge is to use a different button to turn the LED off whe you push the button, and turn it on when you stop pushing the button.</p>
+<p>You are going to learn how to use digital inputs. For example, switches and buttons.</p>
+<p>You will also learn how to make decisions in an Arduino sketch.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="step">
 
-        <input id="140393132635088" type="checkbox" class="show_read">
-        <label for="140393132635088"><div class="speech right">
+
+            <div class="activitysectioncontainer">
+            <h3>Complete the challenge</h3>
+            <input type="checkbox" class="show_hide section" id="140342080724368" checked>
+            <label for="140342080724368" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="140342080993808" type="checkbox" class="show_read">
+        <label for="140342080993808"><div class="speech right">
 <div class="speechbubble right">
-<p>Copy the sketch below into your Arduino window. Remember to delete the other sketch first.</p>
+<p>Create a new sketch in the Arduino IDE. It will look like this:</p>
+<p>```c++
+void setup() {
+  // put your setup code here, to run once:</p>
+<p>}</p>
+<p>void loop() {
+  // put your main code here, to run repeatedly:</p>
+<p>}</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">buttonState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">               </span><span class="c1">// variable for reading the pushbutton status</span>
-<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">           </span><span class="c1">// initialise pin 12 as an output:</span>
-<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT</span><span class="p">);</span><span class="w">             </span><span class="c1">// initialise pin 7 as an input:</span>
+</div>
+<div class="activitystep">
+
+        <input id="140342078849168" type="checkbox" class="show_read">
+        <label for="140342078849168"><div class="speech right">
+<div class="speechbubble right">
+<p>Remember that digital pins on an Arduino can be inputs or outputs, depending on what you want them to be.</p>
+<p>The <code>pinMode()</code> function is how you tell the Arduino that a pin is going to be an input or output.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140342078964752" type="checkbox" class="show_read">
+        <label for="140342078964752"><div class="speech right">
+<div class="speechbubble right">
+<p>Tell the Arduino that pin 1 is an input, by putting the following code inside the <code>setup()</code> function.</p>
+<div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 1 as an input.</span>
+</code></pre></div>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140342078965136" type="checkbox" class="show_read">
+        <label for="140342078965136"><div class="speech right">
+<div class="speechbubble right">
+<p>I can give you a hint if you need it, but have a go by yourself first.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="140342078965584"><label for="140342078965584" class="hint"></label><div class="hint">
+            
+<div>
+<p>Your entire <code>setup()</code> function should look like this:</p>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 1 as an input.</span>
 <span class="p">}</span>
+</code></pre></div>
+</div>
 
-<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">buttonState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">digitalRead</span><span class="p">(</span><span class="mi">7</span><span class="p">);</span><span class="w">  </span><span class="c1">// read the state of the pushbutton value:</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">buttonState</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">HIGH</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">    </span><span class="c1">// check if the pushbutton is pressed.</span>
-<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w">    </span><span class="c1">// turn LED on if the buttonState is HIGH:</span>
-<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">     </span><span class="c1">// turn LED off if the buttonState is LOW:</span>
-<span class="w">    </span><span class="p">}</span>
+            </div></div>
+            
+</div>
+<div class="activitystep">
+
+        <input id="140342078965456" type="checkbox" class="show_read">
+        <label for="140342078965456"><div class="speech right">
+<div class="speechbubble right">
+<p>Also tell the Arduino that pin 5 is an output, by putting the following code inside the <code>setup()</code> function.</p>
+<div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 5 as an output.</span>
+</code></pre></div>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140342078966096" type="checkbox" class="show_read">
+        <label for="140342078966096"><div class="speech right">
+<div class="speechbubble right">
+<p>I can give you a hint if you need it, but have a go by yourself first.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="140342078966544"><label for="140342078966544" class="hint"></label><div class="hint">
+            
+<div>
+<p>Your entire <code>setup()</code> function should look like this:</p>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 1 as an input.</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 5 as an output.</span>
 <span class="p">}</span>
 </code></pre></div>
 
-        <input id="140393132634512" type="checkbox" class="show_read">
-        <label for="140393132634512"><div class="speech right">
+<p>or like this:</p>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 5 as an output.</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 1 as an input.</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+
+            </div></div>
+            
+</div>
+<div class="activitystep">
+
+        <input id="140342081440144" type="checkbox" class="show_read">
+        <label for="140342081440144"><div class="speech right">
 <div class="speechbubble right">
-<p>Upload this sketch to your Arduino and check that it works.</p>
+<p>Now we’ll use the input to turn the output on and off.</p>
+<p>Copy this code into the <code>loop()</code> function of your sketch:</p>
+<div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">HIGH</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">     </span><span class="c1">// check if the input is on.</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w">         </span><span class="c1">// turn the LED on if the input is on</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">          </span><span class="c1">// turn the LED off if the input is not on</span>
+<span class="w">    </span><span class="p">}</span>
+</code></pre></div>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
 
-        <input id="140393132634032" type="checkbox" class="show_read">
-        <label for="140393132634032"><div class="speech right">
+        <input id="140342080979088" type="checkbox" class="show_read">
+        <label for="140342080979088"><div class="speech right">
 <div class="speechbubble right">
-<p>Now see if you can make the LED come on when you don’t push the button, and turn off when you push the button.</p>
-<p>I can give you some hints if you need them, but have a go by yourself first.</p>
+<p>I can give you a hint if you need it, but have a go by yourself first.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level1_hint1-1"><label for="level1_hint1-1" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="140342078855184"><label for="140342078855184" class="hint"></label><div class="hint">
             
 <div>
-<p>There is more than one way to solve this challenge.</p>
-<p>You could change the place where you test <code>buttonState</code>, or you could change the action that happens when <code>buttonState</code> has been tested.</p>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level1_hint1-2"><label for="level1_hint1-2" class="hint"></label><div class="hint">
+<p>Your entire <code>loop()</code> function should look like this:</p>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">HIGH</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">     </span><span class="c1">// check if the input is on.</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w">         </span><span class="c1">// turn the LED on if the input is on</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">          </span><span class="c1">// turn the LED off if the input is not on</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+
+            </div></div>
+            
+</div>
+<div class="activitystep">
+
+        <input id="140342078859728" type="checkbox" class="show_read">
+        <label for="140342078859728"><div class="speech right">
+<div class="speechbubble right">
+<p>Now upload the sketch to your Arduino.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140342078855376" type="checkbox" class="show_read">
+        <label for="140342078855376"><div class="speech right">
+<div class="speechbubble right">
+<p>You need to connect an LED to pin 5. Use the diagram below to help you.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="01-led5-input1.svg" alt="Connecting an LED to pin 5 and an input wire to pin 1" class="activity centre">
+
+</div>
+</div>
+
+            <label for="140342080724368" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Try it out</h3>
+            <input type="checkbox" class="show_hide section" id="140342078795920" checked>
+            <label for="140342078795920" class="activitysection"></label>
+            <div class="activitysection">
             
 <div>
-<p><code>digitalWrite(12, HIGH);</code> turns the LED on, and <code>digitalWrite(12, LOW);</code> turns the LED off. You need the opposite to happen.</p>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level1_hint1-3"><label for="level1_hint1-3" class="hint"></label><div class="hint">
+<div class="activitystep">
+
+        <input id="140342080724240" type="checkbox" class="show_read">
+        <label for="140342080724240"><div class="speech right">
+<div class="speechbubble right">
+<p>Take the wire that’s connected to pin 1. Connect it to one of the pins labelled “GND”.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140342080378704" type="checkbox" class="show_read">
+        <label for="140342080378704"><div class="speech right">
+<div class="speechbubble right">
+<p>What happened to the LED?</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140342080912144" type="checkbox" class="show_read">
+        <label for="140342080912144"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>It’s off, sir.</p>
+</div>
+</div></label>
+
+        <input id="140342078791120" type="checkbox" class="show_read">
+        <label for="140342078791120"><div class="speech right">
+<div class="speechbubble right">
+<p>Now take that wire out of the “GND” pin.</p>
+<p>What happened to the LED?</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140342078793552" type="checkbox" class="show_read">
+        <label for="140342078793552"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>It’s still off, sir.</p>
+<p>Actually, it’s randomly turning on and off.</p>
+</div>
+</div></label>
+
+        <input id="140342078791184" type="checkbox" class="show_read">
+        <label for="140342078791184"><div class="speech right">
+<div class="speechbubble right">
+<p>Take the wire that’s connected to pin 1. Connect it to one of the pins labelled “+5V”.</p>
+<p>What happened to the LED?</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140342078797712" type="checkbox" class="show_read">
+        <label for="140342078797712"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>It turned on.</p>
+</div>
+</div></label>
+
+        <input id="140342078797200" type="checkbox" class="show_read">
+        <label for="140342078797200"><div class="speech right">
+<div class="speechbubble right">
+<p>Now take that wire out of the “+5V” pin.</p>
+<p>What happened to the LED?</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140342078798288" type="checkbox" class="show_read">
+        <label for="140342078798288"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>It’s still on, sir.</p>
+<p>Actually, it’s randomly turning on and off.</p>
+</div>
+</div></label>
+</div>
+</div>
+
+            <label for="140342078795920" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Fix the problem</h3>
+            <input type="checkbox" class="show_hide section" id="140342078966864" checked>
+            <label for="140342078966864" class="activitysection"></label>
+            <div class="activitysection">
             
 <div>
-<p>Change <code>digitalWrite(12, HIGH);</code> to <code>digitalWrite(12, LOW);</code> and change <code>digitalWrite(12, LOW);</code> to <code>digitalWrite(12, HIGH);</code>.</p>
+<div class="activitystep">
+
+        <input id="140342078794640" type="checkbox" class="show_read">
+        <label for="140342078794640"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>Having the input randomly go on and off is a bit useless, sir.</p>
+<p>Isn’t there a better way?</p>
+</div>
+</div></label>
+
+        <input id="140342078799312" type="checkbox" class="show_read">
+        <label for="140342078799312"><div class="speech right">
+<div class="speechbubble right">
+<p>Yes, there is.</p>
+<p>We can add a resistor so that whenever the wire is not connected to “GND”, the input will be on, and when the wire is connected to “GND”, the input will be off.</p>
+<p>This resistor is called a pullup resistor, because it pulls the input up (that is, on) unless you deliberately connect it to “GND”.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140342078791440" type="checkbox" class="show_read">
+        <label for="140342078791440"><div class="speech right">
+<div class="speechbubble right">
+<p>The Arduino actually has a pullup resistor built right in.</p>
+<p>To use it, just change the pin mode from <code>INPUT</code> to <code>INPUT_PULLUP</code>.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140342078795344" type="checkbox" class="show_read">
+        <label for="140342078795344"><div class="speech right">
+<div class="speechbubble right">
+<p>I can give you a hint if you need it, but have a go by yourself first.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="140342078966800"><label for="140342078966800" class="hint"></label><div class="hint">
+            
+<div>
+<p>Change the pinMode line for pin 1 to look like this:</p>
+<div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT_PULLUP</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 1 as an input.</span>
+</code></pre></div>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="140342078966672"><label for="140342078966672" class="hint"></label><div class="hint">
+            
+<div>
+<p>Your entire <code>setup()</code> function should look like this:</p>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT_PULLUP</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 1 as an input.</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">          </span><span class="c1">// set up pin 5 as an output.</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>or like this:</p>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">          </span><span class="c1">// set up pin 5 as an output.</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT_PULLUP</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 1 as an input.</span>
+<span class="p">}</span>
+</code></pre></div>
 </div>
 
             </div></div>
@@ -120,14 +418,97 @@
             </div></div>
             
 </div>
-
-            </div></div>
-            
 </div>
-<div class="step">
 
-        <input id="140393132632928" type="checkbox" class="show_read">
-        <label for="140393132632928"><div class="speech left">
+            <label for="140342078966864" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Try it out again</h3>
+            <input type="checkbox" class="show_hide section" id="140342078969232" checked>
+            <label for="140342078969232" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="140342078967056" type="checkbox" class="show_read">
+        <label for="140342078967056"><div class="speech right">
+<div class="speechbubble right">
+<p>Take the wire that’s connected to pin 1. Connect it to one of the pins labelled “GND”.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140342078967376" type="checkbox" class="show_read">
+        <label for="140342078967376"><div class="speech right">
+<div class="speechbubble right">
+<p>What happened to the LED?</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140342078967760" type="checkbox" class="show_read">
+        <label for="140342078967760"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>It’s off, sir.</p>
+</div>
+</div></label>
+
+        <input id="140342078968144" type="checkbox" class="show_read">
+        <label for="140342078968144"><div class="speech right">
+<div class="speechbubble right">
+<p>Now take that wire out of the “GND” pin.</p>
+<p>What happened to the LED?</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140342078968528" type="checkbox" class="show_read">
+        <label for="140342078968528"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>It’s on, sir.</p>
+</div>
+</div></label>
+
+        <input id="140342078968912" type="checkbox" class="show_read">
+        <label for="140342078968912"><div class="speech right">
+<div class="speechbubble right">
+<p>Well done! You have used an input.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+</div>
+
+            <label for="140342078969232" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Claim your achievement</h3>
+            <input type="checkbox" class="show_hide section" id="140342078971152" checked>
+            <label for="140342078971152" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="140342078969360" type="checkbox" class="show_read">
+        <label for="140342078969360"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -135,39 +516,51 @@
 </div>
 </div></label>
 
-        <input id="140393132632400" type="checkbox" class="show_read">
-        <label for="140393132632400"><div class="speech right">
+        <input id="140342078969808" type="checkbox" class="show_read">
+        <label for="140342078969808"><div class="speech right">
 <div class="speechbubble right">
 <p>That’s fantastic!</p>
 <p>Now claim your achievement.</p>
-<ol>
-<li>Save your Arduino sketch. Name it <code>C3a-level1</code>.</li>
-<li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive.</li>
-<li>Complete a claim slip. The code is <code>C3a</code> and the level is <code>1</code>.</li>
-</ol>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
+
+        <input id="140342078970256" type="checkbox" class="show_read">
+        <label for="140342078970256"><div class="speech right">
+<div class="speechbubble right">
+<p>Save your Arduino sketch. Name it <code>C4-level1</code>.</p>
+<p>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive. <a href="../activity-I1">Here are instructions about how to do this.</a></p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140342078970640" type="checkbox" class="show_read">
+        <label for="140342078970640"><div class="speech right">
+<div class="speechbubble right">
+<p>Complete a claim slip. The code is <code>C4</code> and the level is <code>1</code>.
+Here’s an example:</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="claim-slip-C4-L1.svg" alt="Sample claim slip" class="claimslip centre">
+
 </div>
 </div>
 
-            <label for="level1-section" class="tut_section"></label>
+            <label for="140342078971152" class="activitysection"></label>
+            </div>
             </div>
             
-</div>
 
-<h2><a id="level2"></a><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /> Level 2 — Use variables</h2>
+<h2><a id="level2"></a>
+<img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" />
+ Level 2 — Use variables</h2>
 
-<div class="tutorial">
-<input type="checkbox" class="show_hide section" id="level2-section" checked>
-            <label for="level2-section" class="tut_section"></label>
-            <div class="tut_section">
-            
-<div>
-
-        <input id="140393132631536" type="checkbox" class="show_read">
-        <label for="140393132631536"><div class="speech left">
+        <input id="140342078971216" type="checkbox" class="show_read">
+        <label for="140342078971216"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -175,18 +568,27 @@
 </div>
 </div></label>
 
-        <input id="140393132631056" type="checkbox" class="show_read">
-        <label for="140393132631056"><div class="speech right">
+        <input id="140342078971728" type="checkbox" class="show_read">
+        <label for="140342078971728"><div class="speech right">
 <div class="speechbubble right">
-<p>You’re going start learning to use variables.</p>
+<p>You’re going to start learning to use variables.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="step">
 
-        <input id="140393132630528" type="checkbox" class="show_read">
-        <label for="140393132630528"><div class="speech right">
+
+            <div class="activitysectioncontainer">
+            <h3>Complete the challenge</h3>
+            <input type="checkbox" class="show_hide section" id="140342078977360" checked>
+            <label for="140342078977360" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="140342078971088" type="checkbox" class="show_read">
+        <label for="140342078971088"><div class="speech right">
 <div class="speechbubble right">
 <p>Open a new Arduino window.</p>
 <p>Copy the sketch below into your Arduino window. Remember to delete the other sketch first.</p>
@@ -194,57 +596,110 @@
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">buttonState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">                </span><span class="c1">// variable for reading the pushbutton status</span>
-<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">        </span><span class="c1">// initialise ledPin as an output:</span>
-<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">buttonPin</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT</span><span class="p">);</span><span class="w">      </span><span class="c1">// initialise buttonPin as an input:</span>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">       </span><span class="c1">// set up pin 6 as an output.</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT_PULLUP</span><span class="p">);</span><span class="w"> </span><span class="c1">// set up pin 4 as an input.</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">buttonState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">digitalRead</span><span class="p">(</span><span class="n">buttonPin</span><span class="p">);</span><span class="w"> </span><span class="c1">// read the state of the pushbutton value:</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">buttonState</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">HIGH</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">     </span><span class="c1">// check if the pushbutton is pressed.</span>
-<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// turn LED on if the buttonState is HIGH:</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">LOW</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c1">// check if the input is LOW</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w">    </span><span class="c1">// turn the LED on</span>
 <span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn LED off if the buttonState is LOW:</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">     </span><span class="c1">// turn the LED off</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="activitystep">
+
+        <input id="140342078972560" type="checkbox" class="show_read">
+        <label for="140342078972560"><div class="speech right">
+<div class="speechbubble right">
+<p>Connect the LED and wire to your Arduino like you did in level 1, then upload the sketch and try it out.</p>
+<p>Here’s a picture of how to do the wiring:</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="02-led6-input4.svg" alt="Connecting an LED to pin 6 and an input wire to pin 4" class="activity centre">
+
+
+        <input id="140342078972880" type="checkbox" class="show_read">
+        <label for="140342078972880"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>I think it works. When I connect the input wire to “GND”, the LED turns on.</p>
+</div>
+</div></label>
+
+        <input id="140342078973392" type="checkbox" class="show_read">
+        <label for="140342078973392"><div class="speech right">
+<div class="speechbubble right">
+<p>That’s right.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+<div class="activitystep">
+
+        <input id="140342078973840" type="checkbox" class="show_read">
+        <label for="140342078973840"><div class="speech right">
+<div class="speechbubble right">
+<p>What if you wanted to connect the input to pin 3, and the LED to pin 9?</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140342078974224" type="checkbox" class="show_read">
+        <label for="140342078974224"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>I would have to look for all the places in the sketch that use pin 4 and change it to use pin 3. Then I would look for the places that use pin 6 and change them to pin 9.</p>
+</div>
+</div></label>
+
+        <input id="140342078974608" type="checkbox" class="show_read">
+        <label for="140342078974608"><div class="speech right">
+<div class="speechbubble right">
+<p>You could easily make mistakes like that.</p>
+<p>I’ll show you another way.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140342078974992" type="checkbox" class="show_read">
+        <label for="140342078974992"><div class="speech right">
+<div class="speechbubble right">
+<p>Variables let us use one piece of data in many different parts of a sketch.</p>
+<p>Replace the sketch with this code:</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">inputPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">         </span><span class="c1">// set up pin 6 as an output.</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">inputPin</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT_PULLUP</span><span class="p">);</span><span class="w"> </span><span class="c1">// set up pin 4 as an input.</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">inputPin</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">LOW</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c1">// check if the input is LOW</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w">    </span><span class="c1">// turn the LED on</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">     </span><span class="c1">// turn the LED off</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 
-        <input id="140393132629904" type="checkbox" class="show_read">
-        <label for="140393132629904"><div class="speech right">
-<div class="speechbubble right">
-<p>Now at the very top of the sketch, declare two new variables by adding these lines:</p>
-<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">buttonPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">;</span>
-</code></pre></div>
-
-<p>Upload your sketch and check that it works.</p>
-</div>
-<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
-
-</div></label>
-
-        <input id="140393132628656" type="checkbox" class="show_read">
-        <label for="140393132628656"><div class="speech left">
-<img src="/computing/arduino-year8/img/student.svg" alt="student">
-
-<div class="thoughtbubble left">
-<p>What the …</p>
-<p>This is getting weird.</p>
-</div>
-</div></label>
-
-        <input id="140393132628128" type="checkbox" class="show_read">
-        <label for="140393132628128"><div class="speech right">
-<div class="speechbubble right">
-<p>Variables let us use one piece of data in many different parts of a sketch.</p>
-</div>
-<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
-
-</div></label>
-
-        <input id="140393132627600" type="checkbox" class="show_read">
-        <label for="140393132627600"><div class="speech left">
+        <input id="140342078975440" type="checkbox" class="show_read">
+        <label for="140342078975440"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -252,8 +707,8 @@
 </div>
 </div></label>
 
-        <input id="140393132627072" type="checkbox" class="show_read">
-        <label for="140393132627072"><div class="speech right">
+        <input id="140342078975824" type="checkbox" class="show_read">
+        <label for="140342078975824"><div class="speech right">
 <div class="speechbubble right">
 <p>Yes and no.</p>
 <p>There <em>is</em> more code, but it is now much easier to change which button and LED we want the sketch to use.</p>
@@ -261,24 +716,37 @@
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
+</div>
+<div class="activitystep">
 
-        <input id="140393132622224" type="checkbox" class="show_read">
-        <label for="140393132622224"><div class="speech right">
+        <input id="140342078976144" type="checkbox" class="show_read">
+        <label for="140342078976144"><div class="speech right">
 <div class="speechbubble right">
-<p>Your challenge is to change the button from pin 7 to pin 6, and change the LED from pin 12 to pin 9.</p>
-<p><strong>You are only allowed to make changes at the top of the sketch, not inside the <code>loop()</code> function.</strong></p>
+<p>Your challenge is to change the input from pin 4 to pin 3, and change the LED from pin 6 to pin 9.</p>
+<p>Remember to move the wires too, as in this picture.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level1_hint2-1"><label for="level1_hint2-1" class="hint"></label><div class="hint">
+<img src="03-led9-input3.svg" alt="Connecting an LED to pin 9 and an input wire to pin 3" class="activity centre">
+
+
+        <input id="140342078976592" type="checkbox" class="show_read">
+        <label for="140342078976592"><div class="speech right">
+<div class="speechbubble right">
+<p>You are only allowed to make changes at the top of the sketch, not inside the <code>loop()</code> function.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="140342078977296"><label for="140342078977296" class="hint"></label><div class="hint">
             
 <div>
-<p>Change the value of <code>buttonPin</code> and <code>ledPin</code>.</p>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level1_hint2-2"><label for="level1_hint2-2" class="hint"></label><div class="hint">
+<p>Change the value of <code>inputPin</code> and <code>ledPin</code>.</p>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="140342078977232"><label for="140342078977232" class="hint"></label><div class="hint">
             
 <div>
-<p>Edit the lines <code>int buttonPin = 7;</code> and <code>int ledPin = 12;</code></p>
+<p>Edit the lines <code>int inputPin = 4;</code> and <code>int ledPin = 6;</code></p>
 </div>
 
             </div></div>
@@ -288,10 +756,25 @@
             </div></div>
             
 </div>
-<div class="step">
+</div>
 
-        <input id="140393132626448" type="checkbox" class="show_read">
-        <label for="140393132626448"><div class="speech left">
+            <label for="140342078977360" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Claim your achievement</h3>
+            <input type="checkbox" class="show_hide section" id="140342078978768" checked>
+            <label for="140342078978768" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="140342078977424" type="checkbox" class="show_read">
+        <label for="140342078977424"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -299,40 +782,43 @@
 </div>
 </div></label>
 
-        <input id="140393132625536" type="checkbox" class="show_read">
-        <label for="140393132625536"><div class="speech right">
+        <input id="140342078977872" type="checkbox" class="show_read">
+        <label for="140342078977872"><div class="speech right">
 <div class="speechbubble right">
 <p>That’s fantastic!</p>
 <p>Now claim your achievement.</p>
-<ol>
-<li>Save your Arduino sketch. Name it <code>C3a-level2</code>.</li>
-<li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive.</li>
-<li>Complete a claim slip and hand it to me. The code is <code>C3a</code> and the level is <code>2</code>.</li>
-<li>Can you find another variable (not <code>buttonPin</code> or <code>ledPin</code>) in the sketch? Write it on your claim slip.</li>
-</ol>
+<p>Save your Arduino sketch. Name it <code>C4-level2</code>.</p>
+<p>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
+
+        <input id="140342078978256" type="checkbox" class="show_read">
+        <label for="140342078978256"><div class="speech right">
+<div class="speechbubble right">
+<p>Complete a claim slip. The code is <code>C4</code> and the level is <code>2</code>.
+Here’s an example:</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="claim-slip-C4-L2.svg" alt="Sample claim slip" class="claimslip centre">
+
 </div>
 </div>
 
-            <label for="level2-section" class="tut_section"></label>
+            <label for="140342078978768" class="activitysection"></label>
+            </div>
             </div>
             
-</div>
 
-<h2><a id="level3"></a><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /> Level 3 — Write pseudocode</h2>
+<h2><a id="level3"></a>
+<img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" />
+ Level 3 — The Backwards Light</h2>
 
-<div class="tutorial">
-<input type="checkbox" class="show_hide section" id="level3-section" checked>
-            <label for="level3-section" class="tut_section"></label>
-            <div class="tut_section">
-            
-<div>
-
-        <input id="140393132624624" type="checkbox" class="show_read">
-        <label for="140393132624624"><div class="speech left">
+        <input id="140342078978896" type="checkbox" class="show_read">
+        <label for="140342078978896"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -340,148 +826,136 @@
 </div>
 </div></label>
 
-        <input id="140393132622656" type="checkbox" class="show_read">
-        <label for="140393132622656"><div class="speech right">
+        <input id="140342078979344" type="checkbox" class="show_read">
+        <label for="140342078979344"><div class="speech right">
 <div class="speechbubble right">
-<p>You’re going to start with the sketch that you created in level 2.</p>
-<p>Your challenge is to create something that we call “pseudocode” for your sketch.</p>
+<p>You’re going to learn more about how to make choices with an Arduino.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
 
-        <input id="140393132623664" type="checkbox" class="show_read">
-        <label for="140393132623664"><div class="speech left">
-<img src="/computing/arduino-year8/img/student.svg" alt="student">
 
-<div class="speechbubble left">
-<p>Syoo-doh-code? What is that?</p>
-</div>
-</div></label>
+            <div class="activitysectioncontainer">
+            <h3>Complete the challenge</h3>
+            <input type="checkbox" class="show_hide section" id="140342079015568" checked>
+            <label for="140342079015568" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
 
-        <input id="140393135647728" type="checkbox" class="show_read">
-        <label for="140393135647728"><div class="speech right">
+        <input id="140342078978832" type="checkbox" class="show_read">
+        <label for="140342078978832"><div class="speech right">
 <div class="speechbubble right">
-<p>“Pseudo” means “pretend” or “kinda like”. So pseudocode is “pretend code” or “kinda like code”.</p>
-<p>Pseudocode looks a bit like real code, but it is designed to be read by humans, not by computers. That makes it a lot like the comments you learned about earlier.</p>
-</div>
-<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
-
-</div></label>
-<div class="step">
-
-        <input id="140393135643648" type="checkbox" class="show_read">
-        <label for="140393135643648"><div class="speech right">
-<div class="speechbubble right">
-<p>If you already closed your sketch from level 2, open it again. It was called <code>C3a-level2</code>.</p>
-<p>Save it with a new name, <code>C3a-level3</code>.</p>
+<p>Your challenge is to turn the LED off when the input wire is connected to “GND”, and turn it on when the wire is disconnected.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
 
-        <input id="140393135647824" type="checkbox" class="show_read">
-        <label for="140393135647824"><div class="speech left">
-<img src="/computing/arduino-year8/img/student.svg" alt="student">
-
-<div class="speechbubble left">
-<p>Where am I supposed to make my pseudocode?</p>
-</div>
-</div></label>
-
-        <input id="140393135643264" type="checkbox" class="show_read">
-        <label for="140393135643264"><div class="speech right">
+        <input id="140342079013072" type="checkbox" class="show_read">
+        <label for="140342079013072"><div class="speech right">
 <div class="speechbubble right">
-<p>Ask the real-life me for a pseudocode sheet to write on.</p>
+<p>Start with this sketch:</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">inputPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">         </span><span class="c1">// set up pin 6 as an output.</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">inputPin</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT_PULLUP</span><span class="p">);</span><span class="w"> </span><span class="c1">// set up pin 4 as an input.</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">inputPin</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">LOW</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c1">// check if the input is LOW</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w">    </span><span class="c1">// turn the LED on</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">     </span><span class="c1">// turn the LED off</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+        <input id="140342079013584" type="checkbox" class="show_read">
+        <label for="140342079013584"><div class="speech right">
+<div class="speechbubble right">
+<p>Connect the LED and wire to your Arduino like you did in level 1 and 2, then upload the sketch and try it out.</p>
+<p>Here’s a picture of how to do the wiring:</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="02-led6-input4.svg" alt="Connecting an LED to pin 6 and an input wire to pin 4" class="activity centre">
+
+
+        <input id="140342079013968" type="checkbox" class="show_read">
+        <label for="140342079013968"><div class="speech right">
+<div class="speechbubble right">
+<p>Remember, your challenge is to turn the LED off when the input wire is connected to “GND”, and turn it on when the wire is disconnected.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
 
-        <input id="140393135642688" type="checkbox" class="show_read">
-        <label for="140393135642688"><div class="speech right">
+        <input id="140342079014544" type="checkbox" class="show_read">
+        <label for="140342079014544"><div class="speech right">
 <div class="speechbubble right">
-<p>A lot of the Arduino sketch has comments. They are written after the <code>//</code> in the sketch.</p>
-<p>But you’ve added some code, and changed some other code, so the comments are not quite right anymore.</p>
+<p>I can give you a hint if you need it, but have a go by yourself first.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-
-        <input id="140393135651520" type="checkbox" class="show_read">
-        <label for="140393135651520"><div class="speech right">
-<div class="speechbubble right">
-<p>So, for most lines in your sketch (except for some that have <code>{</code> or <code>}</code> in them) make sure there is a comment that actually describes what the line of code does.</p>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="140342079015376"><label for="140342079015376" class="hint"></label><div class="hint">
+            
+<div>
+<p>You will need to change something in the line that that says</p>
+<div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">inputPin</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">LOW</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c1">// check if the input is LOW</span>
+</code></pre></div>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="140342079015248"><label for="140342079015248" class="hint"></label><div class="hint">
+            
+<div>
+<p>Right now the sketch checks if the input is LOW.  Make it check the opposite.</p>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="140342079015184"><label for="140342079015184" class="hint"></label><div class="hint">
+            
+<div>
+<p>Change that line to this:</p>
+<div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">inputPin</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">HIGH</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c1">// check if the input is HIGH</span>
+</code></pre></div>
 </div>
-<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
-</div></label>
-
-        <input id="140393135883024" type="checkbox" class="show_read">
-        <label for="140393135883024"><div class="speech left">
-<img src="/computing/arduino-year8/img/student.svg" alt="student">
-
-<div class="speechbubble left">
-<p>Some of the lines already have comments.</p>
+            </div></div>
+            
 </div>
-</div></label>
 
-        <input id="140393132698608" type="checkbox" class="show_read">
-        <label for="140393132698608"><div class="speech right">
-<div class="speechbubble right">
-<p>That’s right. If the line has a comment, make sure it still describes what the line does.</p>
-<p>If the line doesn’t have a comment, make one up for it.</p>
+            </div></div>
+            
 </div>
-<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
-</div></label>
-
-        <input id="140393132698080" type="checkbox" class="show_read">
-        <label for="140393132698080"><div class="speech left">
-<img src="/computing/arduino-year8/img/student.svg" alt="student">
-
-<div class="speechbubble left">
-<p>But I don’t know what the code does.</p>
+            </div></div>
+            
 </div>
-</div></label>
-
-        <input id="140393132697552" type="checkbox" class="show_read">
-        <label for="140393132697552"><div class="speech right">
-<div class="speechbubble right">
-<p>Then there are three ways to get help:</p>
-<ol>
-<li>See if there is a line with a comment that looks a bit like your line that doesn’t have a comment. That can help.</li>
-<li>Ask a classmate who seems to know what they’re doing.</li>
-<li>Ask me in real life.</li>
-</ol>
 </div>
-<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
-</div></label>
-</div>
-<div class="step">
+            <label for="140342079015568" class="activitysection"></label>
+            </div>
+            </div>
+            
 
-        <input id="140393132696928" type="checkbox" class="show_read">
-        <label for="140393132696928"><div class="speech left">
-<img src="/computing/arduino-year8/img/student.svg" alt="student">
 
-<div class="speechbubble left">
-<p>My sketch has comments on nearly every line now, except for some lines that have <code>{</code> or <code>}</code> in them.</p>
-</div>
-</div></label>
+            <div class="activitysectioncontainer">
+            <h3>Claim your achievement</h3>
+            <input type="checkbox" class="show_hide section" id="140342079017552" checked>
+            <label for="140342079017552" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
 
-        <input id="140393132696400" type="checkbox" class="show_read">
-        <label for="140393132696400"><div class="speech right">
-<div class="speechbubble right">
-<p>Excellent!</p>
-<p>Now copy those comments onto your pseudocode sheet, one line at a time.</p>
-</div>
-<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
-
-</div></label>
-
-        <input id="140393132695872" type="checkbox" class="show_read">
-        <label for="140393132695872"><div class="speech left">
+        <input id="140342079015632" type="checkbox" class="show_read">
+        <label for="140342079015632"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -489,28 +963,44 @@
 </div>
 </div></label>
 
-        <input id="140393132695344" type="checkbox" class="show_read">
-        <label for="140393132695344"><div class="speech right">
+        <input id="140342079016080" type="checkbox" class="show_read">
+        <label for="140342079016080"><div class="speech right">
 <div class="speechbubble right">
 <p>That’s fantastic!</p>
 <p>Now claim your achievement.</p>
-<ol>
-<li>Save your Arduino sketch. Be sure it’s named <code>C3a-level3</code>.</li>
-<li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive.</li>
-<li>Complete a claim slip and hand it to me. The code is <code>C3a</code> and the level is <code>3</code>.</li>
-<li>Also give me the pseudocode sheet.</li>
-</ol>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
+
+        <input id="140342079016528" type="checkbox" class="show_read">
+        <label for="140342079016528"><div class="speech right">
+<div class="speechbubble right">
+<p>Save your Arduino sketch. Be sure it’s named <code>C4-level3</code>.</p>
+<p>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140342079016976" type="checkbox" class="show_read">
+        <label for="140342079016976"><div class="speech right">
+<div class="speechbubble right">
+<p>Complete a claim slip. The code is <code>C4</code> and the level is <code>3</code>.
+Here’s an example:</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="claim-slip-C4-L3.svg" alt="Sample claim slip" class="claimslip centre">
+
 </div>
 </div>
 
-            <label for="level3-section" class="tut_section"></label>
+            <label for="140342079017552" class="activitysection"></label>
+            </div>
             </div>
             
-</div>
     </div>
     <div id="foot">
 <p>Author: Jared Henley</p>
@@ -518,8 +1008,8 @@
 <p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
 <p><a href="/credits.html">Credits for material from third parties</a></p>
 <p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
-<p><em>Last built: 2023-05-05 12:04:59.960349</em></p>
-<p><em>Last modified: 2023-04-25 14:49:57.240226</em></p>
+<p><em>Last built: 2023-05-24 21:10:58.062839</em></p>
+<p><em>Last modified: 2023-05-24 21:10:51.115114</em></p>
     </div>
 </div>
 </body>
