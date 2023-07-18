@@ -1,15 +1,22 @@
 @font-face {
-font-family: 'Encode Sans';
+font-family: 'SiteFont';
 font-style: normal;
-font-weight: 400;
-src: url('/fonts/EncodeSans-Regular.ttf');
+font-weight: 800;
+src: url('/fonts/EncodeSans-Black.ttf');
 }
 
 @font-face {
-font-family: 'Encode Sans';
+font-family: 'SiteFont';
 font-style: normal;
-font-weight: 800;
-src: url('/fonts/EncodeSans-Bold.ttf');
+font-weight: 400;
+src: url('/fonts/ABeeZee-Regular.ttf');
+}
+
+@font-face {
+font-family: 'SiteFont';
+font-style: italic;
+font-weight: 400;
+src: url('/fonts/ABeeZee-Italic.ttf');
 }
 
 /* reset */
@@ -22,7 +29,7 @@ line-height: 1.4;
 
 body {
 background: #222;
-font-family: "Encode Sans";
+font-family: "SiteFont";
 font-size: 20px;
 }
 
