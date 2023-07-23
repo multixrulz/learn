@@ -1,23 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Quick Quiz</title>
-        <link rel="stylesheet" type="text/css" href="/css/css.css">
-        <link rel="stylesheet" type="text/css" href="jquiz/jquiz.css">
-        <script src="jquiz/jquiz.js"></script>
-    </head>
-    <body>
-        <h1>Here is some HTML</h1>
-        <p>Here is some more HTML. Quiz follows.</p>
-        <script>
-        jquiz_load("test_quiz.jquiz");
-        </script>
-        <p>OK, that was the quiz code. Here's another quiz:</p>
-        <script>
-        jquiz_load("test_quiz.jquiz");
-        </script>
-    </body>
+<html>
+<head>
+<title>JQuiz</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/css/codehilite.css">
+<link rel="stylesheet" type="text/css" href="/css/css.css">
+<link rel="shortcut icon" href="/favicon.png">
+<meta name="description" content="A static HTML, CSS and Javascript quiz system.">
+<meta name="generator" content="0cms">
+<meta name="author" content="Jared Henley">
+<meta name="copyright" content="&copy; 2023 Jared Henley">
+</head>
+<body>
+<div id="width">
+    <div id="head">
+        <div>
+            <p>Learn</p>
+        </div>
+    </div>
+    <div id="content">
+<h1>JQuiz</h1>
+<p>JQuiz is a quiz system written in HTML, CSS and Javascript. It has no database or server.</p>
+<p>This page serves as a test page for JQuiz.</p>
+<p>The same quiz is being loaded up here twice to test that JQuiz is able to do that without getting the quizzes mixed up.</p>
+
+
+<script src="/jquiz/jquiz.js"></script>
+<script>
+jquiz_load("/jquiz/tests/basic-multichoice.jquiz");
+</script>
+<script>
+jquiz_load("/jquiz/tests/basic-multichoice.jquiz");
+</script>
+
+    </div>
+    <div id="foot">
+<p>Author: Jared Henley</p>
+<p><strong>Copyright: © State of NSW 2023 (Department of Education)</strong> <img src="/img/by-sa.svg" alt="Creative Commons BY-SA icon" /></p>
+<p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
+<p><a href="/credits.html">Credits for material from third parties</a></p>
+<p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
+<p><em>Last built: 2023-07-23 05:37:28.127166</em></p>
+<p><em>Last modified: 2023-07-23 05:37:26.045527</em></p>
+    </div>
+</div>
+</body>
 </html>
