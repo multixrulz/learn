@@ -343,3 +343,20 @@ margin: 0;
 aspect-ratio: 16 / 9;
 width: 80%;
 }
+
+/* ClickImage */
+div.clickimage {
+display: inline-block;
+border: solid rgba(19,194,252,1) 0.1em;
+margin: 0.3em;
+padding: 0.4em;
+max-width: 30%;
+text-align: center;
+}
+div.clickimage img {
+max-width: 100%;
+max-height: 25vh;
+}
+div.clickimage p.caption {
+text-align: center;
+}
