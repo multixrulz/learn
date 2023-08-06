@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="/css/codehilite.css">
 <link rel="stylesheet" type="text/css" href="/css/css.css">
 <link rel="shortcut icon" href="/favicon.png">
-<meta name="description" content="A tutorial about using analogue inputs on an Arduino">
+<meta name="description" content="An activity about using analogue inputs on an Arduino">
 <meta name="generator" content="0cms">
 <meta name="author" content="Jared Henley">
 <meta name="copyright" content="&copy; 2023 Jared Henley">
@@ -15,29 +15,27 @@
 <body>
 <div id="width">
     <div id="head">
+        <a href="/">
         <div>
             <p>Learn Arduino</p>
         </div>
+        </a>
     </div>
     <div id="content">
-<h1>C3c — Analogue outputs</h1>
+<h1>C6 — Analogue outputs</h1>
 <p>There are three levels in this activity:</p>
 <ul>
 <li><a href="#level1">Level 1</a></li>
 <li><a href="#level2">Level 2</a></li>
 <li><a href="#level3">Level 3</a></li>
 </ul>
-<h2><a id="level1"></a><img src="/computing/arduino-year8/img/award.svg" /> Level 1 — Change the brightness of an LED</h2>
 
-<div class="tutorial">
-<input type="checkbox" class="show_hide section" id="level1-section" checked>
-            <label for="level1-section" class="tut_section"></label>
-            <div class="tut_section">
-            
-<div>
+<h2><a id="level1"></a>
+<img src="/computing/arduino-year8/img/award.svg" />
+ Level 1 — Change the brightness of an LED</h2>
 
-        <input id="140329956850608" type="checkbox" class="show_read">
-        <label for="140329956850608"><div class="speech left">
+        <input id="139918646919760" type="checkbox" class="show_read">
+        <label for="139918646919760"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -45,27 +43,45 @@
 </div>
 </div></label>
 
-        <input id="140329953834560" type="checkbox" class="show_read">
-        <label for="140329953834560"><div class="speech right">
+        <input id="139918646923088" type="checkbox" class="show_read">
+        <label for="139918646923088"><div class="speech right">
 <div class="speechbubble right">
 <p>You are going to learn how to use the analogue output to change the brightness of an LED.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="step">
 
-        <input id="140329953834080" type="checkbox" class="show_read">
-        <label for="140329953834080"><div class="speech right">
+
+            <div class="activitysectioncontainer">
+            <h3>Complete the challenge</h3>
+            <input type="checkbox" class="show_hide section" id="139918646916496" checked>
+            <label for="139918646916496" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="139918646919632" type="checkbox" class="show_read">
+        <label for="139918646919632"><div class="speech right">
 <div class="speechbubble right">
 <p>Open a new Arduino window with a blank sketch in it.</p>
+<p>Save your Arduino sketch. Name it <code>C6-level1</code>.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="139918646923792" type="checkbox" class="show_read">
+        <label for="139918646923792"><div class="speech right">
+<div class="speechbubble right">
 <p>Copy the sketch below into your Arduino window. Remember to delete the blank sketch first.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A9</span><span class="p">;</span><span class="w">                </span><span class="c1">// define the pin for LED D9 on the ThinkerShield</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">buttonPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span><span class="w">              </span><span class="c1">// define the pin for button D7</span>
+<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">13</span><span class="p">;</span><span class="w">                </span><span class="c1">// define the pin the LED is on</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">buttonPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span><span class="w">              </span><span class="c1">// define the pin for the button</span>
 <span class="kt">int</span><span class="w"> </span><span class="n">buttonState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">            </span><span class="c1">// create a variable for what the button is doing</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
@@ -83,18 +99,18 @@
 <span class="p">}</span>
 </code></pre></div>
 
-        <input id="140329953833504" type="checkbox" class="show_read">
-        <label for="140329953833504"><div class="speech right">
+        <input id="139918646924240" type="checkbox" class="show_read">
+        <label for="139918646924240"><div class="speech right">
 <div class="speechbubble right">
 <p>Upload this sketch to your Arduino and check that it works.</p>
-<p>The light should be dimmer when you press button D7.</p>
+<p>The light should be dimmer when you press the button.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
 
-        <input id="140329953833024" type="checkbox" class="show_read">
-        <label for="140329953833024"><div class="speech right">
+        <input id="139918646924624" type="checkbox" class="show_read">
+        <label for="139918646924624"><div class="speech right">
 <div class="speechbubble right">
 <p>The analogue outputs can have values from 0 to 255. Try out some different numbers in the <code>analogWrite()</code> function.</p>
 </div>
@@ -102,8 +118,8 @@
 
 </div></label>
 
-        <input id="140329953832544" type="checkbox" class="show_read">
-        <label for="140329953832544"><div class="speech left">
+        <input id="139918646925008" type="checkbox" class="show_read">
+        <label for="139918646925008"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -111,8 +127,8 @@
 </div>
 </div></label>
 
-        <input id="140329953832064" type="checkbox" class="show_read">
-        <label for="140329953832064"><div class="speech right">
+        <input id="139918650125840" type="checkbox" class="show_read">
+        <label for="139918650125840"><div class="speech right">
 <div class="speechbubble right">
 <p>Digital data is just &ldquo;on&rdquo; or &ldquo;off&rdquo;, <code>HIGH</code> or <code>LOW</code>, etc.</p>
 <p>Analogue data is a number. There’s a minimum and a maximum possible value for that number.</p>
@@ -122,10 +138,10 @@
 
 </div></label>
 </div>
-<div class="step">
+<div class="activitystep">
 
-        <input id="140329953831488" type="checkbox" class="show_read">
-        <label for="140329953831488"><div class="speech right">
+        <input id="139918650766096" type="checkbox" class="show_read">
+        <label for="139918650766096"><div class="speech right">
 <div class="speechbubble right">
 <p>To complete this activity, change the program so that the LED is on with a value of 50 when the button is not pressed, and is on with a value of 190 when the button is pressed.</p>
 </div>
@@ -133,10 +149,25 @@
 
 </div></label>
 </div>
-<div class="step">
+</div>
 
-        <input id="140329953830912" type="checkbox" class="show_read">
-        <label for="140329953830912"><div class="speech left">
+            <label for="139918646916496" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Claim your achievement</h3>
+            <input type="checkbox" class="show_hide section" id="139918646905616" checked>
+            <label for="139918646905616" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="139918646906576" type="checkbox" class="show_read">
+        <label for="139918646906576"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -144,15 +175,14 @@
 </div>
 </div></label>
 
-        <input id="140329953830432" type="checkbox" class="show_read">
-        <label for="140329953830432"><div class="speech right">
+        <input id="139918646908112" type="checkbox" class="show_read">
+        <label for="139918646908112"><div class="speech right">
 <div class="speechbubble right">
 <p>That’s fantastic!</p>
 <p>Now claim your achievement.</p>
 <ol>
-<li>Save your Arduino sketch. Name it <code>C3c-level1</code>.</li>
 <li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive.</li>
-<li>Complete a claim slip. The code is <code>C3c</code> and the level is <code>1</code>.</li>
+<li>Complete a claim slip. The code is <code>C6</code> and the level is <code>1</code>.</li>
 </ol>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
@@ -161,22 +191,17 @@
 </div>
 </div>
 
-            <label for="level1-section" class="tut_section"></label>
+            <label for="139918646905616" class="activitysection"></label>
+            </div>
             </div>
             
-</div>
 
-<h2><a id="level2"></a><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /> Level 2 — The Dimmer Switch</h2>
+<h2><a id="level1"></a>
+<img src="/computing/arduino-year8/img/award.svg" />
+ Level 1 — The Dimmer Switch</h2>
 
-<div class="tutorial">
-<input type="checkbox" class="show_hide section" id="level2-section" checked>
-            <label for="level2-section" class="tut_section"></label>
-            <div class="tut_section">
-            
-<div>
-
-        <input id="140329953829520" type="checkbox" class="show_read">
-        <label for="140329953829520"><div class="speech left">
+        <input id="139918646905552" type="checkbox" class="show_read">
+        <label for="139918646905552"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -184,20 +209,38 @@
 </div>
 </div></label>
 
-        <input id="140329953828944" type="checkbox" class="show_read">
-        <label for="140329953828944"><div class="speech right">
+        <input id="139918646914768" type="checkbox" class="show_read">
+        <label for="139918646914768"><div class="speech right">
 <div class="speechbubble right">
 <p>You&rsquo;ll learn how to use buttons to make an LED shine brighter and dimmer.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="step">
 
-        <input id="140329953827552" type="checkbox" class="show_read">
-        <label for="140329953827552"><div class="speech right">
+
+            <div class="activitysectioncontainer">
+            <h3>Complete the challenge</h3>
+            <input type="checkbox" class="show_hide section" id="139918646903056" checked>
+            <label for="139918646903056" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="139918646908240" type="checkbox" class="show_read">
+        <label for="139918646908240"><div class="speech right">
 <div class="speechbubble right">
 <p>Open a new Arduino window with a blank sketch in it.</p>
+<p>Save your Arduino sketch. Name it <code>C6-level2</code>.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="139918646914192" type="checkbox" class="show_read">
+        <label for="139918646914192"><div class="speech right">
+<div class="speechbubble right">
 <p>Copy the sketch below into your Arduino window. Remember to delete the blank sketch first.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
@@ -236,19 +279,19 @@
 <span class="p">}</span>
 </code></pre></div>
 
-        <input id="140329953826928" type="checkbox" class="show_read">
-        <label for="140329953826928"><div class="speech right">
+        <input id="139918646907344" type="checkbox" class="show_read">
+        <label for="139918646907344"><div class="speech right">
 <div class="speechbubble right">
 <p>There are three places that say <code>/* ADD CODE HERE */</code>. Use the comments to work out what to put in these places, instead of <code>/* ADD CODE HERE */</code>.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level2_hint1-1"><label for="level2_hint1-1" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="139918646903568"><label for="139918646903568" class="hint"></label><div class="hint">
             
 <div>
 <p>To set the brightness of the LED, use the analogWrite() function.</p>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="level2_hint1-2"><label for="level2_hint1-2" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="139918646903376"><label for="139918646903376" class="hint"></label><div class="hint">
             
 <div>
 <p>Put in <code>analogWrite(ledPin, brightness);</code></p>
@@ -261,10 +304,25 @@
             </div></div>
             
 </div>
-<div class="step">
+</div>
 
-        <input id="140329953825920" type="checkbox" class="show_read">
-        <label for="140329953825920"><div class="speech left">
+            <label for="139918646903056" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Claim your achievement</h3>
+            <input type="checkbox" class="show_hide section" id="139918649062288" checked>
+            <label for="139918649062288" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="139918648931280" type="checkbox" class="show_read">
+        <label for="139918648931280"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -272,15 +330,14 @@
 </div>
 </div></label>
 
-        <input id="140329957081152" type="checkbox" class="show_read">
-        <label for="140329957081152"><div class="speech right">
+        <input id="139918649169232" type="checkbox" class="show_read">
+        <label for="139918649169232"><div class="speech right">
 <div class="speechbubble right">
 <p>That’s fantastic!</p>
 <p>Now claim your achievement.</p>
 <ol>
-<li>Save your Arduino sketch. Name it <code>C3c-level2</code>.</li>
 <li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive.</li>
-<li>Complete a claim slip. The code is <code>C3c</code> and the level is <code>2</code>.</li>
+<li>Complete a claim slip. The code is <code>C6</code> and the level is <code>2</code>.</li>
 </ol>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
@@ -289,22 +346,17 @@
 </div>
 </div>
 
-            <label for="level2-section" class="tut_section"></label>
+            <label for="139918649062288" class="activitysection"></label>
+            </div>
             </div>
             
-</div>
 
-<h2><a id="level3"></a><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /> Level 3 — Make an LED “breathe”</h2>
+<h2><a id="level2"></a>
+<img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" />
+ Level 2 — Make an LED “breathe”</h2>
 
-<div class="tutorial">
-<input type="checkbox" class="show_hide section" id="level3-section" checked>
-            <label for="level3-section" class="tut_section"></label>
-            <div class="tut_section">
-            
-<div>
-
-        <input id="140329956841440" type="checkbox" class="show_read">
-        <label for="140329956841440"><div class="speech left">
+        <input id="139918649061712" type="checkbox" class="show_read">
+        <label for="139918649061712"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -312,18 +364,62 @@
 </div>
 </div></label>
 
-        <input id="140329956841008" type="checkbox" class="show_read">
-        <label for="140329956841008"><div class="speech right">
+        <input id="139918649062992" type="checkbox" class="show_read">
+        <label for="139918649062992"><div class="speech right">
 <div class="speechbubble right">
 <p>You’ll learn how to use a “for” loop to make a LED glow brighter and dimmer.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="step">
 
-        <input id="140329956841296" type="checkbox" class="show_read">
-        <label for="140329956841296"><div class="speech left">
+
+            <div class="activitysectioncontainer">
+            <h3>Complete the challenge</h3>
+            <input type="checkbox" class="show_hide section" id="139918646919568" checked>
+            <label for="139918646919568" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="139918649062544" type="checkbox" class="show_read">
+        <label for="139918649062544"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What are we doing in this level, sir?</p>
+</div>
+</div></label>
+
+        <input id="139918649064592" type="checkbox" class="show_read">
+        <label for="139918649064592"><div class="speech right">
+<div class="speechbubble right">
+<p>You’ll learn how to use a “for” loop to make a LED glow brighter and dimmer.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+</div>
+
+            <label for="139918646919568" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Claim your achievement</h3>
+            <input type="checkbox" class="show_hide section" id="139918646926032" checked>
+            <label for="139918646926032" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="139918646925200" type="checkbox" class="show_read">
+        <label for="139918646925200"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -331,15 +427,14 @@
 </div>
 </div></label>
 
-        <input id="140329956846432" type="checkbox" class="show_read">
-        <label for="140329956846432"><div class="speech right">
+        <input id="139918646925520" type="checkbox" class="show_read">
+        <label for="139918646925520"><div class="speech right">
 <div class="speechbubble right">
 <p>That’s fantastic!</p>
 <p>Now claim your achievement.</p>
 <ol>
-<li>Save your Arduino sketch. Name it <code>C3c-level3</code>.</li>
 <li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive.</li>
-<li>Complete a claim slip. The code is <code>C3c</code> and the level is <code>3</code>.</li>
+<li>Complete a claim slip. The code is <code>C6</code> and the level is <code>3</code>.</li>
 </ol>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
@@ -348,10 +443,10 @@
 </div>
 </div>
 
-            <label for="level3-section" class="tut_section"></label>
+            <label for="139918646926032" class="activitysection"></label>
+            </div>
             </div>
             
-</div>
     </div>
     <div id="foot">
 <p>Author: Jared Henley</p>
@@ -359,8 +454,8 @@
 <p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
 <p><a href="/credits.html">Credits for material from third parties</a></p>
 <p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
-<p><em>Last built: 2023-05-05 12:04:56.378725</em></p>
-<p><em>Last modified: 2023-04-25 14:49:57.593560</em></p>
+<p><em>Last built: 2023-08-06 15:48:13.496278</em></p>
+<p><em>Last modified: 2023-08-06 15:48:11.055512</em></p>
     </div>
 </div>
 </body>

@@ -188,7 +188,7 @@ div.hint{
   border: solid 0.2em #6FB279;
   border-radius: 0.5em;
   margin-top: 1em;
-  padding: 0.2em 1em;
+  padding: 0.2em 1em 1em 1em;
 }
 input.show_hide.hint + label::before {
   content: '🐵️ Show hint';

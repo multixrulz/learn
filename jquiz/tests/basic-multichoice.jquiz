@@ -3,16 +3,14 @@
 text:What is 2+3?
 image:question.png
 @answer
-text: 4
-image:
+text: 4 is a really long answer to test how wrapping etc works.
+image:thing.svg
 correct: false
 @answer
 text: 5
-image:5.png
 correct: true
 @answer
-text: 6
-image:
+image: 6.png
 correct: false
 @answer
 text: 23

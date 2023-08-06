@@ -1,6 +1,6 @@
 /* Main layout */
 .jquiz-container {
-    background: #aaa;
+    padding: 1em;
     text-align: center;
 }
 
@@ -45,20 +45,46 @@
     background: #ddf;
 }
 
-/* Style answers */
-.jquiz-answers label {
+/* Start buttons */
+.jquiz-container input {
+    background: #4DA5FF;
+    border: solid #295787 0.2vh;
+    margin: 2vh;
+    border-radius: 0.2em;
+    padding: 1vh;
+    font-size: 2.6vh;
+}
+
+/* Style questions */
+.jquiz-question {
     display: inline-flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    height: 20vh;
-    width: 40vw;
+    justify-content: space-around;
+    font-size: 8vmin;
+}
+/* Style answers */
+.jquiz-answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.jquiz-answers label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
     margin: 1.5vh 2vw;
     border: solid #888 1vh;
     background: #eee;
     text-align: center;
-    font-size: 4vh;
+    font-size: 4vmin;
 }
-
+.jquiz-answers label p {
+    margin: 0;
+    padding: 0;
+    max-width: 50%;
+}
 .jquiz-answers input {
     display: none;
 }
@@ -79,6 +105,17 @@
 
 .jquiz-answers input.incorrect + label {
     border-color: red;
+}
+
+/* Style scoreboard */
+.jquiz-scoreboard {
+    width: 100%;
+    height: 100%;
+    font-size: 12vmin;
+}
+.jquiz-scoreboard span.score {
+    font-size: 20vmin;
+    font-weight: bold;
 }
 
 /* Style bottom bar content */
@@ -103,14 +140,6 @@
     font-size: 3vh;
 }
 
-.jquiz-bottombar input {
-    background: #4DA5FF;
-    border: solid #295787 0.2vh;
-    margin: 2vh;
-    border-radius: 0.2em;
-    padding: 1vh;
-    font-size: 2.6vh;
-}
 .jquiz-bottombar input:disabled {
     filter: grayscale(100%);
     display: none;
