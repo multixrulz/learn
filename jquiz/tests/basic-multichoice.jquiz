@@ -1,7 +1,7 @@
 % jquiz
 % multichoice
 text:What is 2+3?
-image:question.png
+image:question.svg
 @answer
 text: 4 is a really long answer to test how wrapping etc works.
 image:thing.svg

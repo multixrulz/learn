@@ -122,6 +122,8 @@ function jquiz_display_start(quiz_id) {
     html = `<p>${title}</p>
 <input type="button" value="Start the quiz" onclick="jquiz_start(${quiz_id});" />`;
     write_html_to_quiz(quiz_id, html);
+    div = document.getElementById(`jquiz-${quiz_id}`);
+    document.exitFullscreen();
 }
 
 function jquiz_start(quiz_id) {
@@ -129,6 +131,8 @@ function jquiz_start(quiz_id) {
     audio_music.play();
     quiz_id = quiz_id.toString();
     console.log("JQuiz: Starting the quiz with id", quiz_id);
+    div = document.getElementById(`jquiz-${quiz_id}`);
+    div.requestFullscreen();
     jquiz_init_quiz(quiz_id);
     jquiz_next_question(quiz_id);
 }
@@ -159,15 +163,15 @@ function jquiz_next_question(quiz_id) {
     // TODO: Might need to check that the quiz has loaded first, and do
     // nothing otherwise, waiting for the user to click again.
     url = quiz_ids[quiz_id].url;
-    question = quizzes[url]['quiz']['questions'][q_index];
+    question = quiz_ids[quiz_id].questions[q_index];
     // Build up some HTML for the question
-    question_html = jquiz_text_image_html(question)
+    question_html = jquiz_text_image_html(question, url)
     // Build up some HTML for the answers
     answer_code = [];
     question.answers.forEach((answer, index) => {
         // Not guaranteed unique but hopefully good enough
         answer_id = (Math.random() * 10**20).toString();
-        answer_snippet = jquiz_text_image_html(answer);
+        answer_snippet = jquiz_text_image_html(answer, url);
         answer_code.push(`<input type="radio" id="${answer_id}" name="jquiz-${quiz_id}-radios" correct="${answer.correct}" index="${index}" />
         <label for="${answer_id}">${answer_snippet}</label>`);
         });
@@ -207,7 +211,7 @@ function jquiz_next_question(quiz_id) {
     lock_button.disabled = false;
 }
 
-function jquiz_text_image_html(thing) {
+function jquiz_text_image_html(thing, quizurl) {
     if (thing.text === undefined) {
         text = '';
     } else {
@@ -217,6 +221,16 @@ function jquiz_text_image_html(thing) {
         image = '';
     } else {
         image = thing.image.trim();
+        // Generate a usable path to the image.
+        // If it is an absolute path, we're OK.
+        if (! image.startsWith('/')) {
+            // If it's a relative path, prepend the location of the
+            // quiz URL with the last element (the quiz file) removed.
+            path = quizurl.split('/').slice(0,-1);
+            path.push(image);
+            image = path.join('/');
+            console.log(image);
+        }
     }
     html = '';
     if (text.length > 0) {
@@ -263,6 +277,13 @@ function jquiz_key_in_dict(key, dict) {
 function jquiz_init_quiz(quiz_id) {
     console.log("JQuiz: Starting quiz");
     url = quiz_ids[quiz_id].url;
+    //// Shuffle the quiz questions each time
+    // Deep copy the quiz array
+    quiz_ids[quiz_id].questions = structuredClone(quizzes[url].quiz.questions);
+    // Shuffle the questions
+    shuffle(quiz_ids[quiz_id].questions);
+    // Also shuffle the answers
+    quiz_ids[quiz_id].questions.forEach(question => shuffle(question.answers));
     quiz_results[quiz_id] = {
         'q_index': 0,
         'completed': false,
