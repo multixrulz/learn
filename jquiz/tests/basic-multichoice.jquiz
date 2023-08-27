@@ -1,4 +1,5 @@
 % jquiz
+
 % multichoice
 text:What is 2+3?
 image:question.svg
@@ -16,6 +17,7 @@ correct: false
 text: 23
 image:
 correct: false
+
 % multichoice
 text: What is 3+2?
 @answer
@@ -29,4 +31,79 @@ text:15
 correct:false
 @answer
 text: 7
+correct: false
+
+% multichoice
+text: What is 3+2?
+@answer
+text:No idea
+correct: false
+@answer
+text:Same as 2+3
+correct: true
+@answer
+text:5
+correct:true
+@answer
+text: 7
+correct: false
+
+% multichoice
+text: There are 2 answers
+@answer
+text:True
+correct: true
+@answer
+text: False
+correct: false
+
+% multichoice
+text: There are 3 answers
+@answer
+text:True
+correct: true
+@answer
+text: False
+correct: false
+@answer
+text: Distractor
+correct: false
+
+% multichoice
+text: There are 5 answers
+@answer
+text:True
+correct: true
+@answer
+text: False
+correct: false
+@answer
+text: Distractor 1
+correct: false
+@answer
+text: Distractor 2
+correct: false
+@answer
+text: Distractor 3
+correct: false
+
+% multichoice
+text: There are 6 answers
+@answer
+text:True
+correct: true
+@answer
+text: False
+correct: false
+@answer
+text: Distractor 1
+correct: false
+@answer
+text: Distractor 2
+correct: false
+@answer
+text: Distractor 3
+correct: false
+@answer
+text: Distractor 4
 correct: false

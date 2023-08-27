@@ -61,8 +61,9 @@
 }
 .jquiz-answers img {
     height: 18vh;
+    margin-right: 1em;
+    margin-left: 0.5em;
 }
-
 /* Style questions */
 .jquiz-question {
     display: flex;
@@ -74,25 +75,36 @@
 /* Style answers */
 .jquiz-answers {
     display: grid;
+}
+.jquiz-2-answers {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.jquiz-3-answers {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.jquiz-4-answers {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
+.jquiz-5-answers, .jquiz-6-answers {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
 .jquiz-answers label {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: rox;
     align-items: center;
     justify-content: space-around;
-    margin: 1.5vh 2vw;
+    margin: 1.5vh 1vw;
     border: solid #888 1vh;
     background: #eee;
     text-align: center;
     font-size: 4vmin;
 }
-.jquiz-answers label p {
-    margin: 0;
-    padding: 0;
-    max-width: 50%;
-}
+
 .jquiz-answers input {
     display: none;
 }
@@ -105,6 +117,14 @@
 .jquiz-answers input:checked + label {
     background-color: #20C59B;
     border-color: #2F8D75;
+}
+
+.jquiz-answers input[type="radio"] + label {
+    border-radius: 2em;
+}
+
+.jquiz-answers input[type="checkbox"] + label {
+    border-radius: 0;
 }
 
 .jquiz-answers input.correct + label {

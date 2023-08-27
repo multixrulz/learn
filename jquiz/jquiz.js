@@ -71,7 +71,13 @@ function jquiz_insert(url, title, max_questions) {
         rq = new XMLHttpRequest();
         rq.onload = function() {
             console.log("JQuiz: Parsing file for quiz at " + url);
-            quizzes[url]['quiz'] = jquiz_parse_file(this.responseText);
+            try {
+                quizzes[url]['quiz'] = jquiz_parse_file(this.responseText);
+            } catch (e) {
+                alert(e);
+                console.log("JQuiz: Parse failed with exception " + e);
+                return
+            }
             quizzes[url]['loaded'] = true;
             console.log("JQuiz: quiz at " + url + " parsed.");
         }
@@ -89,7 +95,7 @@ function jquiz_insert(url, title, max_questions) {
     } else {
         quiz_ids[quiz_id].max_questions = max_questions;
     }
-    // Create a container for the unique quiz
+    // Create a HTML container for the unique quiz
     console.log("JQuiz: Creating a div container for the quiz", quiz_id);
     document.write(`
     <div class="jquiz-container" id="jquiz-${quiz_id}">
@@ -128,12 +134,18 @@ function jquiz_display_start(quiz_id) {
 
 function jquiz_start(quiz_id) {
     stop_all_audio();
+    // Did the quiz load?
+    url = quiz_ids[quiz_id].url;
+    if (quizzes[url].loaded == false) {
+        alert("Quiz failed to load. Check the console log");
+        return
+    }
     audio_music.play();
     quiz_id = quiz_id.toString();
     console.log("JQuiz: Starting the quiz with id", quiz_id);
     div = document.getElementById(`jquiz-${quiz_id}`);
-    div.requestFullscreen();
     jquiz_init_quiz(quiz_id);
+    div.requestFullscreen();
     jquiz_next_question(quiz_id);
 }
 
@@ -168,13 +180,28 @@ function jquiz_next_question(quiz_id) {
     question_html = jquiz_text_image_html(question, url)
     // Build up some HTML for the answers
     answer_code = [];
+    // How many correct answers are there?
+    input_type = 'none';
+    question.answers.forEach((answer, index) => {
+        if (answer.correct == 'true') {
+            if (input_type == 'none') {
+                input_type = 'radio';
+                console.log("radio");
+            } else {
+                if (input_type == 'radio') {
+                    input_type = 'checkbox';
+                    console.log("checkbox");
+                }
+            }
+        }
+    });
     question.answers.forEach((answer, index) => {
         // Not guaranteed unique but hopefully good enough
         answer_id = (Math.random() * 10**20).toString();
         answer_snippet = jquiz_text_image_html(answer, url);
-        answer_code.push(`<input type="radio" id="${answer_id}" name="jquiz-${quiz_id}-radios" correct="${answer.correct}" index="${index}" />
+        answer_code.push(`<input type="${input_type}" id="${answer_id}" name="jquiz-${quiz_id}-${input_type}" correct="${answer.correct}" index="${index}" />
         <label for="${answer_id}">${answer_snippet}</label>`);
-        });
+    });
     answer_html = answer_code.join("\n");
 
     // Increment the question number and check if the quiz will be completed with this question
@@ -192,7 +219,7 @@ function jquiz_next_question(quiz_id) {
         <div class="jquiz-question">
             ${question_html}
         </div>
-        <div class="jquiz-answers">
+        <div class="jquiz-answers jquiz-${question.answers.length}-answers">
             ${answer_html}
         </div>
         <div class="jquiz-bottombar">
@@ -234,7 +261,7 @@ function jquiz_text_image_html(thing, quizurl) {
     }
     html = '';
     if (text.length > 0) {
-        html += `<p>${text}</p>`;
+        html += `<div>${text}</div>`;
     }
     if (image.length > 0) {
         html += `<img src=${image} />`;
@@ -284,26 +311,32 @@ function jquiz_init_quiz(quiz_id) {
     shuffle(quiz_ids[quiz_id].questions);
     // Also shuffle the answers
     quiz_ids[quiz_id].questions.forEach(question => shuffle(question.answers));
+    // How many questions are we going to show?
+    num_questions = quizzes[url]['quiz']['questions'].length;
+    if (quiz_ids[quiz_id].max_questions > 0) { // 0 means show the whole quiz
+        num_questions = Math.min(num_questions, quiz_ids[quiz_id].max_questions);
+    }
     quiz_results[quiz_id] = {
         'q_index': 0,
         'completed': false,
         'score': 0,
-        'num_questions': quizzes[url]['quiz']['questions'].length};
+        'num_questions': num_questions};
 }
 
 function jquiz_lock_it_in(quiz_id) {
     // Check the answer, update the score etc.
     user_correct = true;
-    selector = "#jquiz-" + quiz_id + " input[type=radio]";
+    selector = "#jquiz-" + quiz_id + " .jquiz-answers input";
     answers = document.querySelectorAll(selector);
     answers.forEach(answer => {
         answer.disabled = true;
-        is_answer = (answer.getAttribute("correct") == "true");
-        if (is_answer)
+        is_correct = (answer.getAttribute("correct") == "true");
+        if (is_correct)
             answer.classList.add("correct");
         else
             answer.classList.add("incorrect");
-        right_answer = (is_answer == answer.checked);
+        right_answer = (is_correct == answer.checked);
+        console.log(right_answer);
         user_correct = user_correct && right_answer;
     });
     stop_all_audio();
@@ -334,21 +367,26 @@ function jquiz_is_new_question(line) {
 function jquiz_parse_file(text) {
     quiz_text = text.split("\n"); // Convert to an array of lines
     //// Basic checks on the file content
-    // Check that the first line contains a revelation signature
+    // Check that the first line contains a jquiz signature
     jquiz_sig = /%\s*jquiz$/;
     if (! jquiz_sig.test(quiz_text[0])) {
-        alert("jquiz: '% jquiz' signature not found on line 1 of quiz file");
-        return
+        throw new Error("jquiz: '% jquiz' signature not found on line 1 of quiz file");
     }
     // Get rest of the file as an array of lines
     quiz_text = quiz_text.slice(1);
     if (quiz_text.length < 1)
         // There's no actual quiz content
-        return
+        throw new Error("jquiz: no quiz content");
+    // Get rid of any leading blank lines
+    while (quiz_text[0].trim().length == 0)
+        quiz_text = quiz_text.slice(1);
+        if (quiz_text.length < 1)
+            // There's no actual quiz content
+            throw new Error("jquiz: no quiz content");
+    // Process the questions
     if (! jquiz_is_new_question(quiz_text[0])) {
         // If it's not a new question
-        alert("jquiz: '% line 2 doesn't start a question");
-        return
+        throw new Error("jquiz: '% line 2 doesn't start a question");
     }
     raw_questions = [];
         // Contains arrays of [q, def] where q is the question definition

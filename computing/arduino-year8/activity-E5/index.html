@@ -22,14 +22,14 @@
         </a>
     </div>
     <div id="content">
-<h1>Nothing to see</h1>
+<h1>E5 — Wiring a buzzer</h1>
 
 <h2><a id="level1"></a>
 <img src="/computing/arduino-year8/img/award.svg" />
- Level 1 — Nothing to see here</h2>
+ Level 1 — Connect a buzzer to the Arduino</h2>
 
-        <input id="140397131918480" type="checkbox" class="show_read">
-        <label for="140397131918480"><div class="speech left">
+        <input id="139775982169360" type="checkbox" class="show_read">
+        <label for="139775982169360"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -37,14 +37,129 @@
 </div>
 </div></label>
 
-        <input id="140397131923408" type="checkbox" class="show_read">
-        <label for="140397131923408"><div class="speech right">
+        <input id="139775982173904" type="checkbox" class="show_read">
+        <label for="139775982173904"><div class="speech right">
 <div class="speechbubble right">
-<p>I’m sorry, but this one hasn’t been written yet.</p>
+<p>You are going to learn how to connect a buzzer to the Arduino.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
+
+
+            <div class="activitysectioncontainer">
+            <h3>Complete the challenge</h3>
+            <input type="checkbox" class="show_hide section" id="139775979767696" checked>
+            <label for="139775979767696" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="139775982168144" type="checkbox" class="show_read">
+        <label for="139775982168144"><div class="speech right">
+<div class="speechbubble right">
+<p>Start a new Arduino sketch and put this code into it:</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT_PULLUP</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">LOW</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+        <input id="139775979766288" type="checkbox" class="show_read">
+        <label for="139775979766288"><div class="speech right">
+<div class="speechbubble right">
+<p>Upload it to your Arduino.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+<div class="activitystep">
+
+        <input id="139775979766736" type="checkbox" class="show_read">
+        <label for="139775979766736"><div class="speech right">
+<div class="speechbubble right">
+<p>The buzzer is connected directly to a digital output.</p>
+<p>One wire on the buzzer is labelled +. This wire goes to the digital output.</p>
+<p>The other wire on the buzzer goes to GND.</p>
+<p>The diagram below shows how to wire the buzzer, and also includes a button to make the buzzer sound.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="01-connect-buzzer.svg" alt="Connecting a buzzer to an Arduino" class="activity centre">
+
+</div>
+<div class="activitystep">
+
+        <input id="139775979767248" type="checkbox" class="show_read">
+        <label for="139775979767248"><div class="speech right">
+<div class="speechbubble right">
+<p>Press the button. Did the buzzer make a noise?</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+</div>
+
+            <label for="139775979767696" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Claim your achievement</h3>
+            <input type="checkbox" class="show_hide section" id="139775982168208" checked>
+            <label for="139775982168208" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="139775979767568" type="checkbox" class="show_read">
+        <label for="139775979767568"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>I did it!</p>
+</div>
+</div></label>
+
+        <input id="139775983238608" type="checkbox" class="show_read">
+        <label for="139775983238608"><div class="speech right">
+<div class="speechbubble right">
+<p>That’s fantastic!</p>
+<p>Now claim your achievement.</p>
+<ol>
+<li>Complete a claim slip. The code is <code>E5</code> and the level is <code>1</code>.</li>
+</ol>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="claim-slip-E5.svg" alt="Sample claim slip" class="claimslip centre">
+
+</div>
+</div>
+
+            <label for="139775982168208" class="activitysection"></label>
+            </div>
+            </div>
+            
     </div>
     <div id="foot">
 <p>Author: Jared Henley</p>
@@ -52,8 +167,8 @@
 <p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
 <p><a href="/credits.html">Credits for material from third parties</a></p>
 <p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
-<p><em>Last built: 2023-08-07 09:11:37.795501</em></p>
-<p><em>Last modified: 2023-05-21 21:23:19.823317</em></p>
+<p><em>Last built: 2023-08-28 08:14:48.267050</em></p>
+<p><em>Last modified: 2023-08-27 20:44:59.958450</em></p>
     </div>
 </div>
 </body>
