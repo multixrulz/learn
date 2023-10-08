@@ -1,0 +1,72 @@
+/* Main layout */
+@font-face {
+font-family: 'SiteFont';
+font-style: normal;
+font-weight: 800;
+src: url('fonts/EncodeSans-Black.ttf');
+}
+
+@font-face {
+font-family: 'SiteFont';
+font-style: normal;
+font-weight: 400;
+src: url('fonts/ABeeZee-Regular.ttf');
+}
+
+@font-face {
+font-family: 'SiteFont';
+font-style: italic;
+font-weight: 400;
+src: url('fonts/ABeeZee-Italic.ttf');
+}
+
+body {
+    font-family: SiteFont;
+}
+
+.jquiz-container {
+    padding: 1em;
+}
+
+/* Images */
+.jquiz-question img {
+    vertical-align: top;
+    height: 6em;
+}
+.jquiz-answer * {
+    vertical-align: top;
+}
+.jquiz-answer img {
+    height: 4em;
+    margin-right: 1em;
+    margin-left: 0.5em;
+}
+/* Style questions */
+.jquiz-question {
+    display: list-item;
+    list-style-type: decimal;
+    padding-top: 1em;
+}
+.jquiz-question div {
+    display: inline-block;
+}
+/* Style answers */
+.jquiz-answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.jquiz-answer {
+    display: flex;
+}
+
+.jquiz-answer input {
+    display: block;
+    height: 1em;
+}
+
+.jquiz-answer label {
+    display: flex;
+}
+

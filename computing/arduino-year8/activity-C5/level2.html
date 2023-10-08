@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arduino and basic electronics – Year 8</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/css/codehilite.css">
+<link rel="stylesheet" type="text/css" href="/css/css.css">
+<link rel="shortcut icon" href="/favicon.png">
+<meta name="description" content="An activity about using analogue inputs on an Arduino">
+<meta name="generator" content="0cms">
+<meta name="author" content="Jared Henley">
+<meta name="copyright" content="&copy; 2023 Jared Henley">
+</head>
+<body>
+<div id="width">
+    <div id="head">
+        <a href="/">
+        <div>
+            <p>Learn Arduino</p>
+        </div>
+        </a>
+    </div>
+    <div id="content">
+<h1>C5 — Analogue inputs</h1>
+
+<h2><a id="level2"></a>
+<img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" />
+ Level 2 — Controlling the LED with an analogue input</h2>
+
+        <input id="140323371170128" type="checkbox" class="show_read">
+        <label for="140323371170128"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What are we doing in this level, sir?</p>
+</div>
+</div></label>
+
+        <input id="140323371207568" type="checkbox" class="show_read">
+        <label for="140323371207568"><div class="speech right">
+<div class="speechbubble right">
+<p>You are going to learn how to use an analogue input to control how fast an LED flashes.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+
+            <div class="activitysectioncontainer">
+            <h3>Complete the challenge</h3>
+            <input type="checkbox" class="show_hide section" id="140323371157584" checked>
+            <label for="140323371157584" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="140323371171792" type="checkbox" class="show_read">
+        <label for="140323371171792"><div class="speech right">
+<div class="speechbubble right">
+<p>Wire up your Arduino and breadboard as shown in the diagram below.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="01-wiring-diagram.svg" alt="Connecting an LDR to an Arduino" class="activity centre">
+
+</div>
+<div class="activitystep">
+
+        <input id="140323376108816" type="checkbox" class="show_read">
+        <label for="140323376108816"><div class="speech right">
+<div class="speechbubble right">
+<p>You will be changing the sketch from level 1, so open it and save it with a new name: <code>C5-level2</code>.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140323371208720" type="checkbox" class="show_read">
+        <label for="140323371208720"><div class="speech right">
+<div class="speechbubble right">
+<p>First, get rid of the line that says</p>
+<div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w">                              </span><span class="c1">// wait for 0.1 seconds so that it doesn&#39;t update too often</span>
+</code></pre></div>
+
+<p>That was just there to slow down the program a bit, to make it go at a speed people can handle.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140323371209104" type="checkbox" class="show_read">
+        <label for="140323371209104"><div class="speech right">
+<div class="speechbubble right">
+<p>Do you remember in <a href="../activity-C2/">C2</a> that you changed the amount of time that the LED blinked on and off?  You’ll copy some code from that.</p>
+<p>Here is the complete sketch, but don’t copy anything yet.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 13 as an output.</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// turn the LED on</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for 1 second</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn the LED off</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for 1 second</span>
+<span class="p">}</span>
+</code></pre></div>
+
+        <input id="140323371209552" type="checkbox" class="show_read">
+        <label for="140323371209552"><div class="speech right">
+<div class="speechbubble right">
+<p>Copy the code inside the <code>setup()</code> function above. Put it at the end of the <code>setup()</code> function in your current <code>C5-level2</code> sketch.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140323373213712" type="checkbox" class="show_read">
+        <label for="140323373213712"><div class="speech right">
+<div class="speechbubble right">
+<p>Copy the code inside the <code>loop()</code> function. Put it at the end of the <code>loop()</code> function in your current <code>C5-level2</code> sketch.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140323373798864" type="checkbox" class="show_read">
+        <label for="140323373798864"><div class="speech right">
+<div class="speechbubble right">
+<p>Now the LED will blink on and off for one second, and the numbers from the analogue input will come to the serial monitor.</p>
+<p>Try it and see.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+<div class="activitystep">
+
+        <input id="140323372678032" type="checkbox" class="show_read">
+        <label for="140323372678032"><div class="speech right">
+<div class="speechbubble right">
+<p>Now see if you can use the variable <code>sensorValue</code> to set the time in the <code>delay()</code> functions.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140323371168016" type="checkbox" class="show_read">
+        <label for="140323371168016"><div class="speech right">
+<div class="speechbubble right">
+<p>Here’s some pseudocode that might help you:</p>
+<ol>
+<li>Read the LDR analogue input</li>
+<li>Turn on the LED</li>
+<li>Wait for a delay time according to the value from the analogue input</li>
+<li>Turn off the LED</li>
+<li>Wait for a delay time according to the value from the analogue input</li>
+</ol>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140323371170448" type="checkbox" class="show_read">
+        <label for="140323371170448"><div class="speech right">
+<div class="speechbubble right">
+<p>Have a go. Make some changes. Then upload your program and move your hand over the LDR and away from it again.</p>
+<p>Does the blink time change?</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140323371157392" type="checkbox" class="show_read">
+        <label for="140323371157392"><div class="speech right">
+<div class="speechbubble right">
+<p>I can give you some hints if you need them, but have a go by yourself first.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="140323371156048"><label for="140323371156048" class="hint"></label><div class="hint">
+            
+<div>
+<p>The number in the brackets in the <code>delay()</code> function tells the Arduino how long to delay. But it doesn’t have to be a number – you can put a variable there too.</p>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="140323371157264"><label for="140323371157264" class="hint"></label><div class="hint">
+            
+<div>
+<p>Change each <code>delay(1000);</code> to be <code>delay(sensorValue);</code>.</p>
+</div>
+
+            </div></div>
+            
+</div>
+
+            </div></div>
+            
+</div>
+</div>
+
+            <label for="140323371157584" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Claim your achievenent</h3>
+            <input type="checkbox" class="show_hide section" id="140323371157520" checked>
+            <label for="140323371157520" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="140323371161232" type="checkbox" class="show_read">
+        <label for="140323371161232"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>I did it!</p>
+</div>
+</div></label>
+
+        <input id="140323371165136" type="checkbox" class="show_read">
+        <label for="140323371165136"><div class="speech right">
+<div class="speechbubble right">
+<p>That’s fantastic!</p>
+<p>Now claim your achievement.</p>
+<ol>
+<li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive.</li>
+<li>Complete a claim slip. The code is <code>C5</code> and the level is <code>2</code>.</li>
+<li>Also write down the biggest and smallest numbers that you are able to get by covering and uncovering the LDR.</li>
+</ol>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="claim-slip-C5-L2.svg" alt="Sample claim slip" class="claimslip centre">
+
+</div>
+</div>
+
+            <label for="140323371157520" class="activitysection"></label>
+            </div>
+            </div>
+            
+    </div>
+    <div id="foot">
+<p>Author: Jared Henley</p>
+<p><strong>Copyright: © State of NSW 2023 (Department of Education)</strong> <img src="/img/by-sa.svg" alt="Creative Commons BY-SA icon" /></p>
+<p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
+<p><a href="/credits.html">Credits for material from third parties</a></p>
+<p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
+<p><em>Last built: 2023-10-04 20:01:50.823210</em></p>
+<p><em>Last modified: 2023-10-04 19:58:21.190104</em></p>
+    </div>
+</div>
+</body>
+</html>

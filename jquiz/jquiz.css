@@ -1,7 +1,29 @@
 /* Main layout */
+@font-face {
+font-family: 'SiteFont';
+font-style: normal;
+font-weight: 800;
+src: url('fonts/EncodeSans-Black.ttf');
+}
+
+@font-face {
+font-family: 'SiteFont';
+font-style: normal;
+font-weight: 400;
+src: url('fonts/ABeeZee-Regular.ttf');
+}
+
+@font-face {
+font-family: 'SiteFont';
+font-style: italic;
+font-weight: 400;
+src: url('fonts/ABeeZee-Italic.ttf');
+}
+
 .jquiz-container {
     padding: 1em;
     text-align: center;
+    font-family: SiteFont;
 }
 
 .jquiz-quiz {
@@ -52,6 +74,7 @@
     margin: 2vh;
     border-radius: 0.2em;
     padding: 1vh;
+    font-family: SiteFont;
     font-size: 2.6vh;
 }
 
@@ -95,7 +118,7 @@
 
 .jquiz-answers label {
     display: flex;
-    flex-direction: rox;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
     margin: 1.5vh 1vw;
