@@ -62,6 +62,7 @@ function jquiz_print() {
         jquiz_write_print_html(html);
         quiz_data['quiz'].forEach((question, index) => {
             if (index < quiz_data['max_questions']) {
+                console.log("Printing question");
                 console.log(`JQuiz: Writing out question ${index}`);
                 html = '<div class="jquiz-question">';
                 html += jquiz_question_html(question);
@@ -104,6 +105,8 @@ function jquiz_get_data() {
     quiz_data['src'] = params.get("src");
     quiz_data['title'] = params.get("title");
     quiz_data['max_questions'] = params.get("max_q");
+    console.log("Got the following from the GET string:")
+    console.log(quiz_data)
 }
 
 function jquiz_audio_load() {
