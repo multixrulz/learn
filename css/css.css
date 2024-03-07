@@ -204,6 +204,7 @@ input.show_hide.hint:checked + label::before {
 .speech img {
   position: absolute;
   width: 7em;
+  max-height: 6em;
   bottom: 0;
 }
 .speech.right img {

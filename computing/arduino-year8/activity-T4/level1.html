@@ -26,8 +26,8 @@
 <img src="/computing/arduino-year8/img/award.svg" />
  Level 1 — Digital outputs</h2>
 
-        <input id="140337852343376" type="checkbox" class="show_read">
-        <label for="140337852343376"><div class="speech left">
+        <input id="139753134908496" type="checkbox" class="show_read">
+        <label for="139753134908496"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -35,8 +35,8 @@
 </div>
 </div></label>
 
-        <input id="140337849058704" type="checkbox" class="show_read">
-        <label for="140337849058704"><div class="speech right">
+        <input id="139753134474640" type="checkbox" class="show_read">
+        <label for="139753134474640"><div class="speech right">
 <div class="speechbubble right">
 <p>I’m going to explain about the digital outputs that an Arduino has and how to use them.</p>
 </div>
@@ -47,17 +47,140 @@
 
             <div class="activitysectioncontainer">
             <h3>Listen and understand</h3>
-            <input type="checkbox" class="show_hide section" id="140337849060048" checked>
-            <label for="140337849060048" class="activitysection"></label>
+            <input type="checkbox" class="show_hide section" id="139753134431824" checked>
+            <label for="139753134431824" class="activitysection"></label>
             <div class="activitysection">
             
 <div>
 <div class="activitystep">
 
-        <input id="140337851540688" type="checkbox" class="show_read">
-        <label for="140337851540688"><div class="speech right">
+        <input id="139753134439696" type="checkbox" class="show_read">
+        <label for="139753134439696"><div class="speech right">
 <div class="speechbubble right">
-<p>Nothing here yet</p>
+<p>A digital output is a type of output.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="139753134475920" type="checkbox" class="show_read">
+        <label for="139753134475920"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What is an output?</p>
+</div>
+</div></label>
+
+        <input id="139753134476304" type="checkbox" class="show_read">
+        <label for="139753134476304"><div class="speech right">
+<div class="speechbubble right">
+<p>An output lets the Arduino control something in the world. For example:</p>
+<ul>
+<li>A light</li>
+<li>A buzzer</li>
+<li>A remote signal to a TV</li>
+<li>A motor</li>
+<li>A speaker</li>
+</ul>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="139753134476688" type="checkbox" class="show_read">
+        <label for="139753134476688"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>So what is a <strong>digital</strong> output?</p>
+</div>
+</div></label>
+
+        <input id="139753134477072" type="checkbox" class="show_read">
+        <label for="139753134477072"><div class="speech right">
+<div class="speechbubble right">
+<p>A digital output can only be on or off. It can&rsquo;t be partly on.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="139753134477456" type="checkbox" class="show_read">
+        <label for="139753134477456"><div class="speech right">
+<div class="speechbubble right">
+<p>A normal light could be controlled by a ditigal output. You can turn it on. You can turn it off. You can&rsquo;t turn it half on.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="139753134577104" type="checkbox" class="show_read">
+        <label for="139753134577104"><div class="speech right">
+<div class="speechbubble right">
+<p>Some smart lights have a dimmer. You can make them dim, or they can be bright. They can&rsquo;t be controlled by a digital output.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="139753136169040" type="checkbox" class="show_read">
+        <label for="139753136169040"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>How do you program an Arduino to use a digital output?</p>
+</div>
+</div></label>
+
+        <input id="139753134273808" type="checkbox" class="show_read">
+        <label for="139753134273808"><div class="speech right">
+<div class="speechbubble right">
+<p>In the <strong>setup()</strong> section of your sketch, you&rsquo;ll need to tell the Arduino that you want a certain pin to be a digital output.</p>
+<p>Let&rsquo;s say you want Pin 5 to be a digital output.  You would write</p>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p><code>pinMode</code> takes two arguments.</p>
+<ul>
+<li>The <code>5</code> is the pin number you are controlling.</li>
+<li><code>OUTPUT</code> means that you want the pin to be an output.</li>
+</ul>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="139753134439184" type="checkbox" class="show_read">
+        <label for="139753134439184"><div class="speech right">
+<div class="speechbubble right">
+<p>To turn the digital output on, you write this:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+</code></pre></div>
+
+<p><code>digitalWrite</code> takes two arguments.</p>
+<ul>
+<li>The <code>5</code> is the pin number you are controlling.</li>
+<li><code>HIGH</code> means to turn it on.</li>
+</ul>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="139753134434448" type="checkbox" class="show_read">
+        <label for="139753134434448"><div class="speech right">
+<div class="speechbubble right">
+<p>To turn the digital output off, you write this:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span>
+</code></pre></div>
+
+<ul>
+<li>The <code>5</code> is the pin number you are controlling.</li>
+<li><code>LOW</code> means to turn it off.</li>
+</ul>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
@@ -65,7 +188,7 @@
 </div>
 </div>
 
-            <label for="140337849060048" class="activitysection"></label>
+            <label for="139753134431824" class="activitysection"></label>
             </div>
             </div>
             
@@ -76,8 +199,8 @@
 <p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
 <p><a href="/credits.html">Credits for material from third parties</a></p>
 <p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
-<p><em>Last built: 2024-02-15 08:09:19.601331</em></p>
-<p><em>Last modified: 2023-10-15 20:21:28.406646</em></p>
+<p><em>Last built: 2024-03-07 11:42:49.821583</em></p>
+<p><em>Last modified: 2024-03-07 11:42:07.693329</em></p>
     </div>
 </div>
 </body>
