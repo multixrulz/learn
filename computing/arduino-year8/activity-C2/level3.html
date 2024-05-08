@@ -28,8 +28,8 @@
 <img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" />
  Level 3 — Blink a pattern</h2>
 
-        <input id="139955914715792" type="checkbox" class="show_read">
-        <label for="139955914715792"><div class="speech left">
+        <input id="123938902361680" type="checkbox" class="show_read">
+        <label for="123938902361680"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -37,8 +37,8 @@
 </div>
 </div></label>
 
-        <input id="139955912229456" type="checkbox" class="show_read">
-        <label for="139955912229456"><div class="speech right">
+        <input id="123938902365392" type="checkbox" class="show_read">
+        <label for="123938902365392"><div class="speech right">
 <div class="speechbubble right">
 <p>I am going to give you a sketch that blinks an LED on your Arduino.</p>
 <p>Your challenge is to change the sketch so that the LED blinks on and off for 1 second, and then on and off for half a second.</p>
@@ -50,15 +50,24 @@
 
             <div class="activitysectioncontainer">
             <h3>Complete the challenge</h3>
-            <input type="checkbox" class="show_hide section" id="139955921824144" checked>
-            <label for="139955921824144" class="activitysection"></label>
+            <input type="checkbox" class="show_hide section" id="123938902368016" checked>
+            <label for="123938902368016" class="activitysection"></label>
             <div class="activitysection">
             
 <div>
 <div class="activitystep">
 
-        <input id="139955914716944" type="checkbox" class="show_read">
-        <label for="139955914716944"><div class="speech right">
+        <input id="123938902362576" type="checkbox" class="show_read">
+        <label for="123938902362576"><div class="speech right">
+<div class="speechbubble right">
+<p>Get an Arduino that has the ThinkerShield attached.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="123938902366096" type="checkbox" class="show_read">
+        <label for="123938902366096"><div class="speech right">
 <div class="speechbubble right">
 <p>Open a new Arduino window.</p>
 <p>Save your Arduino sketch. Name it <code>C2-level3</code>.</p>
@@ -67,8 +76,8 @@
 
 </div></label>
 
-        <input id="139955912230160" type="checkbox" class="show_read">
-        <label for="139955912230160"><div class="speech right">
+        <input id="123938902366480" type="checkbox" class="show_read">
+        <label for="123938902366480"><div class="speech right">
 <div class="speechbubble right">
 <p>Copy the sketch below into your Arduino window. Remember to delete the other sketch first.</p>
 </div>
@@ -76,19 +85,19 @@
 
 </div></label>
 <div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 13 as an output.</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 12 as an output.</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// turn the LED on</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// turn the LED on</span>
 <span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for 1 second</span>
-<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn the LED off</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn the LED off</span>
 <span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for 1 second</span>
 <span class="p">}</span>
 </code></pre></div>
 
-        <input id="139955912230608" type="checkbox" class="show_read">
-        <label for="139955912230608"><div class="speech right">
+        <input id="123938902366928" type="checkbox" class="show_read">
+        <label for="123938902366928"><div class="speech right">
 <div class="speechbubble right">
 <p>See if you can work out how to make the LED blink on and off for 1 second, and then on and off for half a second.  It should blink like this:</p>
 </div>
@@ -98,35 +107,35 @@
 <img src="blink-1s-1s-500ms-500ms.gif" alt="Animation illustrating LED on and off for 1 second and then on and off for 0.5 seconds" class="centre blinklight">
 
 
-        <input id="139955912230928" type="checkbox" class="show_read">
-        <label for="139955912230928"><div class="speech right">
+        <input id="123938902367248" type="checkbox" class="show_read">
+        <label for="123938902367248"><div class="speech right">
 <div class="speechbubble right">
 <p>I can give you some hints if you need them, but have a go by yourself first.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="139955915183568"><label for="139955915183568" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="123938902341328"><label for="123938902341328" class="hint"></label><div class="hint">
             
 <div>
 <p>Inside the <code>loop()</code> function you will need 8 lines of code. Copy the four lines you have and paste them right after the last <code>delay(1000)</code>.</p>
 <p>Now change two of the delays.</p>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="139955915827984"><label for="139955915827984" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="123938902341264"><label for="123938902341264" class="hint"></label><div class="hint">
             
 <div>
 <p>Your <code>loop</code> function needs to look like this before you start changing the delays:</p>
 <div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// turn the LED on</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// turn the LED on</span>
 <span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for 1 second</span>
-<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn the LED off</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn the LED off</span>
 <span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for 1 second</span>
-<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// turn the LED on</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// turn the LED on</span>
 <span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for 1 second</span>
-<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn the LED off</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn the LED off</span>
 <span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for 1 second</span>
 <span class="p">}</span>
 </code></pre></div>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="139955912231632"><label for="139955912231632" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="123938902367952"><label for="123938902367952" class="hint"></label><div class="hint">
             
 <div>
 <p>Change the last two delays to <code>delay(500)</code>.</p>
@@ -145,7 +154,7 @@
 </div>
 </div>
 
-            <label for="139955921824144" class="activitysection"></label>
+            <label for="123938902368016" class="activitysection"></label>
             </div>
             </div>
             
@@ -153,15 +162,15 @@
 
             <div class="activitysectioncontainer">
             <h3>Claim your achievement</h3>
-            <input type="checkbox" class="show_hide section" id="139955914714320" checked>
-            <label for="139955914714320" class="activitysection"></label>
+            <input type="checkbox" class="show_hide section" id="123938902369424" checked>
+            <label for="123938902369424" class="activitysection"></label>
             <div class="activitysection">
             
 <div>
 <div class="activitystep">
 
-        <input id="139955915832528" type="checkbox" class="show_read">
-        <label for="139955915832528"><div class="speech left">
+        <input id="123938902367696" type="checkbox" class="show_read">
+        <label for="123938902367696"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -169,8 +178,8 @@
 </div>
 </div></label>
 
-        <input id="139955914553488" type="checkbox" class="show_read">
-        <label for="139955914553488"><div class="speech right">
+        <input id="123938902368528" type="checkbox" class="show_read">
+        <label for="123938902368528"><div class="speech right">
 <div class="speechbubble right">
 <p>That’s fantastic!</p>
 <p>Now claim your achievement.</p>
@@ -179,8 +188,8 @@
 
 </div></label>
 
-        <input id="139955914125968" type="checkbox" class="show_read">
-        <label for="139955914125968"><div class="speech right">
+        <input id="123938902368912" type="checkbox" class="show_read">
+        <label for="123938902368912"><div class="speech right">
 <div class="speechbubble right">
 <ol>
 <li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive. <a href="../activity-I1">Here are instructions about how to do this.</a></li>
@@ -196,7 +205,7 @@ Here’s an example:</li>
 </div>
 </div>
 
-            <label for="139955914714320" class="activitysection"></label>
+            <label for="123938902369424" class="activitysection"></label>
             </div>
             </div>
             
@@ -207,8 +216,8 @@ Here’s an example:</li>
 <p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
 <p><a href="/credits.html">Credits for material from third parties</a></p>
 <p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
-<p><em>Last built: 2024-02-15 08:09:21.019452</em></p>
-<p><em>Last modified: 2023-10-05 14:18:33.135854</em></p>
+<p><em>Last built: 2024-05-09 09:33:54.532975</em></p>
+<p><em>Last modified: 2024-05-09 09:33:43.753296</em></p>
     </div>
 </div>
 </body>

@@ -28,8 +28,8 @@
 <img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" />
  Level 2 — Change the blink “off” time</h2>
 
-        <input id="139871086538448" type="checkbox" class="show_read">
-        <label for="139871086538448"><div class="speech left">
+        <input id="137158589285008" type="checkbox" class="show_read">
+        <label for="137158589285008"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -37,8 +37,8 @@
 </div>
 </div></label>
 
-        <input id="139871086541776" type="checkbox" class="show_read">
-        <label for="139871086541776"><div class="speech right">
+        <input id="137158589287760" type="checkbox" class="show_read">
+        <label for="137158589287760"><div class="speech right">
 <div class="speechbubble right">
 <p>I am going to give you a sketch that blinks an LED on your Arduino.</p>
 <p>Your challenge is to change the sketch so that the LED is off for a longer time: it’s off for one second now, change it so that it’s off for 2 seconds.</p>
@@ -50,15 +50,24 @@
 
             <div class="activitysectioncontainer">
             <h3>Complete the challenge</h3>
-            <input type="checkbox" class="show_hide section" id="139871087192528" checked>
-            <label for="139871087192528" class="activitysection"></label>
+            <input type="checkbox" class="show_hide section" id="137158589290064" checked>
+            <label for="137158589290064" class="activitysection"></label>
             <div class="activitysection">
             
 <div>
 <div class="activitystep">
 
-        <input id="139871086539600" type="checkbox" class="show_read">
-        <label for="139871086539600"><div class="speech right">
+        <input id="137158589284944" type="checkbox" class="show_read">
+        <label for="137158589284944"><div class="speech right">
+<div class="speechbubble right">
+<p>Get an Arduino that has the ThinkerShield attached.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="137158589288464" type="checkbox" class="show_read">
+        <label for="137158589288464"><div class="speech right">
 <div class="speechbubble right">
 <p>Open a new Arduino window.</p>
 <p>Save your Arduino sketch. Name it <code>C2-level2</code>.</p>
@@ -67,8 +76,8 @@
 
 </div></label>
 
-        <input id="139871084102352" type="checkbox" class="show_read">
-        <label for="139871084102352"><div class="speech right">
+        <input id="137158589288848" type="checkbox" class="show_read">
+        <label for="137158589288848"><div class="speech right">
 <div class="speechbubble right">
 <p>Copy the sketch below into your Arduino window. Remember to delete the other sketch first.</p>
 </div>
@@ -76,19 +85,19 @@
 
 </div></label>
 <div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 13 as an output.</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 12 as an output.</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// turn the LED on</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// turn the LED on</span>
 <span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for 1 second</span>
-<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn the LED off</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn the LED off</span>
 <span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for 1 second</span>
 <span class="p">}</span>
 </code></pre></div>
 
-        <input id="139871084102800" type="checkbox" class="show_read">
-        <label for="139871084102800"><div class="speech right">
+        <input id="137158589289296" type="checkbox" class="show_read">
+        <label for="137158589289296"><div class="speech right">
 <div class="speechbubble right">
 <p>See if you can work out how to change the length of time the LED is off. Make a change, upload the sketch to the Arduino, and see if it works right.</p>
 <p>Remember, the challenge is to get the LED to stay off for 2 seconds.  It should blink like this:</p>
@@ -99,23 +108,23 @@
 <img src="blink-1s-2s.gif" alt="Animation illustrating LED on for 1 second and off for 2 seconds" class="centre blinklight">
 
 
-        <input id="139871084103120" type="checkbox" class="show_read">
-        <label for="139871084103120"><div class="speech right">
+        <input id="137158589289616" type="checkbox" class="show_read">
+        <label for="137158589289616"><div class="speech right">
 <div class="speechbubble right">
 <p>I can give you some hints if you need them, but have a go by yourself first.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="139871087442576"><label for="139871087442576" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="137158589290448"><label for="137158589290448" class="hint"></label><div class="hint">
             
 <div>
 <p>Can you see a comment in the sketch that says &ldquo;wait for a second&rdquo;? (comments start with <code>//</code>. Everything after <code>//</code> is for people to read, not the computer).</p>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="139871089845264"><label for="139871089845264" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="137158589047120"><label for="137158589047120" class="hint"></label><div class="hint">
             
 <div>
 <p>The command <code>delay(1000);</code> tells the Arduino to wait for 1000 milliseconds. 1000 milliseconds is 1 second.</p>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="139871084103824"><label for="139871084103824" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="137158589290320"><label for="137158589290320" class="hint"></label><div class="hint">
             
 <div>
 <p>Change the second <code>delay(1000);</code> to <code>delay(2000);</code>.</p>
@@ -134,7 +143,7 @@
 </div>
 </div>
 
-            <label for="139871087192528" class="activitysection"></label>
+            <label for="137158589290064" class="activitysection"></label>
             </div>
             </div>
             
@@ -142,15 +151,15 @@
 
             <div class="activitysectioncontainer">
             <h3>Claim your achievement</h3>
-            <input type="checkbox" class="show_hide section" id="139871086536336" checked>
-            <label for="139871086536336" class="activitysection"></label>
+            <input type="checkbox" class="show_hide section" id="137158589291856" checked>
+            <label for="137158589291856" class="activitysection"></label>
             <div class="activitysection">
             
 <div>
 <div class="activitystep">
 
-        <input id="139871087192400" type="checkbox" class="show_read">
-        <label for="139871087192400"><div class="speech left">
+        <input id="137158589290512" type="checkbox" class="show_read">
+        <label for="137158589290512"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -158,8 +167,8 @@
 </div>
 </div></label>
 
-        <input id="139871086376848" type="checkbox" class="show_read">
-        <label for="139871086376848"><div class="speech right">
+        <input id="137158589290960" type="checkbox" class="show_read">
+        <label for="137158589290960"><div class="speech right">
 <div class="speechbubble right">
 <p>That’s fantastic!</p>
 <p>Now claim your achievement.</p>
@@ -168,8 +177,8 @@
 
 </div></label>
 
-        <input id="139871085949072" type="checkbox" class="show_read">
-        <label for="139871085949072"><div class="speech right">
+        <input id="137158589291344" type="checkbox" class="show_read">
+        <label for="137158589291344"><div class="speech right">
 <div class="speechbubble right">
 <ol>
 <li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive. <a href="../activity-I1">Here are instructions about how to do this.</a></li>
@@ -185,7 +194,7 @@
 </div>
 </div>
 
-            <label for="139871086536336" class="activitysection"></label>
+            <label for="137158589291856" class="activitysection"></label>
             </div>
             </div>
             
@@ -196,8 +205,8 @@
 <p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
 <p><a href="/credits.html">Credits for material from third parties</a></p>
 <p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
-<p><em>Last built: 2024-02-15 08:09:20.794612</em></p>
-<p><em>Last modified: 2023-10-05 14:18:33.135854</em></p>
+<p><em>Last built: 2024-05-09 09:33:54.522762</em></p>
+<p><em>Last modified: 2024-05-09 09:33:40.053299</em></p>
     </div>
 </div>
 </body>
