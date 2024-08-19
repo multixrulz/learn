@@ -28,8 +28,8 @@
 <img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" />
  Level 3 — The Backwards Light</h2>
 
-        <input id="140458247631568" type="checkbox" class="show_read">
-        <label for="140458247631568"><div class="speech left">
+        <input id="138663135943936" type="checkbox" class="show_read">
+        <label for="138663135943936"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -37,8 +37,8 @@
 </div>
 </div></label>
 
-        <input id="140458245210768" type="checkbox" class="show_read">
-        <label for="140458245210768"><div class="speech right">
+        <input id="138663135948832" type="checkbox" class="show_read">
+        <label for="138663135948832"><div class="speech right">
 <div class="speechbubble right">
 <p>You’re going to learn more about how to make choices with an Arduino.</p>
 </div>
@@ -49,24 +49,24 @@
 
             <div class="activitysectioncontainer">
             <h3>Complete the challenge</h3>
-            <input type="checkbox" class="show_hide section" id="140458248498192" checked>
-            <label for="140458248498192" class="activitysection"></label>
+            <input type="checkbox" class="show_hide section" id="138663135952384" checked>
+            <label for="138663135952384" class="activitysection"></label>
             <div class="activitysection">
             
 <div>
 <div class="activitystep">
 
-        <input id="140458247632720" type="checkbox" class="show_read">
-        <label for="140458247632720"><div class="speech right">
+        <input id="138663135950560" type="checkbox" class="show_read">
+        <label for="138663135950560"><div class="speech right">
 <div class="speechbubble right">
-<p>Your challenge is to turn the LED off when the input wire is connected to “GND”, and turn it on when the wire is disconnected.</p>
+<p>Your challenge is to turn the LED off when button D7 is pressed, and turn it on when button D7 is not pressed.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
 
-        <input id="140458245211472" type="checkbox" class="show_read">
-        <label for="140458245211472"><div class="speech right">
+        <input id="138663135950848" type="checkbox" class="show_read">
+        <label for="138663135950848"><div class="speech right">
 <div class="speechbubble right">
 <p>Start with the sketch from level 2. It should look like this:</p>
 </div>
@@ -74,16 +74,16 @@
 
 </div></label>
 
-        <input id="140458245211856" type="checkbox" class="show_read">
-        <label for="140458245211856"><div class="speech right">
+        <input id="138663135951136" type="checkbox" class="show_read">
+        <label for="138663135951136"><div class="speech right">
 <div class="speechbubble right">
 <p>Save your Arduino sketch. Name it <code>C4-level3</code>.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">inputPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">9</span><span class="p">;</span>
+<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">inputPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">         </span><span class="c1">// set up pin &quot;ledPin&quot; as an output.</span>
@@ -99,36 +99,24 @@
 <span class="p">}</span>
 </code></pre></div>
 
-        <input id="140458245212304" type="checkbox" class="show_read">
-        <label for="140458245212304"><div class="speech right">
+        <input id="138663135951472" type="checkbox" class="show_read">
+        <label for="138663135951472"><div class="speech right">
 <div class="speechbubble right">
-<p>Connect the LED and wire to your Arduino like you did in level 1 and 2, then upload the sketch and try it out.</p>
-<p>Here’s a picture of how to do the wiring:</p>
-</div>
-<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
-
-</div></label>
-<img src="02-led9-input3.svg" alt="Connecting an LED to pin 9 and an input wire to pin 3" class="activity centre">
-
-
-        <input id="140458245212624" type="checkbox" class="show_read">
-        <label for="140458245212624"><div class="speech right">
-<div class="speechbubble right">
-<p>Remember, your challenge is to turn the LED off when the input wire is connected to “GND”, and turn it on when the wire is disconnected.</p>
+<p>Remember, your challenge is to turn the LED off when button D7 is pressed, and turn it on when button D7 is not pressed.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
 
-        <input id="140458248743696" type="checkbox" class="show_read">
-        <label for="140458248743696"><div class="speech right">
+        <input id="138663135951760" type="checkbox" class="show_read">
+        <label for="138663135951760"><div class="speech right">
 <div class="speechbubble right">
 <p>I can give you a hint if you need it, but have a go by yourself first.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="140458248498320"><label for="140458248498320" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="138663135952288"><label for="138663135952288" class="hint"></label><div class="hint">
             
 <div>
 <p>You have 2 options. Either change something in the line that that says</p>
@@ -140,11 +128,11 @@
 <span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">     </span><span class="c1">// turn the LED off</span>
 </code></pre></div>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="140458247466960"><label for="140458247466960" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="138663135952240"><label for="138663135952240" class="hint"></label><div class="hint">
             
 <div>
 <p>Make your code do the opposite of what it does now - change <code>LOW</code> to <code>HIGH</code> and change <code>HIGH</code> to <code>LOW</code>.</p>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="140458254391888"><label for="140458254391888" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="138663135952192"><label for="138663135952192" class="hint"></label><div class="hint">
             
 <div>
 <p>You have 2 options. Either change the <code>if</code> line to this</p>
@@ -171,7 +159,7 @@
 </div>
 </div>
 
-            <label for="140458248498192" class="activitysection"></label>
+            <label for="138663135952384" class="activitysection"></label>
             </div>
             </div>
             
@@ -179,15 +167,15 @@
 
             <div class="activitysectioncontainer">
             <h3>Claim your achievement</h3>
-            <input type="checkbox" class="show_hide section" id="140458247626192" checked>
-            <label for="140458247626192" class="activitysection"></label>
+            <input type="checkbox" class="show_hide section" id="138663136019088" checked>
+            <label for="138663136019088" class="activitysection"></label>
             <div class="activitysection">
             
 <div>
 <div class="activitystep">
 
-        <input id="140458248498256" type="checkbox" class="show_read">
-        <label for="140458248498256"><div class="speech left">
+        <input id="138663135952432" type="checkbox" class="show_read">
+        <label for="138663135952432"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -195,8 +183,8 @@
 </div>
 </div></label>
 
-        <input id="140458247631312" type="checkbox" class="show_read">
-        <label for="140458247631312"><div class="speech right">
+        <input id="138663135952816" type="checkbox" class="show_read">
+        <label for="138663135952816"><div class="speech right">
 <div class="speechbubble right">
 <p>That’s fantastic!</p>
 <p>Now claim your achievement.</p>
@@ -205,8 +193,8 @@
 
 </div></label>
 
-        <input id="140458247628944" type="checkbox" class="show_read">
-        <label for="140458247628944"><div class="speech right">
+        <input id="138663136018704" type="checkbox" class="show_read">
+        <label for="138663136018704"><div class="speech right">
 <div class="speechbubble right">
 <ol>
 <li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive.</li>
@@ -222,7 +210,7 @@
 </div>
 </div>
 
-            <label for="140458247626192" class="activitysection"></label>
+            <label for="138663136019088" class="activitysection"></label>
             </div>
             </div>
             
@@ -233,8 +221,8 @@
 <p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
 <p><a href="/credits.html">Credits for material from third parties</a></p>
 <p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
-<p><em>Last built: 2024-02-15 08:09:22.534749</em></p>
-<p><em>Last modified: 2023-10-05 14:18:33.149188</em></p>
+<p><em>Last built: 2024-08-19 10:49:08.626464</em></p>
+<p><em>Last modified: 2024-08-18 20:58:21.340207</em></p>
     </div>
 </div>
 </body>
