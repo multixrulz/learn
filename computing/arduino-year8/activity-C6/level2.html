@@ -28,8 +28,8 @@
 <img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" />
  Level 2 — The Dimmer Switch</h2>
 
-        <input id="128061031229312" type="checkbox" class="show_read">
-        <label for="128061031229312"><div class="speech left">
+        <input id="128730898245744" type="checkbox" class="show_read">
+        <label for="128730898245744"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -37,8 +37,8 @@
 </div>
 </div></label>
 
-        <input id="128061031230560" type="checkbox" class="show_read">
-        <label for="128061031230560"><div class="speech right">
+        <input id="128730898247712" type="checkbox" class="show_read">
+        <label for="128730898247712"><div class="speech right">
 <div class="speechbubble right">
 <p>You&rsquo;ll learn how to use buttons to make an LED shine brighter and dimmer.</p>
 </div>
@@ -49,28 +49,24 @@
 
             <div class="activitysectioncontainer">
             <h3>Complete the challenge</h3>
-            <input type="checkbox" class="show_hide section" id="128061031233680" checked>
-            <label for="128061031233680" class="activitysection"></label>
+            <input type="checkbox" class="show_hide section" id="128730898250688" checked>
+            <label for="128730898250688" class="activitysection"></label>
             <div class="activitysection">
             
 <div>
 <div class="activitystep">
 
-        <input id="128061031232144" type="checkbox" class="show_read">
-        <label for="128061031232144"><div class="speech right">
+        <input id="128730898245648" type="checkbox" class="show_read">
+        <label for="128730898245648"><div class="speech right">
 <div class="speechbubble right">
-<p>Wire up your Arduino and breadboard as shown in the diagram below.</p>
+<p>Get an Arduino with a ThinkerShield attached.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<img src="02-wiring-diagram.svg" alt="Wiring diagram" class="activity centre">
 
-</div>
-<div class="activitystep">
-
-        <input id="128061031232528" type="checkbox" class="show_read">
-        <label for="128061031232528"><div class="speech right">
+        <input id="128730898249536" type="checkbox" class="show_read">
+        <label for="128730898249536"><div class="speech right">
 <div class="speechbubble right">
 <p>Open a new Arduino window with a blank sketch in it.</p>
 <p>Save your Arduino sketch. Name it <code>C6-level2</code>.</p>
@@ -79,17 +75,17 @@
 
 </div></label>
 
-        <input id="128061031232816" type="checkbox" class="show_read">
-        <label for="128061031232816"><div class="speech right">
+        <input id="128730898249824" type="checkbox" class="show_read">
+        <label for="128730898249824"><div class="speech right">
 <div class="speechbubble right">
 <p>Copy the sketch below into your Arduino window. Remember to delete the blank sketch first.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w">                 </span><span class="c1">// define the pin for the LED</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">upButtonPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">            </span><span class="c1">// define the pin for the &quot;up&quot; button</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">downButtonPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w">          </span><span class="c1">// define the pin for the &quot;down&quot; button</span>
+<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span><span class="w">                 </span><span class="c1">// define the pin for the LED</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">upButtonPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span><span class="w">            </span><span class="c1">// define the pin for the &quot;up&quot; button</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">downButtonPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span><span class="w">          </span><span class="c1">// define the pin for the &quot;down&quot; button</span>
 <span class="kt">int</span><span class="w"> </span><span class="n">upButtonState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">          </span><span class="c1">// create a variable for what the up button is doing</span>
 <span class="kt">int</span><span class="w"> </span><span class="n">downButtonState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">        </span><span class="c1">// create a variable for what the down button is doing</span>
 <span class="kt">int</span><span class="w"> </span><span class="n">brightness</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">             </span><span class="c1">// create a variable for the brightness of the LED</span>
@@ -120,19 +116,19 @@
 <span class="p">}</span>
 </code></pre></div>
 
-        <input id="128061031233152" type="checkbox" class="show_read">
-        <label for="128061031233152"><div class="speech right">
+        <input id="128730898250160" type="checkbox" class="show_read">
+        <label for="128730898250160"><div class="speech right">
 <div class="speechbubble right">
 <p>There are three places that say <code>/* ADD CODE HERE */</code>. Use the comments to work out what to put in these places, instead of <code>/* ADD CODE HERE */</code>.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="128061031233584"><label for="128061031233584" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="128730898250592"><label for="128730898250592" class="hint"></label><div class="hint">
             
 <div>
 <p>To set the brightness of the LED, use the analogWrite() function.</p>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="128061031233536"><label for="128061031233536" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="128730898250544"><label for="128730898250544" class="hint"></label><div class="hint">
             
 <div>
 <p>Put in <code>analogWrite(ledPin, brightness);</code></p>
@@ -147,7 +143,7 @@
 </div>
 </div>
 
-            <label for="128061031233680" class="activitysection"></label>
+            <label for="128730898250688" class="activitysection"></label>
             </div>
             </div>
             
@@ -155,15 +151,15 @@
 
             <div class="activitysectioncontainer">
             <h3>Claim your achievement</h3>
-            <input type="checkbox" class="show_hide section" id="128061031234448" checked>
-            <label for="128061031234448" class="activitysection"></label>
+            <input type="checkbox" class="show_hide section" id="128730898251504" checked>
+            <label for="128730898251504" class="activitysection"></label>
             <div class="activitysection">
             
 <div>
 <div class="activitystep">
 
-        <input id="128061031233728" type="checkbox" class="show_read">
-        <label for="128061031233728"><div class="speech left">
+        <input id="128730898250736" type="checkbox" class="show_read">
+        <label for="128730898250736"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -171,8 +167,8 @@
 </div>
 </div></label>
 
-        <input id="128061031234064" type="checkbox" class="show_read">
-        <label for="128061031234064"><div class="speech right">
+        <input id="128730898251120" type="checkbox" class="show_read">
+        <label for="128730898251120"><div class="speech right">
 <div class="speechbubble right">
 <p>That’s fantastic!</p>
 <p>Now claim your achievement.</p>
@@ -189,7 +185,7 @@
 </div>
 </div>
 
-            <label for="128061031234448" class="activitysection"></label>
+            <label for="128730898251504" class="activitysection"></label>
             </div>
             </div>
             
@@ -200,8 +196,8 @@
 <p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
 <p><a href="/credits.html">Credits for material from third parties</a></p>
 <p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
-<p><em>Last built: 2024-08-19 10:49:04.667822</em></p>
-<p><em>Last modified: 2023-10-05 14:18:33.149188</em></p>
+<p><em>Last built: 2024-08-22 08:24:46.687805</em></p>
+<p><em>Last modified: 2024-08-22 08:23:53.353268</em></p>
     </div>
 </div>
 </body>

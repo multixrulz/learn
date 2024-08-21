@@ -28,8 +28,8 @@
 <img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" />
  Level 3 — Turn LEDs on and off with the potentiometer</h2>
 
-        <input id="138806192154112" type="checkbox" class="show_read">
-        <label for="138806192154112"><div class="speech left">
+        <input id="126727102048032" type="checkbox" class="show_read">
+        <label for="126727102048032"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -37,8 +37,8 @@
 </div>
 </div></label>
 
-        <input id="138806192155600" type="checkbox" class="show_read">
-        <label for="138806192155600"><div class="speech right">
+        <input id="126727102049232" type="checkbox" class="show_read">
+        <label for="126727102049232"><div class="speech right">
 <div class="speechbubble right">
 <p>You’re going to turn different LEDs on and off using the potentiometer.</p>
 </div>
@@ -49,22 +49,32 @@
 
             <div class="activitysectioncontainer">
             <h3>Complete the challenge</h3>
-            <input type="checkbox" class="show_hide section" id="138806192158768" checked>
-            <label for="138806192158768" class="activitysection"></label>
+            <input type="checkbox" class="show_hide section" id="126727102052688" checked>
+            <label for="126727102052688" class="activitysection"></label>
             <div class="activitysection">
             
 <div>
 <div class="activitystep">
 
-        <input id="138806192157184" type="checkbox" class="show_read">
-        <label for="138806192157184"><div class="speech right">
+        <input id="126727102050816" type="checkbox" class="show_read">
+        <label for="126727102050816"><div class="speech right">
+<div class="speechbubble right">
+<p>Open a new Arduino window with a blank sketch in it.</p>
+<p>Save your Arduino sketch. Name it <code>C5-level3</code>.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="126727102051104" type="checkbox" class="show_read">
+        <label for="126727102051104"><div class="speech right">
 <div class="speechbubble right">
 <p>Copy this sketch</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">sensorPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A5</span><span class="w">             </span><span class="c1">// the input pin for the potentiometer on the ThinkerShield</span>
+<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">sensorPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A5</span><span class="p">;</span><span class="w">            </span><span class="c1">// the input pin for the potentiometer on the ThinkerShield</span>
 <span class="kt">int</span><span class="w"> </span><span class="n">sensorValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">           </span><span class="c1">// variable to store the value coming from the sensor</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
@@ -80,8 +90,8 @@
 <span class="p">}</span>
 </code></pre></div>
 
-        <input id="138806192157520" type="checkbox" class="show_read">
-        <label for="138806192157520"><div class="speech right">
+        <input id="126727102051440" type="checkbox" class="show_read">
+        <label for="126727102051440"><div class="speech right">
 <div class="speechbubble right">
 <p>Here is some pseudocode that tells you how the LEDs should be turned on and off.  You’ll need to change this to Arduino code and put it in the <code>loop()</code> function.</p>
 <ol>
@@ -97,8 +107,8 @@
 
 </div></label>
 
-        <input id="138806192157808" type="checkbox" class="show_read">
-        <label for="138806192157808"><div class="speech right">
+        <input id="126727102051728" type="checkbox" class="show_read">
+        <label for="126727102051728"><div class="speech right">
 <div class="speechbubble right">
 <p>Here is some code to turn LED 10 on if the value from the potentiometer is between 300 and 400.</p>
 <div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sensorValue</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">300</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">sensorValue</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">400</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c1">// if the value from the potentiometer is between 300 and 400.</span>
@@ -109,11 +119,11 @@
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="138806192158240"><label for="138806192158240" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="126727102052160"><label for="126727102052160" class="hint"></label><div class="hint">
             
 <div>
 <p>How would you turn all of the LEDs off? <code>digitalWrite(8, LOW);</code> turns off LED 8.</p>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="138806192158192"><label for="138806192158192" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="126727102052112"><label for="126727102052112" class="hint"></label><div class="hint">
             
 <div>
 <p>Pseudocode “If the value from the potentiometer is between 0 and 204, turn LED 8 on.” needs three lines of actual code:</p>
@@ -130,15 +140,15 @@
             </div></div>
             
 
-        <input id="138806192158288" type="checkbox" class="show_read">
-        <label for="138806192158288"><div class="speech right">
+        <input id="126727102052208" type="checkbox" class="show_read">
+        <label for="126727102052208"><div class="speech right">
 <div class="speechbubble right">
 <p>Remember, you need to get the LEDs to come on when the potentiometer reaches a certain value. The values are listed above.</p>
 </div>
 <img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
 
 </div></label>
-<div class="hintbox"><input type="checkbox" class="show_hide hint" id="138806192158672"><label for="138806192158672" class="hint"></label><div class="hint">
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="126727102052592"><label for="126727102052592" class="hint"></label><div class="hint">
             
 <div>
 <p>Put the code inside the <code>loop()</code> function.</p>
@@ -149,7 +159,7 @@
 </div>
 </div>
 
-            <label for="138806192158768" class="activitysection"></label>
+            <label for="126727102052688" class="activitysection"></label>
             </div>
             </div>
             
@@ -157,15 +167,15 @@
 
             <div class="activitysectioncontainer">
             <h3>Claim your achievement</h3>
-            <input type="checkbox" class="show_hide section" id="138806192159584" checked>
-            <label for="138806192159584" class="activitysection"></label>
+            <input type="checkbox" class="show_hide section" id="126727102053504" checked>
+            <label for="126727102053504" class="activitysection"></label>
             <div class="activitysection">
             
 <div>
 <div class="activitystep">
 
-        <input id="138806192158816" type="checkbox" class="show_read">
-        <label for="138806192158816"><div class="speech left">
+        <input id="126727102052736" type="checkbox" class="show_read">
+        <label for="126727102052736"><div class="speech left">
 <img src="/computing/arduino-year8/img/student.svg" alt="student">
 
 <div class="speechbubble left">
@@ -173,8 +183,8 @@
 </div>
 </div></label>
 
-        <input id="138806192159200" type="checkbox" class="show_read">
-        <label for="138806192159200"><div class="speech right">
+        <input id="126727102053120" type="checkbox" class="show_read">
+        <label for="126727102053120"><div class="speech right">
 <div class="speechbubble right">
 <p>That’s fantastic!</p>
 <p>Now claim your achievement.</p>
@@ -191,7 +201,7 @@
 </div>
 </div>
 
-            <label for="138806192159584" class="activitysection"></label>
+            <label for="126727102053504" class="activitysection"></label>
             </div>
             </div>
             
@@ -202,8 +212,8 @@
 <p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
 <p><a href="/credits.html">Credits for material from third parties</a></p>
 <p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
-<p><em>Last built: 2024-08-19 11:19:47.743149</em></p>
-<p><em>Last modified: 2024-08-19 11:19:42.667173</em></p>
+<p><em>Last built: 2024-08-22 08:24:46.748641</em></p>
+<p><em>Last modified: 2024-08-22 08:20:30.025733</em></p>
     </div>
 </div>
 </body>
