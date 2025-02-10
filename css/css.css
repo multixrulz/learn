@@ -1,0 +1,363 @@
+@font-face {
+font-family: 'SiteFont';
+font-style: normal;
+font-weight: 800;
+src: url('/fonts/EncodeSans-Black.ttf');
+}
+
+@font-face {
+font-family: 'SiteFont';
+font-style: normal;
+font-weight: 400;
+src: url('/fonts/ABeeZee-Regular.ttf');
+}
+
+@font-face {
+font-family: 'SiteFont';
+font-style: italic;
+font-weight: 400;
+src: url('/fonts/ABeeZee-Italic.ttf');
+}
+
+/* reset */
+html, body {
+margin: 0;
+border: 0;
+padding: 0;
+line-height: 1.4;
+}
+
+body {
+background: #222;
+font-family: "SiteFont";
+font-size: 20px;
+}
+
+/* Layout */
+#width {
+min-width: 35em;
+max-width: 60em;
+overflow: auto;
+margin: 0 auto 0 auto;
+padding: 0;
+}
+
+#head {
+height: 7em;
+background: linear-gradient(-27deg, rgba(2,0,36,0.5) 0%, rgba(54,54,54,0.4) 35%, rgba(255,255,255,0) 100%), rgba(19,194,252,1);
+}
+#head p {
+position: absolute;
+font-size: 250%;
+font-weight: 900;
+padding: 0;
+margin: 0.5em 0 0 1em;
+color: #f5f8f9;
+text-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.3);
+}
+#headimg img{
+float: right;
+content: url(/img/mrhenley.svg);
+height: 7em; /* same as #head */
+}
+
+#content {
+background: #f5f8f9;
+padding: 0 2em 2em 2em;
+margin-top: 0;
+border-top: solid #DF9C00 0.2em;
+}
+
+#foot {
+border-top: solid 1px;
+padding: 1em 3em 3em 3em;
+background: #efefef;
+font-size: 80%;
+text-align: center;
+}
+#foot * {
+margin: 0.2em 0 0 0;
+}
+
+/* Images */
+img.activity {
+background: white;
+max-width: 90%;
+max-height: 100vh;
+padding: 0.5em;
+border: solid #5a8f00 0.2em;
+}
+img.activity + img.activity {
+margin-top: 0.4em;
+}
+
+img.claimslip {
+width: 20em;
+background: white;
+padding: 1em;
+max-width: 90%;
+max-height: 100vh;
+}
+
+img.centre {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+img.blinklight {
+width: 2em;
+height: 2em;
+}
+
+/* Award icon in front of heading text */
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
+height: 1.5em;
+vertical-align: bottom;
+}
+
+/* code - but not codehilite code */
+code:not(.codehilite *) {
+background: #C9F2FF;
+border: solid 0.1em #34A7CC;
+border-radius: 0.2em;
+padding: 0 0.2em;
+color: #1F6D87;
+}
+
+/* Activity stuff
+ */
+.activitysectioncontainer {
+  background: #dee;
+  margin: 0.5em 0;
+  border-radius: 0.5em;
+  padding: 1em;
+}
+.activitysectioncontainer h3:first-child {
+  margin-top: 0;
+}
+.activitystep {
+  background: #bde;
+  margin: 0.5em 0;
+  border-radius: 0.5em;
+  padding: 1em;
+}
+.activitystep:nth-of-type(even) {
+  background: #bed;
+}
+.activitystep > h2 {
+  margin-top: 0;
+}
+
+input.show_hide {
+  display: none;
+}
+div.activitysection {
+  display: none;
+}
+input.show_hide:checked + label + div.activitysection {
+  display: block;
+}
+label.activitysection::before, label.hint::before {
+  background: #13C2FC;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+input.show_hide.section + label.activitysection::before {
+  content: '🐵️ Show this section';
+}
+input.show_hide.section:checked + label.activitysection::before, div.activitysection label.activitysection::before {
+  content: '🙈 Hide this section';
+}
+
+div.hintbox {
+margin-left: 3em;
+}
+div.hintbox div.hintbox{
+margin-left: 0;
+}
+input.show_hide:checked ~ div.hint{
+  display: block;
+}
+input.show_hide ~ div.hint{
+  display: none;
+}
+div.hint{
+  display: block;
+  background: #BBF0C3;
+  border: solid 0.2em #6FB279;
+  border-radius: 0.5em;
+  margin-top: 1em;
+  padding: 0.2em 1em 1em 1em;
+}
+input.show_hide.hint + label::before {
+  content: '🐵️ Show hint';
+}
+input.show_hide.hint:checked + label::before {
+  content: '🙈 Hide hint';
+}
+
+/* Speakers */
+.speech {
+  position: relative; /* Ensure positioning of child elements is within this one */
+}
+.speech img {
+  position: absolute;
+  width: 7em;
+  max-height: 6em;
+  bottom: 0;
+}
+.speech.right img {
+  right: 0;
+}
+.speech.left img {
+  left: 0;
+}
+
+/* Speech and thought bubbles based on CSS found here:
+ * https://www.sitepoint.com/pure-css3-speech-bubbles/ and
+ * https://blogs.sitepointstatic.com/examples/tech/css3-speech-bubbles/index.html
+ * Attribution is appreciated but not required - these links will suffice.
+ */
+
+.speechbubble, .thoughtbubble {
+  position:relative;
+  padding:0 1em;
+  min-height: 4em;
+  margin:2em;
+  border:0.4em solid #5a8f00;
+  text-align:left;
+  color:#333;
+  background:#fff;
+  border-radius:1.5em;
+}
+input.show_read {
+display: none;
+}
+input.show_read:checked + label .speech {
+filter: grayscale(100%);
+}
+.speechbubble.left, .thoughtbubble.left {
+  margin-left: 9em;
+  margin-right: 2em;
+}
+.speechbubble.right, .thoughtbubble.right{
+  margin-left: 2em;
+  margin-right: 9em;
+  right: 0;
+}
+/* Speech bubble coloured triangle */
+.speechbubble::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 1.1em;
+  border: 1.25em solid;
+}
+.left.speechbubble::before {
+  border-top-color: transparent;
+  border-bottom-color: #5a8f00;
+  border-left-color: transparent;
+  border-right-color: #5a8f00;
+  left: -2.5em;
+}
+.right.speechbubble::before {
+  border-top-color: transparent;
+  border-bottom-color: #5a8f00;
+  border-left-color: #5a8f00;
+  border-right-color: transparent;
+  right: -2.5em;
+}
+/* Speech bubble white triangle */
+.speechbubble::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 1.42em;
+  border: 0.95em solid;
+}
+.left.speechbubble::after {
+  border-top-color: transparent;
+  border-bottom-color: #fff;
+  border-left-color: transparent;
+  border-right-color: #fff;
+  left: -1.7em;
+}
+.right.speechbubble::after {
+  border-top-color: transparent;
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+  border-right-color: transparent;
+  right: -1.7em;
+}
+/* Thought bubble circles */
+.thoughtbubble::before {
+  content: '';
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  background-color: #fff;
+  border: 0.5em solid #5a8f00;
+  border-radius: 2em;
+}
+.thoughtbubble::after {
+  content: '';
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background-color: #fff;
+  border: 0.5em solid #5a8f00;
+  border-radius: 2em;
+}
+.left.thoughtbubble::before {
+  left: -2.5em;
+  bottom: 2em;
+}
+.left.thoughtbubble::after {
+  left: -3.5em;
+  bottom: 2em;
+}
+.right.thoughtbubble::before {
+  right: -2.5em;
+  bottom: 2em;
+}
+.right.thoughtbubble::after {
+  right: -3.5em;
+  bottom: 2em;
+}
+
+/* Code - highlighted with codehilite/pygments */
+div.codehilite {
+margin: 0 3em;
+padding: 0.2em 1em;
+border-radius: 0.5em;
+overflow-x:auto;
+}
+.hint div.codehilite {
+margin: 0;
+}
+
+/* YouTube video embed */
+.youtube {
+aspect-ratio: 16 / 9;
+width: 80%;
+}
+
+/* ClickImage */
+div.clickimage {
+display: inline-block;
+border: solid rgba(19,194,252,1) 0.1em;
+margin: 0.3em;
+padding: 0.4em;
+max-width: 30%;
+text-align: center;
+}
+div.clickimage img {
+max-width: 100%;
+max-height: 25vh;
+}
+div.clickimage p.caption {
+text-align: center;
+}

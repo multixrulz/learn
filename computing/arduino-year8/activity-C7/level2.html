@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arduino and basic electronics – Year 8</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/css/codehilite.css">
+<link rel="stylesheet" type="text/css" href="/css/css.css">
+<link rel="shortcut icon" href="/favicon.png">
+<meta name="description" content="An activity about implementing a state machine on an Arduino">
+<meta name="generator" content="0cms">
+<meta name="author" content="Jared Henley">
+<meta name="copyright" content="&copy; 2024 Jared Henley">
+</head>
+<body>
+<div id="width">
+    <div id="head">
+        <a href="/">
+        <div>
+            <p>Learn Arduino</p>
+        </div>
+        </a>
+    </div>
+    <div id="content">
+<h1>C7 — The torch</h1>
+
+<h2><a id="level2"></a>
+<img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" />
+ Level 2 — A 3-level torch</h2>
+
+        <input id="125323337705584" type="checkbox" class="show_read">
+        <label for="125323337705584"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What are we doing in this level, sir?</p>
+</div>
+</div></label>
+
+        <input id="125323337706640" type="checkbox" class="show_read">
+        <label for="125323337706640"><div class="speech right">
+<div class="speechbubble right">
+<p>You are going to learn how to code a torch that has off, dim, and on modes. You change mode by pushing a button.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+
+            <div class="activitysectioncontainer">
+            <h3>Complete the challenge</h3>
+            <input type="checkbox" class="show_hide section" id="125323337710000" checked>
+            <label for="125323337710000" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="125323337708080" type="checkbox" class="show_read">
+        <label for="125323337708080"><div class="speech right">
+<div class="speechbubble right">
+<p>Wire up your Arduino and breadboard as shown in the diagram below. This is the same as in level 1.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="01-wiring-diagram.svg" alt="Wiring diagram" class="activity centre">
+
+</div>
+<div class="activitystep">
+
+        <input id="125323337708464" type="checkbox" class="show_read">
+        <label for="125323337708464"><div class="speech right">
+<div class="speechbubble right">
+<p>Open up the Arduino sketch from level 1 and save it with the name <code>C7-level2</code>. It should look like this:</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">buttonPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">torchState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">buttonPin</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT_PULLUP</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// State change code</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">torchState</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">buttonPin</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">LOW</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// If the button is pressed</span>
+<span class="w">            </span><span class="n">torchState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">                  </span><span class="c1">// Change the torch state</span>
+<span class="w">            </span><span class="n">delay</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span><span class="w">                      </span><span class="c1">// Wait for the button to stop bouncing</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">torchState</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">buttonPin</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">LOW</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// If the button is pressed</span>
+<span class="w">            </span><span class="n">torchState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">                  </span><span class="c1">// Change the torch state</span>
+<span class="w">            </span><span class="n">delay</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span><span class="w">                      </span><span class="c1">// Wait for the button to stop bouncing</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// LED control code</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">torchState</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">torchState</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+        <input id="125323337708800" type="checkbox" class="show_read">
+        <label for="125323337708800"><div class="speech right">
+<div class="speechbubble right">
+<p>Add a new section of code to change <code>torchState</code> from 1 to 2. You’ll need to duplicate and edit this:</p>
+<div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">torchState</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">buttonPin</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">LOW</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// If the button is pressed</span>
+<span class="w">            </span><span class="n">torchState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">                  </span><span class="c1">// Change the torch state</span>
+<span class="w">            </span><span class="n">delay</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span><span class="w">                      </span><span class="c1">// Wait for the button to stop bouncing</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+</code></pre></div>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="125323337709088" type="checkbox" class="show_read">
+        <label for="125323337709088"><div class="speech right">
+<div class="speechbubble right">
+<p>Also change the code that changes the <code>torchState</code> from 1 back to 0 - make it change from 2 to 0 instead.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="125323337709376" type="checkbox" class="show_read">
+        <label for="125323337709376"><div class="speech right">
+<div class="speechbubble right">
+<p>Also add a new section of code to tell the Arduino what to do in torchState 2. You’ll need to duplicate and edit this:</p>
+<div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">torchState</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+</code></pre></div>
+
+<p>Instead of using <code>digitalWrite</code>, use <code>analogWrite</code>.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="125323337709664" type="checkbox" class="show_read">
+        <label for="125323337709664"><div class="speech right">
+<div class="speechbubble right">
+<p>The goal is to have the LED start off, then turn on, then go dim, then go off again, when you press the button each time.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+</div>
+
+            <label for="125323337710000" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Claim your achievement</h3>
+            <input type="checkbox" class="show_hide section" id="125323337710720" checked>
+            <label for="125323337710720" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="125323337710048" type="checkbox" class="show_read">
+        <label for="125323337710048"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>I did it!</p>
+</div>
+</div></label>
+
+        <input id="125323337710336" type="checkbox" class="show_read">
+        <label for="125323337710336"><div class="speech right">
+<div class="speechbubble right">
+<p>That’s fantastic!</p>
+<p>Now claim your achievement.</p>
+<ol>
+<li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive.</li>
+<li>Complete a claim slip. The code is <code>C7</code> and the level is <code>2</code>.</li>
+</ol>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="claim-slip-C7-L2.svg" alt="Sample claim slip" class="claimslip centre">
+
+</div>
+</div>
+
+            <label for="125323337710720" class="activitysection"></label>
+            </div>
+            </div>
+            
+    </div>
+    <div id="foot">
+<p>Author: Jared Henley</p>
+<p><strong>Copyright: © State of NSW 2023 (Department of Education)</strong> <img src="/img/by-sa.svg" alt="Creative Commons BY-SA icon" /></p>
+<p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
+<p><a href="/credits.html">Credits for material from third parties</a></p>
+<p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
+<p><em>Last built: 2024-08-19 10:49:12.360041</em></p>
+<p><em>Last modified: 2023-10-05 14:18:33.179188</em></p>
+    </div>
+</div>
+</body>
+</html>

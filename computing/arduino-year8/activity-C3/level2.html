@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arduino and basic electronics – Year 8</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/css/codehilite.css">
+<link rel="stylesheet" type="text/css" href="/css/css.css">
+<link rel="shortcut icon" href="/favicon.png">
+<meta name="description" content="An activity about using Arduino digital outputs">
+<meta name="generator" content="0cms">
+<meta name="author" content="Jared Henley">
+<meta name="copyright" content="&copy; 2024 Jared Henley">
+</head>
+<body>
+<div id="width">
+    <div id="head">
+        <a href="/">
+        <div>
+            <p>Learn Arduino</p>
+        </div>
+        </a>
+    </div>
+    <div id="content">
+<h1>Activity C3 — Digital outputs</h1>
+
+<h2><a id="level2"></a>
+<img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" />
+ Level 2 — Use a different digital output</h2>
+
+        <input id="140068219392976" type="checkbox" class="show_read">
+        <label for="140068219392976"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What are we doing in this level, sir?</p>
+</div>
+</div></label>
+
+        <input id="140068219400464" type="checkbox" class="show_read">
+        <label for="140068219400464"><div class="speech right">
+<div class="speechbubble right">
+<p>You are going to learn how to change the sketch to use a different digital output.</p>
+<p>Your challenge is to change sketch from level 1 to use pin 11 instead of pin 9.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+
+            <div class="activitysectioncontainer">
+            <h3>Complete the challenge</h3>
+            <input type="checkbox" class="show_hide section" id="140068219470048" checked>
+            <label for="140068219470048" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="140068219402048" type="checkbox" class="show_read">
+        <label for="140068219402048"><div class="speech right">
+<div class="speechbubble right">
+<p>Open up the sketch from level 1.</p>
+<p>Save your Arduino sketch. Name it <code>C3-level2</code>.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140068219402336" type="checkbox" class="show_read">
+        <label for="140068219402336"><div class="speech right">
+<div class="speechbubble right">
+<p>In your sketch, there’s a line that says</p>
+<p><code>pinMode(9, OUTPUT);    // set up pin 9 as an output.</code></p>
+<p>The first “argument” to the <code>pinMode()</code> function is the pin number.  Change this from 9 to 11.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140068219402624" type="checkbox" class="show_read">
+        <label for="140068219402624"><div class="speech right">
+<div class="speechbubble right">
+<p>In the comment, change the pin number from 9 to 1 too, so that it still matches what the sketch is doing.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140068219402912" type="checkbox" class="show_read">
+        <label for="140068219402912"><div class="speech right">
+<div class="speechbubble right">
+<p>I can give you a hint if you need it, but have a go by yourself first.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="140068219403248"><label for="140068219403248" class="hint"></label><div class="hint">
+            
+<div>
+<p>Your entire <code>setup()</code> function should look like this:</p>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 11 as an output.</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+
+            </div></div>
+            
+</div>
+<div class="activitystep">
+
+        <input id="140068219403344" type="checkbox" class="show_read">
+        <label for="140068219403344"><div class="speech right">
+<div class="speechbubble right">
+<p>In your sketch, there are two calls to <code>digitalWrite()</code>. Change the pin number in both of them from 9 to 11.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140068219403680" type="checkbox" class="show_read">
+        <label for="140068219403680"><div class="speech right">
+<div class="speechbubble right">
+<p>I can give you a hint if you need it, but have a go by yourself first.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="140068219404016"><label for="140068219404016" class="hint"></label><div class="hint">
+            
+<div>
+<p>Your entire <code>loop()</code> function should look like this:</p>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// turn the LED on</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w">             </span><span class="c1">// wait for 1 tenth second</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn the LED off</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for 1 second</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+
+            </div></div>
+            
+
+        <input id="140068219404064" type="checkbox" class="show_read">
+        <label for="140068219404064"><div class="speech right">
+<div class="speechbubble right">
+<p>Now upload the sketch to an Arduino that has a Thinkershield attached.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+</div>
+
+            <label for="140068219470048" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Claim your achievement</h3>
+            <input type="checkbox" class="show_hide section" id="140068219471392" checked>
+            <label for="140068219471392" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="140068222136784" type="checkbox" class="show_read">
+        <label for="140068222136784"><div class="speech right">
+<div class="speechbubble right">
+<p>Did LED 11 flash?</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140068219470336" type="checkbox" class="show_read">
+        <label for="140068219470336"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>I did it!</p>
+</div>
+</div></label>
+
+        <input id="140068219470624" type="checkbox" class="show_read">
+        <label for="140068219470624"><div class="speech right">
+<div class="speechbubble right">
+<p>That’s fantastic!</p>
+<p>Now claim your achievement.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="140068219470912" type="checkbox" class="show_read">
+        <label for="140068219470912"><div class="speech right">
+<div class="speechbubble right">
+<ol>
+<li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive. <a href="../activity-I1">Here are instructions about how to do this.</a></li>
+<li>Complete a claim slip. The code is <code>C3</code> and the level is <code>2</code>.</li>
+</ol>
+<p>Here’s an example:</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="claim-slip-C3-L2.svg" alt="Sample claim slip" class="claimslip centre">
+
+</div>
+</div>
+
+            <label for="140068219471392" class="activitysection"></label>
+            </div>
+            </div>
+            
+    </div>
+    <div id="foot">
+<p>Author: Jared Henley</p>
+<p><strong>Copyright: © State of NSW 2023 (Department of Education)</strong> <img src="/img/by-sa.svg" alt="Creative Commons BY-SA icon" /></p>
+<p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
+<p><a href="/credits.html">Credits for material from third parties</a></p>
+<p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
+<p><em>Last built: 2024-08-19 10:49:08.034284</em></p>
+<p><em>Last modified: 2024-05-13 13:24:07.029995</em></p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,354 @@
+/* Main layout */
+@font-face {
+font-family: 'SiteFont';
+font-style: normal;
+font-weight: 800;
+src: url('fonts/EncodeSans-Black.ttf');
+}
+
+@font-face {
+font-family: 'SiteFont';
+font-style: normal;
+font-weight: 400;
+src: url('fonts/ABeeZee-Regular.ttf');
+}
+
+@font-face {
+font-family: 'SiteFont';
+font-style: italic;
+font-weight: 400;
+src: url('fonts/ABeeZee-Italic.ttf');
+}
+
+:fullscreen, ::backdrop {
+    background-color: transparent;
+}
+
+body {
+    font-family: SiteFont;
+}
+
+.jquiz-contrast-with-bg {
+    background: rgba(255,255,255,0.5);
+}
+
+.jquiz-container {
+    padding: 1em;
+    text-align: center;
+    font-size: 3vmin;
+}
+
+#jquiz-credits {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+#jquiz-credits p {
+    text-align: center;
+    margin: 1ex;
+}
+
+.jquiz-container .jquiz-quiz {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.jquiz-container .jquiz-quiz .hide {
+    display: none;
+}
+
+.jquiz-container .jquiz-title {
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.jquiz-container .jquiz-question {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 100vw;
+}
+
+.jquiz-container .jquiz-answers {
+    position: absolute;
+    top: 50vh;
+    left: 0;
+    height: 43vh;
+    width: 100vw;
+    padding: 0;
+}
+
+.jquiz-container .jquiz-bottombar {
+    position: absolute;
+    top: 93vh;
+    left: 0;
+    height: 7vh;
+    width: 100vw;
+    z-index: 1;
+    background: rgba(255,255,255,0.5);
+}
+
+/* Start buttons */
+.jquiz-container input, .jquiz-container select {
+    background: #4DA5FF;
+    border: solid #295787 0.2vh;
+    margin: 1vh;
+    border-radius: 0.2em;
+    padding: 1vh;
+    font-family: SiteFont;
+    font-size: 2.6vh;
+}
+
+/* Images */
+.jquiz-container .jquiz-question img {
+    height: 45vh;
+}
+.jquiz-container .jquiz-answers img {
+    height: 18vh;
+    margin-right: 1em;
+    margin-left: 0.5em;
+}
+/* Style questions */
+.jquiz-container .jquiz-question {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 8vmin;
+
+}
+/* Style answers */
+.jquiz-container .jquiz-answers {
+    display: grid;
+}
+.jquiz-container .jquiz-2-answers {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.jquiz-container .jquiz-3-answers {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.jquiz-container .jquiz-4-answers {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.jquiz-container .jquiz-5-answers, .jquiz-6-answers {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.jquiz-container .jquiz-answers label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0.5vh 1vw;
+    border: solid #888 1vh;
+    background: #eee;
+    text-align: center;
+    font-size: 4vmin;
+}
+
+.jquiz-container .jquiz-answers input {
+    display: none;
+}
+
+.jquiz-container .jquiz-answers input:hover :not(.correct, .incorrect) + label {
+    background-color: #20B0C5;
+    border-color: #2F808D;
+}
+
+.jquiz-container .jquiz-answers input:checked + label {
+    background-color: #20C59B;
+    border-color: #2F8D75;
+}
+
+.jquiz-container .jquiz-answers input[type="radio"] + label {
+    border-radius: 2em;
+}
+
+.jquiz-container .jquiz-answers input[type="checkbox"] + label {
+    border-radius: 0;
+}
+
+.jquiz-container .jquiz-answers input.correct + label {
+    border-color: green;
+}
+
+.jquiz-container .jquiz-answers input.incorrect + label {
+    border-color: red;
+}
+
+.jquiz-container .jquiz-auto .jquiz-answers input.correct + label {
+    background-color: #4D994D;
+    border-color: green;
+}
+
+.jquiz-container .jquiz-auto .jquiz-answers input.incorrect + label {
+    background-color: #994D4D;
+    border-color: red;
+}
+
+/* Splash screen */
+.jquiz-container .jquiz-splash {
+    width: 100%;
+    height: 100%;
+    font-size: 20vmin;
+    color: white;
+}
+
+/* Style scoreboard */
+.jquiz-container .jquiz-scoreboard {
+    width: 100%;
+    height: 100%;
+    font-size: 12vmin;
+    color: white;
+}
+.jquiz-container .jquiz-scoreboard span.score {
+    font-size: 20vmin;
+    font-weight: bold;
+}
+
+/* Style bottom bar content */
+.jquiz-container .jquiz-bottombar .jquiz-quit {
+    content: url("quit-icon.svg");
+    width: 3vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 1vh;
+    padding: 1vh;
+}
+
+.jquiz-container .jquiz-bottombar .jquiz-qnum {
+    position: absolute;
+    left: 4vw;
+    bottom: 0;
+    margin: 1vh;
+    padding: 1vh;
+    font-size: 3vh;
+}
+
+.jquiz-container .jquiz-bottombar .jquiz-score {
+    position: absolute;
+    left: 30vw;
+    right: 30vw;
+    bottom: 0;
+    margin: 1vh;
+    padding: 1vh;
+    font-size: 3vh;
+}
+
+.jquiz-container .jquiz-auto .jquiz-score,
+.jquiz-container .jquiz-auto .jquiz-lock,
+.jquiz-container .jquiz-auto .jquiz-next {
+    display:none !important;
+}
+
+.jquiz-container .jquiz-bottombar input:disabled {
+    filter: grayscale(100%);
+    display: none;
+}
+
+.jquiz-container .jquiz-bottombar .jquiz-lock, .jquiz-bottombar .jquiz-next {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/*
+ * Printable quiz
+ */
+
+.jquiz-print {
+    padding: 1em;
+}
+
+/* Images */
+.jquiz-print .jquiz-question img {
+    vertical-align: top;
+    height: 8em;
+    margin-left: 2em;
+}
+.jquiz-print .jquiz-answer img {
+    vertical-align: top;
+    height: 4em;
+    margin-right: 1em;
+    margin-left: 0.5em;
+}
+/* Style questions */
+.jquiz-print .jquiz-question {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 1ex;
+    padding-bottom: 1ex;
+    margin-left: 2em;
+}
+.jquiz-print .jquiz-question::before {
+    content: counter(question_number) ". ";
+}
+.jquiz-print .jquiz-question div {
+    display: inline-block;
+}
+/* Style answers */
+.jquiz-print .jquiz-answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+    margin-left: 7ex;
+}
+
+.jquiz-print .jquiz-answer {
+    display: flex;
+    align-items: flex-start;
+}
+
+.jquiz-print .jquiz-answer * {
+    vertical-align: top;
+}
+
+.jquiz-print .jquiz-answer sub {
+    vertical-align: revert;
+}
+
+.jquiz-print .jquiz-answer input {
+    display: block;
+    height: 1em;
+}
+
+.jquiz-print .jquiz-answer label {
+    display: flex;
+}
+
+#show-answers {
+    margin-top: 2em;
+}
+
+/* Question numbering - required because of .nobreak divs*/
+}
+.jquiz-print {
+    counter-reset: question_number;
+}
+.nobreak {
+    counter-increment: question_number;
+}
+
+@media print {
+    #show-answers {
+        display: none;
+    }
+
+    .nobreak {
+        break-inside: avoid;
+    }
+}

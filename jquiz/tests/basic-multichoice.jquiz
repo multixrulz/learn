@@ -1,0 +1,108 @@
+% jquiz Test Quiz
+% multichoice
+text:What is 2+3?
+image:question.svg
+@answer
+text: 4 is a really long answer to test how wrapping etc works.
+image:thing.svg
+correct: false
+@answer
+text: 5
+correct: true
+@answer
+image: 6.png
+correct: false
+@answer
+text: 23
+image:
+correct: false
+
+% multichoice
+text: What is 3+2?<sub>subscript</sub>
+@answer
+text:No idea<sub>subscript</sub>
+correct: false
+@answer
+text:Same as 2+3<sup>superscript</sup>
+correct: true
+@answer
+text:15<sup>superscript</sup>
+correct:false
+@answer
+text: 7
+correct: false
+
+% multichoice
+text: What is 3+2?
+@answer
+text:No idea
+correct: false
+@answer
+text:Same as 2+3
+correct: true
+@answer
+text:5
+correct:true
+@answer
+text: 7
+correct: false
+
+% multichoice
+text: There are 2 answers
+@answer
+text:True
+correct: true
+@answer
+text: False
+correct: false
+
+% multichoice
+text: There are 3 answers
+@answer
+text:True
+correct: true
+@answer
+text: False
+correct: false
+@answer
+text: Distractor
+correct: false
+
+% multichoice
+text: There are 5 answers
+@answer
+text:True
+correct: true
+@answer
+text: False
+correct: false
+@answer
+text: Distractor 1
+correct: false
+@answer
+text: Distractor 2
+correct: false
+@answer
+text: Distractor 3
+correct: false
+
+% multichoice
+text: There are 6 answers
+@answer
+text:True
+correct: true
+@answer
+text: False
+correct: false
+@answer
+text: Distractor 1
+correct: false
+@answer
+text: Distractor 2
+correct: false
+@answer
+text: Distractor 3
+correct: false
+@answer
+text: Distractor 4
+correct: false

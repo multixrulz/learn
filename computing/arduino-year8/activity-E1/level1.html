@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arduino and basic electronics – Year 8</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/css/codehilite.css">
+<link rel="stylesheet" type="text/css" href="/css/css.css">
+<link rel="shortcut icon" href="/favicon.png">
+<meta name="description" content="How to connect an LED to an Arduino">
+<meta name="generator" content="0cms">
+<meta name="author" content="Jared Henley">
+<meta name="copyright" content="&copy; 2024 Jared Henley">
+</head>
+<body>
+<div id="width">
+    <div id="head">
+        <a href="/">
+        <div>
+            <p>Learn Arduino</p>
+        </div>
+        </a>
+    </div>
+    <div id="content">
+<h1>Activity E1 — Wiring an LED</h1>
+
+<h2><a id="level1"></a>
+<img src="/computing/arduino-year8/img/award.svg" />
+ Level 1 — Connect an LED to your Arduino board</h2>
+
+        <input id="128805768666368" type="checkbox" class="show_read">
+        <label for="128805768666368"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What are we doing in this level, sir?</p>
+</div>
+</div></label>
+
+        <input id="128805768671984" type="checkbox" class="show_read">
+        <label for="128805768671984"><div class="speech right">
+<div class="speechbubble right">
+<p>You’re going to connect an LED to your Arduino board.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+
+            <div class="activitysectioncontainer">
+            <h3>Upload a sketch to your Arduino</h3>
+            <input type="checkbox" class="show_hide section" id="128805768674048" checked>
+            <label for="128805768674048" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="128805768668480" type="checkbox" class="show_read">
+        <label for="128805768668480"><div class="speech right">
+<div class="speechbubble right">
+<p>Start the Arduino IDE.</p>
+<p>Copy and paste the sketch below into it, and upload it to your Arduino.</p>
+<p>If you don’t remember how to do this, read <a href="../activity-C1" target="_blank">C1 - Upload to an Arduino</a> again.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 13 as an output.</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w"> </span><span class="c1">// turn the LED on</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for 1 second</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn the LED off</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for 1 second</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+
+            <label for="128805768674048" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Connect the LED</h3>
+            <input type="checkbox" class="show_hide section" id="128805768743104" checked>
+            <label for="128805768743104" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="128805768674096" type="checkbox" class="show_read">
+        <label for="128805768674096"><div class="speech right">
+<div class="speechbubble right">
+<p>Get out the LED, resistor, and wires from your set of parts.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="128805768674432" type="checkbox" class="show_read">
+        <label for="128805768674432"><div class="speech right">
+<div class="speechbubble right">
+<p>Look closely at the LED. Inside it has a large metal piece and a small metal piece.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="01-LED.svg" alt="An LED" class="activity centre">
+
+
+        <input id="128805768674768" type="checkbox" class="show_read">
+        <label for="128805768674768"><div class="speech right">
+<div class="speechbubble right">
+<p>Connect the LED and resistor to the Arduino using wires, as you see in the picture.</p>
+<p>You connect the big side of the LED to GND, and the small side to the resistor.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="02-connect-LED.svg" alt="Connecting the LED" class="activity centre">
+
+</div>
+<div class="activitystep">
+
+        <input id="128805768675152" type="checkbox" class="show_read">
+        <label for="128805768675152"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>I don’t have all red wires</p>
+</div>
+</div></label>
+
+        <input id="128805768741040" type="checkbox" class="show_read">
+        <label for="128805768741040"><div class="speech right">
+<div class="speechbubble right">
+<p>That’s OK. The colour doesn&rsquo;t matter.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+<div class="activitystep">
+
+        <input id="128805768741376" type="checkbox" class="show_read">
+        <label for="128805768741376"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What is the resistor for?</p>
+</div>
+</div></label>
+
+        <input id="128805768741664" type="checkbox" class="show_read">
+        <label for="128805768741664"><div class="speech right">
+<div class="speechbubble right">
+<p>It reduces the amount of electricity that goes to the LED. If you don’t have it, your LED or your Arduino will break one day.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+<div class="activitystep">
+
+        <input id="128805768742000" type="checkbox" class="show_read">
+        <label for="128805768742000"><div class="speech right">
+<div class="speechbubble right">
+<p>Now your LED should be blinking the same as the LED on your Arduino.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+<div class="activitystep">
+
+        <input id="128805768742384" type="checkbox" class="show_read">
+        <label for="128805768742384"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>But it’s not blinking!</p>
+</div>
+</div></label>
+
+        <input id="128805768742672" type="checkbox" class="show_read">
+        <label for="128805768742672"><div class="speech right">
+<div class="speechbubble right">
+<p>Check your wiring. Try connecting the LED the other way around.</p>
+<p>If that doesn’t work, call for help.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+</div>
+
+            <label for="128805768743104" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Claim your achievement</h3>
+            <input type="checkbox" class="show_hide section" id="128805768744016" checked>
+            <label for="128805768744016" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="128805768743152" type="checkbox" class="show_read">
+        <label for="128805768743152"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>The LED is flashing!</p>
+</div>
+</div></label>
+
+        <input id="128805768743536" type="checkbox" class="show_read">
+        <label for="128805768743536"><div class="speech right">
+<div class="speechbubble right">
+<p>Congratulations.</p>
+<p>Fill out an activity claim slip. Use the code <code>E1</code>. Make sure that I see your blinking LED, so that I knows you got it to work.</p>
+<p>Here’s an example:</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="claim-slip-E1.svg" alt="Sample claim slip" class="claimslip centre">
+
+</div>
+</div>
+
+            <label for="128805768744016" class="activitysection"></label>
+            </div>
+            </div>
+            
+    </div>
+    <div id="foot">
+<p>Author: Jared Henley</p>
+<p><strong>Copyright: © State of NSW 2023 (Department of Education)</strong> <img src="/img/by-sa.svg" alt="Creative Commons BY-SA icon" /></p>
+<p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
+<p><a href="/credits.html">Credits for material from third parties</a></p>
+<p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
+<p><em>Last built: 2024-08-19 10:49:04.751638</em></p>
+<p><em>Last modified: 2023-10-05 14:18:26.769187</em></p>
+    </div>
+</div>
+</body>
+</html>

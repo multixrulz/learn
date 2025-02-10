@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arduino and basic electronics – Year 8</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/css/codehilite.css">
+<link rel="stylesheet" type="text/css" href="/css/css.css">
+<link rel="shortcut icon" href="/favicon.png">
+<meta name="description" content="An introduction to the electronics breadboard">
+<meta name="generator" content="0cms">
+<meta name="author" content="Jared Henley">
+<meta name="copyright" content="&copy; 2024 Jared Henley">
+</head>
+<body>
+<div id="width">
+    <div id="head">
+        <a href="/">
+        <div>
+            <p>Learn Arduino</p>
+        </div>
+        </a>
+    </div>
+    <div id="content">
+<h1>Activity E2 — Breadboards</h1>
+
+<h2><a id="level1"></a>
+<img src="/computing/arduino-year8/img/award.svg" />
+ Level 1 — Connect an LED to your Arduino using a breadboard</h2>
+
+        <input id="135729637634176" type="checkbox" class="show_read">
+        <label for="135729637634176"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What are we doing in this level, sir?</p>
+</div>
+</div></label>
+
+        <input id="135729637635184" type="checkbox" class="show_read">
+        <label for="135729637635184"><div class="speech right">
+<div class="speechbubble right">
+<p>You’re going to us a breadboard connect an LED to your Arduino board.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+
+            <div class="activitysectioncontainer">
+            <h3>Get to know the breadboard</h3>
+            <input type="checkbox" class="show_hide section" id="135729637637584" checked>
+            <label for="135729637637584" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="135729637631296" type="checkbox" class="show_read">
+        <label for="135729637631296"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What is a breadboard, sir?</p>
+</div>
+</div></label>
+
+        <input id="135729637636864" type="checkbox" class="show_read">
+        <label for="135729637636864"><div class="speech right">
+<div class="speechbubble right">
+<p>It’s a special board that allows you to easily connect electronic components together.</p>
+<p>If you want to know about why it’s called a breadboard, <a href="https://en.wikipedia.org/wiki/Breadboard">read this wikipedia article</a></p>
+<p>A breadboard looks like this:</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="01-breadboard.svg" alt="A breadboard" class="activity centre">
+
+
+        <input id="135729637637200" type="checkbox" class="show_read">
+        <label for="135729637637200"><div class="speech right">
+<div class="speechbubble right">
+<p>Inside the breadboard, groups of holes are connected together. The connections are highlighted in the picture below. Only holes in the same highlight are connected together.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="02-breadboard-connections.svg" alt="Breadboard connections" class="activity centre">
+
+</div>
+</div>
+
+            <label for="135729637637584" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Connect the LED</h3>
+            <input type="checkbox" class="show_hide section" id="135729637705632" checked>
+            <label for="135729637705632" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="135729637637632" type="checkbox" class="show_read">
+        <label for="135729637637632"><div class="speech right">
+<div class="speechbubble right">
+<p>Get out the LED, resistor, wires and breadboard from your set of parts.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="135729637637968" type="checkbox" class="show_read">
+        <label for="135729637637968"><div class="speech right">
+<div class="speechbubble right">
+<p>Connect the components as shown in the picture below:</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="03-breadboard-led.svg" alt="Connecting an LED to the arduino using a breadboard" class="activity centre">
+
+</div>
+<div class="activitystep">
+
+        <input id="135729637703952" type="checkbox" class="show_read">
+        <label for="135729637703952"><div class="speech right">
+<div class="speechbubble right">
+<p>Start the Arduino IDE and put the sketch below into it.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 5 as an output.</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn the LED on</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w">             </span><span class="c1">// wait for 1 tenth second</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">   </span><span class="c1">// turn the LED off</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for 1 second</span>
+<span class="p">}</span>
+</code></pre></div>
+
+        <input id="135729637704288" type="checkbox" class="show_read">
+        <label for="135729637704288"><div class="speech right">
+<div class="speechbubble right">
+<p>Upload the sketch.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+<div class="activitystep">
+
+        <input id="135729637704624" type="checkbox" class="show_read">
+        <label for="135729637704624"><div class="speech right">
+<div class="speechbubble right">
+<p>Now your LED should be blinking the same as the LED on your Arduino.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+<div class="activitystep">
+
+        <input id="135729637705008" type="checkbox" class="show_read">
+        <label for="135729637705008"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>But it’s not blinking!</p>
+</div>
+</div></label>
+
+        <input id="135729637705296" type="checkbox" class="show_read">
+        <label for="135729637705296"><div class="speech right">
+<div class="speechbubble right">
+<p>Check your wiring. Try connecting the LED the other way around.</p>
+<p>If that doesn’t work, call for help.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+</div>
+
+            <label for="135729637705632" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Claim your achievement</h3>
+            <input type="checkbox" class="show_hide section" id="135729637706544" checked>
+            <label for="135729637706544" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="135729637705680" type="checkbox" class="show_read">
+        <label for="135729637705680"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>The LED is flashing!</p>
+</div>
+</div></label>
+
+        <input id="135729637706064" type="checkbox" class="show_read">
+        <label for="135729637706064"><div class="speech right">
+<div class="speechbubble right">
+<p>Congratulations.</p>
+<p>Fill out an activity claim slip. Use the code <code>E2</code>. Make sure that I see your blinking LED, so that I knows you got it to work.</p>
+<p>Here’s an example:</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="claim-slip-E2.svg" alt="Sample claim slip" class="claimslip centre">
+
+</div>
+</div>
+
+            <label for="135729637706544" class="activitysection"></label>
+            </div>
+            </div>
+            
+    </div>
+    <div id="foot">
+<p>Author: Jared Henley</p>
+<p><strong>Copyright: © State of NSW 2023 (Department of Education)</strong> <img src="/img/by-sa.svg" alt="Creative Commons BY-SA icon" /></p>
+<p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
+<p><a href="/credits.html">Credits for material from third parties</a></p>
+<p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
+<p><em>Last built: 2024-08-19 10:49:03.378285</em></p>
+<p><em>Last modified: 2023-10-05 14:18:26.769187</em></p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arduino and basic electronics – Year 8</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/css/codehilite.css">
+<link rel="stylesheet" type="text/css" href="/css/css.css">
+<link rel="shortcut icon" href="/favicon.png">
+<meta name="description" content="An activity about using Arduino digital outputs">
+<meta name="generator" content="0cms">
+<meta name="author" content="Jared Henley">
+<meta name="copyright" content="&copy; 2024 Jared Henley">
+</head>
+<body>
+<div id="width">
+    <div id="head">
+        <a href="/">
+        <div>
+            <p>Learn Arduino</p>
+        </div>
+        </a>
+    </div>
+    <div id="content">
+<h1>Activity C3 — Digital outputs</h1>
+
+<h2><a id="level1"></a>
+<img src="/computing/arduino-year8/img/award.svg" />
+ Level 1 — Use a digital output</h2>
+
+        <input id="135517378583808" type="checkbox" class="show_read">
+        <label for="135517378583808"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What are we doing in this level, sir?</p>
+</div>
+</div></label>
+
+        <input id="135517378588944" type="checkbox" class="show_read">
+        <label for="135517378588944"><div class="speech right">
+<div class="speechbubble right">
+<p>You are going to start with an empty new sketch and learn how to control a digital output.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+
+            <div class="activitysectioncontainer">
+            <h3>Complete the challenge</h3>
+            <input type="checkbox" class="show_hide section" id="135517378659536" checked>
+            <label for="135517378659536" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="135517378586448" type="checkbox" class="show_read">
+        <label for="135517378586448"><div class="speech right">
+<div class="speechbubble right">
+<p>Create a new sketch in the Arduino IDE. It will look like this:</p>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// put your setup code here, to run once:</span>
+
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// put your main code here, to run repeatedly:</span>
+
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+<div class="activitystep">
+
+        <input id="135517378591008" type="checkbox" class="show_read">
+        <label for="135517378591008"><div class="speech right">
+<div class="speechbubble right">
+<p>Save your Arduino sketch. Name it <code>C3-level1</code>.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="135517378591296" type="checkbox" class="show_read">
+        <label for="135517378591296"><div class="speech right">
+<div class="speechbubble right">
+<p>Digital pins on an Arduino can be inputs or outputs, depending on what you want them to be.</p>
+<p>The <code>pinMode()</code> function is how you tell the Arduino that a pin is going to be an input or output.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="135517378591584" type="checkbox" class="show_read">
+        <label for="135517378591584"><div class="speech right">
+<div class="speechbubble right">
+<p>Tell the Arduino that pin 9 is an output, by putting the following code inside the <code>setup()</code> function.</p>
+<div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 9 as an output.</span>
+</code></pre></div>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="135517378591872" type="checkbox" class="show_read">
+        <label for="135517378591872"><div class="speech right">
+<div class="speechbubble right">
+<p>I can give you a hint if you need it, but have a go by yourself first.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="135517378658384"><label for="135517378658384" class="hint"></label><div class="hint">
+            
+<div>
+<p>Your entire <code>setup()</code> function should look like this:</p>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">    </span><span class="c1">// set up pin 9 as an output.</span>
+<span class="p">}</span>
+</code></pre></div>
+
+        <input id="135517378592208" type="checkbox" class="show_read">
+        <label for="135517378592208"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>Why did you delete the bit that said <code>// put your setup code here, to run once:</code>?</p>
+</div>
+</div></label>
+
+        <input id="135517378592496" type="checkbox" class="show_read">
+        <label for="135517378592496"><div class="speech right">
+<div class="speechbubble right">
+<p>Anything you see after a double slash (that’s <code>//</code>) is a comment. It is there to help people read the sketch.</p>
+<p>It means nothing to the Arduino, so deleting it doesn’t make any difference to the sketch.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+
+            </div></div>
+            
+</div>
+<div class="activitystep">
+
+        <input id="135517378658480" type="checkbox" class="show_read">
+        <label for="135517378658480"><div class="speech right">
+<div class="speechbubble right">
+<p>The Arduino knows that pin 9 is an output, so now you can turn it on and off.</p>
+<p>Let’s just flash it on briefly each second.  Put this code into the <code>loop()</code> function:</p>
+<div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn the LED on</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w">             </span><span class="c1">// wait for 1 tenth second</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">   </span><span class="c1">// turn the LED off</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for 1 second</span>
+</code></pre></div>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="135517378658768" type="checkbox" class="show_read">
+        <label for="135517378658768"><div class="speech right">
+<div class="speechbubble right">
+<p>I can give you a hint if you need it, but have a go by yourself first.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="135517378659104"><label for="135517378659104" class="hint"></label><div class="hint">
+            
+<div>
+<p>Your entire <code>loop()</code> function should look like this:</p>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w">  </span><span class="c1">// turn the LED on</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w">             </span><span class="c1">// wait for 1 tenth second</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span><span class="w">   </span><span class="c1">// turn the LED off</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w">            </span><span class="c1">// wait for 1 second</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+
+            </div></div>
+            
+
+        <input id="135517378659152" type="checkbox" class="show_read">
+        <label for="135517378659152"><div class="speech right">
+<div class="speechbubble right">
+<p>Now upload the sketch to an Arduino that has a Thinkershield attached.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+</div>
+
+            <label for="135517378659536" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Claim your achievement</h3>
+            <input type="checkbox" class="show_hide section" id="135517378661216" checked>
+            <label for="135517378661216" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="135517378659584" type="checkbox" class="show_read">
+        <label for="135517378659584"><div class="speech right">
+<div class="speechbubble right">
+<p>Did LED 9 flash?</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="135517378659968" type="checkbox" class="show_read">
+        <label for="135517378659968"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>I did it!</p>
+</div>
+</div></label>
+
+        <input id="135517378660352" type="checkbox" class="show_read">
+        <label for="135517378660352"><div class="speech right">
+<div class="speechbubble right">
+<p>That’s fantastic!</p>
+<p>Now claim your achievement.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="135517378660736" type="checkbox" class="show_read">
+        <label for="135517378660736"><div class="speech right">
+<div class="speechbubble right">
+<ol>
+<li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive. <a href="../activity-I1">Here are instructions about how to do this.</a></li>
+<li>Complete a claim slip. The code is <code>C3</code> and the level is <code>1</code>.</li>
+</ol>
+<p>Here’s an example:</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="claim-slip-C3-L1.svg" alt="Sample claim slip" class="claimslip centre">
+
+</div>
+</div>
+
+            <label for="135517378661216" class="activitysection"></label>
+            </div>
+            </div>
+            
+    </div>
+    <div id="foot">
+<p>Author: Jared Henley</p>
+<p><strong>Copyright: © State of NSW 2023 (Department of Education)</strong> <img src="/img/by-sa.svg" alt="Creative Commons BY-SA icon" /></p>
+<p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
+<p><a href="/credits.html">Credits for material from third parties</a></p>
+<p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
+<p><em>Last built: 2024-08-19 10:49:08.130727</em></p>
+<p><em>Last modified: 2024-08-18 20:58:21.340207</em></p>
+    </div>
+</div>
+</body>
+</html>

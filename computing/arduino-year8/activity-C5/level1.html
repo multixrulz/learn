@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arduino and basic electronics – Year 8</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/css/codehilite.css">
+<link rel="stylesheet" type="text/css" href="/css/css.css">
+<link rel="shortcut icon" href="/favicon.png">
+<meta name="description" content="An activity about using analogue inputs on an Arduino">
+<meta name="generator" content="0cms">
+<meta name="author" content="Jared Henley">
+<meta name="copyright" content="&copy; 2025 Jared Henley">
+</head>
+<body>
+<div id="width">
+    <div id="head">
+        <a href="/">
+        <div>
+            <p>Learn Arduino</p>
+        </div>
+        </a>
+    </div>
+    <div id="content">
+<h1>C5 — Analogue inputs</h1>
+
+<h2><a id="level1"></a>
+<img src="/computing/arduino-year8/img/award.svg" />
+ Level 1 — Numbers from an analogue input</h2>
+
+        <input id="132575202876384" type="checkbox" class="show_read">
+        <label for="132575202876384"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What are we doing in this level, sir?</p>
+</div>
+</div></label>
+
+        <input id="132575202877392" type="checkbox" class="show_read">
+        <label for="132575202877392"><div class="speech right">
+<div class="speechbubble right">
+<p>You are going to learn how to use the serial monitor to see what an analogue input is doing.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+
+            <div class="activitysectioncontainer">
+            <h3>Complete the challenge</h3>
+            <input type="checkbox" class="show_hide section" id="132575202878064" checked>
+            <label for="132575202878064" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="132575202808272" type="checkbox" class="show_read">
+        <label for="132575202808272"><div class="speech right">
+<div class="speechbubble right">
+<p>Open a new Arduino window with a blank sketch in it.</p>
+<p>Save your Arduino sketch. Name it <code>C5-level1</code>.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="132575202808912" type="checkbox" class="show_read">
+        <label for="132575202808912"><div class="speech right">
+<div class="speechbubble right">
+<p>Copy the sketch below into your Arduino window. Remember to delete the blank sketch first.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">sensorPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A5</span><span class="p">;</span><span class="w">      </span><span class="c1">// the input pin for the potentiometer on the ThinkerShield</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">sensorValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">     </span><span class="c1">// variable to store the value coming from the sensor</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span><span class="w">  </span><span class="c1">// Set up serial data communication</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">sensorValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">analogRead</span><span class="p">(</span><span class="n">sensorPin</span><span class="p">);</span><span class="w">     </span><span class="c1">// read the value from the sensor</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;The sensor value is: &quot;</span><span class="p">);</span><span class="w">   </span><span class="c1">// send the words over the serial data connection</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">sensorValue</span><span class="p">);</span><span class="w">             </span><span class="c1">// send the sensor value over the serial data connection</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w">                              </span><span class="c1">// wait for 0.1 seconds so that we only send the sensor value back 10 times a second.</span>
+<span class="p">}</span>
+</code></pre></div>
+
+        <input id="132575202160592" type="checkbox" class="show_read">
+        <label for="132575202160592"><div class="speech right">
+<div class="speechbubble right">
+<p>Upload this sketch to your Arduino.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+<div class="activitystep">
+
+        <input id="132575202161200" type="checkbox" class="show_read">
+        <label for="132575202161200"><div class="speech right">
+<div class="speechbubble right">
+<p>Now open the Arduino &ldquo;serial monitor&rdquo;. You do this by choosing &ldquo;Serial monitor&rdquo; from the &ldquo;Tools&rdquo; menu, as shown in the picture.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="serial-monitor.png" alt="How to open the Arduino serial monitor" class="activity centre">
+
+
+        <input id="132575200412016" type="checkbox" class="show_read">
+        <label for="132575200412016"><div class="speech right">
+<div class="speechbubble right">
+<p>Adjust the potentiometer (the knob) on the Arduino and look at the data coming in on the serial monitor.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="132575202809232" type="checkbox" class="show_read">
+        <label for="132575202809232"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What are those numbers, sir?</p>
+</div>
+</div></label>
+
+        <input id="132575202693184" type="checkbox" class="show_read">
+        <label for="132575202693184"><div class="speech right">
+<div class="speechbubble right">
+<p>The number is how the Arduino knows the position of the potentiometer (or knob). This kind of input is called <strong>analogue</strong>.</p>
+<p>Digital data is just &ldquo;on&rdquo; or &ldquo;off&rdquo;, <code>HIGH</code> or <code>LOW</code>, etc.</p>
+<p>Analogue data is a number. There’s a minimum and a maximum possible value for that number.  What are the smallest and biggest numbers you can get?</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+</div>
+
+            <label for="132575202878064" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Claim your achievement</h3>
+            <input type="checkbox" class="show_hide section" id="132575202810512" checked>
+            <label for="132575202810512" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="132575202809872" type="checkbox" class="show_read">
+        <label for="132575202809872"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>I did it!</p>
+</div>
+</div></label>
+
+        <input id="132575202693456" type="checkbox" class="show_read">
+        <label for="132575202693456"><div class="speech right">
+<div class="speechbubble right">
+<p>That’s fantastic!</p>
+<p>Now claim your achievement.</p>
+<ol>
+<li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive.</li>
+<li>Complete a claim slip. The code is <code>C5</code> and the level is <code>1</code>.</li>
+<li>Also write down the biggest and smallest numbers that you are able to get.</li>
+</ol>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="claim-slip-C5-L1.svg" alt="Sample claim slip" class="claimslip centre">
+
+</div>
+</div>
+
+            <label for="132575202810512" class="activitysection"></label>
+            </div>
+            </div>
+            
+    </div>
+    <div id="foot">
+<p>Author: Jared Henley</p>
+<p><strong>Copyright: © State of NSW 2023 (Department of Education)</strong> <img src="/img/by-sa.svg" alt="Creative Commons BY-SA icon" /></p>
+<p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
+<p><a href="/credits.html">Credits for material from third parties</a></p>
+<p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
+<p><em>Last built: 2025-02-09 16:30:28.165454</em></p>
+<p><em>Last modified: 2024-08-22 19:47:42.738954</em></p>
+    </div>
+</div>
+</body>
+</html>

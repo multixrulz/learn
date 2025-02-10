@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arduino and basic electronics – Year 8</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/css/codehilite.css">
+<link rel="stylesheet" type="text/css" href="/css/css.css">
+<link rel="shortcut icon" href="/favicon.png">
+<meta name="description" content="How to connecting an LDR to an Arduino">
+<meta name="generator" content="0cms">
+<meta name="author" content="Jared Henley">
+<meta name="copyright" content="&copy; 2024 Jared Henley">
+</head>
+<body>
+<div id="width">
+    <div id="head">
+        <a href="/">
+        <div>
+            <p>Learn Arduino</p>
+        </div>
+        </a>
+    </div>
+    <div id="content">
+<h1>Activity E4 — Wiring an LDR</h1>
+
+<h2><a id="level1"></a>
+<img src="/computing/arduino-year8/img/award.svg" />
+ Level 1 — Connect an LDR to the Arduino</h2>
+
+        <input id="130321384614912" type="checkbox" class="show_read">
+        <label for="130321384614912"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What are we doing in this level, sir?</p>
+</div>
+</div></label>
+
+        <input id="130321384616112" type="checkbox" class="show_read">
+        <label for="130321384616112"><div class="speech right">
+<div class="speechbubble right">
+<p>You are going to learn how to connect an LDR (light sensor) to the Arduino.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+
+            <div class="activitysectioncontainer">
+            <h3>Complete the challenge</h3>
+            <input type="checkbox" class="show_hide section" id="130321384619616" checked>
+            <label for="130321384619616" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="130321384617840" type="checkbox" class="show_read">
+        <label for="130321384617840"><div class="speech right">
+<div class="speechbubble right">
+<p>Start a new Arduino sketch and put this code into it:</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="codehilite"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">analogRead</span><span class="p">(</span><span class="n">A5</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">100</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+        <input id="130321384618176" type="checkbox" class="show_read">
+        <label for="130321384618176"><div class="speech right">
+<div class="speechbubble right">
+<p>Upload it to your Arduino.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+<div class="activitystep">
+
+        <input id="130321384618512" type="checkbox" class="show_read">
+        <label for="130321384618512"><div class="speech right">
+<div class="speechbubble right">
+<p>We connect the LDR using a circuit called a “voltage divider”. It divides the 5V from the Ardiuno between the LDR and a resistor.</p>
+<p>Without that resistor, we wouldn’t be able to use the LDR.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="01-volt-divider.svg" alt="Connecting an LDR to an Arduino" class="activity centre">
+
+
+        <input id="130321384618848" type="checkbox" class="show_read">
+        <label for="130321384618848"><div class="speech right">
+<div class="speechbubble right">
+<p>This is how you actually connect the wires. Be sure to use the resistor with the right colours on it!</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="02-wiring-diagram.svg" alt="Connecting an LDR to an Arduino" class="activity centre">
+
+</div>
+<div class="activitystep">
+
+        <input id="130321384619232" type="checkbox" class="show_read">
+        <label for="130321384619232"><div class="speech right">
+<div class="speechbubble right">
+<p>Cover the LDR so that light can’t reach it. Then uncover it.</p>
+<p>Dit the LED go on and off?</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+</div>
+</div>
+
+            <label for="130321384619616" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Claim your achievement</h3>
+            <input type="checkbox" class="show_hide section" id="130321384685936" checked>
+            <label for="130321384685936" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="130321384619664" type="checkbox" class="show_read">
+        <label for="130321384619664"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>I did it!</p>
+</div>
+</div></label>
+
+        <input id="130321384619952" type="checkbox" class="show_read">
+        <label for="130321384619952"><div class="speech right">
+<div class="speechbubble right">
+<p>That’s fantastic!</p>
+<p>Now claim your achievement.</p>
+<ol>
+<li>Complete a claim slip. The code is <code>E4</code> and the level is <code>1</code>.</li>
+</ol>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="claim-slip-E4.svg" alt="Sample claim slip" class="claimslip centre">
+
+</div>
+</div>
+
+            <label for="130321384685936" class="activitysection"></label>
+            </div>
+            </div>
+            
+    </div>
+    <div id="foot">
+<p>Author: Jared Henley</p>
+<p><strong>Copyright: © State of NSW 2023 (Department of Education)</strong> <img src="/img/by-sa.svg" alt="Creative Commons BY-SA icon" /></p>
+<p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
+<p><a href="/credits.html">Credits for material from third parties</a></p>
+<p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
+<p><em>Last built: 2024-08-19 10:49:03.636832</em></p>
+<p><em>Last modified: 2023-10-05 14:18:33.179188</em></p>
+    </div>
+</div>
+</body>
+</html>

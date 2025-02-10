@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arduino and basic electronics – Year 8</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/css/codehilite.css">
+<link rel="stylesheet" type="text/css" href="/css/css.css">
+<link rel="shortcut icon" href="/favicon.png">
+<meta name="description" content="An activity about using analogue inputs on an Arduino">
+<meta name="generator" content="0cms">
+<meta name="author" content="Jared Henley">
+<meta name="copyright" content="&copy; 2025 Jared Henley">
+</head>
+<body>
+<div id="width">
+    <div id="head">
+        <a href="/">
+        <div>
+            <p>Learn Arduino</p>
+        </div>
+        </a>
+    </div>
+    <div id="content">
+<h1>C5 — Analogue inputs</h1>
+
+<h2><a id="level3"></a>
+<img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" />
+ Level 3 — Turn LEDs on and off with the potentiometer</h2>
+
+        <input id="129135481428960" type="checkbox" class="show_read">
+        <label for="129135481428960"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What are we doing in this level, sir?</p>
+</div>
+</div></label>
+
+        <input id="129135481429968" type="checkbox" class="show_read">
+        <label for="129135481429968"><div class="speech right">
+<div class="speechbubble right">
+<p>You’re going to turn different LEDs on and off using the potentiometer.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+
+            <div class="activitysectioncontainer">
+            <h3>Complete the challenge</h3>
+            <input type="checkbox" class="show_hide section" id="129135481430976" checked>
+            <label for="129135481430976" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="129135481360528" type="checkbox" class="show_read">
+        <label for="129135481360528"><div class="speech right">
+<div class="speechbubble right">
+<p>Open a new Arduino window with a blank sketch in it.</p>
+<p>Save your Arduino sketch. Name it <code>C5-level3</code>.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="129135481361168" type="checkbox" class="show_read">
+        <label for="129135481361168"><div class="speech right">
+<div class="speechbubble right">
+<p>Copy this sketch</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">sensorPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A5</span><span class="p">;</span><span class="w">            </span><span class="c1">// the input pin for the potentiometer on the ThinkerShield</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">sensorValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">           </span><span class="c1">// variable to store the value coming from the sensor</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">        </span><span class="c1">// declare pin 8 as an OUTPUT</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">        </span><span class="c1">// declare pin 9 as an OUTPUT</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">       </span><span class="c1">// declare pin 10 as an OUTPUT</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">       </span><span class="c1">// declare pin 11 as an OUTPUT</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">       </span><span class="c1">// declare pin 12 as an OUTPUT</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">sensorValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">analogRead</span><span class="p">(</span><span class="n">sensorPin</span><span class="p">);</span><span class="w">     </span><span class="c1">// read the value from the sensor</span>
+<span class="p">}</span>
+</code></pre></div>
+
+        <input id="129135480713168" type="checkbox" class="show_read">
+        <label for="129135480713168"><div class="speech right">
+<div class="speechbubble right">
+<p>Here is some pseudocode that tells you how the LEDs should be turned on and off.  You’ll need to change this to Arduino code and put it in the <code>loop()</code> function.</p>
+<ol>
+<li>Turn off all the LEDs.</li>
+<li>If the value from the potentiometer is between 0 and 204, turn LED 8 on.</li>
+<li>If the value from the potentiometer is between 205 and 410, turn LED 9 on.</li>
+<li>If the value from the potentiometer is between 411 and 615, turn LED 10 on.</li>
+<li>If the value from the potentiometer is between 616 and 820, turn LED 11 on.</li>
+<li>If the value from the potentiometer is between 821 and 1023, turn LED 12 on.</li>
+</ol>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="129135480713776" type="checkbox" class="show_read">
+        <label for="129135480713776"><div class="speech right">
+<div class="speechbubble right">
+<p>Here is some code to turn LED 10 on if the value from the potentiometer is between 300 and 400.</p>
+<div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sensorValue</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">300</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">sensorValue</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">400</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c1">// if the value from the potentiometer is between 300 and 400.</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w">                       </span><span class="c1">// turn LED 10 on</span>
+<span class="w">    </span><span class="p">}</span>
+</code></pre></div>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="129135481361488"><label for="129135481361488" class="hint"></label><div class="hint">
+            
+<div>
+<p>How would you turn all of the LEDs off? <code>digitalWrite(8, LOW);</code> turns off LED 8.</p>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="129135481430304"><label for="129135481430304" class="hint"></label><div class="hint">
+            
+<div>
+<p>Pseudocode “If the value from the potentiometer is between 0 and 204, turn LED 8 on.” needs three lines of actual code:</p>
+<div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sensorValue</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">sensorValue</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">204</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c1">// if the value from the potentiometer is between 0 and 204.</span>
+<span class="w">        </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span><span class="w">                      </span><span class="c1">// turn LED 8 on</span>
+<span class="w">    </span><span class="p">}</span>
+</code></pre></div>
+</div>
+
+            </div></div>
+            
+</div>
+
+            </div></div>
+            
+
+        <input id="129135479374192" type="checkbox" class="show_read">
+        <label for="129135479374192"><div class="speech right">
+<div class="speechbubble right">
+<p>Remember, you need to get the LEDs to come on when the potentiometer reaches a certain value. The values are listed above.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="129135481361808"><label for="129135481361808" class="hint"></label><div class="hint">
+            
+<div>
+<p>Put the code inside the <code>loop()</code> function.</p>
+</div>
+
+            </div></div>
+            
+</div>
+</div>
+
+            <label for="129135481430976" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Claim your achievement</h3>
+            <input type="checkbox" class="show_hide section" id="129135481362768" checked>
+            <label for="129135481362768" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="129135481362128" type="checkbox" class="show_read">
+        <label for="129135481362128"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>I did it!</p>
+</div>
+</div></label>
+
+        <input id="129135481245488" type="checkbox" class="show_read">
+        <label for="129135481245488"><div class="speech right">
+<div class="speechbubble right">
+<p>That’s fantastic!</p>
+<p>Now claim your achievement.</p>
+<ol>
+<li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive.</li>
+<li>Complete a claim slip. The code is <code>C5</code> and the level is <code>3</code>.</li>
+</ol>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="claim-slip-C5-L3.svg" alt="Sample claim slip" class="claimslip centre">
+
+</div>
+</div>
+
+            <label for="129135481362768" class="activitysection"></label>
+            </div>
+            </div>
+            
+    </div>
+    <div id="foot">
+<p>Author: Jared Henley</p>
+<p><strong>Copyright: © State of NSW 2023 (Department of Education)</strong> <img src="/img/by-sa.svg" alt="Creative Commons BY-SA icon" /></p>
+<p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
+<p><a href="/credits.html">Credits for material from third parties</a></p>
+<p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
+<p><em>Last built: 2025-02-09 16:30:28.262247</em></p>
+<p><em>Last modified: 2024-08-22 19:47:42.738954</em></p>
+    </div>
+</div>
+</body>
+</html>

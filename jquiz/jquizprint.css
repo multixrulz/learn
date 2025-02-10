@@ -1,0 +1,87 @@
+.jquiz-print {
+    padding: 1em;
+}
+
+/* Images */
+.jquiz-print .jquiz-question img {
+    vertical-align: top;
+    height: 8em;
+    margin-left: 2em;
+}
+.jquiz-print .jquiz-answer img {
+    vertical-align: top;
+    height: 4em;
+    margin-right: 1em;
+    margin-left: 0.5em;
+}
+/* Style questions */
+.jquiz-print .jquiz-question {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 1ex;
+    padding-bottom: 1ex;
+    margin-left: 2em;
+}
+.jquiz-print .jquiz-question::before {
+    content: counter(question_number) ". ";
+}
+.jquiz-print .jquiz-question div {
+    display: inline-block;
+}
+/* Style answers */
+.jquiz-print .jquiz-answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+    margin-left: 7ex;
+}
+
+.jquiz-print .jquiz-answer {
+    display: flex;
+    align-items: flex-start;
+}
+
+.jquiz-print .jquiz-answer * {
+    vertical-align: top;
+}
+
+.jquiz-print .jquiz-answer sub {
+    vertical-align: revert;
+}
+
+.jquiz-print .jquiz-answer input {
+    display: block;
+    height: 1em;
+}
+
+.jquiz-print .jquiz-answer label {
+    display: flex;
+}
+
+#show-answers {
+    margin-top: 2em;
+}
+
+/* Question numbering - required because of .nobreak divs*/
+}
+.jquiz-print {
+    counter-reset: question_number;
+}
+.nobreak {
+    counter-increment: question_number;
+}
+
+@media print {
+    #show-answers {
+        display: none;
+    }
+
+    .nobreak {
+        break-inside: avoid;
+    }
+
+    .background * {
+        display: none;
+    }
+}

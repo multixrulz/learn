@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arduino and basic electronics – Year 8</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/css/codehilite.css">
+<link rel="stylesheet" type="text/css" href="/css/css.css">
+<link rel="shortcut icon" href="/favicon.png">
+<meta name="description" content="An activity about using analogue inputs on an Arduino">
+<meta name="generator" content="0cms">
+<meta name="author" content="Jared Henley">
+<meta name="copyright" content="&copy; 2025 Jared Henley">
+</head>
+<body>
+<div id="width">
+    <div id="head">
+        <a href="/">
+        <div>
+            <p>Learn Arduino</p>
+        </div>
+        </a>
+    </div>
+    <div id="content">
+<h1>C6 — Analogue outputs</h1>
+
+<h2><a id="level3"></a>
+<img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" />
+ Level 3 — Make an LED “breathe”</h2>
+
+        <input id="129885780548576" type="checkbox" class="show_read">
+        <label for="129885780548576"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>What are we doing in this level, sir?</p>
+</div>
+</div></label>
+
+        <input id="129885780549584" type="checkbox" class="show_read">
+        <label for="129885780549584"><div class="speech right">
+<div class="speechbubble right">
+<p>You’ll learn how to make a LED “breath” by glowing brighter and dimmer.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+
+            <div class="activitysectioncontainer">
+            <h3>Complete the challenge</h3>
+            <input type="checkbox" class="show_hide section" id="129885780550592" checked>
+            <label for="129885780550592" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="129885780480144" type="checkbox" class="show_read">
+        <label for="129885780480144"><div class="speech right">
+<div class="speechbubble right">
+<p>Get an Arduino with a ThinkerShield attached.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="129885780480784" type="checkbox" class="show_read">
+        <label for="129885780480784"><div class="speech right">
+<div class="speechbubble right">
+<p>Open a new Arduino window with a blank sketch in it.</p>
+<p>Save your Arduino sketch. Name it <code>C6-level3</code>.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="129885779832784" type="checkbox" class="show_read">
+        <label for="129885779832784"><div class="speech right">
+<div class="speechbubble right">
+<p>Copy the sketch below into your Arduino window. Remember to delete the blank sketch first.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span><span class="w">                 </span><span class="c1">// define the pin for the LED</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">brightness</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">             </span><span class="c1">// create a variable for the brightness of the LED</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">direction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">              </span><span class="c1">// create a variable to say whether the LED should get brighter or dimmer</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span><span class="w">                </span><span class="c1">// set up the ledPin as an OUTPUT</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+        <input id="129885779833392" type="checkbox" class="show_read">
+        <label for="129885779833392"><div class="speech right">
+<div class="speechbubble right">
+<p>I want you to fill in the loop() function.</p>
+<p>First, create an <code>if</code> statement to check the <code>direction</code> variable, to know if the LED should be getting brighter or dimmer.  It should be like this:</p>
+<div class="codehilite"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">direction</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="cm">/* INSERT A NUMBER HERE */</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Increase the brightness</span>
+<span class="p">}</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">direction</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="cm">/* INSERT A NUMBER HERE */</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Decrease the brightness</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>What number should you put into the <code>if</code> statement?</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="129885780549920"><label for="129885780549920" class="hint"></label><div class="hint">
+            
+<div>
+<p>We’ll make the number <code>1</code> mean “getting brighter”, and the number <code>0</code> mean “getting dimmer”.</p>
+</div>
+
+            </div></div>
+            
+
+        <input id="129885778330256" type="checkbox" class="show_read">
+        <label for="129885778330256"><div class="speech right">
+<div class="speechbubble right">
+<p>Underneath the comment that says <code>// Increase the brightness</code>, write code that adds 1 to the <code>brightness</code> variable.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="129885780481104"><label for="129885780481104" class="hint"></label><div class="hint">
+            
+<div>
+<p>Go back up to level 1 to see how to increase the brightness.</p>
+</div>
+
+            </div></div>
+            
+
+        <input id="129885780365104" type="checkbox" class="show_read">
+        <label for="129885780365104"><div class="speech right">
+<div class="speechbubble right">
+<p>Underneath the comment that says <code>// Increase the brightness</code>, write code that adds 1 to the <code>brightness</code> variable.</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="129885780481424"><label for="129885780481424" class="hint"></label><div class="hint">
+            
+<div>
+<p>Go back up to level 1 to see how to decrease the brightness.</p>
+</div>
+
+            </div></div>
+            
+
+        <input id="129885780365648" type="checkbox" class="show_read">
+        <label for="129885780365648"><div class="speech right">
+<div class="speechbubble right">
+<p>Now change the <code>direction</code> from up to down when the LED is at full brightness, and to change the <code>direction</code> from down to up when the LED is completely off.</p>
+<p>Add this code to make that happen:</p>
+<div class="codehilite"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">brightness</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">255</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">direction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">brightness</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">direction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+
+        <input id="129885780171600" type="checkbox" class="show_read">
+        <label for="129885780171600"><div class="speech right">
+<div class="speechbubble right">
+<p>Finally, set the brightness of the LED. Do you remember how?</p>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<div class="hintbox"><input type="checkbox" class="show_hide hint" id="129885779833696"><label for="129885779833696" class="hint"></label><div class="hint">
+            
+<div>
+<p>Go back up to level 1 to see how to set the brightness.</p>
+</div>
+
+            </div></div>
+            
+</div>
+</div>
+
+            <label for="129885780550592" class="activitysection"></label>
+            </div>
+            </div>
+            
+
+
+            <div class="activitysectioncontainer">
+            <h3>Claim your achievement</h3>
+            <input type="checkbox" class="show_hide section" id="129885780482384" checked>
+            <label for="129885780482384" class="activitysection"></label>
+            <div class="activitysection">
+            
+<div>
+<div class="activitystep">
+
+        <input id="129885780481744" type="checkbox" class="show_read">
+        <label for="129885780481744"><div class="speech left">
+<img src="/computing/arduino-year8/img/student.svg" alt="student">
+
+<div class="speechbubble left">
+<p>I did it!</p>
+</div>
+</div></label>
+
+        <input id="129885780172112" type="checkbox" class="show_read">
+        <label for="129885780172112"><div class="speech right">
+<div class="speechbubble right">
+<p>That’s fantastic!</p>
+<p>Now claim your achievement.</p>
+<ol>
+<li>Copy the saved sketch to your <code>Year 8 Digital Tech</code> folder on Google Drive.</li>
+<li>Complete a claim slip. The code is <code>C6</code> and the level is <code>3</code>.</li>
+</ol>
+</div>
+<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+
+</div></label>
+<img src="claim-slip-C6-L3.svg" alt="Sample claim slip" class="claimslip centre">
+
+</div>
+</div>
+
+            <label for="129885780482384" class="activitysection"></label>
+            </div>
+            </div>
+            
+    </div>
+    <div id="foot">
+<p>Author: Jared Henley</p>
+<p><strong>Copyright: © State of NSW 2023 (Department of Education)</strong> <img src="/img/by-sa.svg" alt="Creative Commons BY-SA icon" /></p>
+<p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
+<p><a href="/credits.html">Credits for material from third parties</a></p>
+<p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
+<p><em>Last built: 2025-02-09 16:30:28.542417</em></p>
+<p><em>Last modified: 2024-08-22 19:47:42.742287</em></p>
+    </div>
+</div>
+</body>
+</html>
