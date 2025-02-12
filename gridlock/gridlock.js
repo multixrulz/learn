@@ -218,7 +218,7 @@ function gl_start_game() {
     // Get ready to go
     console.log("Gridlock: Starting the game");
     div = document.getElementById('gridlock');
-    div.requestFullscreen(); // TODO reinstate after debugging
+    div.requestFullscreen();
 }
 
 function gl_next_question() {
@@ -247,7 +247,7 @@ function gl_next_question() {
         console.log(q_index, question);
         answer = question[0]; // TODO allow selection of answer column
         answer_html = `<div>${answer}</div>`;
-        gl_write_answer(answer_html); // TODO this needs to happen as the next question is shown
+        gl_write_answer(answer_html);
     }
 
     console.log("Gridlock: Presenting next question for quiz");
@@ -263,7 +263,7 @@ function gl_next_question() {
     // Increment the question number and check if the quiz will be completed with this question
     game_data['q_index']++;
     if (game_data['q_index'] >= game_data['data'].length) {
-        complete = true; // TODO use this to end the game
+        complete = true;
         console.log("Gridlock: This is the last question. Quiz is complete.");
     } else {
         complete = false;
@@ -274,8 +274,6 @@ function gl_next_question() {
     // Play the thinking music
     gl_audio_play_thinking();
     if (!complete) {
-        // Load the next question when music for this one ends.
-        // TODO - the second question doesn't execute the callback gl_next_question
         gl_audio_thinking_ended(gl_next_question);
         console.log("Next question will be shown at the end of the music.");
     } else {
