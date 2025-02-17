@@ -1,0 +1,138 @@
+% jquiz Bunsen burner
+% multichoice
+text: What must you do before using the bunsen burner?
+@answer
+text: Tie back long hair
+correct: true
+@answer
+text: Wear safety glasses
+correct: true
+@answer
+text: Wear a lab coat
+correct: true
+@answer
+text: Move flammable things away
+correct: true
+@answer
+text: Have some food ready to eat
+correct: false
+@answer
+text: Turn on the gas taps in the lab
+correct: false
+
+% multichoice
+text: Where do you put the bunsen burner?
+@answer
+text: On a heat-proof mat away from the edge of the bench
+correct: true
+@answer
+text: On a heat-proof mat close to the edge of the bench
+correct: false
+@answer
+text: Close to the edge of the bench
+correct: false
+@answer
+text: Away from the edge of the bench
+correct: false
+
+% multichoice
+text: Should you check that the gas tube and bunsen burner are in good condition?
+@answer
+text: Yes
+correct: true
+@answer
+text: No
+correct: false
+
+% multichoice
+text: Which picture shows the correct air-hole position for lighting the bunsen burner?
+@answer
+text: Air hole closed
+image: bunsen-light.svg
+correct: true
+@answer
+text: Air hole open
+image: bunsen-light-wrong.svg
+correct: false
+
+% multichoice
+text: In what order do you do these actions?
+@answer
+text: Light the match, turn on the gas
+correct: true
+@answer
+text: Turn on the gas, light the match
+correct: false
+
+% multichoice
+text: Which pictures are true?
+@answer
+image: bunsen-hot.svg
+correct: true
+@answer
+image: bunsen-safety.svg
+correct: true
+@answer
+image: bunsen-hot-wrong.svg
+correct: false
+@answer
+image: bunsen-safety-wrong.svg
+correct: false
+
+% multichoice
+text: What is the safety flame?
+@answer
+image: bunsen-safety.svg
+correct: true
+@answer
+image: bunsen-hot.svg
+correct: false
+
+% multichoice
+text: Which part of the bunsen burner do you use to move it around?
+@answer
+text: The base
+correct: true
+@answer
+text: The air hole
+correct: false
+@answer
+text: The tube
+correct: false
+@answer
+text: The top
+correct: false
+
+% multichoice
+text: When should you reach over a lit bunsen burner?
+@answer
+text: Never
+correct: true
+@answer
+text: You are in a hurry
+correct: false
+@answer
+text: Someone is being annoying on the other side
+correct: false
+@answer
+text: You are too lazy to walk around it
+correct: false
+
+% multichoice
+text: What should your bunsen burner look like when it's on but not heating something?
+@answer
+image: bunsen-safety.svg
+correct: true
+@answer
+image: bunsen-hot.svg
+correct: false
+
+% multichoice
+text: What should your bunsen burner look like before turning off the gas?
+@answer
+image: bunsen-safety.svg
+correct: true
+@answer
+image: bunsen-hot.svg
+correct: false
+

@@ -1,0 +1,77 @@
+% jquiz States of Matter 2:<br>Particle model
+% multichoice
+text: Which state of matter has particles arranged like this:
+image: solid.svg
+@answer
+text: Solid
+correct: true
+@answer
+text: Liquid
+correct: false
+@answer
+text: Gas
+correct: false
+
+% multichoice
+text: Which state of matter has particles arranged like this:
+image: liquid.svg
+@answer
+text: Solid
+correct: false
+@answer
+text: Liquid
+correct: true
+@answer
+text: Gas
+correct: false
+
+% multichoice
+text: Which state of matter has particles arranged like this:
+image: gas.svg
+@answer
+text: Solid
+correct: false
+@answer
+text: Liquid
+correct: false
+@answer
+text: Gas
+correct: true
+
+% multichoice
+text: Which state of matter has particles packed so close together that they can’t move around?
+@answer
+text: Solid
+correct: true
+@answer
+text: Liquid
+correct: false
+@answer
+text: Gas
+correct: false
+
+% multichoice
+text: Which state of matter has particles packed close together, but they can slide past each other?
+@answer
+text: Solid
+correct: false
+@answer
+text: Liquid
+correct: true
+@answer
+text: Gas
+correct: false
+
+% multichoice
+text: Which state of matter has particles flying around?
+@answer
+text: Solid
+correct: false
+@answer
+text: Liquid
+correct: false
+@answer
+text: Gas
+correct: true
+
+

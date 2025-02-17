@@ -29,10 +29,8 @@ function gl_run() {
 
 function gl_audio_load() {
     // Sounds to play
-    //audio_intro = new Audio('media/mind-meld-v2-podcast-intro-285010.mp3');
-    audio_intro = new Audio('media/mind-meld-v2-podcast-intro-285010-short.mp3');
-    //audio_thinking = new Audio('media/intro-blaster-trio-251453.mp3');
-    audio_thinking = new Audio('media/intro-blaster-trio-251453-short.mp3');
+    audio_intro = new Audio('media/mind-meld-v2-podcast-intro-285010.mp3');
+    audio_thinking = new Audio('media/intro-blaster-trio-251453.mp3');
 }
 
 function gl_audio_stop() {
@@ -84,9 +82,7 @@ function gl_set_up_game() {
 function gl_get_data() {
     params = new URLSearchParams(window.location.search);
     game_data['src'] = params.get("src");
-    game_data['title'] = params.get("title");
-    console.log("Got the following from the GET string:");
-    console.log(game_data);
+    console.log("Got the following from the GET string:", params);
 }
 
 function gl_load_game(callback) {
@@ -96,7 +92,10 @@ function gl_load_game(callback) {
     rq.onload = function() {
         console.log("Gridlock: Parsing file for game at " + game_data['src']);
         try {
-            csv_data = CSV.parse(this.responseText);
+            lines = this.responseText.split("\n");
+            // shift returns and removes first line
+            game_data["title"] = lines.shift().split(",")[0];
+            csv_data = CSV.parse(lines.join("\n"));
         } catch (e) {
             alert(e);
             console.log("Gridlock: Parse failed with exception " + e);
@@ -114,20 +113,18 @@ function gl_load_game(callback) {
     url_no_cache = game_data['src'] + "?v=" + Date.now();
     rq.open('GET', url_no_cache, true);
     rq.send();
-    console.log(game_data);
 }
 
 function gl_show_buttons() {
     console.log("Gridlock: Creating buttons for cards and game");
     title = game_data['title'];
-    html = `<h1 class="gl-contrast-with-bg gl-title">${title}</h1>
+    html = `<img class="gl-logo-small" src="gridlock-logo.svg">
+    <h1 class="gl-contrast-with-bg gl-title">${title}</h1>
     <input type="button" value="Start game" onclick="gl_start_game();" />
-    <div id="gl-credits">
-        <p><a href="credits.html">Gridlock Credits</a></p>
-    </div>
-    <div class="gl-bottombar">
+    <div id="gl-bottombar">
         <input type="image" class="gl-quit" value="quit" onclick="window.close();" />
-        <input type="button" class="gl-back" value="Game cards" onclick="gl_print_cards();" />
+        <p><a href="credits.html">Gridlock Credits</a></p>
+        <input type="button" value="Game cards" onclick="gl_print_cards();" />
     </div>`;
     gl_write_page_html(html);
 }
@@ -150,7 +147,7 @@ function gl_print_cards() {
     </select>
     <br>
     <input type="button" value="Print game cards" onclick="gl_generate_cards();" />
-    <div class="gl-bottombar">
+    <div id="gl-bottombar">
         <input type="image" class="gl-quit" value="quit" onclick="window.close();" />
         <input type="image" class="gl-back" value="back" onclick="gl_show_buttons();" />
     </div>`;
@@ -172,7 +169,8 @@ function gl_generate_cards() {
     // Generate a set of cards
     cards = make_cards(game_data['data'].length, card_size, max_cards);
     // Create html for each card
-    var cardset_html = [`<div class="gl-cards">`];
+    var cardset_html = [`<input type="image" class="gl-back" value="back" onclick="gl_show_buttons();" />`];
+    cardset_html.push(`<div class="gl-cards">`);
     cards.forEach((card) => {
         card_html = [];
         card_html.push(`<div class="card">`);
@@ -192,8 +190,6 @@ function gl_generate_cards() {
         cardset_html.push(card_html.join("\n"));
     });
     cardset_html.push(`</div>`)
-    cardset_html.push(`<div class=gl-bottombar>`);
-    cardset_html.push(`<input type="image" class="gl-back" value="back" onclick="gl_show_buttons();" />`);
     cardset_html.push(`</div>`);
     gl_write_page_html(cardset_html.join("\n"));
 }
@@ -234,7 +230,7 @@ function gl_next_question() {
             </div>
             <div id="gl-answers">
             </div>
-            <div class="gl-bottombar">
+            <div id="gl-bottombar">
                 <input type="image" class="gl-quit" value="quit" onclick="gl_quit();" />
             </div>`;
             // TODO add a pause button, and a button to check that a particular card number has actually won.
