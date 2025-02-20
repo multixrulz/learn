@@ -223,8 +223,8 @@ function gl_next_question() {
     // Is this the first question? Initialise the page HTML
     if (q_index == 0) {
         // TODO: Link in with selection of prompt and answer columns
-        prompt_title = '<b>' + game_data['columns'][1] +
-            ' → ' + game_data['columns'][0] + '</b>';
+        prompt_title = game_data['columns'][1] +
+            ' → ' + game_data['columns'][0];
         html = `<div id="gl-prompt-label">${prompt_title}</div>
             <div id="gl-prompt">
             </div>
@@ -246,6 +246,15 @@ function gl_next_question() {
         gl_write_answer(answer_html);
     }
 
+    // Is the game complete? There are no more questions, just quit
+    if (game_data['q_index'] >= game_data['data'].length) {
+        console.log("Gridlock: This is the last question.");
+        gl_audio_thinking_ended(gl_end_game);
+        console.log("All questions have been shown. Game over.");
+        prompt_html = `<div>Game Over</div>`;
+        return
+    }
+
     console.log("Gridlock: Presenting next question for quiz");
     // Get index into data from question_order
     data_index = game_data['question_order'][q_index];
@@ -256,26 +265,16 @@ function gl_next_question() {
     prompt = question[1]; // TODO allow selection of prompt column
     prompt_html = `<div>${prompt}</div>`;
 
-    // Increment the question number and check if the quiz will be completed with this question
-    game_data['q_index']++;
-    if (game_data['q_index'] >= game_data['data'].length) {
-        complete = true;
-        console.log("Gridlock: This is the last question. Quiz is complete.");
-    } else {
-        complete = false;
-    }
     // Put the HTML into the quiz div
     gl_write_prompt(prompt_html);
 
     // Play the thinking music
     gl_audio_play_thinking();
-    if (!complete) {
-        gl_audio_thinking_ended(gl_next_question);
-        console.log("Next question will be shown at the end of the music.");
-    } else {
-        gl_audio_thinking_ended(gl_end_game);
-        console.log("All questions have been shown. Game over.");
-    }
+    gl_audio_thinking_ended(gl_next_question);
+    console.log("Next question will be shown at the end of the music.");
+
+    // Increment the question number and check if the quiz will be completed with this question
+    game_data['q_index']++;
 }
 
 function gl_end_game() {
