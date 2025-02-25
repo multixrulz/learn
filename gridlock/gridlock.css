@@ -101,6 +101,10 @@ grid-template-rows: 2fr 2fr 2fr;
 font-size: 80%;
 text-align: center;
 }
+.cardtitle{
+font-size: 120%;
+font-weight: bold;
+}
 .carditem {
 display: grid;
 align-items: center;
@@ -210,5 +214,14 @@ width: 3vh;
 
     body {
     background: unset;
+    }
+
+    #background {
+    display: none;
+    }
+
+    /* Prevent page breaks in cards */
+    .card {
+    break-inside: avoid;
     }
 }

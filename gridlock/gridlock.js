@@ -166,6 +166,8 @@ function gl_generate_cards() {
     card_size = card_sizes[card_layout];
     max_cards_combo = document.getElementById('max_cards');
     max_cards = Number(max_cards_combo.options[max_cards_combo.selectedIndex].value);
+    // Other vars to print
+    game_title = game_data['title'];
     // Generate a set of cards
     cards = make_cards(game_data['data'].length, card_size, max_cards);
     // Create html for each card
@@ -174,6 +176,7 @@ function gl_generate_cards() {
     cards.forEach((card) => {
         card_html = [];
         card_html.push(`<div class="card">`);
+        card_html.push(`<div class="cardtitle">${game_title}</div>`);
         card_html.push(`<div class="card_content layout${card_layout}">`);
         card_questions = card.setBits();
         //console.log("Creating html for card " + card_questions);

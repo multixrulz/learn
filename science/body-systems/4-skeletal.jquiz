@@ -1,0 +1,223 @@
+% jquiz
+% multichoice
+text: What does the skeletal system do?
+@answer
+text: Protect internal organs
+correct: true
+@answer
+text: Give us a shape
+correct: true
+@answer
+text: Give muscles something to move
+correct: true
+@answer
+text: Make blood cells
+correct: true
+@answer
+text: Store fat
+correct: true
+@answer
+text: Let us walk around after death
+correct: false
+
+% multichoice
+text: Bones are not alive
+@answer
+text: False
+correct: true
+@answer
+text: True
+correct: false
+
+% multichoice
+text: What are the different bone shape categories?
+@answer
+text: Long
+correct: true
+@answer
+text: Short
+correct: true
+@answer
+text: Sesamoid
+correct: true
+@answer
+text: Irregular
+correct: true
+@answer
+text: Flat
+correct: true
+@answer
+text: Spherical
+correct: false
+
+% multichoice
+text: What substance pads the places where bones meet?
+@answer
+text: Cartilage
+correct: true
+@answer
+text: Collagen
+correct: false
+@answer
+text: Hard bone tissue
+correct: false
+@answer
+text: Soft bone tissue
+correct: false
+
+% multichoice
+text: What joins bones to other bones
+@answer
+text: Ligaments
+correct: true
+@answer
+text: Tendons
+correct: false
+
+% multichoice
+text: What joins muscles to bones?
+@answer
+text: Tendons
+correct: true
+@answer
+text: Ligaments
+correct: false
+
+% multichoice
+text: What defines a long bone?
+@answer
+text: Cylinder shape
+correct: true
+@answer
+text: Longer than they are wide
+correct: true
+@answer
+text: The 16 longest bones in the body
+correct: false
+@answer
+text: Lasts a long time
+correct: false
+
+% multichoice
+text: Which of these bones are long bones?
+@answer
+text: Finger bones
+correct: true
+@answer
+text: Toe bones
+correct: true
+@answer
+text: Arm bones
+correct: true
+@answer
+text: Leg bones
+correct: true
+@answer
+text: Hip bones
+correct: false
+@answer
+text: Back bones
+correct: false
+
+% multichoice
+text: Where are short bones found?
+@answer
+text: Wrist
+correct: true
+@answer
+text: Ankle
+correct: true
+@answer
+text: Finger
+correct: false
+@answer
+text: Leg
+correct: false
+
+% multichoice
+text: What defines a sesamoid bone?
+@answer
+text: Its round shape
+correct: true
+@answer
+text: Its sesame flavour
+correct: false
+@answer
+text: Its small size
+correct: false
+@answer
+text: Its ablilty to handle pressure
+correct: false
+
+% multichoice
+text: Which of these are flat bones?
+@answer
+text: Skull bones
+correct: true
+@answer
+text: Shoulder blades
+correct: true
+@answer
+text: Pelvis
+correct: false
+@answer
+text: Ribs
+correct: false
+
+% multichoice
+text: Which of these bones has an irregular shape?
+@answer
+text: Vertebrae (back bones)
+correct: true
+@answer
+text: Knee caps
+correct: false
+@answer
+text: Shoulder blades
+correct: false
+@answer
+text: Thigh bones
+correct: false
+
+% multichoice
+text: Where do you find a hinge joint?
+@answer
+text: Fingers
+correct: true
+@answer
+text: Toes
+correct: true
+@answer
+text: Elbows
+correct: true
+@answer
+text: Knees
+correct: true
+@answer
+text: Neck
+correct: false
+@answer
+text: Shoulders
+correct: false
+
+% multichoice
+text: Where do you find a ball and socket joint?
+@answer
+text: Shoulders
+correct: true
+@answer
+text: Hips
+correct: true
+@answer
+text: Elbows
+correct: false
+@answer
+text: Knees
+correct: false
+@answer
+text: Neck
+correct: false
+@answer
+text: Arms
+correct: false
+

@@ -90,7 +90,7 @@ background: rgba(255,255,255,0.5);
 /* Start controls */
 .startup {
 display: flex;
-flex-wrap: nowrap;
+flex-wrap: wrap;
 align-items: center;
 justify-content: center;
 font-size: 5vh;
