@@ -60,21 +60,6 @@ text: villi
 correct: false
 
 % multichoice
-text: What are the two parts of a nephron?
-@answer
-text: glomerulus and tubule
-correct: true
-@answer
-text: glomerulus and bladder
-correct: false
-@answer
-text: tibia and fibula
-correct: false
-@answer
-text: axon and dendrite
-correct: false
-
-% multichoice
 text: The kidneys filter out vitamins and minerals and then re-absorb the ones you still need
 @answer
 text: True

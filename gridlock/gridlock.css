@@ -172,6 +172,7 @@ top: 10vh;
 height: 83vh;
 right: 0;
 width: 75vw;
+padding: 1ex;
 font-size: 10vmin;
 font-weight: 900;
 align-content: center;
@@ -184,6 +185,7 @@ top: 0;
 height: 14vh;
 right: 0;
 width: 75vw;
+padding: 1ex;
 font-size: 7vmin;
 align-content: center;
 }
