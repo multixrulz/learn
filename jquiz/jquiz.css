@@ -226,6 +226,7 @@ padding: 1vh;
 
 #jquiz-bottombar .jquiz-status {
 font-size: 3vh;
+padding: 0 1ex;
 }
 
 .jquiz-container .jquiz-auto .jquiz-score,

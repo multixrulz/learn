@@ -175,12 +175,3 @@ correct: true
 @answer
 text:Atrium
 correct: false
-
-% multichoice
-text: Which side of the heart pumps blood to the lungs
-@answer
-text: right
-correct: true
-@answer
-text: left
-correct: false

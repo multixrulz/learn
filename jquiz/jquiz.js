@@ -365,7 +365,7 @@ function jquiz_answer_html(question, add_div=false) {
             } else {
                 if (input_type == 'radio') {
                     input_type = 'checkbox';
-                    console.log("checkbox");
+                    console.log("nope, checkbox");
                 }
             }
         }
@@ -375,6 +375,8 @@ function jquiz_answer_html(question, add_div=false) {
         answer_id = unique_id();
         if (auto) {
             answer_num = answer_numbers[index];
+            if (answer.text === undefined)
+                answer.text = '';
             answer.text = answer_num + ': ' + answer.text;
             answer_snippet = jquiz_text_image_html(answer, quiz_data['src']);
         } else {
