@@ -446,8 +446,7 @@ function jquiz_show_scoreboard() {
         html = `
             <div class="jquiz-quiz">
             <div class="jquiz-scoreboard">
-                <p>${title}</p>
-                <p>You scored<br><span class="score">${score}</span><br> out of ${num_questions}</p>
+                <p>You scored<br><span class="score">${score}</span><br> out of ${num_questions} in the ${title} quiz</p>
             </div>
             <div id="jquiz-bottombar">
                 <input type="image" class="jquiz-close" value="close" onclick="jquiz_start_button();" />
