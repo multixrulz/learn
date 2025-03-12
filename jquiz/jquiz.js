@@ -429,6 +429,7 @@ function jquiz_show_scoreboard() {
     jquiz_audio_stop();
     jquiz_audio_play_music();
     // Display the score
+    title = quiz_data['title'];
     score = quiz_results['score'];
     num_questions = quiz_data['num_questions'];
     if (auto) {
@@ -445,6 +446,7 @@ function jquiz_show_scoreboard() {
         html = `
             <div class="jquiz-quiz">
             <div class="jquiz-scoreboard">
+                <p>${title}</p>
                 <p>You scored<br><span class="score">${score}</span><br> out of ${num_questions}</p>
             </div>
             <div id="jquiz-bottombar">
