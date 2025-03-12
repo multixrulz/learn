@@ -1,0 +1,170 @@
+% jquiz Parts of a lab report
+% multichoice
+text: A name for the experiment
+@answer
+text: Title
+correct: true
+@answer
+text: Aim
+correct: false
+@answer
+text: Hypothesis
+correct: false
+@answer
+text: Equipment and materials
+correct: false
+@answer
+text: Method
+correct: false
+@answer
+text: Results
+correct: false
+
+% multichoice
+text: A short description of what you want to find out in the experiment
+@answer
+text: Aim
+correct: true
+@answer
+text: Hypothesis
+correct: false
+@answer
+text: Equipment and materials
+correct: false
+@answer
+text: Method
+correct: false
+@answer
+text: Results
+correct: false
+@answer
+text: Discussion
+correct: false
+
+% multichoice
+text: What you think will happen in the experiment, and the reason for thinking that
+@answer
+text: Hypothesis
+correct: true
+@answer
+text: Equipment and materials
+correct: false
+@answer
+text: Method
+correct: false
+@answer
+text: Results
+correct: false
+@answer
+text: Discussion
+correct: false
+@answer
+text: Conclusion
+correct: false
+
+% multichoice
+text: A list of the things you need to do the experiment
+@answer
+text: Equipment and materials
+correct: true
+@answer
+text: Method
+correct: false
+@answer
+text: Results
+correct: false
+@answer
+text: Discussion
+correct: false
+@answer
+text: Conclusion
+correct: false
+@answer
+text: Hypothesis
+correct: false
+
+% multichoice
+text: A list of the actions you did in the experiment
+@answer
+text: Method
+correct: true
+@answer
+text: Results
+correct: false
+@answer
+text: Discussion
+correct: false
+@answer
+text: Conclusion
+correct: false
+@answer
+text: Hypothesis
+correct: false
+@answer
+text: Equipment and materials
+correct: false
+
+% multichoice
+text: The things you observed in the experiment
+@answer
+text: Results
+correct: true
+@answer
+text: Discussion
+correct: false
+@answer
+text: Conclusion
+correct: false
+@answer
+text: Hypothesis
+correct: false
+@answer
+text: Equipment and materials
+correct: false
+@answer
+text: Method
+correct: false
+
+% multichoice
+text: Explain your results and any problems that you had doing the experiment
+@answer
+text: Discussion
+correct: true
+@answer
+text: Conclusion
+correct: false
+@answer
+text: Hypothesis
+correct: false
+@answer
+text: Equipment and materials
+correct: false
+@answer
+text: Method
+correct: false
+@answer
+text: Results
+correct: false
+
+% multichoice
+text: The answer to the things you wanted to find out in the “aim”
+@answer
+text: Conclusion
+correct: true
+@answer
+text: Hypothesis
+correct: false
+@answer
+text: Equipment and materials
+correct: false
+@answer
+text: Method
+correct: false
+@answer
+text: Results
+correct: false
+@answer
+text: Discussion
+correct: false
+
+
