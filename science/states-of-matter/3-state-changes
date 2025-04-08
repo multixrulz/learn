@@ -1,0 +1,156 @@
+% jquiz States of Matter 3:<br>State Changes & Energy
+% multichoice
+text: When a solid turns into a liquid, we say that it
+@answer
+text: melts
+correct: true
+@answer
+text: condenses
+correct: false
+@answer
+text: boils
+correct: false
+@answer
+text: evaporates
+correct: false
+
+% multichoice
+text: When a gas turns into a liquid, we say that it
+@answer
+text: melts
+correct: false
+@answer
+text: condenses
+correct: true
+@answer
+text: sublimes
+correct: false
+@answer
+text: evaporates
+correct: false
+
+% multichoice
+text: When a solid turns into a gas, we say that it
+@answer
+text: sublimes
+correct: true
+@answer
+text: condenses
+correct: false
+@answer
+text: depsits
+correct: false
+@answer
+text: freezes
+correct: false
+
+% multichoice
+text: When a liquid turns into a gas, we say that it
+@answer
+text: freezes
+correct: false
+@answer
+text: sublimes
+correct: false
+@answer
+text: boils
+correct: true
+@answer
+text: evaporates
+correct: true
+
+% multichoice
+text: When a liquid turns into a solid, we say that it
+@answer
+text: freezes
+correct: true
+@answer
+text: condenses
+correct: false
+@answer
+text: boils
+correct: false
+@answer
+text: deposits
+correct: false
+
+% multichoice
+text: When a gas turns into a solid, we say that it
+@answer
+text: deposits
+correct: true
+@answer
+text: condenses
+correct: false
+@answer
+text: boils
+correct: false
+@answer
+text: sublimes
+correct: false
+
+% multichoice
+text: When we add energy to a substance, which of these things happens?
+@answer
+text: Particles move faster
+correct: true
+@answer
+text: The substance gets hotter
+correct: true
+@answer
+text: Particles stick together
+correct: false
+@answer
+text: The substance gets colder
+correct: false
+
+% multichoice
+text: When we remove energy from a substance, which of these things happens?
+@answer
+text: Particles move slower
+correct: true
+@answer
+text: The substance gets colder
+correct: true
+@answer
+text: Particles fly around
+correct: false
+@answer
+text: The substance gets hotter
+correct: false
+
+% multichoice
+text: Which list shows the states of matter ordered from lowest energy to highest energy?
+@answer
+text: Solid, Liquid, Gas
+correct: true
+@answer
+text: Solid, Gas, Liquid
+correct: false
+@answer
+text: Gas, Solid, Liquid
+correct: false
+@answer
+text: Gas, Liquid, Solid
+correct: false
+@answer
+text: Liquid, Solid, Gas
+correct: false
+@answer
+text: Liquid, Gas, Solid
+correct: false
+
+% multichoice
+text: When a substance gets hotter, which of these is true?
+@answer
+text: It gets bigger (expands)
+correct: true
+@answer
+text: It has lower density
+correct: true
+@answer
+text: Its particles move slower
+correct: false
+@answer
+text: It will float on a cooler part of the same substance
+correct: true

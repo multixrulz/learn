@@ -1,0 +1,164 @@
+% jquiz Separating mixtures
+% multichoice
+text: Which of these things is a way to separate a mixture?
+@answer
+text: Evaporation
+correct: true
+@answer
+text: Chromatography
+correct: true
+@answer
+text: Filtering
+correct: true
+@answer
+text: Separating funnel
+correct: true
+@answer
+text: Using a magnet
+correct: true
+@answer
+text: Freezing
+correct: false
+
+% multichoice
+text: Which of these things is a way to separate a mixture?
+@answer
+text: Distillation
+correct: true
+@answer
+text: Crystallisation
+correct: true
+@answer
+text: Decanting
+correct: true
+@answer
+text: Hand picking
+correct: true
+@answer
+text: Pouring
+correct: false
+@answer
+text: Boiling
+correct: false
+
+% multichoice
+text: Which mixtures can be separated by evaporation?
+@answer
+text: Salty water
+correct: true
+@answer
+text: Oil and water
+correct: false
+@answer
+text: Wood and nails
+correct: false
+@answer
+text: Dyes in textas
+correct: false
+
+
+% multichoice
+text: Which mixtures can be separated by chromatography?
+@answer
+text: Dyes in textas
+correct: true
+@answer
+text: Salty water
+correct: false
+@answer
+text: Oil and water
+correct: false
+@answer
+text: Wood and nails
+correct: false
+
+% multichoice
+text: Which mixtures can be separated by filtering?
+@answer
+text: Muddy water
+correct: true
+@answer
+text: Salty water
+correct: false
+@answer
+text: Dyes in textas
+correct: false
+@answer
+text: Wood and nails
+correct: false
+
+% multichoice
+text: Which mixtures can be separated by a separating funnel?
+@answer
+text: Oil and water
+correct: true
+@answer
+text: Salty water
+correct: false
+@answer
+text: Dyes in textas
+correct: false
+@answer
+text: Wood and nails
+correct: false
+
+% multichoice
+text: Which mixtures can be separated by a magnet?
+@answer
+text: Wood and nails
+correct: true
+@answer
+text: Oil and water
+correct: false
+@answer
+text: Salty water
+correct: false
+@answer
+text: Dyes in textas
+correct: false
+
+% multichoice
+text: Which mixtures can be separated by distillation?
+@answer
+text: Oils from plant leaves
+correct: true
+@answer
+text: Salt and pepper
+correct: false
+@answer
+text: Wood and nails
+correct: false
+@answer
+text: Dyes in textas
+correct: false
+
+% multichoice
+text: Which mixtures can be separated by crystallisation?
+@answer
+text: Wood and nails
+correct: true
+@answer
+text: Oil and water
+correct: false
+@answer
+text: Salty water
+correct: false
+@answer
+text: Dyes in textas
+correct: false
+
+% multichoice
+text: Which mixtures can be separated by decanting?
+@answer
+text: Muddy water
+correct: true
+@answer
+text: Wood and nails
+correct: false
+@answer
+text: Salty water
+correct: false
+@answer
+text: Dyes in textas
+correct: false
+
