@@ -25,43 +25,43 @@
 <h1>C7 — The torch</h1>
 
 <h2><a id="level2"></a>
-<img src="/computing/arduino-year8/img/award.svg" /><img src="/computing/arduino-year8/img/award.svg" />
+<img src="/img/award.svg" /><img src="/img/award.svg" />
  Level 2 — A 3-level torch</h2>
 
-        <input id="128227740703712" type="checkbox" class="show_read">
-        <label for="128227740703712"><div class="speech left">
-<img src="/computing/arduino-year8/img/student.svg" alt="student">
+        <input id="129912907176928" type="checkbox" class="show_read">
+        <label for="129912907176928"><div class="speech left">
+<img src="/img/student.svg" alt="student">
 
 <div class="speechbubble left">
 <p>What are we doing in this level, sir?</p>
 </div>
 </div></label>
 
-        <input id="128227740704720" type="checkbox" class="show_read">
-        <label for="128227740704720"><div class="speech right">
+        <input id="129912907177936" type="checkbox" class="show_read">
+        <label for="129912907177936"><div class="speech right">
 <div class="speechbubble right">
 <p>You are going to learn how to code a torch that has off, dim, and on modes. You change mode by pushing a button.</p>
 </div>
-<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+<img src="/img/teacher.svg" alt="teacher">
 
 </div></label>
 
 
             <div class="activitysectioncontainer">
             <h3>Complete the challenge</h3>
-            <input type="checkbox" class="show_hide section" id="128227740705392" checked>
-            <label for="128227740705392" class="activitysection"></label>
+            <input type="checkbox" class="show_hide section" id="129912907178608" checked>
+            <label for="129912907178608" class="activitysection"></label>
             <div class="activitysection">
             
 <div>
 <div class="activitystep">
 
-        <input id="128227740635280" type="checkbox" class="show_read">
-        <label for="128227740635280"><div class="speech right">
+        <input id="129912907124880" type="checkbox" class="show_read">
+        <label for="129912907124880"><div class="speech right">
 <div class="speechbubble right">
 <p>Wire up your Arduino and breadboard as shown in the diagram below. This is the same as in level 1.</p>
 </div>
-<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+<img src="/img/teacher.svg" alt="teacher">
 
 </div></label>
 <img src="01-wiring-diagram.svg" alt="Wiring diagram" class="activity centre">
@@ -69,12 +69,12 @@
 </div>
 <div class="activitystep">
 
-        <input id="128227740635920" type="checkbox" class="show_read">
-        <label for="128227740635920"><div class="speech right">
+        <input id="129912907125520" type="checkbox" class="show_read">
+        <label for="129912907125520"><div class="speech right">
 <div class="speechbubble right">
 <p>Open up the Arduino sketch from level 1 and save it with the name <code>C7-level2</code>. It should look like this:</p>
 </div>
-<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+<img src="/img/teacher.svg" alt="teacher">
 
 </div></label>
 <div class="codehilite"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
@@ -112,8 +112,8 @@
 <span class="p">}</span>
 </code></pre></div>
 
-        <input id="128227739988528" type="checkbox" class="show_read">
-        <label for="128227739988528"><div class="speech right">
+        <input id="129912906478128" type="checkbox" class="show_read">
+        <label for="129912906478128"><div class="speech right">
 <div class="speechbubble right">
 <p>Add a new section of code to change <code>torchState</code> from 1 to 2. You’ll need to duplicate and edit this:</p>
 <div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">torchState</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -124,21 +124,21 @@
 <span class="w">    </span><span class="p">}</span>
 </code></pre></div>
 </div>
-<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+<img src="/img/teacher.svg" alt="teacher">
 
 </div></label>
 
-        <input id="128227739988832" type="checkbox" class="show_read">
-        <label for="128227739988832"><div class="speech right">
+        <input id="129912906478432" type="checkbox" class="show_read">
+        <label for="129912906478432"><div class="speech right">
 <div class="speechbubble right">
 <p>Also change the code that changes the <code>torchState</code> from 1 back to 0 - make it change from 2 to 0 instead.</p>
 </div>
-<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+<img src="/img/teacher.svg" alt="teacher">
 
 </div></label>
 
-        <input id="128227738124656" type="checkbox" class="show_read">
-        <label for="128227738124656"><div class="speech right">
+        <input id="129912905154928" type="checkbox" class="show_read">
+        <label for="129912905154928"><div class="speech right">
 <div class="speechbubble right">
 <p>Also add a new section of code to tell the Arduino what to do in torchState 2. You’ll need to duplicate and edit this:</p>
 <div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">torchState</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -148,22 +148,22 @@
 
 <p>Instead of using <code>digitalWrite</code>, use <code>analogWrite</code>.</p>
 </div>
-<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+<img src="/img/teacher.svg" alt="teacher">
 
 </div></label>
 
-        <input id="128227740536624" type="checkbox" class="show_read">
-        <label for="128227740536624"><div class="speech right">
+        <input id="129912907026224" type="checkbox" class="show_read">
+        <label for="129912907026224"><div class="speech right">
 <div class="speechbubble right">
 <p>The goal is to have the LED start off, then turn on, then go dim, then go off again, when you press the button each time.</p>
 </div>
-<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+<img src="/img/teacher.svg" alt="teacher">
 
 </div></label>
 </div>
 </div>
 
-            <label for="128227740705392" class="activitysection"></label>
+            <label for="129912907178608" class="activitysection"></label>
             </div>
             </div>
             
@@ -171,24 +171,24 @@
 
             <div class="activitysectioncontainer">
             <h3>Claim your achievement</h3>
-            <input type="checkbox" class="show_hide section" id="128227740637200" checked>
-            <label for="128227740637200" class="activitysection"></label>
+            <input type="checkbox" class="show_hide section" id="129912907126800" checked>
+            <label for="129912907126800" class="activitysection"></label>
             <div class="activitysection">
             
 <div>
 <div class="activitystep">
 
-        <input id="128227740636560" type="checkbox" class="show_read">
-        <label for="128227740636560"><div class="speech left">
-<img src="/computing/arduino-year8/img/student.svg" alt="student">
+        <input id="129912907126160" type="checkbox" class="show_read">
+        <label for="129912907126160"><div class="speech left">
+<img src="/img/student.svg" alt="student">
 
 <div class="speechbubble left">
 <p>I did it!</p>
 </div>
 </div></label>
 
-        <input id="128227740536896" type="checkbox" class="show_read">
-        <label for="128227740536896"><div class="speech right">
+        <input id="129912907026496" type="checkbox" class="show_read">
+        <label for="129912907026496"><div class="speech right">
 <div class="speechbubble right">
 <p>That’s fantastic!</p>
 <p>Now claim your achievement.</p>
@@ -197,13 +197,13 @@
 <li>Complete a claim slip. The code is <code>C7</code> and the level is <code>2</code>.</li>
 </ol>
 </div>
-<img src="/computing/arduino-year8/img/teacher.svg" alt="teacher">
+<img src="/img/teacher.svg" alt="teacher">
 
 </div></label>
 </div>
 </div>
 
-            <label for="128227740637200" class="activitysection"></label>
+            <label for="129912907126800" class="activitysection"></label>
             </div>
             </div>
             
@@ -214,7 +214,7 @@
 <p>Except as otherwise noted, all material in this website is licensed under a Creative Commons Share Alike Licence (CC-BY-SA).</p>
 <p><a href="/credits.html">Credits for material from third parties</a></p>
 <p>Built with <a href="http://0cms.henley.id.au">0cms</a>.</p>
-<p><em>Last built: 2025-05-08 11:00:57.955452</em></p>
+<p><em>Last built: 2025-07-22 15:53:17.167413</em></p>
 <p><em>Last modified: 2025-05-08 10:58:22.721932</em></p>
     </div>
 </div>

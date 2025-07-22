@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="svg1"
+   sodipodi:docname="laptop.svg"
+   viewBox="0 0 60 60"
+   sodipodi:version="0.32"
+   _SVGFile__filename="oldscale/devices/cdaudio_mount.svg"
+   version="1.0"
+   y="0"
+   x="0"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     inkscape:window-y="26"
+     pagecolor="#ffffff"
+     inkscape:window-height="1151"
+     inkscape:zoom="2.3381897"
+     inkscape:window-x="0"
+     borderopacity="1.0"
+     inkscape:current-layer="svg1"
+     inkscape:cx="195.87803"
+     inkscape:cy="65.862918"
+     inkscape:window-width="1920"
+     inkscape:pageopacity="0.0"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:window-maximized="1" />
+  <g
+     id="g3979"
+     transform="matrix(1 0 0 1.0033 .22354 -.45710)">
+    <path
+       id="path3099"
+       style="stroke-linejoin:round;color:#000000;stroke:#ffffff;stroke-linecap:round;stroke-width:8.1118;fill:none"
+       d="m10.495 7c-1.0107 0.1021-1.781 0.9612-1.781 2v30.875h41.875v-30.875c0-1.108-0.892-2-2-2h-37.875c-0.069 0-0.151-0.0068-0.219 0zm-2.4373 32.938l-3.7187 7.874h50.875l-3.719-7.874h-43.437zm-3.7187 7.906v3.875c0 1.108 0.892 2 2 2h46.875c1.108 0 2-0.892 2-2v-3.875h-50.875z" />
+    <path
+       id="rect2209"
+       sodipodi:nodetypes="cccccc"
+       style="stroke-linejoin:round;fill-rule:evenodd;color:#000000;stroke:#000000;stroke-linecap:round;stroke-width:3.1199;fill:#d9dddf"
+       d="m8.839 39.878v-30.875c0-1.1076 0.892-1.9996 2-1.9996h37.875c1.108 0 2 0.892 2 2v30.875" />
+    <path
+       id="path4071"
+       sodipodi:nodetypes="ccccc"
+       style="stroke-linejoin:round;fill-rule:evenodd;color:#000000;stroke:#000000;stroke-linecap:round;stroke-width:3.1199;fill:#babec3"
+       d="m8.1724 39.941h43.459l3.708 7.875h-50.875l3.7084-7.875z" />
+    <path
+       id="path4946"
+       sodipodi:nodetypes="ccccc"
+       style="stroke-linejoin:round;fill-rule:evenodd;color:#000000;stroke:#000000;stroke-linecap:round;stroke-width:1.8719;fill:#000000"
+       d="m13.714 11.628h32.125v23.625h-32.125v-23.625z" />
+    <path
+       id="rect3085"
+       sodipodi:nodetypes="ccccccc"
+       style="stroke-linejoin:round;fill-rule:evenodd;color:#000000;stroke:#000000;stroke-linecap:round;stroke-width:3.1199;fill:#d9dddf"
+       d="m55.339 47.849v3.875c0 1.108-0.892 2-2 2h-46.875c-1.108 0-2-0.892-2-2v-3.875h50.875z" />
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <text
+     xml:space="preserve"
+     style="font-size:12px;font-family:'Exo 2';-inkscape-font-specification:'Exo 2, ';text-align:center;text-anchor:middle;fill:#000000;stroke-width:4.40315"
+     x="31.72653"
+     y="-25.041372"
+     id="text1"><tspan
+       sodipodi:role="line"
+       id="tspan1"
+       x="31.726538"
+       y="-25.041372"
+       style="font-size:12px">https://openclipart.org/detail/200309/primary-laptop</tspan></text>
+</svg>

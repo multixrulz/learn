@@ -14,9 +14,6 @@ correct: false
 @answer
 text: motion
 correct: false
-@answer
-text: field
-correct: false
 
 % multichoice
 text: Which word means: an action that changes the motion or shape of an object
@@ -32,30 +29,9 @@ correct: false
 @answer
 text: motion
 correct: false
-@answer
-text: field
-correct: false
 
 % multichoice
-text: Which word means: an action that changes the motion or shape of an object
-@answer
-text: force
-correct: true
-@answer
-text: field
-correct: false
-@answer
-text: friction
-correct: false
-@answer
-text: motion
-correct: false
-@answer
-text: field
-correct: false
-
-% multichoice
-text: Which word means: a force that opposes motion because of objects touching
+text: Which word means: a force that opposes motion because of objects rubbing
 @answer
 text: friction
 correct: true
@@ -67,9 +43,6 @@ text: field
 correct: false
 @answer
 text: motion
-correct: false
-@answer
-text: field
 correct: false
 
 % multichoice
@@ -82,9 +55,6 @@ text: friction
 correct: false
 @answer
 text: force
-correct: false
-@answer
-text: field
 correct: false
 @answer
 text: field
