@@ -1,0 +1,161 @@
+% jquiz
+
+% multichoice
+text: Which word means: an area of influence that exerts a force on an object
+@answer
+text: field
+correct: true
+@answer
+text: force
+correct: false
+@answer
+text: friction
+correct: false
+@answer
+text: motion
+correct: false
+@answer
+text: field
+correct: false
+
+% multichoice
+text: Which word means: an action that changes the motion or shape of an object
+@answer
+text: force
+correct: true
+@answer
+text: field
+correct: false
+@answer
+text: friction
+correct: false
+@answer
+text: motion
+correct: false
+@answer
+text: field
+correct: false
+
+% multichoice
+text: Which word means: an action that changes the motion or shape of an object
+@answer
+text: force
+correct: true
+@answer
+text: field
+correct: false
+@answer
+text: friction
+correct: false
+@answer
+text: motion
+correct: false
+@answer
+text: field
+correct: false
+
+% multichoice
+text: Which word means: a force that opposes motion because of objects touching
+@answer
+text: friction
+correct: true
+@answer
+text: force
+correct: false
+@answer
+text: field
+correct: false
+@answer
+text: motion
+correct: false
+@answer
+text: field
+correct: false
+
+% multichoice
+text: Which word means: the change in position of an object over time
+@answer
+text: motion
+correct: true
+@answer
+text: friction
+correct: false
+@answer
+text: force
+correct: false
+@answer
+text: field
+correct: false
+@answer
+text: field
+correct: false
+
+% multichoice
+text: Which kind of force needs things to physically touch?
+@answer
+text: Contact force
+correct: true
+@answer
+text: Non-contact force
+correct: false
+
+% multichoice
+text: Which kind of force can work even when things do not physically touch?
+@answer
+text: Non-Contact forces
+correct: true
+@answer
+text: Contact forces
+correct: false
+
+
+% multichoice
+text: Which of these is a type of contact force?
+@answer
+text: Push and pull
+correct: true
+@answer
+text: Tension
+correct: true
+@answer
+text: Friction
+correct: true
+@answer
+text: Drag (air resistance and water resistance)
+correct: true
+@answer
+text: Gravity
+correct: false
+@answer
+text: Magnetism
+correct: false
+
+% multichoice
+text: Which of these is a type of non-contact force?
+@answer
+text: Gravity
+correct: true
+@answer
+text: Electricity
+correct: true
+@answer
+text: Magnetism
+correct: true
+@answer
+text: Push and pull
+correct: false
+@answer
+text: Friction
+correct: false
+@answer
+text: Tension
+correct: false
+
+% multichoice
+text: Which kind of force acts through a field?
+@answer
+text: Non-contact force
+correct: true
+@answer
+text: Contact force
+correct: false
