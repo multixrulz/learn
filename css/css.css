@@ -393,3 +393,12 @@ padding: 1em 0;
 .icon img {
 height: 10vh;
 }
+
+/* Tables, when I want borders */
+.showtablelines table, .showtablelines th, .showtablelines td {
+border-collapse: collapse;
+border: black 1px solid;
+}
+.showtablelines th, .showtablelines td {
+padding: 0.3em;
+}
