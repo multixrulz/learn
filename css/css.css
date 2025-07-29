@@ -402,3 +402,8 @@ border: black 1px solid;
 .showtablelines th, .showtablelines td {
 padding: 0.3em;
 }
+
+/* fitimage - it fits inside its container */
+.fitimage {
+max-width: 100%;
+}
