@@ -26,6 +26,22 @@ var audio_music;
 var previous_id = 0;
 var auto=false;
 
+
+// Populate quiz_data from GET parameters
+params = new URLSearchParams(window.location.search);
+quiz_data['src'] = params.get("src");
+quiz_data['allq'] = params.get("allq");
+console.log("Got the following from the GET string:")
+console.log(quiz_data)
+
+// Handle "all questions" specified in GET string
+if (quiz_data['allq'] == "true") {
+    console.log("JQuiz: Show all questions was requested in the GET string, hiding UI element");
+    // Don't show the combo box
+    max_questions = document.getElementById("max_q").style.display = "none";
+    max_questions = document.getElementById("max_q_label").style.display = "none";
+}
+
 // Make the quiz go automatically
 function jquiz_run_auto() {
     /* Hide startup stuff */
@@ -46,7 +62,6 @@ function jquiz_run() {
     elements.forEach(e => {e.classList.add("hide")})
 
     /* Get the quiz going */
-    jquiz_get_data();
     jquiz_audio_load();
     jquiz_load_quiz(function () {
         jquiz_shuffle_quiz();
@@ -86,7 +101,6 @@ function jquiz_print() {
     elements.forEach(e => {e.classList.add("hide")})
 
     /* Load and present the quiz */
-    jquiz_get_data();
     jquiz_load_quiz(function () {
         jquiz_shuffle_quiz();
 
@@ -138,13 +152,21 @@ function jquiz_load_quiz(callback) {
         }
         // How many questions are we going to show?
         quiz_questions = quiz_data['quiz'].length;
-        max_questions = document.getElementById("max_q").value;
-        max_questions = Number(max_questions);
-        /* If it's not a number, assume all questions are to be shown */
-        if (isNaN(max_questions)) {
+        // If all questions are specified in the GET string
+        if (quiz_data['allq'] == "true") {
+            console.log("JQuiz: Showing all questions as requested in the GET string");
+            // Set the number of questions to show to the number in the quiz
             num_questions = quiz_questions;
         } else {
-            num_questions = Math.min(quiz_questions, max_questions);
+            console.log("JQuiz: Using user selection of how many questions to show");
+            max_questions = document.getElementById("max_q").value;
+            max_questions = Number(max_questions);
+            /* If it's not a number, assume all questions are to be shown */
+            if (isNaN(max_questions)) {
+                num_questions = quiz_questions;
+            } else {
+                num_questions = Math.min(quiz_questions, max_questions);
+            }
         }
         quiz_data['num_questions'] = num_questions;
         quiz_data['loaded'] = true;
@@ -154,14 +176,6 @@ function jquiz_load_quiz(callback) {
     url_no_cache = quiz_data['src'] + "?v=" + Date.now();
     rq.open('GET', url_no_cache, true);
     rq.send();
-}
-
-// Populate quiz_data from GET parameters
-function jquiz_get_data() {
-    params = new URLSearchParams(window.location.search);
-    quiz_data['src'] = params.get("src");
-    console.log("Got the following from the GET string:")
-    console.log(quiz_data)
 }
 
 function jquiz_audio_load() {
