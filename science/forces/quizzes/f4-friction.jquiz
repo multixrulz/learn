@@ -1,0 +1,129 @@
+% jquiz Friction
+
+% multichoice
+text: What causes friction?
+@answer
+text: Two surfaces rubbing together
+correct: true
+@answer
+text: Monsters
+correct: false
+@answer
+text: Things sticking together
+correct: false
+@answer
+text: Things getting hot
+correct: false
+
+
+% multichoice
+text: What does friction do?
+@answer
+text: Slows things down
+correct: true
+@answer
+text: Makes heat
+correct: true
+@answer
+text: Wears things out
+correct: true
+@answer
+text: Makes things last forever
+correct: false
+
+
+% multichoice
+text: Which of these things affects friction between two solids?
+@answer
+text: Roughness of the surfaces
+correct: true
+@answer
+text: The force pushing the surfaces together
+correct: true
+@answer
+text: The speed of the surfaces moving past each other
+correct: false
+@answer
+text: The colour of the surfaces
+correct: false
+
+
+% multichoice
+text: Which of these things affects friction between a solid and a liquid or gas?
+@answer
+text: The speed of the solid object
+correct: true
+@answer
+text: The kind of liquid or gas
+correct: true
+@answer
+text: The force pushing the object
+correct: false
+@answer
+text: The colour of the surfaces
+correct: false
+
+
+% multichoice
+text: How is friction useful?
+@answer
+text: It lets us stop when we want to
+correct: true
+@answer
+text: It lets us sit without sliding off the chair
+correct: true
+@answer
+text: It lets us push against the ground so we can walk
+correct: true
+@answer
+text: It wears out our shoes
+correct: false
+
+
+% multichoice
+text: When is friction unhelpful?
+@answer
+text: When we want to keep moving
+correct: true
+@answer
+text: When it creates too much heat
+correct: true
+@answer
+text: When it wears things out
+correct: true
+@answer
+text: When it lets us grip a football
+correct: false
+
+
+% multichoice
+text: How do we reduce friction?
+@answer
+text: By using oil or another lubricant to make the surfaces slippery
+correct: true
+@answer
+text: By using rollers and wheels so surfaces do not rub together
+correct: true
+@answer
+text: By making surfaces very smooth
+correct: true
+@answer
+text: By coating surfaces with rubber
+correct: false
+
+
+% multichoice
+text: What do we call friction involving liquids and gases?
+@answer
+text: Drag
+correct: true
+@answer
+text: Wind
+correct: false
+@answer
+text: Fluidics
+correct: false
+@answer
+text: Non-solid friction
+correct: false
+
