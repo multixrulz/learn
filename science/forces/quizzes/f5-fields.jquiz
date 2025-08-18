@@ -1,0 +1,143 @@
+% jquiz Friction
+
+% multichoice
+text: In the science topic of forces, what is a field?
+@answer
+text: An area that creates a force
+correct: true
+@answer
+text: Something that makes a non-contact force
+correct: true
+@answer
+text: A type of animal habitat
+correct: false
+@answer
+text: A place for sports
+correct: false
+
+% multichoice
+text: Which of these forces act through fields?
+@answer
+text: Magnetic
+correct: true
+@answer
+text: Electric
+correct: true
+@answer
+text: Gravitational
+correct: true
+@answer
+text: Aerodynamic
+correct: false
+
+% multichoice
+text: Which things can create a magnetic field?
+@answer
+text: Magnets
+correct: true
+@answer
+text: Electric currents
+correct: true
+@answer
+text: Plastic
+correct: false
+@answer
+text: Wood
+correct: false
+
+% multichoice
+text: What creates a gravitational field?
+@answer
+text: Anything that has mass
+correct: true
+@answer
+text: Magnets
+correct: false
+@answer
+text: Batteries
+correct: false
+@answer
+text: Spaceships
+correct: false
+
+% multichoice
+text: What does an electric field do?
+@answer
+text: Pushes or pulls electrically charged particles
+correct: true
+@answer
+text: Makes things magnetic
+correct: false
+@answer
+text: Changes temperature
+correct: false
+@answer
+text: Moves sound waves
+correct: false
+
+% multichoice
+text: What does gravity do?
+@answer
+text: Pulls objects toward each other
+correct: true
+@answer
+text: Makes things magnetic
+correct: false
+@answer
+text: Makes sparks
+correct: false
+@answer
+text: Push objects away from each other
+correct: false
+
+% multichoice
+text: Where is Earth's gravitational field the strongest?
+@answer
+text: Close to the Earth’s surface
+correct: true
+@answer
+text: Far away from Earth
+correct: false
+@answer
+text: At the centre of the Earth
+correct: false
+@answer
+text: On the International Space Station
+correct: false
+
+% multichoice
+text: What causes electric fields?
+@answer
+text: Charged objects
+correct: true
+@answer
+text: Moving magnets
+correct: true
+@answer
+text: Forces
+correct: false
+@answer
+text: Things that have mass
+correct: false
+
+Which of these statements are true about fields?
+A) Fields can act without touching the object
+B) Fields need physical contact to work
+C) Fields can be invisible
+D) Fields only exist on Earth
+
+
+% multichoice
+text: Choose the true statements
+@answer
+text: Fields can act without touching
+correct: true
+@answer
+text: Fields are invisible
+correct: true
+@answer
+text: Fields need physical contact to work
+correct: false
+@answer
+text: Fields only exist on Earth
+correct: false
