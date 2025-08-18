@@ -76,7 +76,7 @@ text: Nuclear Energy
 correct: false
 
 % multichoice
-text: What is the energy that travels through space called?
+text: What is the energy that travels by waves in space called?
 @answer
 text: Light Energy
 correct: true
