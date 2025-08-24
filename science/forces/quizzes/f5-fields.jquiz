@@ -120,13 +120,6 @@ correct: false
 text: Things that have mass
 correct: false
 
-Which of these statements are true about fields?
-A) Fields can act without touching the object
-B) Fields need physical contact to work
-C) Fields can be invisible
-D) Fields only exist on Earth
-
-
 % multichoice
 text: Choose the true statements
 @answer

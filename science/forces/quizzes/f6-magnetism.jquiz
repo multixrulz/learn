@@ -1,0 +1,98 @@
+% jquiz Magnetism
+
+% multichoice
+text: What force will happen between the magnets?
+image: f6-magnetism/N-N.svg
+@answer
+text: Repelled
+correct: true
+@answer
+text: Attracted
+correct: false
+
+
+% multichoice
+text: What force will happen between the magnets?
+image: f6-magnetism/S-S.svg
+@answer
+text: Repelled
+correct: true
+@answer
+text: Attracted
+correct: false
+
+
+% multichoice
+text: What force will happen between the magnets?
+image: f6-magnetism/N-S.svg
+@answer
+text: Attracted
+correct: true
+@answer
+text: Repelled
+correct: false
+
+
+% multichoice
+text: What force will happen between the magnets?
+image: f6-magnetism/S-N.svg
+@answer
+text: Attracted
+correct: true
+@answer
+text: Repelled
+correct: false
+
+
+% multichoice
+text: What do we call the north and south ends of a magnet?
+@answer
+text: poles
+correct: true
+@answer
+text: ends
+correct: false
+@answer
+text: cores
+correct:
+@answer
+text: zones
+correct: false
+
+
+% multichoice
+text: Which of these things is true?
+@answer
+text: A magnet works through a magnetic field
+correct: true
+@answer
+text: Magnetism is a non-contact force
+correct: true
+@answer
+text: Magnetism is a contact force
+correct: false
+@answer
+text: Magnets work by magic
+correct: false
+
+
+% multichoice
+text: Which material is affected by a magnetic field?
+@answer
+text: steel
+correct: true
+@answer
+text: iron
+correct: true
+@answer
+text: paper
+correct:
+@answer
+text: plastic
+correct: false
+@answer
+text: copper
+correct: false
+@answer
+text: aluminium
+correct: false

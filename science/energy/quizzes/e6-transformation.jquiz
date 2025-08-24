@@ -1,0 +1,189 @@
+% jquiz Energy transformation
+
+% multichoice
+text: What energy transformation is this?
+image: e6-magnetism/chemical-kinetic.jpg
+@answer
+text: From chemical
+correct: true
+@answer
+text: To kinetic
+correct: true
+@answer
+text: From electrical
+correct: false
+@answer
+text: From nuclear
+correct: false
+@answer
+text: To potential
+correct: false
+@answer
+text: To light
+correct: false
+
+% multichoice
+text: What energy transformation is this?
+image: e6-magnetism/electrical-light.jpg
+@answer
+text: From electrical
+correct: true
+@answer
+text: To light
+correct: true
+@answer
+text: From thermal
+correct: false
+@answer
+text: From sound
+correct: false
+@answer
+text: To kinetic
+correct: false
+@answer
+text: To potential
+correct: false
+
+% multichoice
+text: What energy transformation is this?
+image: e6-magnetism/electrical-sound.jpg
+@answer
+text: From electrical
+correct: true
+@answer
+text: To sound
+correct: true
+@answer
+text: From thermal
+correct: false
+@answer
+text: From light
+correct: false
+@answer
+text: To electrical
+correct: false
+@answer
+text: To chemical
+correct: false
+
+% multichoice
+text: What energy transformation is this?
+image: e6-magnetism/kinetic-potential.jpg
+@answer
+text: From kinetic
+correct: true
+@answer
+text: To potential
+correct: true
+@answer
+text: From electrical
+correct: false
+@answer
+text: From nuclear
+correct: false
+@answer
+text: To thermal
+correct: false
+@answer
+text: To chemical
+correct: false
+
+% multichoice
+text: What energy transformation is this?
+image: e6-magnetism/kinetic-thermal.jpg
+@answer
+text: From kinetic
+correct: true
+@answer
+text: To thermal
+correct: true
+@answer
+text: From potential
+correct: false
+@answer
+text: From electrical
+correct: false
+@answer
+text: To nuclear
+correct: false
+@answer
+text: To sound
+correct: false
+
+% multichoice
+text: What energy transformation is this?
+image: e6-magnetism/light-electrical.jpg
+@answer
+text: From light
+correct: true
+@answer
+text: To electrical
+correct: true
+@answer
+text: From potential
+correct: false
+@answer
+text: From sound
+correct: false
+@answer
+text: To chemical
+correct: false
+@answer
+text: To kinetic
+correct: false
+
+% multichoice
+text: What energy transformation is this?
+image: e6-magnetism/nuclear-electrical.jpg
+@answer
+text: From nuclear
+correct: true
+@answer
+text: To electrical
+correct: true
+@answer
+text: From chemical
+correct: false
+@answer
+text: From kinetic
+correct: false
+@answer
+text: To thermal
+correct: false
+@answer
+text: To light
+correct: false
+
+% multichoice
+text: What energy transformation is this?
+image: e6-magnetism/potential-kinetic.jpg
+@answer
+text: From potential
+correct: true
+@answer
+text: To kinetic
+correct: true
+@answer
+text: From electrical
+correct: false
+@answer
+text: From chemical
+correct: false
+@answer
+text: To thermal
+correct: false
+@answer
+text: To sound
+correct: false
+
+% multichoice
+text: When energy changes from one form to another, it is
+@answer
+text: transformed
+correct: true
+@answer
+text: destroyed
+correct: false
+@answer
+text: created
+correct: false

@@ -257,6 +257,7 @@ padding: 1em;
 vertical-align: top;
 height: 8em;
 margin-left: 2em;
+max-width: 75%;
 }
 .jquiz-print .jquiz-answer img {
 vertical-align: top;
