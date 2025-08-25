@@ -464,6 +464,7 @@ function jquiz_show_scoreboard() {
             </div>
             <div id="jquiz-bottombar">
                 <input type="image" class="jquiz-close" value="close" onclick="jquiz_start_button();" />
+                <input type="button" value="Reload score" onclick="jquiz_show_scoreboard();" />
             </div>
             </div>`;
     }

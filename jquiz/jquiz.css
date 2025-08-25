@@ -108,6 +108,7 @@ font-size: 5vh;
 /* Images */
 .jquiz-container .jquiz-question img {
 height: 45vh;
+max-width: 50%;
 }
 .jquiz-container .jquiz-answers img {
 height: 18vh;
@@ -218,6 +219,9 @@ font-weight: bold;
 }
 
 /* Style bottom bar content */
+#jquiz-bottombar input {
+font-size: 2vh;
+}
 #jquiz-bottombar .jquiz-quit, #jquiz-bottombar .jquiz-close {
 content: url("quit-icon.svg");
 width: 3vh;
@@ -250,14 +254,18 @@ width: 10em;
 
 .jquiz-print {
 padding: 1em;
+font-size: 160%;
 }
 
 /* Images */
+.jquiz-print .jquiz-question {
+margin-top: 2em;
+}
 .jquiz-print .jquiz-question img {
 vertical-align: top;
-height: 8em;
+max-height: 8em;
 margin-left: 2em;
-max-width: 75%;
+max-width: 60%;
 }
 .jquiz-print .jquiz-answer img {
 vertical-align: top;
@@ -295,7 +303,9 @@ align-items: flex-start;
 }
 
 .jquiz-print .jquiz-answer input {
-margin-top: 0.15ex;
+scale: 2;
+margin-top: 0.5ex;
+margin-right: 1ex;
 }
 
 .jquiz-print .jquiz-answer label {
@@ -318,7 +328,14 @@ counter-increment: question_number;
 #show-answers {
     display: none;
 }
-
+.jquiz-print {
+font-size: 60%;
+}
+.jquiz-print .jquiz-answer input {
+scale: 1;
+margin-top: 0.1ex;
+margin-right: 0.2ex;
+}
 .nobreak {
     break-inside: avoid;
 }
