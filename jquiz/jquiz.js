@@ -124,15 +124,49 @@ function jquiz_print() {
             }
             });
         html = `<input id="show-answers" type="button" onclick="jquiz_show_answers();" value="Show answers">`;
+        html += `<input id="mark-quiz" type="button" onclick="jquiz_mark_quiz();" value="Mark quiz">`;
         jquiz_write_print_html(html);
     });
 }
 
 function jquiz_show_answers() {
+    element = document.getElementById("jquiz");
+    element.classList.add("quiz_marked");
     selector = "input[correct='true']";
     correct_answers = document.querySelectorAll(selector);
     correct_answers.forEach(element => {
         element.checked = true;
+    });
+    selector = "input[correct='false']";
+    correct_answers = document.querySelectorAll(selector);
+    correct_answers.forEach(element => {
+        element.checked = false;
+    });
+}
+
+function jquiz_mark_quiz() {
+    selector = "input";
+    answers = document.querySelectorAll(selector);
+    answers.forEach(element => {
+    element.classList.add("correct_missing");
+    });
+    selector = "input[correct='true']";
+    correct_answers = document.querySelectorAll(selector);
+    correct_answers.forEach(element => {
+        element.classList.remove("correct_missing", "right", "wrong");
+        if (element.checked == true)
+            element.classList.add("right");
+        else
+            element.classList.add("wrong");
+    });
+    selector = "input[correct='false']";
+    incorrect_answers = document.querySelectorAll(selector);
+    incorrect_answers.forEach(element => {
+        element.classList.remove("correct_missing", "right", "wrong");
+        if (element.checked == false)
+            element.classList.add("right");
+        else
+            element.classList.add("wrong");
     });
 }
 

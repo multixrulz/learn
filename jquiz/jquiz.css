@@ -256,11 +256,11 @@ width: 10em;
 padding: 1em;
 font-size: 160%;
 }
-
-/* Images */
 .jquiz-print .jquiz-question {
 margin-top: 2em;
 }
+
+/* Images */
 .jquiz-print .jquiz-question img {
 vertical-align: top;
 max-height: 8em;
@@ -310,10 +310,28 @@ margin-right: 1ex;
 
 .jquiz-print .jquiz-answer label {
 display: flex;
+padding: 0.2ex;
+border-radius: 0.5ex;
 }
 
-#show-answers {
+#show-answers, #mark-quiz {
 margin-top: 2em;
+}
+
+/* For marking the quiz */
+.jquiz-print .jquiz-answer input.right + label {
+background-color: green;
+}
+.jquiz-print .jquiz-answer input.wrong + label {
+background-color: red;
+}
+.jquiz-print .jquiz-answer input.correct_missing + label {
+background-color: gold;
+}
+
+/* Make the quiz look different when answers have been shown */
+#jquiz.quiz_marked {
+background-color: #eee;
 }
 
 /* Question numbering - required because of .nobreak divs*/
@@ -324,19 +342,27 @@ counter-reset: question_number;
 counter-increment: question_number;
 }
 
+
 @media print {
-#show-answers {
-    display: none;
+#show-answers, #mark-quiz{
+display: none;
 }
 .jquiz-print {
 font-size: 60%;
 }
 .jquiz-print .jquiz-answer input {
 scale: 1;
-margin-top: 0.1ex;
+margin-top: 0;
 margin-right: 0.2ex;
+}
+.jquiz-print .jquiz-answer label {
+padding: 0;
+}
+.jquiz-print .jquiz-question {
+margin-top: 2em;
 }
 .nobreak {
     break-inside: avoid;
 }
 }
+

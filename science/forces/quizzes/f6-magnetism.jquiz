@@ -54,7 +54,7 @@ text: ends
 correct: false
 @answer
 text: cores
-correct:
+correct: false
 @answer
 text: zones
 correct: false
@@ -86,7 +86,7 @@ text: iron
 correct: true
 @answer
 text: paper
-correct:
+correct: false
 @answer
 text: plastic
 correct: false
