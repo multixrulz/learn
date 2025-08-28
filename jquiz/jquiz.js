@@ -106,7 +106,7 @@ function jquiz_print() {
 
         console.log("JQuiz: Writing out the questions");
         title = quiz_data['title'];
-        html = `<p>Name:</p><h1 class="title">${title}</h1>`;
+        html = `<p id="name">Name:</p><h1 class="title">${title}</h1>`;
         jquiz_write_print_html(html);
         quiz_data['quiz'].forEach((question, index) => {
             if (index < quiz_data['num_questions']) {
@@ -142,6 +142,10 @@ function jquiz_show_answers() {
     correct_answers.forEach(element => {
         element.checked = false;
     });
+    element = document.getElementById("show-answers");
+    element.classList.add("hide");
+    element = document.getElementById("mark-quiz");
+    element.classList.add("hide");
 }
 
 function jquiz_mark_quiz() {
@@ -168,6 +172,11 @@ function jquiz_mark_quiz() {
         else
             element.classList.add("wrong");
     });
+    element = document.getElementById("show-answers");
+    element.classList.add("hide");
+    element = document.getElementById("mark-quiz");
+    element.classList.add("hide");
+
 }
 
 function jquiz_load_quiz(callback) {

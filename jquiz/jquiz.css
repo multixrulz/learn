@@ -342,8 +342,14 @@ counter-reset: question_number;
 counter-increment: question_number;
 }
 
-
+/* Printing */
+#name {
+display: none;
+}
 @media print {
+#name {
+display: inherit;
+}
 #show-answers, #mark-quiz{
 display: none;
 }
