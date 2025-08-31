@@ -4,10 +4,10 @@
 text: What force will happen between the magnets?
 image: f6-magnetism/N-N.svg
 @answer
-text: Repelled
+text: Repulsion
 correct: true
 @answer
-text: Attracted
+text: Attraction
 correct: false
 
 
@@ -15,10 +15,10 @@ correct: false
 text: What force will happen between the magnets?
 image: f6-magnetism/S-S.svg
 @answer
-text: Repelled
+text: Repulsion
 correct: true
 @answer
-text: Attracted
+text: Attraction
 correct: false
 
 
@@ -26,10 +26,10 @@ correct: false
 text: What force will happen between the magnets?
 image: f6-magnetism/N-S.svg
 @answer
-text: Attracted
+text: Attraction
 correct: true
 @answer
-text: Repelled
+text: Repulsion
 correct: false
 
 
@@ -37,10 +37,10 @@ correct: false
 text: What force will happen between the magnets?
 image: f6-magnetism/S-N.svg
 @answer
-text: Attracted
+text: Attraction
 correct: true
 @answer
-text: Repelled
+text: Repulsion
 correct: false
 
 

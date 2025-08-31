@@ -1,0 +1,161 @@
+% jquiz Static Electricity
+
+% multichoice
+text: What force will happen between the objects?
+image: f7-electrostatics/+-.svg
+@answer
+text: Attraction
+correct: true
+@answer
+text: Repulsion
+correct: false
+
+
+% multichoice
+text: What force will happen between the objects?
+image: f7-electrostatics/-+.svg
+@answer
+text: Attraction
+correct: true
+@answer
+text: Repulsion
+correct: false
+
+
+% multichoice
+text: What force will happen between the objects?
+image: f7-electrostatics/++.svg
+@answer
+text: Repulsion
+correct: true
+@answer
+text: Attraction
+correct: false
+
+
+% multichoice
+text: What force will happen between the objects?
+image: f7-electrostatics/--.svg
+@answer
+text: Repulsion
+correct: true
+@answer
+text: Attraction
+correct: false
+
+
+% multichoice
+text: Which tiny particles cause static electricity?
+@answer
+text: Electrons
+correct: true
+@answer
+text: Protons
+correct: true
+@answer
+text: Neutrons
+correct: false
+@answer
+text: Photons
+correct: false
+
+
+% multichoice
+text: Which tiny particles have a <b>positive</b> electric charge?
+@answer
+text: Protons
+correct: true
+@answer
+text: Electrons
+correct: false
+@answer
+text: Neutrons
+correct: false
+@answer
+text: Photons
+correct: false
+
+
+% multichoice
+text: Which tiny particles have a <b>negative</b> electric charge?
+@answer
+text: Electrons
+correct: true
+@answer
+text: Protons
+correct: false
+@answer
+text: Neutrons
+correct: false
+@answer
+text: Photons
+correct: false
+
+
+% multichoice
+text: Which tiny particles are able to move from one atom to another?
+@answer
+text: Electrons
+correct: true
+@answer
+text: Protons
+correct: false
+@answer
+text: Neutrons
+correct: false
+@answer
+text: Photons
+correct: false
+
+
+% multichoice
+text: Which of these things is true?
+@answer
+text: Static electricity works through an electric field
+correct: true
+@answer
+text: Static electricity is a non-contact force
+correct: true
+@answer
+text: Static electricity is a contact force
+correct: false
+@answer
+text: Static electricity works by magic
+correct: false
+
+
+% multichoice
+text: An object has collected some electrons. What charge does it have?
+@answer
+text: Negative
+correct: true
+@answer
+text: Positive
+correct: false
+
+
+% multichoice
+text: An object has lost some electrons. What charge does it have?
+@answer
+text: Positive
+correct: true
+@answer
+text: Negative
+correct: false
+
+
+% multichoice
+text: An electrically neutral object has
+@answer
+text: The same number of protons and electrons
+correct: true
+@answer
+text: More electrons than protons
+correct: false
+@answer
+text: More protons than electrons
+correct: false
+@answer
+text: No protons or electrons
+correct: false
+
