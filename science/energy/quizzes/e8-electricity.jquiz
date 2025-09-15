@@ -1,0 +1,208 @@
+% jquiz Energy transformation
+
+% multichoice
+text: What is an electric current?
+@answer
+text: Flowing electrons
+correct: true
+@answer
+text: A kind of static electricity
+correct: false
+@answer
+text: A type of magnetism
+correct: false
+@answer
+text: A river with batteries in it
+correct: false
+
+
+% multichoice
+text: Which of these things makes electricity go where you want?
+@answer
+text: Conductor
+correct: true
+@answer
+text: Insulator
+correct: false
+@answer
+text: Battery
+correct: false
+@answer
+text: Switch
+correct: false
+
+
+% multichoice
+text: Which of these is a good insulator?
+@answer
+text: Plastic
+correct: true
+@answer
+text: Paper
+correct: true
+@answer
+text: Copper wire
+correct: false
+@answer
+text: Aluminium foil
+correct: false
+
+% multichoice
+text: Which of these is a good conductor?
+@answer
+text: Plastic
+correct: false
+@answer
+text: Paper
+correct: false
+@answer
+text: Copper wire
+correct: true
+@answer
+text: Aluminium foil
+correct: true
+
+
+% multichoice
+text: A circuit with components connected in a single loop is a
+@answer
+text: series circuit
+correct: true
+@answer
+text: parallel circuit
+correct: false
+@answer
+text: static circuit
+correct: false
+@answer
+text: complex circuit
+correct: false
+
+
+% multichoice
+text: A circuit with more than one path is a
+@answer
+text: parallel circuit
+correct: true
+@answer
+text: series circuit
+correct: false
+@answer
+text: static circuit
+correct: false
+@answer
+text: complex circuit
+correct: false
+
+
+% multichoice
+text: What does a battery do in a circuit?
+@answer
+text: acts as an energy source
+correct: true
+@answer
+text: measures the current
+correct: false
+@answer
+text: lights up a bulb
+correct: false
+@answer
+text: acts as an insulator
+correct: false
+
+
+% multichoice
+text: Electric current is measured in
+@answer
+text: Amps (A)
+correct: true
+@answer
+text: Volts (V)
+correct: false
+@answer
+text: Watts (W)
+correct: false
+@answer
+text: Ohms (Ω)
+correct: false
+
+
+% multichoice
+text: Electric power is measured in
+@answer
+text: Amps (A)
+correct: false
+@answer
+text: Volts (V)
+correct: false
+@answer
+text: Watts (W)
+correct: true
+@answer
+text: Ohms (Ω)
+correct: false
+
+
+% multichoice
+text: Electric resistance is measured in
+@answer
+text: Amps (A)
+correct: false
+@answer
+text: Volts (V)
+correct: false
+@answer
+text: Watts (W)
+correct: false
+@answer
+text: Ohms (Ω)
+correct: true
+
+
+% multichoice
+text: Electric pottential is measured in
+@answer
+text: Amps (A)
+correct: false
+@answer
+text: Volts (V)
+correct: true
+@answer
+text: Watts (W)
+correct: false
+@answer
+text: Ohms (Ω)
+correct: false
+
+
+% multichoice
+text: A switch is used in a circuit to
+@answer
+text: start and stop the flow of current
+correct: true
+@answer
+text: increase the voltage
+correct: false
+@answer
+text: store energy
+correct: false
+@answer
+text: absorb the electrons
+correct: false
+
+
+% multichoice
+text: What type of energy is stored in a battery?
+@answer
+text: Chemical energy
+correct: true
+@answer
+text: Light energy
+correct: false
+@answer
+text: Electrical energy
+correct: false
+@answer
+text: Kinetic energy
+correct: false
+
