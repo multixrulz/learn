@@ -160,7 +160,7 @@ correct: true
 
 
 % multichoice
-text: Electric pottential is measured in
+text: Electric potential is measured in
 @answer
 text: Amps (A)
 correct: false
