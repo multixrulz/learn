@@ -1,0 +1,85 @@
+% jquiz Resources
+
+% multichoice
+text: Which term means “Something that you can use”?
+@answer
+text: Resource
+correct: true
+@answer
+text: Natural resource
+correct: false
+@answer
+text: Manufactured resource
+correct: false
+
+% multichoice
+text: Which term means “A resource that comes from nature mostly the way it is”?
+@answer
+text: Resource
+correct: false
+@answer
+text: Natural resource
+correct: true
+@answer
+text: Manufactured resource
+correct: false
+
+% multichoice
+text: Which term means “A resource that was made from other resources”?
+@answer
+text: Resource
+correct: false
+@answer
+text: Natural resource
+correct: false
+@answer
+text: Manufactured resource
+correct: true
+
+% multichoice
+text: Water is a natural resource.  This means that
+@answer
+text: We use water the way it comes from nature
+correct: true
+@answer
+text: There is a lot of water
+correct: false
+@answer
+text: Water is better than a laptop
+correct: false
+
+% multichoice
+text: Wood is a natural resource.  This means that
+@answer
+text: We use wood the way it comes from nature
+correct: true
+@answer
+text: We can eat wood
+correct: false
+@answer
+text: Wood is free
+correct: false
+
+% multichoice
+text: A laptop is a manufactured resource.  This means that
+@answer
+text: A laptop is made from other resources
+correct: true
+@answer
+text: A laptop is bad for you
+correct: false
+@answer
+text: A laptop is hard to use
+correct: false
+
+% multichoice
+text: A burger is a manufactured resource.  This means that
+@answer
+text: A burger is made from other resources
+correct: true
+@answer
+text: A burger is not safe to eat
+correct: false
+@answer
+text: A burger is better for you than natural food
+correct: false
