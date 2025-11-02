@@ -1,0 +1,137 @@
+% jquiz Conserving Resources
+% multichoice
+text: What means “use again”?
+@answer
+text: Reuse
+correct: true
+@answer
+text: Reduce
+correct: false
+@answer
+text: Recycle
+correct: false
+@answer
+text: Conserve
+correct: false
+
+
+% multichoice
+text: What means “use less”?
+@answer
+text: Reduce
+correct: true
+@answer
+text: Reuse
+correct: false
+@answer
+text: Recycle
+correct: false
+@answer
+text: Conserve
+correct: false
+
+
+% multichoice
+text: What means “look after” or “protect”?
+@answer
+text: Conserve
+correct: true
+@answer
+text: Reuse
+correct: false
+@answer
+text: Recycle
+correct: false
+@answer
+text: Reduce
+correct: false
+
+
+% multichoice
+text: What means “turn waste into new material”?
+@answer
+text: Recycle
+correct: true
+@answer
+text: Reuse
+correct: false
+@answer
+text: Reduce
+correct: false
+@answer
+text: Conserve
+correct: false
+
+
+% multichoice
+text: What does “sustainable” mean?
+@answer
+text: Able to be continued for a long time
+correct: true
+@answer
+text: Not very much fun
+correct: false
+@answer
+text: Not having nice things
+correct: false
+@answer
+text: Conservation
+correct: false
+
+
+% multichoice
+text: How do we use <b>renewable</b> resources sustainably?
+@answer
+text: Reduce the amount we use
+correct: true
+@answer
+text: Reuse the resource
+correct: true
+@answer
+text: Recycle the resource
+correct: true
+@answer
+text: Waste the resource
+correct: false
+
+
+% multichoice
+text: How do we use <b>non-renewable</b> resources sustainably?
+@answer
+text: Reduce the amount we use
+correct: true
+@answer
+text: Reuse the resource
+correct: true
+@answer
+text: Recycle the resource
+correct: true
+@answer
+text: Waste the resource
+correct: false
+
+
+% multichoice
+text: Will <b>renewable</b> resources ever run out?
+@answer
+text: Yes, if we use them too fast
+correct: true
+@answer
+text: Yes, if we use them
+correct: false
+@answer
+text: No
+correct: false
+
+
+% multichoice
+text: Will <b>non-renewable</b> resources ever run out?
+@answer
+text: Yes, if we use them
+correct: true
+@answer
+text: Yes, if we use them too fast
+correct: false
+@answer
+text: No
+correct: false
