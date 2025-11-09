@@ -1,0 +1,141 @@
+% jquiz Resources and the environment
+% multichoice
+text: Which word means "making a place the way it was before it was mined"?
+@answer
+text: Rehabilitation
+correct: true
+@answer
+text: Environment
+correct: false
+@answer
+text: Habitat
+correct: false
+@answer
+text: Pollution
+correct: false
+
+
+% multichoice
+text: Which word means "the number of different things living in a place"?
+@answer
+text: Biodiversity
+correct: true
+@answer
+text: Environment
+correct: false
+@answer
+text: Habitat
+correct: false
+@answer
+text: Pollution
+correct: false
+
+% multichoice
+text: Which word means "the place where a plant or animal naturally lives"?
+@answer
+text: Habitat
+correct: true
+@answer
+text: Biodiversity
+correct: false
+@answer
+text: Environment
+correct: false
+@answer
+text: Pollution
+correct: false
+
+% multichoice
+text: Which word means "the things that surround a living thing"?
+@answer
+text: Environment
+correct: true
+@answer
+text: Biodiversity
+correct: false
+@answer
+text: Habitat
+correct: false
+@answer
+text: Pollution
+correct: false
+
+% multichoice
+text: Which word means "adding harmful things to an environment"?
+@answer
+text: Pollution
+correct: true
+@answer
+text: Biodiversity
+correct: false
+@answer
+text: Environment
+correct: false
+@answer
+text: Habitat
+correct: false
+
+
+% multichoice
+text: What can happen when we mine and use fossil fuels like coal, diesel and petrol?
+@answer
+text: Global warming
+correct: true
+@answer
+text: Destroying habitat
+correct: true
+@answer
+text: Pollution
+correct: true
+@answer
+text: Increasing biodiversity
+correct: false
+
+
+% multichoice
+text: What can happen when we build and use wind farms?
+@answer
+text: Birds get hit by turbine blades
+correct: true
+@answer
+text: Global warming
+correct: false
+@answer
+text: Pollution
+correct: false
+@answer
+text: Destroying habitat
+correct: true
+
+
+% multichoice
+text: How can we reduce the impact of using resources?
+@answer
+text: Use less of the resource
+correct: true
+@answer
+text: Use as much as we can
+correct: false
+@answer
+text: Use technology that reduces the environmental impact
+correct: true
+@answer
+text: Import the resource from another country
+correct: false
+
+
+% multichoice
+text: How can we reduce the impact of using resources?
+@answer
+text: Use robots instead of people
+correct: false
+@answer
+text: Rehabilitate mines
+correct: true
+@answer
+text: Let resource companies do whatever they want
+correct: false
+@answer
+text: Recycle instead of throwing out
+correct: true
+
