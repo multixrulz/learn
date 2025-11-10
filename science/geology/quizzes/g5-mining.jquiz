@@ -1,0 +1,340 @@
+% jquiz Mining
+
+% multichoice
+text: Which word means “a person who learns about the inside of Earth”?
+@answer
+text: geologist
+correct: true
+@answer
+text: engineer
+correct: false
+@answer
+text: metallurgist
+correct: false
+
+
+% multichoice
+text: Which word means “a person who learns how the Earth works inside”?
+@answer
+text: geophysicist
+correct: true
+@answer
+text: geochemist
+correct: false
+@answer
+text: engineer
+correct: false
+@answer
+text: metallurgist
+correct: false
+
+
+% multichoice
+text: Which word means “a person who learns what the Earth is made of inside”?
+@answer
+text: geochemist
+correct: true
+@answer
+text: geophysicist
+correct: false
+@answer
+text: engineer
+correct: false
+@answer
+text: metallurgist
+correct: false
+
+
+% multichoice
+text: Which word means “a person who knows how to build things”?
+@answer
+text: engineer
+correct: true
+@answer
+text: geochemist
+correct: false
+@answer
+text: geophysicist
+correct: false
+@answer
+text: metallurgist
+correct: false
+
+
+% multichoice
+text: Which word means “a person who knows all about metals”?
+@answer
+text: metallurgist
+correct: true
+@answer
+text: geochemist
+correct: false
+@answer
+text: engineer
+correct: false
+@answer
+text: geophysicist
+correct: false
+
+
+% multichoice
+text: Which word means “permission to do something”?
+@answer
+text: licence
+correct: true
+@answer
+text: exploration
+correct: false
+@answer
+text: extraction
+correct: false
+@answer
+text: rehabilitate
+correct: false
+
+
+% multichoice
+text: Which word means “discovering new things”?
+@answer
+text: exploration
+correct: true
+@answer
+text: licence
+correct: false
+@answer
+text: extraction
+correct: false
+@answer
+text: rehabilitate
+correct: false
+
+
+% multichoice
+text: Which word means “getting a metal out of its ore”?
+@answer
+text: extraction
+correct: true
+@answer
+text: licence
+correct: false
+@answer
+text: exploration
+correct: false
+@answer
+text: rehabilitate
+correct: false
+
+
+% multichoice
+text: Which word means “to fix a mine site to the way it was before”?
+@answer
+text: rehabilitate
+correct: true
+@answer
+text: licence
+correct: false
+@answer
+text: extraction
+correct: false
+@answer
+text: exploration
+correct: false
+
+
+% multichoice
+text: Which word means “how heavy something is for its size”?
+@answer
+text: density
+correct: true
+@answer
+text: environment
+correct: false
+@answer
+text: property
+correct: false
+@answer
+text: magnetic
+correct: false
+@answer
+text: resource
+correct: false
+@answer
+text: mineral deposit
+correct: false
+
+
+
+% multichoice
+text: Which word means “making nuclear radiation”?
+@answer
+text: radioactive
+correct: true
+@answer
+text: density
+correct: false
+@answer
+text: property
+correct: false
+@answer
+text: resource
+correct: false
+@answer
+text: mine
+correct: false
+@answer
+text: ore body
+correct: false
+
+
+% multichoice
+text: Which word means “the things that surround a living thing”?
+@answer
+text: environment
+correct: true
+@answer
+text: density
+correct: false
+@answer
+text: magnetic
+correct: false
+@answer
+text: resource
+correct: false
+@answer
+text: mineral deposit
+correct: false
+@answer
+text: mine
+correct: false
+
+
+% multichoice
+text: Which word means “something you can measure”?
+@answer
+text: property
+correct: true
+@answer
+text: radioactive
+correct: false
+@answer
+text: density
+correct: false
+@answer
+text: resource
+correct: false
+@answer
+text: mineral deposit
+correct: false
+@answer
+text: ore body
+correct: false
+
+
+% multichoice
+text: Which word means “able to affect a magnet”?
+@answer
+text: magnetic
+correct: true
+@answer
+text: density
+correct: false
+@answer
+text: resource
+correct: false
+@answer
+text: mineral deposit
+correct: false
+@answer
+text: mine
+correct: false
+@answer
+text: ore body
+correct: false
+
+
+% multichoice
+text: Which word means “something we can use”?
+@answer
+text: resource
+correct: true
+@answer
+text: radioactive
+correct: false
+@answer
+text: density
+correct: false
+@answer
+text: mineral deposit
+correct: false
+@answer
+text: mine
+correct: false
+@answer
+text: ore body
+correct: false
+
+
+% multichoice
+text: Which word means “an area of rocks that have a certain mineral”?
+@answer
+text: mineral deposit
+correct: true
+@answer
+text: radioactive
+correct: false
+@answer
+text: environment
+correct: false
+@answer
+text: density
+correct: false
+@answer
+text: mine
+correct: false
+@answer
+text: ore body
+correct: false
+
+
+% multichoice
+text: Which word means “to get minerals out of the ground”?
+@answer
+text: mine
+correct: true
+@answer
+text: radioactive
+correct: false
+@answer
+text: environment
+correct: false
+@answer
+text: property
+correct: false
+@answer
+text: magnetic
+correct: false
+@answer
+text: ore body
+correct: false
+
+
+% multichoice
+text: Which word means “a mineral deposit that is worth money”?
+@answer
+text: ore body
+correct: true
+@answer
+text: radioactive
+correct: false
+@answer
+text: environment
+correct: false
+@answer
+text: property
+correct: false
+@answer
+text: magnetic
+correct: false
+@answer
+text: resource
+correct: false
