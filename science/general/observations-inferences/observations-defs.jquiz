@@ -1,0 +1,60 @@
+% jquiz
+% multichoice
+text: Which term matches this definition: “Factual data that have been measured or seen”
+@answer
+text: Observation
+correct: true
+@answer
+text: Inference
+correct: false
+@answer
+text: Qualitative
+correct: false
+@answer
+text: Quantitative
+correct: false
+
+% multichoice
+text: Which term matches this definition: “Conclusions based on what was seen, plus other knowledge”
+@answer
+text: Inference
+correct: true
+@answer
+text: Observation
+correct: false
+@answer
+text: Qualitative
+correct: false
+@answer
+text: Quantitative
+correct: false
+
+% multichoice
+text: Which term matches this definition: “Observations that are described by a number”
+@answer
+text: Quantitative
+correct: true
+@answer
+text: Observation
+correct: false
+@answer
+text: Inference
+correct: false
+@answer
+text: Qualitative
+correct: false
+
+% multichoice
+text: Which term matches this definition: “Observations that are not described by a number”
+@answer
+text: Qualitative
+correct: true
+@answer
+text: Observation
+correct: false
+@answer
+text: Inference
+correct: false
+@answer
+text: Quantitative
+correct: false

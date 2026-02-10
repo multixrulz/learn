@@ -1,0 +1,646 @@
+% jquiz
+% multichoice
+text: Which term matches this definition: “Factual data that have been measured or seen”
+@answer
+text: Observation
+correct: true
+@answer
+text: Inference
+correct: false
+@answer
+text: Qualitative
+correct: false
+@answer
+text: Quantitative
+correct: false
+
+% multichoice
+text: Which term matches this definition: “Conclusions based on what was seen, plus other knowledge”
+@answer
+text: Inference
+correct: true
+@answer
+text: Observation
+correct: false
+@answer
+text: Qualitative
+correct: false
+@answer
+text: Quantitative
+correct: false
+
+% multichoice
+text: Which term matches this definition: “Observations that are described by a number”
+@answer
+text: Quantitative
+correct: true
+@answer
+text: Observation
+correct: false
+@answer
+text: Inference
+correct: false
+@answer
+text: Qualitative
+correct: false
+
+% multichoice
+text: Which term matches this definition: “Observations that are not described by a number”
+@answer
+text: Qualitative
+correct: true
+@answer
+text: Observation
+correct: false
+@answer
+text: Inference
+correct: false
+@answer
+text: Quantitative
+correct: false
+
+% multichoice
+text: What type of statement is this: The mask is 50cm tall
+image: images/ancient_egypt_golden_mask.jpg
+@answer
+text: Quantitative observation
+correct: true
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The mask has a striped pattern
+image: images/ancient_egypt_golden_mask.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: true
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The mask is very old
+image: images/ancient_egypt_golden_mask.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: true
+
+
+
+% multichoice
+text: What type of statement is this: The rat weighs 7g
+image: images/animal_mouse_experiment_laboratory.jpg
+@answer
+text: Quantitative observation
+correct: true
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The rat has red eyes
+image: images/animal_mouse_experiment_laboratory.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: true
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The rat is white
+image: images/animal_mouse_experiment_laboratory.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: true
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The rat is being used in a lab
+image: images/animal_mouse_experiment_laboratory.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: true
+
+
+
+% multichoice
+text: What type of statement is this: The little green blobs are 6µm wide
+image: images/bartramia_pomiformis_cells_biology.jpg
+@answer
+text: Quantitative observation
+correct: true
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The thing is green
+image: images/bartramia_pomiformis_cells_biology.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: true
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: This is a picture from a microscope
+image: images/bartramia_pomiformis_cells_biology.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: true
+
+
+
+% multichoice
+text: What type of statement is this: The flower has five petals
+image: images/bees_insects_pollen.jpg
+@answer
+text: Quantitative observation
+correct: true
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: There is a bee
+image: images/bees_insects_pollen.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: true
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The picture was made in a garden
+image: images/bees_insects_pollen.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: true
+
+
+
+% multichoice
+text: What type of statement is this: The frog is 15mm long
+image: images/frog_red_frog_poison.jpg
+@answer
+text: Quantitative observation
+correct: true
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The frog is red
+image: images/frog_red_frog_poison.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: true
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The frog is poisonous
+image: images/frog_red_frog_poison.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: true
+
+
+
+% multichoice
+text: What type of statement is this: The fuel tank is 100% full
+image: images/fuel_gauge_fuel_light.jpg
+@answer
+text: Quantitative observation
+correct: true
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The needle and scale use contrasting colours
+image: images/fuel_gauge_fuel_light.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: true
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The fuel tank has just been filled
+image: images/fuel_gauge_fuel_light.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: true
+
+
+
+% multichoice
+text: What type of statement is this: There are 5 jellyfish per litre
+image: images/jellyfish_sea_sea_creatures_0.jpg
+@answer
+text: Quantitative observation
+correct: true
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The jellyfish have a circular shape when seen from above
+image: images/jellyfish_sea_sea_creatures_0.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: true
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The jellyfish are being lit by a red light
+image: images/jellyfish_sea_sea_creatures_0.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: true
+
+
+
+% multichoice
+text: What type of statement is this: There is 1000mL of liquid in the measuring cylinder
+image: images/measure_scala_science_glass.jpg
+@answer
+text: Quantitative observation
+correct: true
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The liquid becomes darker with depth
+image: images/measure_scala_science_glass.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: true
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: 1 litre of red liquid is required for the experiment
+image: images/measure_scala_science_glass.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: true
+
+
+
+% multichoice
+text: What type of statement is this: The pH of the solution is 7.053
+image: images/ph_meter_0.jpg
+@answer
+text: Quantitative observation
+correct: true
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The pH is increasing over time
+image: images/ph_meter_0.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: true
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: This pH meter is expensive
+image: images/ph_meter_0.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: true
+
+
+
+% multichoice
+text: What type of statement is this: The rock layers are all between 20cm and 40cm thick
+image: images/rock_formations_folded_fold_0.jpg
+@answer
+text: Quantitative observation
+correct: true
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The rock folding is quite intense
+image: images/rock_formations_folded_fold_0.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: true
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The rocks were folded over millions of years
+image: images/rock_formations_folded_fold_0.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: true
+
+
+
+% multichoice
+text: What type of statement is this: The rock has a hardness of 6 on the Mohs scale
+image: images/rock_sand_stone_erosion.jpg
+@answer
+text: Quantitative observation
+correct: true
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The rock is all sandstone of different colours
+image: images/rock_sand_stone_erosion.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: true
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The patterns were formed by wind erosion
+image: images/rock_sand_stone_erosion.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: true
+
+
+
+% multichoice
+text: What type of statement is this: The green lasers have a wavelength of 510nm
+image: images/scientist_doing_research_in.jpg
+@answer
+text: Quantitative observation
+correct: true
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The yellow light is brighter than the green
+image: images/scientist_doing_research_in.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: true
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The man in then picture is a laser physicist
+image: images/scientist_doing_research_in.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: true
+
+
+
+% multichoice
+text: What type of statement is this: The temperature is 20C
+image: images/thermometer_temperature_measure_428339.jpg
+@answer
+text: Quantitative observation
+correct: true
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The temperature is falling
+image: images/thermometer_temperature_measure_428339.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: true
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The room temperature is a little cold.
+image: images/thermometer_temperature_measure_428339.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: true
+
+
+
+% multichoice
+text: What type of statement is this: The tomato is 8m wide
+image: images/tomato_tiny_ruler_red.jpg
+@answer
+text: Quantitative observation
+correct: true
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The tomato is ripe
+image: images/tomato_tiny_ruler_red.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: true
+@answer
+text: Inference
+correct: false
+
+% multichoice
+text: What type of statement is this: The tomato will taste delicious
+image: images/tomato_tiny_ruler_red.jpg
+@answer
+text: Quantitative observation
+correct: false
+@answer
+text: Qualitative observation
+correct: false
+@answer
+text: Inference
+correct: true
+

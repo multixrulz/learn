@@ -1,0 +1,161 @@
+% jquiz
+% multichoice
+text: Qualitative data depends more on the observer than quantitative data does
+@answer
+text: True
+correct: true
+@answer
+text: False
+correct: false
+
+% multichoice
+text: A scientist qualitatively observes that an insect bites a mammal. Which of these further observations would be quantitative?
+@answer
+text: The number of times the mammal is bitten each day
+correct: true
+@answer
+text: The average time between bites
+correct: true
+@answer
+text: The time of each bite
+correct: true
+@answer
+text: The species of insect and mammal
+correct: false
+@answer
+text: The direction the insect approaches the mammal from
+correct: true
+@answer
+text: What the mammal does in response to being bitten
+correct: false
+
+% multichoice
+text: Biological drawings are
+@answer
+text: Qualitative data
+correct: true
+@answer
+text: Quantitative data
+correct: false
+
+% multichoice
+text: Better observational technology allows better observations to be made
+@answer
+text: True
+correct: true
+@answer
+text: False
+correct: false
+
+% multichoice
+text: Which of these is an analogue measuring technology?
+@answer
+text: Universal indicator
+correct: true
+@answer
+text: Glass thermometer
+correct: true
+@answer
+text: Ruler
+correct: true
+@answer
+text: Meter with a moving needle
+correct: true
+@answer
+text: Electronic pH probe
+correct: false
+@answer
+text: Digital microscope
+correct: false
+
+% multichoice
+text: Which of these is data that has been collected first-hand by the researcher?
+@answer
+text: Primary data
+correct: true
+@answer
+text: Secondary data
+correct: false
+@answer
+text: Empirical data
+correct: false
+@answer
+text: Anecdotal data
+correct: false
+
+% multichoice
+text: Which of these is data that has been collected by someone other than the researcher, or by reading other research?
+@answer
+text: Primary data
+correct: false
+@answer
+text: Secondary data
+correct: true
+@answer
+text: Empirical data
+correct: false
+@answer
+text: Anecdotal data
+correct: false
+
+% multichoice
+text: Which of these is data that has been collected by controlled experiment?
+@answer
+text: Primary data
+correct: false
+@answer
+text: Secondary data
+correct: false
+@answer
+text: Empirical data
+correct: true
+@answer
+text: Anecdotal data
+correct: false
+
+% multichoice
+text: Which of these is a story told about someone’s experience?
+@answer
+text: Primary data
+correct: false
+@answer
+text: Secondary data
+correct: false
+@answer
+text: Empirical data
+correct: false
+@answer
+text: Anecdotal data
+correct: true
+
+% multichoice
+text: What are the advantages of digital measuring instruments?
+@answer
+text: No parallax error
+correct: true
+@answer
+text: Easy to use
+correct: true
+@answer
+text: Always correct
+correct: false
+@answer
+text: No human factor
+correct: true
+
+% multichoice
+text: What are the advantages of analogue measuring instruments?
+@answer
+text: Continuous data
+correct: true
+@answer
+text: Changing values are easier to see
+correct: true
+@answer
+text: Doesn’t oversimplify data
+correct: true
+@answer
+text: Always correct
+correct: false
+
+
