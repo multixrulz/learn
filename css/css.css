@@ -116,6 +116,12 @@ height: 1.5em;
 vertical-align: bottom;
 }
 
+/* Quotes */
+blockquote {
+border-left: solid #71B6D9 0.2em;
+padding-left: 0.5em;
+}
+
 /* code - but not codehilite code */
 code:not(.codehilite *) {
 background: #C9F2FF;
