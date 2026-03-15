@@ -1,0 +1,157 @@
+% jquiz Validity, Accuracy, Reliability — Examples
+% multichoice
+text: An experiment aims to investigate the effect of the amount of water on plant growth. The experiment is done in an outdoor garden. Which one of these is the main problem with the experiment?
+@answer
+text: Validity
+correct: true
+@answer
+text: Accuracy
+correct: false
+@answer
+text: Reliability
+correct: false
+
+
+% multichoice
+text: An experiment aims to investigate the effect of the amount of water on plant growth. The experiment is done indoors with different plants in different parts of the room. Which one of these is the main problem with the experiment?
+@answer
+text: Validity
+correct: true
+@answer
+text: Accuracy
+correct: false
+@answer
+text: Reliability
+correct: false
+
+
+% multichoice
+text: An experiment aims to investigate the effect of the amount of water on plant growth. One plant is used for each amount of water. Which one of these is the main problem with the experiment?
+@answer
+text: Validity
+correct: true
+@answer
+text: Accuracy
+correct: false
+@answer
+text: Reliability
+correct: false
+
+
+% multichoice
+text: An experiment aims to investigate the effect of the amount of water on plant growth. All of the plants died. Which one of these is the main problem with the experiment?
+@answer
+text: Validity
+correct: true
+@answer
+text: Accuracy
+correct: false
+@answer
+text: Reliability
+correct: false
+
+
+% multichoice
+text: An experiment aims to investigate the effect of the amount of water on plant growth over 2 months. To save time, the experiment was done over 4 weeks. Which one of these is the main problem with the experiment?
+@answer
+text: Validity
+correct: true
+@answer
+text: Accuracy
+correct: false
+@answer
+text: Reliability
+correct: false
+
+
+% multichoice
+text: An experiment aims to investigate the effect of the amount of water on plant growth.  Daily plant height data was presented in a table in the final report. Which one of these is the main problem with the experiment?
+@answer
+text: Validity
+correct: true
+@answer
+text: Accuracy
+correct: false
+@answer
+text: Reliability
+correct: false
+
+
+% multichoice
+text: An experiment aims to investigate the effect of the amount of water on plant growth.  A 1 litre beaker was used to measure amounts of water that were put on the plant, which varied from 100mL to 300mL. Which one of these is the main problem with the experiment?
+@answer
+text: Validity
+correct: false
+@answer
+text: Accuracy
+correct: true
+@answer
+text: Reliability
+correct: false
+
+
+% multichoice
+text: An experiment aims to investigate the effect of the amount of water on plant growth.  The plant height was measured each day by standing a ruler beside the plant to record its height.  Some of the plants were a little wilted while others stood straight up. Which one of these is the main problem with the experiment?
+@answer
+text: Validity
+correct: false
+@answer
+text: Accuracy
+correct: true
+@answer
+text: Reliability
+correct: false
+
+
+% multichoice
+text: An experiment aims to investigate the effect of the amount of water on plant growth.  At the end of the experiment the plants were dried and weighed on a scale.  The needle of the scale hardly moved for any of the plants.  Which one of these is the main problem with the experiment?
+@answer
+text: Validity
+correct: false
+@answer
+text: Accuracy
+correct: true
+@answer
+text: Reliability
+correct: false
+
+
+% multichoice
+text: An experiment aims to investigate the effect of the amount of water on plant growth.  At the end of the experiment the plants were dried and weighed on a scale, but the scale was not zeroed before weighing. Which one of these is the main problem with the experiment?
+@answer
+text: Validity
+correct: false
+@answer
+text: Accuracy
+correct: true
+@answer
+text: Reliability
+correct: false
+
+
+% multichoice
+text: An experiment aims to investigate the effect of the amount of water on plant growth.  The temperature of the room the experiment was done in was not recorded.  Which one of these is the main problem with the experiment?
+@answer
+text: Validity
+correct: false
+@answer
+text: Accuracy
+correct: false
+@answer
+text: Reliability
+correct: true
+
+
+% multichoice
+text: An experiment aims to investigate the effect of the amount of water on plant growth.  Some of the low water plants grew only a little, while others grew a lot.  Which one of these is the main problem with the experiment?
+@answer
+text: Validity
+correct: false
+@answer
+text: Accuracy
+correct: false
+@answer
+text: Reliability
+correct: true
+
+

@@ -1,0 +1,129 @@
+% jquiz Validity, Accuracy, Reliability — Terms
+% multichoice
+text: Which term is most related to “Measuring what you’re trying to measure”?
+@answer
+text: Validity
+correct: true
+@answer
+text: Accuracy
+correct: false
+@answer
+text: Reliability
+correct: false
+
+
+% multichoice
+text: Which term is most related to “The experiment tests what it is supposed to test”?
+@answer
+text: Validity
+correct: true
+@answer
+text: Accuracy
+correct: false
+@answer
+text: Reliability
+correct: false
+
+
+% multichoice
+text: Which term is most related to “Fair test”?
+@answer
+text: Validity
+correct: true
+@answer
+text: Accuracy
+correct: false
+@answer
+text: Reliability
+correct: false
+
+
+% multichoice
+text: Which term is most related to “Controlled variables”?
+@answer
+text: Validity
+correct: true
+@answer
+text: Accuracy
+correct: false
+@answer
+text: Reliability
+correct: false
+
+
+% multichoice
+text: Which term is most related to “Following the method properly”?
+@answer
+text: Validity
+correct: false
+@answer
+text: Accuracy
+correct: false
+@answer
+text: Reliability
+correct: true
+
+
+% multichoice
+text: Which term is most related to “Doing the experiment again gives a similar result”?
+@answer
+text: Validity
+correct: false
+@answer
+text: Accuracy
+correct: false
+@answer
+text: Reliability
+correct: true
+
+
+% multichoice
+text: Which term is most related to “Doing the experiment multiple times and averaging the results”?
+@answer
+text: Validity
+correct: false
+@answer
+text: Accuracy
+correct: false
+@answer
+text: Reliability
+correct: true
+
+
+% multichoice
+text: Which term is most related to “The measurement made is the actual value”?
+@answer
+text: Validity
+correct: false
+@answer
+text: Accuracy
+correct: true
+@answer
+text: Reliability
+correct: false
+
+
+% multichoice
+text: Which term is most related to “Using lab equipment correctly”?
+@answer
+text: Validity
+correct: false
+@answer
+text: Accuracy
+correct: true
+@answer
+text: Reliability
+correct: false
+
+
+% multichoice
+text: Which term is most related to “Using better lab equipment”?
+@answer
+text: Validity
+correct: false
+@answer
+text: Accuracy
+correct: true
+@answer
+text: Reliability
+correct: false

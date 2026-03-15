@@ -1,0 +1,160 @@
+% jquiz Common fractions as percentages
+
+% multichoice
+text: What is <sup>1</sup>&frasl;<sub>2</sub> as a percentage?
+@answer
+text: 50%
+correct: true
+@answer
+text: 20%
+correct: false
+@answer
+text: 12%
+correct: false
+@answer
+text: 2%
+correct: false
+
+
+% multichoice
+text: What is <sup>1</sup>&frasl;<sub>3</sub> as a percentage?
+@answer
+text: 33%
+correct: true
+@answer
+text: 13%
+correct: false
+@answer
+text: 30%
+correct: false
+@answer
+text: 3%
+correct: false
+
+
+% multichoice
+text: What is <sup>2</sup>&frasl;<sub>3</sub> as a percentage?
+@answer
+text: 67%
+correct: true
+@answer
+text: 23%
+correct: false
+@answer
+text: 32%
+correct: false
+@answer
+text: 2%
+correct: false
+
+
+% multichoice
+text: What is <sup>1</sup>&frasl;<sub>4</sub> as a percentage?
+@answer
+text: 25%
+correct: true
+@answer
+text: 14%
+correct: false
+@answer
+text: 4%
+correct: false
+@answer
+text: 40%
+correct: false
+
+
+% multichoice
+text: What is <sup>2</sup>&frasl;<sub>4</sub> as a percentage?
+@answer
+text: 50%
+correct: true
+@answer
+text: 24%
+correct: false
+@answer
+text: 4%
+correct: false
+@answer
+text: 40%
+correct: false
+
+
+% multichoice
+text: What is <sup>3</sup>&frasl;<sub>4</sub> as a percentage?
+@answer
+text: 75%
+correct: true
+@answer
+text: 34%
+correct: false
+@answer
+text: 3%
+correct: false
+@answer
+text: 30%
+correct: false
+
+
+% multichoice
+text: What is <sup>1</sup>&frasl;<sub>5</sub> as a percentage?
+@answer
+text: 20%
+correct: true
+@answer
+text: 15%
+correct: false
+@answer
+text: 50%
+correct: false
+@answer
+text: 10%
+correct: false
+
+
+% multichoice
+text: What is <sup>2</sup>&frasl;<sub>5</sub> as a percentage?
+@answer
+text: 40%
+correct: true
+@answer
+text: 25%
+correct: false
+@answer
+text: 5%
+correct: false
+@answer
+text: 2%
+correct: false
+
+
+% multichoice
+text: What is <sup>3</sup>&frasl;<sub>5</sub> as a percentage?
+@answer
+text: 60%
+correct: true
+@answer
+text: 35%
+correct: false
+@answer
+text: 5%
+correct: false
+@answer
+text: 30%
+correct: false
+
+
+% multichoice
+text: What is <sup>4</sup>&frasl;<sub>5</sub> as a percentage?
+@answer
+text: 80%
+correct: true
+@answer
+text: 45%
+correct: false
+@answer
+text: 50%
+correct: false
+@answer
+text: 4%
+correct: false
