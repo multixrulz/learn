@@ -1,7 +1,24 @@
 % jquiz Circuit symbols
 
 % multichoice
-image: ammeter.png
+image: circuit-symbols/ac-power.png
+text: What does this symbol represent?
+@answer
+text: AC power supply
+correct: true
+@answer
+text: DC power supply
+correct: false
+@answer
+text: Wave machine
+correct: false
+@answer
+text: Battery
+correct: false
+
+
+% multichoice
+image: circuit-symbols/ammeter.png
 text: What does this symbol represent?
 @answer
 text: Ammeter
@@ -18,189 +35,228 @@ correct: false
 
 
 % multichoice
-image:
+image: circuit-symbols/battery.png
 text: What does this symbol represent?
 @answer
-text:
+text: Battery
 correct: true
 @answer
-text:
+text: Electric cell
 correct: false
 @answer
-text:
+text: Open switch
 correct: false
 @answer
-text:
+text: Lamp
 correct: false
 
 
 % multichoice
-image:
+image: circuit-symbols/cell.png
 text: What does this symbol represent?
 @answer
-text:
+text: Electric cell
 correct: true
 @answer
-text:
+text: Battery
 correct: false
 @answer
-text:
+text: Open switch
 correct: false
 @answer
-text:
+text: DC power supply
 correct: false
 
 
 % multichoice
-image:
+image: circuit-symbols/dc-power.png
 text: What does this symbol represent?
 @answer
-text:
+text: DC power supply
 correct: true
 @answer
-text:
+text: Battery
 correct: false
 @answer
-text:
+text: Lamp
 correct: false
 @answer
-text:
+text: AC power supply
 correct: false
 
 
 % multichoice
-image:
+image: circuit-symbols/lamp.png
 text: What does this symbol represent?
 @answer
-text:
+text: Lamp
 correct: true
 @answer
-text:
+text: Resistor
 correct: false
 @answer
-text:
+text: Ammeter
 correct: false
 @answer
-text:
+text: Inchworm
 correct: false
 
 
 % multichoice
-image:
+image: circuit-symbols/resistor-type1.png
 text: What does this symbol represent?
 @answer
-text:
+text: Resistor
 correct: true
 @answer
-text:
+text: Battery
 correct: false
 @answer
-text:
+text: Lamp
 correct: false
 @answer
-text:
+text: Wire
 correct: false
 
 
 % multichoice
-image:
+image: circuit-symbols/resistor-type2.png
 text: What does this symbol represent?
 @answer
-text:
+text: Resistor
 correct: true
 @answer
-text:
+text: Snake
 correct: false
 @answer
-text:
+text: Bent wire
 correct: false
 @answer
-text:
+text: AC power supply
 correct: false
 
 
 % multichoice
-image:
+image: circuit-symbols/resistor-variable-type1.png
 text: What does this symbol represent?
 @answer
-text:
+text: Variable resistor
 correct: true
 @answer
-text:
+text: Resistor
 correct: false
 @answer
-text:
+text: Wire
 correct: false
 @answer
-text:
+text: Battery
 correct: false
 
 
 % multichoice
-image:
+image: circuit-symbols/resistor-variable-type2.png
 text: What does this symbol represent?
 @answer
-text:
+text: Variable resistor
 correct: true
 @answer
-text:
+text: Resistor
 correct: false
 @answer
-text:
+text: Bent wire
 correct: false
 @answer
-text:
+text: Closed switch
 correct: false
 
 
 % multichoice
-image:
+image: circuit-symbols/switch-closed.png
 text: What does this symbol represent?
 @answer
-text:
+text: Closed switch
 correct: true
 @answer
-text:
+text: Open switch
 correct: false
 @answer
-text:
+text: Switch
 correct: false
 @answer
-text:
+text: Screw terminals
 correct: false
 
 
 % multichoice
-image:
+image: circuit-symbols/switch-open.png
 text: What does this symbol represent?
 @answer
-text:
+text: Open switch
 correct: true
 @answer
-text:
+text: Closed switch
 correct: false
 @answer
-text:
+text: Switch
 correct: false
 @answer
-text:
+text: Broken wire
 correct: false
 
 
 % multichoice
-image:
+image: circuit-symbols/voltmeter.png
 text: What does this symbol represent?
 @answer
-text:
+text: Voltmeter
 correct: true
 @answer
-text:
+text: Voltage source
 correct: false
 @answer
-text:
+text: Energy drink
 correct: false
 @answer
-text:
+text: Lamp
+correct: false
+
+
+% multichoice
+image: circuit-symbols/wire.png
+text: What does this symbol represent?
+@answer
+text: Wire
+correct: true
+@answer
+text: Resistor
+correct: false
+@answer
+text: USB cable
+correct: false
+@answer
+text: Electric cell
+correct: false
+
+
+% multichoice
+text: Which ways can wires be drawn in a circuit diagram?
+@answer
+text: Vertically
+correct: true
+@answer
+text: Horizontally
+correct: true
+@answer
+text: Straight
+correct: true
+@answer
+text: Diagonally
+correct: false
+@answer
+text: Bent
+correct: false
+@answer
+text: Curvy
 correct: false
 
 

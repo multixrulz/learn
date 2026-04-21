@@ -109,6 +109,7 @@ font-size: 5vh;
 .jquiz-container .jquiz-question img {
 height: 45vh;
 max-width: 50%;
+object-fit: contain;
 }
 .jquiz-container .jquiz-answers img {
 height: 18vh;
