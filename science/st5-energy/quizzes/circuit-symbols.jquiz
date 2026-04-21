@@ -1,0 +1,206 @@
+% jquiz Circuit symbols
+
+% multichoice
+image: ammeter.png
+text: What does this symbol represent?
+@answer
+text: Ammeter
+correct: true
+@answer
+text: Voltmeter
+correct: false
+@answer
+text: A-Team
+correct: false
+@answer
+text: Anode
+correct: false
+
+
+% multichoice
+image:
+text: What does this symbol represent?
+@answer
+text:
+correct: true
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+
+
+% multichoice
+image:
+text: What does this symbol represent?
+@answer
+text:
+correct: true
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+
+
+% multichoice
+image:
+text: What does this symbol represent?
+@answer
+text:
+correct: true
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+
+
+% multichoice
+image:
+text: What does this symbol represent?
+@answer
+text:
+correct: true
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+
+
+% multichoice
+image:
+text: What does this symbol represent?
+@answer
+text:
+correct: true
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+
+
+% multichoice
+image:
+text: What does this symbol represent?
+@answer
+text:
+correct: true
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+
+
+% multichoice
+image:
+text: What does this symbol represent?
+@answer
+text:
+correct: true
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+
+
+% multichoice
+image:
+text: What does this symbol represent?
+@answer
+text:
+correct: true
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+
+
+% multichoice
+image:
+text: What does this symbol represent?
+@answer
+text:
+correct: true
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+
+
+% multichoice
+image:
+text: What does this symbol represent?
+@answer
+text:
+correct: true
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+
+
+% multichoice
+image:
+text: What does this symbol represent?
+@answer
+text:
+correct: true
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+@answer
+text:
+correct: false
+
+
