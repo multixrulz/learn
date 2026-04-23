@@ -1,0 +1,220 @@
+% jquiz Series and Parallel
+% multichoice
+image: series-parallel/ac-twolamps-voltmeter.png
+text: Are the two lamps in series or parallel?
+@answer
+text: Series
+correct: false
+@answer
+text: Parallel
+correct: true
+
+
+% multichoice
+image: series-parallel/ac-twolamps-voltmeter.png
+text: Would you call this circuit series or parallel?
+@answer
+text: Series
+correct: false
+@answer
+text: Parallel
+correct: true
+
+
+% multichoice
+image: series-parallel/lamp-ammeter-switch.png
+text: Are the ammeter and lamp in series or parallel?
+@answer
+text: Series
+correct: true
+@answer
+text: Parallel
+correct: false
+
+
+% multichoice
+image: series-parallel/lamp-ammeter-switch.png
+text: Would you call this circuit series or parallel?
+@answer
+text: Series
+correct: true
+@answer
+text: Parallel
+correct: false
+
+
+% multichoice
+image: series-parallel/lamp-ammeter-voltmeter.png
+text: Are the ammeter and lamp in series or parallel?
+@answer
+text: Series
+correct: true
+@answer
+text: Parallel
+correct: false
+
+
+% multichoice
+image: series-parallel/lamp-ammeter-voltmeter.png
+text: Are the voltmeter and lamp in series or parallel?
+@answer
+text: Series
+correct: false
+@answer
+text: Parallel
+correct: true
+
+
+% multichoice
+image: series-parallel/lamp-ammeter-voltmeter.png
+text: Would you call this circuit series or parallel?
+@answer
+text: Series
+correct: true
+@answer
+text: Parallel
+correct: false
+
+
+% multichoice
+image: series-parallel/lamp-resistor-parallel.png
+text: Are the lamp and resistor in series or parallel?
+@answer
+text: Series
+correct: false
+@answer
+text: Parallel
+correct: true
+
+
+% multichoice
+image: series-parallel/lamp-resistor-parallel.png
+text: Would you call this circuit series or parallel?
+@answer
+text: Series
+correct: false
+@answer
+text: Parallel
+correct: true
+
+
+% multichoice
+image: series-parallel/lamp-resistor-series.png
+text: Are the lamp and resistor in series or parallel?
+@answer
+text: Series
+correct: true
+@answer
+text: Parallel
+correct: false
+
+
+% multichoice
+image: series-parallel/lamp-resistor-series.png
+text: Would you call this circuit series or parallel?
+@answer
+text: Series
+correct: true
+@answer
+text: Parallel
+correct: false
+
+
+% multichoice
+image: series-parallel/lamp-resistor-series.png
+text: Would you call this circuit series or parallel?
+@answer
+text: Series
+correct: true
+@answer
+text: Parallel
+correct: false
+
+
+% multichoice
+image: series-parallel/lamp-voltmeter.png
+text: Are the lamp and voltmeter in series or parallel?
+@answer
+text: Series
+correct: false
+@answer
+text: Parallel
+correct: true
+
+
+% multichoice
+image: series-parallel/lamp-voltmeter.png
+text: Would you call this circuit series or parallel?
+@answer
+text: Series
+correct: false
+@answer
+text: Parallel
+correct: true
+
+
+% multichoice
+image: series-parallel/lamps-parallel.png
+text: Are the lamps in series or parallel?
+@answer
+text: Series
+correct: false
+@answer
+text: Parallel
+correct: true
+
+
+% multichoice
+image: series-parallel/lamps-parallel.png
+text: Would you call this circuit series or parallel?
+@answer
+text: Series
+correct: false
+@answer
+text: Parallel
+correct: true
+
+
+% multichoice
+image: series-parallel/resistors-parallel.png
+text: Are the resistors in series or parallel?
+@answer
+text: Series
+correct: false
+@answer
+text: Parallel
+correct: true
+
+
+% multichoice
+image: series-parallel/resistors-parallel.png
+text: Would you call this circuit series or parallel?
+@answer
+text: Series
+correct: false
+@answer
+text: Parallel
+correct: true
+
+
+% multichoice
+image: series-parallel/twolamps-voltmeter.png
+text: Are the lamps and voltmeter in series or parallel?
+@answer
+text: Series
+correct: false
+@answer
+text: Parallel
+correct: true
+
+
+% multichoice
+image: series-parallel/twolamps-voltmeter.png
+text: Would you call this circuit series or parallel?
+@answer
+text: Series
+correct: false
+@answer
+text: Parallel
+correct: true
+
