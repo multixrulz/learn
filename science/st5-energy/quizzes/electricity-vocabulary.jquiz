@@ -1,0 +1,177 @@
+% jquiz Electricity vocabulary
+
+% multichoice
+text: Which word means "a path that starts and stops at the same place"?
+@answer
+text: circuit
+correct: true
+@answer
+text: component
+correct: false
+@answer
+text: load
+correct: false
+@answer
+text: conductor
+correct: false
+
+
+% multichoice
+text: Which word means "a basic electrical device that is not made of other parts"?
+@answer
+text: component
+correct: true
+@answer
+text: electron
+correct: false
+@answer
+text: insulator
+correct: false
+@answer
+text: ammeter
+correct: false
+
+
+% multichoice
+text: Which word means "the charged particle that moves in an electric circuit"?
+@answer
+text: electron
+correct: true
+@answer
+text: proton
+correct: false
+@answer
+text: ion
+correct: false
+@answer
+text: voltron
+correct: false
+
+
+% multichoice
+text: Which word means "the part of a circuit that does the work that we want done"?
+@answer
+text: load
+correct: true
+@answer
+text: component
+correct: false
+@answer
+text: resistor
+correct: false
+@answer
+text: conductor
+correct: false
+
+
+% multichoice
+text: Which word means "a material that lets electricity flow easily"?
+@answer
+text: conductor
+correct: true
+@answer
+text: insulator
+correct: false
+@answer
+text: load
+correct: false
+@answer
+text: component
+correct: false
+
+
+% multichoice
+text: Which word means "the amount of electric charge moving in a circuit"?
+@answer
+text: current
+correct: true
+@answer
+text: ammeter
+correct: false
+@answer
+text: voltage
+correct: false
+@answer
+text: load
+correct: false
+
+
+% multichoice
+text: Which word means "the difference in potential energy between two points in a circuit"?
+@answer
+text: potential difference
+correct: true
+@answer
+text: voltage
+correct: false
+@answer
+text: current
+correct: false
+@answer
+text: component
+correct: false
+
+
+% multichoice
+text: Which word means "the unit for measuring current"?
+@answer
+text: amperes (amps)
+correct: true
+@answer
+text: volts
+correct: false
+@answer
+text: ohms
+correct: false
+@answer
+text: electron
+correct: false
+
+
+% multichoice
+text: Which word means "the unit for measuring potential difference"?
+@answer
+text: volts
+correct: true
+@answer
+text: amperes (amps)
+correct: false
+@answer
+text: ohms
+correct: false
+@answer
+text: resistance
+correct: false
+
+
+% multichoice
+text: Which word means "the amount of opposition to an electric current"?
+@answer
+text: resistance
+correct: true
+@answer
+text: voltage
+correct: false
+@answer
+text: load
+correct: false
+@answer
+text: insulator
+correct: false
+
+
+% multichoice
+text: Which word means "the unit for measuring resistance"?
+@answer
+text: ohms
+correct: true
+@answer
+text: volts
+correct: false
+@answer
+text: amperes (amps)
+correct: false
+@answer
+text: energy
+correct: false
+
