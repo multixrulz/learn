@@ -1,0 +1,290 @@
+% jquiz Unit prefixes
+
+% multichoice
+text: Which prefix means 10<sup>3</sup>?
+@answer
+text: k (kilo)
+correct: true
+@answer
+text: M (mega)
+correct: false
+@answer
+text: c (centi)
+correct: false
+@answer
+text: m (milli)
+correct: false
+
+
+% multichoice
+text: Which prefix means 10<sup>6</sup>?
+@answer
+text: M (mega)
+correct: true
+@answer
+text: 𝛍 (micro)
+correct: false
+@answer
+text: c (centi)
+correct: false
+@answer
+text: m (milli)
+correct: false
+
+
+% multichoice
+text: Which prefix means 10<sup>9</sup>?
+@answer
+text: G (giga)
+correct: true
+@answer
+text: 𝛍 (micro)
+correct: false
+@answer
+text: M (mega)
+correct: false
+@answer
+text: m (milli)
+correct: false
+
+
+% multichoice
+text: Which prefix means 10<sup>-2</sup>?
+@answer
+text: c (centi)
+correct: true
+@answer
+text: k (kilo)
+correct: false
+@answer
+text: M (mega)
+correct: false
+@answer
+text: G (giga)
+correct: false
+
+
+% multichoice
+text: Which prefix means 10<sup>-3</sup>?
+@answer
+text: m (milli)
+correct: true
+@answer
+text: n (nano)
+correct: false
+@answer
+text: G (giga)
+correct: false
+@answer
+text: c (centi)
+correct: false
+
+
+% multichoice
+text: Which prefix means 10<sup>-6</sup>?
+@answer
+text: 𝛍 (micro)
+correct: true
+@answer
+text: n (nano)
+correct: false
+@answer
+text: c (centi)
+correct: false
+@answer
+text: k (kilo)
+correct: false
+
+
+% multichoice
+text: Which prefix means 10<sup>-9</sup>?
+@answer
+text: n (nano)
+correct: true
+@answer
+text: M (mega)
+correct: false
+@answer
+text: G (giga)
+correct: false
+@answer
+text: m (milli)
+correct: false
+
+
+% multichoice
+text: Which prefix means 1,000?
+@answer
+text: k (kilo)
+correct: true
+@answer
+text: M (mega)
+correct: false
+@answer
+text: c (centi)
+correct: false
+@answer
+text: m (milli)
+correct: false
+
+
+% multichoice
+text: Which prefix means 1,000,000?
+@answer
+text: M (mega)
+correct: true
+@answer
+text: 𝛍 (micro)
+correct: false
+@answer
+text: c (centi)
+correct: false
+@answer
+text: m (milli)
+correct: false
+
+
+% multichoice
+text: Which prefix means 1,000,000,000?
+@answer
+text: G (giga)
+correct: true
+@answer
+text: 𝛍 (micro)
+correct: false
+@answer
+text: M (mega)
+correct: false
+@answer
+text: m (milli)
+correct: false
+
+
+% multichoice
+text: Which prefix means 0.01?
+@answer
+text: c (centi)
+correct: true
+@answer
+text: k (kilo)
+correct: false
+@answer
+text: M (mega)
+correct: false
+@answer
+text: G (giga)
+correct: false
+
+
+% multichoice
+text: Which prefix means 0.001?
+@answer
+text: m (milli)
+correct: true
+@answer
+text: n (nano)
+correct: false
+@answer
+text: G (giga)
+correct: false
+@answer
+text: c (centi)
+correct: false
+
+
+% multichoice
+text: Which prefix means 0.000001?
+@answer
+text: 𝛍 (micro)
+correct: true
+@answer
+text: n (nano)
+correct: false
+@answer
+text: c (centi)
+correct: false
+@answer
+text: k (kilo)
+correct: false
+
+
+% multichoice
+text: Which prefix means 0.000000001?
+@answer
+text: n (nano)
+correct: true
+@answer
+text: M (mega)
+correct: false
+@answer
+text: G (giga)
+correct: false
+@answer
+text: m (milli)
+correct: false
+
+
+% multichoice
+text: Which prefix means 1 &frasl; 100?
+@answer
+text: c (centi)
+correct: true
+@answer
+text: k (kilo)
+correct: false
+@answer
+text: M (mega)
+correct: false
+@answer
+text: G (giga)
+correct: false
+
+
+% multichoice
+text: Which prefix means 1 &frasl; 1,000?
+@answer
+text: m (milli)
+correct: true
+@answer
+text: n (nano)
+correct: false
+@answer
+text: G (giga)
+correct: false
+@answer
+text: c (centi)
+correct: false
+
+
+% multichoice
+text: Which prefix means 1 &frasl; 1,000,000?
+@answer
+text: 𝛍 (micro)
+correct: true
+@answer
+text: n (nano)
+correct: false
+@answer
+text: c (centi)
+correct: false
+@answer
+text: k (kilo)
+correct: false
+
+
+% multichoice
+text: Which prefix means 1 &frasl; 1,000,000,000?
+@answer
+text: n (nano)
+correct: true
+@answer
+text: M (mega)
+correct: false
+@answer
+text: G (giga)
+correct: false
+@answer
+text: m (milli)
+correct: false
+
+
