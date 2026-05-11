@@ -399,11 +399,11 @@ filter: grayscale(100%);
 input.show_done + label .icon {
 float: right;
 clear: both;
-height: 10vh;
+height: 4em;
 padding: 1em 0;
 }
 .icon img {
-height: 10vh;
+height: 4em;
 }
 
 /* Tables, when I want borders */
