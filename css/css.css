@@ -391,7 +391,7 @@ border: solid #71B6D9;
 border-radius: 0.5em;
 padding: 0em 1em;
 background: #bde;
-min-height: 18vh; /* same as icon below + padding*/
+min-height: 6em; /* same as icon below + padding*/
 }
 input.show_done:checked + label {
 filter: grayscale(100%);
@@ -465,4 +465,33 @@ input[data-index="11"]:checked ~ .tabcontent[data-index="11"],
 input[data-index="12"]:checked ~ .tabcontent[data-index="12"],
 input[data-index="13"]:checked ~ .tabcontent[data-index="13"]{
   display: block;
+}
+
+@media print {
+  * {
+  background: none !important;
+  font-size: 10pt;
+  }
+  #foot, #head {
+  display: none;
+  }
+  #content {
+  border-top: none;
+  }
+  .tabwidget {
+  border: none;
+  margin: 0;
+  padding: 0;
+  }
+  .tabwidget label {
+  display: none;
+  }
+  .tabcontent {
+  display: block !important;
+  border: solid #0091DF 0.2em;
+  border-radius: 0.5em;
+  padding: 1em;
+  margin: 0.5em 0;
+  page-break-inside: avoid;
+  }
 }
