@@ -1,0 +1,139 @@
+% jquiz Parts of a neuron
+% multichoice
+text: Which part of a neuron is this?
+image: neuron/cell_body.png
+@answer
+text: Cell body
+correct: true
+@answer
+text: Axon
+correct: false
+@answer
+text: Axon terminals
+correct: false
+@answer
+text: Dendrites
+correct: false
+@answer
+text: Myelin sheath
+correct: false
+@answer
+text: Synaptic knob
+correct: false
+
+
+% multichoice
+text: Which part of a neuron is this?
+image: neuron/axon_terminals.png
+@answer
+text: Cell body
+correct: false
+@answer
+text: Axon
+correct: false
+@answer
+text: Axon terminals
+correct: true
+@answer
+text: Dendrites
+correct: false
+@answer
+text: Myelin sheath
+correct: false
+@answer
+text: Synaptic knob
+correct: false
+
+
+% multichoice
+text: Which part of a neuron is this?
+image: neuron/axon.png
+@answer
+text: Cell body
+correct: false
+@answer
+text: Axon
+correct: true
+@answer
+text: Axon terminals
+correct: false
+@answer
+text: Dendrites
+correct: false
+@answer
+text: Myelin sheath
+correct: false
+@answer
+text: Synaptic knob
+correct: false
+
+
+% multichoice
+text: Which part of a neuron is this?
+image: neuron/dendrites.png
+@answer
+text: Cell body
+correct: false
+@answer
+text: Axon
+correct: false
+@answer
+text: Axon terminals
+correct: false
+@answer
+text: Dendrites
+correct: true
+@answer
+text: Myelin sheath
+correct: false
+@answer
+text: Synaptic knob
+correct: false
+
+
+% multichoice
+text: Which part of a neuron is this?
+image: neuron/myelin_sheath.png
+@answer
+text: Cell body
+correct: false
+@answer
+text: Axon
+correct: false
+@answer
+text: Axon terminals
+correct: false
+@answer
+text: Dendrites
+correct: false
+@answer
+text: Myelin sheath
+correct: true
+@answer
+text: Synaptic knob
+correct: false
+
+
+% multichoice
+text: Which part of a neuron is this?
+image: neuron/synaptic_knob.png
+@answer
+text: Cell body
+correct: false
+@answer
+text: Axon
+correct: false
+@answer
+text: Axon terminals
+correct: false
+@answer
+text: Dendrites
+correct: false
+@answer
+text: Myelin sheath
+correct: false
+@answer
+text: Synaptic knob
+correct: true
+
+

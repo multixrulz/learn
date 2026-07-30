@@ -1,0 +1,134 @@
+% jquiz Parts of the nervous system
+
+% multichoice
+text: Which part of the nervous system is made up of the brain and spinal cord?
+@answer
+text: Central nervous system
+correct: true
+@answer
+text: Peripheral nervous system
+correct: false
+@answer
+text: Cerebrum
+correct: false
+@answer
+text: Cerebellum
+correct: false
+@answer
+text: Brain stem
+correct: false
+@answer
+text: Hypothalamus and pituitary gland
+correct: false
+
+
+% multichoice
+text: Which part of the nervous system is made up of the nerves in the outer parts of your body?
+@answer
+text: Central nervous system
+correct: false
+@answer
+text: Peripheral nervous system
+correct: true
+@answer
+text: Cerebrum
+correct: false
+@answer
+text: Cerebellum
+correct: false
+@answer
+text: Brain stem
+correct: false
+@answer
+text: Hypothalamus and pituitary gland
+correct: false
+
+
+% multichoice
+text: Which part of the nervous system is where conscious thought happens?
+@answer
+text: Central nervous system
+correct: false
+@answer
+text: Peripheral nervous system
+correct: false
+@answer
+text: Cerebrum
+correct: true
+@answer
+text: Cerebellum
+correct: false
+@answer
+text: Brain stem
+correct: false
+@answer
+text: Hypothalamus and pituitary gland
+correct: false
+
+
+% multichoice
+text: Which part of the nervous system controls movement and balance?
+@answer
+text: Central nervous system
+correct: false
+@answer
+text: Peripheral nervous system
+correct: false
+@answer
+text: Cerebrum
+correct: false
+@answer
+text: Cerebellum
+correct: true
+@answer
+text: Brain stem
+correct: false
+@answer
+text: Hypothalamus and pituitary gland
+correct: false
+
+
+% multichoice
+text: Which part of the nervous system controls automatic body actions?
+@answer
+text: Central nervous system
+correct: false
+@answer
+text: Peripheral nervous system
+correct: false
+@answer
+text: Cerebrum
+correct: false
+@answer
+text: Cerebellum
+correct: false
+@answer
+text: Brain stem
+correct: true
+@answer
+text: Hypothalamus and pituitary gland
+correct: false
+
+
+% multichoice
+text: Which part of the nervous system controls homeostasis?
+@answer
+text: Central nervous system
+correct: false
+@answer
+text: Peripheral nervous system
+correct: false
+@answer
+text: Cerebrum
+correct: false
+@answer
+text: Cerebellum
+correct: false
+@answer
+text: Brain stem
+correct: false
+@answer
+text: Hypothalamus and pituitary gland
+correct: true
+
+
