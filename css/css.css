@@ -68,6 +68,25 @@ margin-top: 0;
 border-top: solid #DF9C00 0.2em;
 }
 
+#activity_code:empty {
+display: none;
+}
+
+#activity_code {
+position: fixed;
+bottom: 0;
+right: 0;
+padding: 1ex;
+margin: 0.5ex;
+background: #f5f8f9;
+border: solid 1px #222;
+border: solid 0.1em #34A7CC;
+border-radius: 0.5em;
+color: #222;
+font-size: 120%;
+font-weight: bold;
+}
+
 #foot {
 border-top: solid 1px;
 padding: 1em 3em 3em 3em;
