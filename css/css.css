@@ -446,6 +446,8 @@ background: #CCEEFF;
 border: solid #0091DF 0.2em;
 border-radius: 0.5em;
 padding: 1em;
+margin: 1em 0;
+clear: both;
 }
 
 .tabwidget input {
@@ -467,6 +469,7 @@ background: #0091DF;
 
 .tabwidget div.tabcontent {
 display: none;
+padding-top: 1em;
 }
 
 /* Show the content for the selected (checked) tab */
