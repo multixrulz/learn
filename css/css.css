@@ -19,6 +19,34 @@ font-weight: 400;
 src: url('/fonts/ABeeZee-Italic.ttf');
 }
 
+@font-face {
+font-family: 'NotebookFont';
+font-style: normal;
+font-weight: 400;
+src: url('/fonts/Andika-Regular.ttf');
+}
+
+@font-face {
+font-family: 'NotebookFont';
+font-style: normal;
+font-weight: 800;
+src: url('/fonts/Andika-Bold.ttf');
+}
+
+@font-face {
+font-family: 'NotebookFont';
+font-style: italic;
+font-weight: 400;
+src: url('/fonts/Andika-Italic.ttf');
+}
+
+@font-face {
+font-family: 'NotebookFont';
+font-style: italic;
+font-weight: 800;
+src: url('/fonts/Andika-BoldItalic.ttf');
+}
+
 /* reset */
 html, body {
 margin: 0;
@@ -429,6 +457,7 @@ height: 4em;
 .showtablelines table, .showtablelines th, .showtablelines td {
 border-collapse: collapse;
 border: black 1px solid;
+margin: 1em 0;
 }
 .showtablelines th, .showtablelines td {
 padding: 0.3em;
@@ -487,6 +516,45 @@ input[data-index="11"]:checked ~ .tabcontent[data-index="11"],
 input[data-index="12"]:checked ~ .tabcontent[data-index="12"],
 input[data-index="13"]:checked ~ .tabcontent[data-index="13"]{
   display: block;
+}
+
+/* Notebook text */
+.rightalign {
+text-align: right;
+}
+
+.notebook {
+background-image: repeating-linear-gradient(white 0px, white 0.95lh, #3bb 0.96lh, #3bb 1lh);
+clear: both;
+padding: 0.14lh 1em 1lh 1em;
+border: solid steelblue 1px;
+box-shadow: 1vh 1vh 0.85vh rgba(0,0,0,0.2),
+    -1vh 1vh 0.85vh rgba(0,0,0,0.2);
+margin: 1em;
+font-family: "NotebookFont";
+}
+
+/* Same text size for everything */
+.notebook h1,
+.notebook h2,
+.notebook h3,
+.notebook h4,
+.notebook h5,
+.notebook h6,
+.notebook p {
+color: #22a;
+font-size: 100%;
+margin: 0;
+padding: 0;
+text-shadow: none;
+}
+
+.notebook h1 {
+text-align: center;
+}
+
+.notebook p + p {
+padding-top: 1lh;
 }
 
 @media print {
