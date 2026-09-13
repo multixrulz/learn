@@ -535,13 +535,7 @@ font-family: "NotebookFont";
 }
 
 /* Same text size for everything */
-.notebook h1,
-.notebook h2,
-.notebook h3,
-.notebook h4,
-.notebook h5,
-.notebook h6,
-.notebook p {
+.notebook * {
 color: #22a;
 font-size: 100%;
 margin: 0;
@@ -551,6 +545,12 @@ text-shadow: none;
 
 .notebook h1 {
 text-align: center;
+padding-bottom: 1lh;
+}
+
+.notebook ul {
+padding-left: 1em;
+line-height: 1.375;
 }
 
 .notebook p + p {
